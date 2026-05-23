@@ -1,0 +1,147 @@
+{
+  "name_es": "Haiti",
+  "name_en": "Haiti",
+  "iso_code": "ht",
+  "flag_url": "https://flagcdn.com/w160/ht.png",
+  "confederation": "CONCACAF",
+  "wc_titles": 0,
+  "group": "C",
+  "elo_base": 1667.115524693197,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Haiti",
+      "away": "Iceland",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-28",
+      "home": "Haiti",
+      "away": "Tunez",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Haiti",
+      "away": "Nicaragua",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-13",
+      "home": "Haiti",
+      "away": "Costa Rica",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-13",
+      "home": "Honduras",
+      "away": "Haiti",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-09",
+      "home": "Nicaragua",
+      "away": "Haiti",
+      "home_goals": 0,
+      "away_goals": 3,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Costa Rica",
+      "away": "Haiti",
+      "home_goals": 3,
+      "away_goals": 3,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-05",
+      "home": "Haiti",
+      "away": "Honduras",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-22",
+      "home": "Estados Unidos",
+      "away": "Haiti",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Gold Cup",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-19",
+      "home": "Trinidad and Tobago",
+      "away": "Haiti",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Gold Cup",
+      "result": "D",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-13",
+      "home": "Haiti",
+      "away": "Escocia",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Brasil",
+      "away": "Haiti",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Marruecos",
+      "away": "Haiti",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "DLDDWLWWLD",
+  "goals_for_last10": 12,
+  "goals_against_last10": 11
+}

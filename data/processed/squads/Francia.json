@@ -1,0 +1,230 @@
+{
+  "team": "Francia",
+  "coach": "Didier Deschamps",
+  "captain": "Kylian Mbappé",
+  "formation": "4-3-3",
+  "star_player": "Kylian Mbappé",
+  "notes": "Lista definitiva de Francia confirmada. Liderados por Mbappé, integran al central Saliba y la gran estrella de la banda ofensiva Michael Olise.",
+  "ratings": {
+    "attack": 10,
+    "defense": 9,
+    "midfield": 8,
+    "bench_depth": 9,
+    "experience": 9,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Mike Maignan",
+      "position": "POR",
+      "club": "AC Milan",
+      "number": 1,
+      "market_value": 40.0,
+      "starter": true
+    },
+    {
+      "name": "Brice Samba",
+      "position": "POR",
+      "club": "Rennes",
+      "number": 16,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Robin Risser",
+      "position": "POR",
+      "club": "Lens",
+      "number": 23,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Jules Kounde",
+      "position": "DEF",
+      "club": "FC Barcelona",
+      "number": 5,
+      "market_value": 50.0,
+      "starter": true
+    },
+    {
+      "name": "William Saliba",
+      "position": "DEF",
+      "club": "Arsenal",
+      "number": 4,
+      "market_value": 80.0,
+      "starter": true,
+      "notes": "Líder de la defensa."
+    },
+    {
+      "name": "Dayot Upamecano",
+      "position": "DEF",
+      "club": "FC Bayern",
+      "number": 18,
+      "market_value": 50.0,
+      "starter": true
+    },
+    {
+      "name": "Theo Hernández",
+      "position": "DEF",
+      "club": "Al Hilal",
+      "number": 22,
+      "market_value": 45.0,
+      "starter": true
+    },
+    {
+      "name": "Malo Gusto",
+      "position": "DEF",
+      "club": "Chelsea",
+      "number": 2,
+      "market_value": 35.0,
+      "starter": false
+    },
+    {
+      "name": "Ibrahima Konaté",
+      "position": "DEF",
+      "club": "Liverpool",
+      "number": 24,
+      "market_value": 45.0,
+      "starter": false
+    },
+    {
+      "name": "Lucas Hernández",
+      "position": "DEF",
+      "club": "PSG",
+      "number": 21,
+      "market_value": 40.0,
+      "starter": false
+    },
+    {
+      "name": "Lucas Digne",
+      "position": "DEF",
+      "club": "Aston Villa",
+      "number": 3,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Maxence Lacroix",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "number": 15,
+      "market_value": 30.0,
+      "starter": false
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "position": "MED",
+      "club": "Real Madrid",
+      "number": 8,
+      "market_value": 90.0,
+      "starter": true,
+      "notes": "Pivote titular."
+    },
+    {
+      "name": "Adrien Rabiot",
+      "position": "MED",
+      "club": "AC Milan",
+      "number": 14,
+      "market_value": 35.0,
+      "starter": true
+    },
+    {
+      "name": "Warren Zaïre-Emery",
+      "position": "MED",
+      "club": "PSG",
+      "number": 6,
+      "market_value": 60.0,
+      "starter": true
+    },
+    {
+      "name": "N’Golo Kanté",
+      "position": "MED",
+      "club": "Fenerbache",
+      "number": 13,
+      "market_value": 10.0,
+      "starter": false
+    },
+    {
+      "name": "Manu Koné",
+      "position": "MED",
+      "club": "AS Roma",
+      "number": 19,
+      "market_value": 25.0,
+      "starter": false
+    },
+    {
+      "name": "Kylian Mbappé",
+      "position": "DEL",
+      "club": "Real Madrid",
+      "number": 10,
+      "market_value": 180.0,
+      "starter": true,
+      "notes": "Máxima estrella mundial."
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "position": "DEL",
+      "club": "PSG",
+      "number": 11,
+      "market_value": 60.0,
+      "starter": true
+    },
+    {
+      "name": "Marcus Thuram",
+      "position": "DEL",
+      "club": "Inter",
+      "number": 9,
+      "market_value": 65.0,
+      "starter": true
+    },
+    {
+      "name": "Michael Olise",
+      "position": "DEL",
+      "club": "FC Bayern",
+      "number": 7,
+      "market_value": 55.0,
+      "starter": false
+    },
+    {
+      "name": "Désiré Doué",
+      "position": "DEL",
+      "club": "PSG",
+      "number": 26,
+      "market_value": 30.0,
+      "starter": false
+    },
+    {
+      "name": "Bradley Barcola",
+      "position": "DEL",
+      "club": "PSG",
+      "number": 20,
+      "market_value": 40.0,
+      "starter": false
+    },
+    {
+      "name": "Maghnes Akliouche",
+      "position": "DEL",
+      "club": "Mónaco",
+      "number": 25,
+      "market_value": 25.0,
+      "starter": false
+    },
+    {
+      "name": "Jean-Philippe Mateta",
+      "position": "DEL",
+      "club": "Crystal Palace",
+      "number": 12,
+      "market_value": 30.0,
+      "starter": false
+    },
+    {
+      "name": "Rayan Cherki",
+      "position": "DEL",
+      "club": "Manchester City",
+      "number": 17,
+      "market_value": 35.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

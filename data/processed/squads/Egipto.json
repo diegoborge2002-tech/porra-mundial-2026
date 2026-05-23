@@ -1,0 +1,238 @@
+{
+  "team": "Egipto",
+  "coach": "Hossam Hassan",
+  "captain": "Mohamed Salah",
+  "formation": "4-3-3",
+  "star_player": "Mohamed Salah",
+  "notes": "Lista definitiva de Egipto. Comandados por Mohamed Salah en el Liverpool y la gran temporada de Marmoush en el Manchester City.",
+  "ratings": {
+    "attack": 9,
+    "defense": 7,
+    "midfield": 8,
+    "bench_depth": 7,
+    "experience": 8,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Mohamed El Shenawy",
+      "position": "POR",
+      "club": "Al-Ahly SC",
+      "number": 1,
+      "market_value": 1.5,
+      "starter": true
+    },
+    {
+      "name": "Mostafa Shobeir",
+      "position": "POR",
+      "club": "Al-Ahly SC",
+      "number": 12,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Al-Mahdy Soliman",
+      "position": "POR",
+      "club": "Al-Ittihad Alexandria",
+      "number": 23,
+      "market_value": 0.4,
+      "starter": false
+    },
+    {
+      "name": "Mohamed Alaa",
+      "position": "POR",
+      "club": "ZED FC",
+      "number": 24,
+      "market_value": 0.3,
+      "starter": false
+    },
+    {
+      "name": "Mohamed Hany",
+      "position": "DEF",
+      "club": "Al-Ahly SC",
+      "number": 2,
+      "market_value": 1.2,
+      "starter": true
+    },
+    {
+      "name": "Mohamed Abdelmonem",
+      "position": "DEF",
+      "club": "OGC Niza",
+      "number": 24,
+      "market_value": 10.0,
+      "starter": true,
+      "notes": "Central de gran marca en Europa."
+    },
+    {
+      "name": "Ramy Rabia",
+      "position": "DEF",
+      "club": "Al-Ahly SC",
+      "number": 5,
+      "market_value": 0.6,
+      "starter": true
+    },
+    {
+      "name": "Ahmed Fotouh",
+      "position": "DEF",
+      "club": "Zamalek SC",
+      "number": 3,
+      "market_value": 1.2,
+      "starter": true
+    },
+    {
+      "name": "Tarek El Ala",
+      "position": "DEF",
+      "club": "Al-Nasr",
+      "number": 13,
+      "market_value": 0.5,
+      "starter": false
+    },
+    {
+      "name": "Hamdi Fathy",
+      "position": "DEF",
+      "club": "Al-Wakrah SC",
+      "number": 4,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Yasser Ibrahim",
+      "position": "DEF",
+      "club": "Al-Ahly SC",
+      "number": 6,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Hossam Abdel-Maguid",
+      "position": "DEF",
+      "club": "Zamalek SC",
+      "number": 14,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Karim Hafez",
+      "position": "DEF",
+      "club": "Pyramids FC",
+      "number": 16,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Marwan Attia",
+      "position": "MED",
+      "club": "Al-Ahly SC",
+      "number": 8,
+      "market_value": 2.2,
+      "starter": true
+    },
+    {
+      "name": "Ahmed Sayed Zizo",
+      "position": "MED",
+      "club": "Zamalek SC",
+      "number": 21,
+      "market_value": 4.5,
+      "starter": true
+    },
+    {
+      "name": "Imam Ashour",
+      "position": "MED",
+      "club": "Al-Ahly SC",
+      "number": 22,
+      "market_value": 3.0,
+      "starter": true
+    },
+    {
+      "name": "Mohand Lashin",
+      "position": "MED",
+      "club": "Pyramids FC",
+      "number": 18,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Nabil Emad Dunga",
+      "position": "MED",
+      "club": "Zamalek SC",
+      "number": 15,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Mahmoud Saber",
+      "position": "MED",
+      "club": "Pyramids FC / Smouha SC",
+      "number": 17,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Mostafa Abdel-Raouf Ziko",
+      "position": "MED",
+      "club": "ZED FC",
+      "number": 19,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Mahmoud Trezeguet",
+      "position": "MED",
+      "club": "Al-Rayyan SC",
+      "number": 7,
+      "market_value": 4.5,
+      "starter": false
+    },
+    {
+      "name": "Ibrahim Ade",
+      "position": "MED",
+      "club": "Pyramids FC",
+      "number": 10,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Haithem Hassan",
+      "position": "MED",
+      "club": "Real Oviedo",
+      "number": 25,
+      "market_value": 1.8,
+      "starter": false
+    },
+    {
+      "name": "Mohamed Salah",
+      "position": "DEL",
+      "club": "Liverpool FC",
+      "number": 10,
+      "market_value": 55.0,
+      "starter": true,
+      "notes": "Capitán, leyenda y gran estrella."
+    },
+    {
+      "name": "Omar Marmoush",
+      "position": "DEL",
+      "club": "Manchester City",
+      "number": 7,
+      "market_value": 40.0,
+      "starter": true,
+      "notes": "Atacante de grandísimo nivel."
+    },
+    {
+      "name": "Aktai Abdullah",
+      "position": "DEL",
+      "club": "ZED FC",
+      "number": 9,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Hamza Abdelkarim",
+      "position": "DEL",
+      "club": "FC Barcelona Atlètic/Al Ahly",
+      "number": 26,
+      "market_value": 1.5,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

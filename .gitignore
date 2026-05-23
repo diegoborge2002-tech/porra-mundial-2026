@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Logs
+*.log
+streamlit_run.log
+
+# Scratch / notebooks (no necesarios en deploy)
+scratch/
+notebooks/
+informes_tacticos/
+
+# Tokens / env
+.env
+.env.local
+*.token
+
+# Claude Code local config
+.claude/
+
+# Streamlit local PID
+/tmp/streamlit_pid

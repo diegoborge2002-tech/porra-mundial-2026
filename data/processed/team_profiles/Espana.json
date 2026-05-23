@@ -1,0 +1,147 @@
+{
+  "name_es": "Espana",
+  "name_en": "Spain",
+  "iso_code": "es",
+  "flag_url": "https://flagcdn.com/w160/es.png",
+  "confederation": "UEFA",
+  "wc_titles": 1,
+  "group": "H",
+  "elo_base": 2027.9251070902171,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Espana",
+      "away": "Egipto",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Espana",
+      "away": "Serbia",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Espana",
+      "away": "Turquia",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-15",
+      "home": "Georgia",
+      "away": "Espana",
+      "home_goals": 0,
+      "away_goals": 4,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Espana",
+      "away": "Bulgaria",
+      "home_goals": 4,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-11",
+      "home": "Espana",
+      "away": "Georgia",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-07",
+      "home": "Turquia",
+      "away": "Espana",
+      "home_goals": 0,
+      "away_goals": 6,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Bulgaria",
+      "away": "Espana",
+      "home_goals": 0,
+      "away_goals": 3,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-08",
+      "home": "Portugal",
+      "away": "Espana",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "UEFA Nations League",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-05",
+      "home": "Espana",
+      "away": "Francia",
+      "home_goals": 5,
+      "away_goals": 4,
+      "tournament": "UEFA Nations League",
+      "result": "W",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-15",
+      "home": "Espana",
+      "away": "Cabo Verde",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Espana",
+      "away": "Arabia Saudi",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Uruguay",
+      "away": "Espana",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "WDWWWWWDWD",
+  "goals_for_last10": 31,
+  "goals_against_last10": 8
+}

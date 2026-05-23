@@ -1,0 +1,147 @@
+{
+  "name_es": "Catar",
+  "name_en": "Qatar",
+  "iso_code": "qa",
+  "flag_url": "https://flagcdn.com/w160/qa.png",
+  "confederation": "AFC",
+  "wc_titles": 0,
+  "group": "B",
+  "elo_base": 1564.6999177454456,
+  "last_10_matches": [
+    {
+      "date": "2025-12-07",
+      "home": "Catar",
+      "away": "Tunez",
+      "home_goals": 0,
+      "away_goals": 3,
+      "tournament": "Arab Cup",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-04",
+      "home": "Catar",
+      "away": "Syria",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Arab Cup",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-01",
+      "home": "Catar",
+      "away": "Palestine",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Arab Cup",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-17",
+      "home": "Catar",
+      "away": "Zimbabwe",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Catar",
+      "away": "United Arab Emirates",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-08",
+      "home": "Catar",
+      "away": "Oman",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-07",
+      "home": "Catar",
+      "away": "Russia",
+      "home_goals": 1,
+      "away_goals": 4,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-03",
+      "home": "Catar",
+      "away": "Bahrain",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-08-24",
+      "home": "Catar",
+      "away": "Lebanon",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-10",
+      "home": "Uzbekistan",
+      "away": "Catar",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-13",
+      "home": "Catar",
+      "away": "Suiza",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Canada",
+      "away": "Catar",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Bosnia Herz.",
+      "away": "Catar",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "LDDLDWLLDL",
+  "goals_for_last10": 9,
+  "goals_against_last10": 19
+}

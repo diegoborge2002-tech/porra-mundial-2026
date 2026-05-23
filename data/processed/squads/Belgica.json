@@ -1,0 +1,230 @@
+{
+  "team": "Belgica",
+  "coach": "Domenico Tedesco",
+  "captain": "Kevin de Bruyne",
+  "formation": "4-3-3",
+  "star_player": "Kevin de Bruyne",
+  "notes": "Lista definitiva de Bélgica. Los Diablos Rojos llegan con la estrella Kevin de Bruyne en el Nápoles, Doku en el Manchester City y Lukaku en el Nápoles.",
+  "ratings": {
+    "attack": 9,
+    "defense": 8,
+    "midfield": 9,
+    "bench_depth": 8,
+    "experience": 9,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Thibaut Courtois",
+      "position": "POR",
+      "club": "Real Madrid",
+      "number": 1,
+      "market_value": 30.0,
+      "starter": true
+    },
+    {
+      "name": "Senne Lammens",
+      "position": "POR",
+      "club": "Manchester United",
+      "number": 12,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Mike Penders",
+      "position": "POR",
+      "club": "Estrasburgo",
+      "number": 23,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Zeno Debast",
+      "position": "DEF",
+      "club": "Sporting",
+      "number": 4,
+      "market_value": 22.0,
+      "starter": true
+    },
+    {
+      "name": "Arthur Theate",
+      "position": "DEF",
+      "club": "Eintracht",
+      "number": 3,
+      "market_value": 20.0,
+      "starter": true
+    },
+    {
+      "name": "Koni de Winter",
+      "position": "DEF",
+      "club": "Milan",
+      "number": 15,
+      "market_value": 16.0,
+      "starter": true
+    },
+    {
+      "name": "Timothy Castagne",
+      "position": "DEF",
+      "club": "Fulham",
+      "number": 2,
+      "market_value": 12.0,
+      "starter": true
+    },
+    {
+      "name": "Brandon Mechele",
+      "position": "DEF",
+      "club": "Brujas",
+      "number": 14,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Nathan Ngoy",
+      "position": "DEF",
+      "club": "Lille",
+      "number": 16,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Thomas Meunir",
+      "position": "DEF",
+      "club": "Lille",
+      "number": 13,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Maxim de Cuyper",
+      "position": "DEF",
+      "club": "Brighton",
+      "number": 5,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Joaquin Seys",
+      "position": "DEF",
+      "club": "Brujas",
+      "number": 24,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Kevin de Bruyne",
+      "position": "MED",
+      "club": "Nápoles",
+      "number": 10,
+      "market_value": 35.0,
+      "starter": true,
+      "notes": "Capitán y leyenda absoluta."
+    },
+    {
+      "name": "Amadou Onana",
+      "position": "MED",
+      "club": "Aston Villa",
+      "number": 6,
+      "market_value": 50.0,
+      "starter": true
+    },
+    {
+      "name": "Youri Tielemans",
+      "position": "MED",
+      "club": "Aston Villa",
+      "number": 8,
+      "market_value": 30.0,
+      "starter": true
+    },
+    {
+      "name": "Hans Vanaken",
+      "position": "MED",
+      "club": "Brujas",
+      "number": 20,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Nicolas Raskin",
+      "position": "MED",
+      "club": "Rangers",
+      "number": 18,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Axel Witsel",
+      "position": "MED",
+      "club": "Girona",
+      "number": 16,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Jérémy Doku",
+      "position": "DEL",
+      "club": "Manchester City",
+      "number": 7,
+      "market_value": 65.0,
+      "starter": true,
+      "notes": "Extremo desequilibrante titular."
+    },
+    {
+      "name": "Leandro Trossard",
+      "position": "DEL",
+      "club": "Arsenal",
+      "number": 11,
+      "market_value": 35.0,
+      "starter": true
+    },
+    {
+      "name": "Romelu Lukaku",
+      "position": "DEL",
+      "club": "Nápoles",
+      "number": 9,
+      "market_value": 30.0,
+      "starter": true,
+      "notes": "Goleador histórico."
+    },
+    {
+      "name": "Alexis Saelemaekers",
+      "position": "DEL",
+      "club": "Milan",
+      "number": 17,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Dodi Lukebakio",
+      "position": "DEL",
+      "club": "Benfica",
+      "number": 22,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Charles de Ketelaere",
+      "position": "DEL",
+      "club": "Atalanta",
+      "number": 19,
+      "market_value": 34.0,
+      "starter": false
+    },
+    {
+      "name": "Matias Fernández-Pardo",
+      "position": "DEL",
+      "club": "Lille",
+      "number": 25,
+      "market_value": 10.0,
+      "starter": false
+    },
+    {
+      "name": "Diego Moreira",
+      "position": "DEL",
+      "club": "Estrasburgo",
+      "number": 26,
+      "market_value": 12.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

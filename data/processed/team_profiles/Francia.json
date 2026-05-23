@@ -1,0 +1,147 @@
+{
+  "name_es": "Francia",
+  "name_en": "France",
+  "iso_code": "fr",
+  "flag_url": "https://flagcdn.com/w160/fr.png",
+  "confederation": "UEFA",
+  "wc_titles": 2,
+  "group": "I",
+  "elo_base": 1949.8579602899,
+  "last_10_matches": [
+    {
+      "date": "2026-03-29",
+      "home": "Colombia",
+      "away": "Francia",
+      "home_goals": 1,
+      "away_goals": 3,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-26",
+      "home": "Brasil",
+      "away": "Francia",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-16",
+      "home": "Azerbaijan",
+      "away": "Francia",
+      "home_goals": 1,
+      "away_goals": 3,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-13",
+      "home": "Francia",
+      "away": "Ukraine",
+      "home_goals": 4,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-13",
+      "home": "Iceland",
+      "away": "Francia",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Francia",
+      "away": "Azerbaijan",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Francia",
+      "away": "Iceland",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-05",
+      "home": "Ukraine",
+      "away": "Francia",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-08",
+      "home": "Alemania",
+      "away": "Francia",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "UEFA Nations League",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-05",
+      "home": "Espana",
+      "away": "Francia",
+      "home_goals": 5,
+      "away_goals": 4,
+      "tournament": "UEFA Nations League",
+      "result": "L",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-16",
+      "home": "Francia",
+      "away": "Senegal",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Francia",
+      "away": "Irak",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Noruega",
+      "away": "Francia",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "LWWWWDWWWW",
+  "goals_for_last10": 27,
+  "goals_against_last10": 11
+}

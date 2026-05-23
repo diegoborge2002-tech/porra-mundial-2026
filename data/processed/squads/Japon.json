@@ -1,0 +1,230 @@
+{
+  "team": "Japon",
+  "coach": "Hajime Moriyasu",
+  "captain": "Wataru Endo",
+  "formation": "4-2-3-1",
+  "star_player": "Takefusha Kubo",
+  "notes": "Lista definitiva de Japón. Los Samuráis Azules presentan un equipo con gran poder organizativo comandado por Kubo en la Real Sociedad e Itakura y Tomiyasu en el Ajax.",
+  "ratings": {
+    "attack": 8,
+    "defense": 8,
+    "midfield": 8,
+    "bench_depth": 8,
+    "experience": 8,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Zion Suzuki",
+      "position": "POR",
+      "club": "Parma",
+      "number": 1,
+      "market_value": 8.0,
+      "starter": true
+    },
+    {
+      "name": "Keisuke Osako",
+      "position": "POR",
+      "club": "Sanfrecce Hiroshima",
+      "number": 12,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Tomoki Hayakawa",
+      "position": "POR",
+      "club": "Kashima",
+      "number": 23,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Ko Itakura",
+      "position": "DEF",
+      "club": "Ajax",
+      "number": 4,
+      "market_value": 15.0,
+      "starter": true
+    },
+    {
+      "name": "Takehiro Tomisayu",
+      "position": "DEF",
+      "club": "Ajax",
+      "number": 22,
+      "market_value": 35.0,
+      "starter": true
+    },
+    {
+      "name": "Yukinari Sugawara",
+      "position": "DEF",
+      "club": "Werder Bremen",
+      "number": 2,
+      "market_value": 12.0,
+      "starter": true
+    },
+    {
+      "name": "Hiroki Ito",
+      "position": "DEF",
+      "club": "Bayern",
+      "number": 21,
+      "market_value": 30.0,
+      "starter": true
+    },
+    {
+      "name": "Yuto Nagamoto",
+      "position": "DEF",
+      "club": "FC Tokyo",
+      "number": 5,
+      "market_value": 0.4,
+      "starter": false
+    },
+    {
+      "name": "Shogo Taniguchi",
+      "position": "DEF",
+      "club": "Sint-Truiden",
+      "number": 3,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Ayumu Seko",
+      "position": "DEF",
+      "club": "Le Havre",
+      "number": 15,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Junnosuke Suzuki",
+      "position": "DEF",
+      "club": "Copenhague",
+      "number": 16,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Tsuyoshi Watanabe",
+      "position": "DEF",
+      "club": "Feyenoord",
+      "number": 24,
+      "market_value": 7.0,
+      "starter": false
+    },
+    {
+      "name": "Wataru Endo",
+      "position": "MED",
+      "club": "Liverpool",
+      "number": 6,
+      "market_value": 13.0,
+      "starter": true,
+      "notes": "Capitán y ancla de la medular."
+    },
+    {
+      "name": "Ao Tanaka",
+      "position": "MED",
+      "club": "Leeds",
+      "number": 17,
+      "market_value": 4.5,
+      "starter": true
+    },
+    {
+      "name": "Daichi Kamada",
+      "position": "MED",
+      "club": "Crystal Palace",
+      "number": 14,
+      "market_value": 18.0,
+      "starter": true
+    },
+    {
+      "name": "Kaishu Sano",
+      "position": "MED",
+      "club": "Mainz",
+      "number": 8,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Junya Ito",
+      "position": "MED",
+      "club": "Genk",
+      "number": 11,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Takefusha Kubo",
+      "position": "DEL",
+      "club": "Real Sociedad",
+      "number": 20,
+      "market_value": 50.0,
+      "starter": true,
+      "notes": "Extrema estrella creativa."
+    },
+    {
+      "name": "Kaito Nakamura",
+      "position": "DEL",
+      "club": "Stade Reims",
+      "number": 13,
+      "market_value": 10.0,
+      "starter": true
+    },
+    {
+      "name": "Daizen Maeda",
+      "position": "DEL",
+      "club": "Celtic",
+      "number": 25,
+      "market_value": 7.0,
+      "starter": true
+    },
+    {
+      "name": "Ritsu Doan",
+      "position": "DEL",
+      "club": "Eintracht",
+      "number": 10,
+      "market_value": 18.0,
+      "starter": false
+    },
+    {
+      "name": "Kaoru Ueda",
+      "position": "DEL",
+      "club": "Feyenoord",
+      "number": 7,
+      "market_value": 40.0,
+      "starter": false,
+      "notes": "Referente de banda muy potente."
+    },
+    {
+      "name": "Koki Ogawa",
+      "position": "DEL",
+      "club": "NEC",
+      "number": 9,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Iori Suzuki",
+      "position": "DEL",
+      "club": "Friburgo",
+      "number": 19,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Kento Shiogai",
+      "position": "DEL",
+      "club": "Wolfsburgo",
+      "number": 18,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Keisuke Goto",
+      "position": "DEL",
+      "club": "Sint-Truiden",
+      "number": 26,
+      "market_value": 2.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

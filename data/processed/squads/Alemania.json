@@ -1,0 +1,233 @@
+{
+  "team": "Alemania",
+  "coach": "Julian Nagelsmann",
+  "captain": "Joshua Kimmich",
+  "formation": "4-2-3-1",
+  "star_player": "Florian Wirtz",
+  "notes": "Lista definitiva confirmada. Nagelsmann lidera Die Mannschaft con el talento colosal de Wirtz y Musiala y el veterano baluarte defensivo Rüdiger.",
+  "ratings": {
+    "attack": 9,
+    "defense": 9,
+    "midfield": 10,
+    "bench_depth": 9,
+    "experience": 9,
+    "motivation": 10
+  },
+  "players": [
+    {
+      "name": "Manuel Neuer",
+      "position": "POR",
+      "club": "Bayern",
+      "number": 1,
+      "market_value": 5.0,
+      "starter": true,
+      "notes": "El veterano guardameta titular indiscutible."
+    },
+    {
+      "name": "Oliver Baumann",
+      "position": "POR",
+      "club": "Hoffenheim",
+      "number": 12,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Alexander Nübel",
+      "position": "POR",
+      "club": "Stuttgart",
+      "number": 22,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Joshua Kimmich",
+      "position": "DEF",
+      "club": "Bayern",
+      "number": 6,
+      "market_value": 50.0,
+      "starter": true,
+      "notes": "Capitán y lateral derecho titular."
+    },
+    {
+      "name": "Antonio Rüdiger",
+      "position": "DEF",
+      "club": "Real Madrid",
+      "number": 2,
+      "market_value": 25.0,
+      "starter": true,
+      "notes": "Líder indiscutible de la zaga."
+    },
+    {
+      "name": "Jonathan Tah",
+      "position": "DEF",
+      "club": "Bayern",
+      "number": 4,
+      "market_value": 30.0,
+      "starter": true
+    },
+    {
+      "name": "David Raum",
+      "position": "DEF",
+      "club": "Leipzig",
+      "number": 3,
+      "market_value": 17.0,
+      "starter": true
+    },
+    {
+      "name": "Waldemar Anton",
+      "position": "DEF",
+      "club": "Dortmund",
+      "number": 16,
+      "market_value": 20.0,
+      "starter": false
+    },
+    {
+      "name": "Nathaniel Brown",
+      "position": "DEF",
+      "club": "Frankfurt",
+      "number": 15,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Pascal Groß",
+      "position": "DEF",
+      "club": "Brighton & Hove Albion",
+      "number": 5,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Nico Schlotterbeck",
+      "position": "DEF",
+      "club": "Dortmund",
+      "number": 15,
+      "market_value": 40.0,
+      "starter": false
+    },
+    {
+      "name": "Malick Thiaw",
+      "position": "DEF",
+      "club": "Newcastle",
+      "number": 24,
+      "market_value": 25.0,
+      "starter": false
+    },
+    {
+      "name": "Aleksandar Pavlovic",
+      "position": "MED",
+      "club": "Bayern",
+      "number": 16,
+      "market_value": 50.0,
+      "starter": true
+    },
+    {
+      "name": "Jamal Musiala",
+      "position": "MED",
+      "club": "Bayern",
+      "number": 10,
+      "market_value": 130.0,
+      "starter": true,
+      "notes": "Magia pura en la mediapunta titular."
+    },
+    {
+      "name": "Florian Wirtz",
+      "position": "MED",
+      "club": "Liverpool",
+      "number": 17,
+      "market_value": 130.0,
+      "starter": true,
+      "notes": "La gran estrella creativa desequilibrante."
+    },
+    {
+      "name": "Angelo Stiller",
+      "position": "MED",
+      "club": "Stuttgart",
+      "number": 18,
+      "market_value": 28.0,
+      "starter": true
+    },
+    {
+      "name": "Nadiem Amiri",
+      "position": "MED",
+      "club": "Mainz",
+      "number": 8,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Jamie Leweling",
+      "position": "MED",
+      "club": "Stuttgart",
+      "number": 21,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Felix Nmecha",
+      "position": "MED",
+      "club": "Dortmund",
+      "number": 19,
+      "market_value": 22.0,
+      "starter": false
+    },
+    {
+      "name": "Leon Goretzka",
+      "position": "MED",
+      "club": "Bayern",
+      "number": 13,
+      "market_value": 20.0,
+      "starter": false
+    },
+    {
+      "name": "Lennart Karl",
+      "position": "MED",
+      "club": "Bayern",
+      "number": 25,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Kai Havertz",
+      "position": "DEL",
+      "club": "Arsenal",
+      "number": 7,
+      "market_value": 75.0,
+      "starter": true,
+      "notes": "Falso nueve de enorme inteligencia táctica."
+    },
+    {
+      "name": "Deniz Undav",
+      "position": "DEL",
+      "club": "Stuttgart",
+      "number": 9,
+      "market_value": 25.0,
+      "starter": true
+    },
+    {
+      "name": "Maximilian Beier",
+      "position": "DEL",
+      "club": "Dortmund",
+      "number": 14,
+      "market_value": 30.0,
+      "starter": false
+    },
+    {
+      "name": "Leroy Sané",
+      "position": "DEL",
+      "club": "Istanbul",
+      "number": 19,
+      "market_value": 70.0,
+      "starter": false
+    },
+    {
+      "name": "Nick Woltemade",
+      "position": "DEL",
+      "club": "Newcastle",
+      "number": 26,
+      "market_value": 6.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

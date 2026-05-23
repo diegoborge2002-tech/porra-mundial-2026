@@ -1,0 +1,147 @@
+{
+  "name_es": "Austria",
+  "name_en": "Austria",
+  "iso_code": "at",
+  "flag_url": "https://flagcdn.com/w160/at.png",
+  "confederation": "UEFA",
+  "wc_titles": 0,
+  "group": "J",
+  "elo_base": 1729.7697145910347,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Austria",
+      "away": "Corea del Sur",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Austria",
+      "away": "Ghana",
+      "home_goals": 5,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Austria",
+      "away": "Bosnia Herz.",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-15",
+      "home": "Cyprus",
+      "away": "Austria",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-12",
+      "home": "Romania",
+      "away": "Austria",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-09",
+      "home": "Austria",
+      "away": "San Marino",
+      "home_goals": 10,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Bosnia Herz.",
+      "away": "Austria",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-06",
+      "home": "Austria",
+      "away": "Cyprus",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-10",
+      "home": "San Marino",
+      "away": "Austria",
+      "home_goals": 0,
+      "away_goals": 4,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-07",
+      "home": "Austria",
+      "away": "Romania",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-16",
+      "home": "Austria",
+      "away": "Jordania",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Argentina",
+      "away": "Austria",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Argelia",
+      "away": "Austria",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "WWWWWLWDWW",
+  "goals_for_last10": 28,
+  "goals_against_last10": 5
+}

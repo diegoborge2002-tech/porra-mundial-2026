@@ -1,0 +1,147 @@
+{
+  "name_es": "Ghana",
+  "name_en": "Ghana",
+  "iso_code": "gh",
+  "flag_url": "https://flagcdn.com/w160/gh.png",
+  "confederation": "CAF",
+  "wc_titles": 0,
+  "group": "L",
+  "elo_base": 1594.1599537052596,
+  "last_10_matches": [
+    {
+      "date": "2026-03-30",
+      "home": "Alemania",
+      "away": "Ghana",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Austria",
+      "away": "Ghana",
+      "home_goals": 5,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Corea del Sur",
+      "away": "Ghana",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-14",
+      "home": "Japon",
+      "away": "Ghana",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "Kirin Cup",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-12",
+      "home": "Ghana",
+      "away": "Comoros",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-08",
+      "home": "Central African Republic",
+      "away": "Ghana",
+      "home_goals": 0,
+      "away_goals": 5,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-08",
+      "home": "Ghana",
+      "away": "Mali",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Chad",
+      "away": "Ghana",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-05-31",
+      "home": "Trinidad and Tobago",
+      "away": "Ghana",
+      "home_goals": 0,
+      "away_goals": 4,
+      "tournament": "Unity Cup",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-05-28",
+      "home": "Nigeria",
+      "away": "Ghana",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Unity Cup",
+      "result": "L",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-17",
+      "home": "Ghana",
+      "away": "Panama",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Inglaterra",
+      "away": "Ghana",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Croacia",
+      "away": "Ghana",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "LWDWWWLLLL",
+  "goals_for_last10": 15,
+  "goals_against_last10": 13
+}

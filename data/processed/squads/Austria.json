@@ -1,0 +1,229 @@
+{
+  "team": "Austria",
+  "coach": "Ralf Rangnick",
+  "captain": "David Alaba",
+  "formation": "4-2-3-1",
+  "star_player": "Marcel Sabitzer",
+  "notes": "Lista definitiva de Austria confirmada. El estandarte Alaba y el mediocentro creativo Sabitzer comandan un equipo muy presionante fiel a Rangnick.",
+  "ratings": {
+    "attack": 8,
+    "defense": 8,
+    "midfield": 9,
+    "bench_depth": 8,
+    "experience": 8,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Patrick Pentz",
+      "position": "POR",
+      "club": "Brondy IF",
+      "number": 1,
+      "market_value": 3.5,
+      "starter": true
+    },
+    {
+      "name": "Alexander Schlager",
+      "position": "POR",
+      "club": "Red Bull Salzburgo",
+      "number": 12,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Florian Wiegele",
+      "position": "POR",
+      "club": "Viktoria Pilsen",
+      "number": 23,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "David Alaba",
+      "position": "DEF",
+      "club": "Real Madrid",
+      "number": 8,
+      "market_value": 20.0,
+      "starter": true,
+      "notes": "Capitán y mariscal de la zaga."
+    },
+    {
+      "name": "Kevin Danso",
+      "position": "DEF",
+      "club": "Tottenham",
+      "number": 4,
+      "market_value": 25.0,
+      "starter": true
+    },
+    {
+      "name": "Philipp Lienhart",
+      "position": "DEF",
+      "club": "Friburgo",
+      "number": 15,
+      "market_value": 20.0,
+      "starter": true
+    },
+    {
+      "name": "Stefan Posch",
+      "position": "DEF",
+      "club": "Mainz 05",
+      "number": 5,
+      "market_value": 15.0,
+      "starter": true
+    },
+    {
+      "name": "David Affengruber",
+      "position": "DEF",
+      "club": "Elche",
+      "number": 2,
+      "market_value": 3.5,
+      "starter": false
+    },
+    {
+      "name": "Marco Friedl",
+      "position": "DEF",
+      "club": "Werder Bremen",
+      "number": 3,
+      "market_value": 7.5,
+      "starter": false
+    },
+    {
+      "name": "Phillipp Mwene",
+      "position": "DEF",
+      "club": "Mainz 05",
+      "number": 16,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Alexander Prass",
+      "position": "DEF",
+      "club": "Hoffenheim",
+      "number": 22,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Michael Svoboda",
+      "position": "DEF",
+      "club": "Venezia",
+      "number": 14,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Christoph Baumgartner",
+      "position": "MED",
+      "club": "Red Bull Leipzig",
+      "number": 19,
+      "market_value": 35.0,
+      "starter": true
+    },
+    {
+      "name": "Konrad Laimer",
+      "position": "MED",
+      "club": "Bayern de Múnich",
+      "number": 24,
+      "market_value": 30.0,
+      "starter": true
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "position": "MED",
+      "club": "Borussia Dortmund",
+      "number": 9,
+      "market_value": 20.0,
+      "starter": true,
+      "notes": "La gran figura en la distribución."
+    },
+    {
+      "name": "Carney Chukwuemeka",
+      "position": "MED",
+      "club": "Borussia Dortmund",
+      "number": 10,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Florian Grillitsch",
+      "position": "MED",
+      "club": "Sporting Braga",
+      "number": 6,
+      "market_value": 6.5,
+      "starter": false
+    },
+    {
+      "name": "Xavier Schlager",
+      "position": "MED",
+      "club": "Red Bull Leipzig",
+      "number": 18,
+      "market_value": 22.0,
+      "starter": false
+    },
+    {
+      "name": "Romano Schimid",
+      "position": "MED",
+      "club": "Werder Bremen",
+      "number": 20,
+      "market_value": 10.0,
+      "starter": false
+    },
+    {
+      "name": "Alessandro Schöph",
+      "position": "MED",
+      "club": "RZ Pellets",
+      "number": 21,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Nicolas Seiwald",
+      "position": "MED",
+      "club": "Red Bull Leipzig",
+      "number": 17,
+      "market_value": 16.0,
+      "starter": false
+    },
+    {
+      "name": "Paul Wanner",
+      "position": "MED",
+      "club": "PSV",
+      "number": 25,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Patrick Wimmer",
+      "position": "MED",
+      "club": "Wolfsburgo",
+      "number": 26,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Michael Gregoritsch",
+      "position": "DEL",
+      "club": "Augsburgo",
+      "number": 11,
+      "market_value": 8.0,
+      "starter": true
+    },
+    {
+      "name": "Marko Arnautovic",
+      "position": "DEL",
+      "club": "Estrella Roja",
+      "number": 7,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Sasa Kalajdzic",
+      "position": "DEL",
+      "club": "LASK Linz",
+      "number": 9,
+      "market_value": 5.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

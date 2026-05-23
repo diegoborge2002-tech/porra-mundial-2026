@@ -1,0 +1,147 @@
+{
+  "name_es": "Canada",
+  "name_en": "Canada",
+  "iso_code": "ca",
+  "flag_url": "https://flagcdn.com/w160/ca.png",
+  "confederation": "CONCACAF",
+  "wc_titles": 0,
+  "group": "B",
+  "elo_base": 1777.124171572518,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Canada",
+      "away": "Tunez",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-28",
+      "home": "Canada",
+      "away": "Iceland",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Canada",
+      "away": "Venezuela",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-13",
+      "home": "Canada",
+      "away": "Ecuador",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Canada",
+      "away": "Colombia",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Canada",
+      "away": "Australia",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Wales",
+      "away": "Canada",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-05",
+      "home": "Romania",
+      "away": "Canada",
+      "home_goals": 0,
+      "away_goals": 3,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-29",
+      "home": "Canada",
+      "away": "Guatemala",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Gold Cup",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-24",
+      "home": "Canada",
+      "away": "El Salvador",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "Gold Cup",
+      "result": "W",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-12",
+      "home": "Canada",
+      "away": "Bosnia Herz.",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Canada",
+      "away": "Catar",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Canada",
+      "away": "Suiza",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    }
+  ],
+  "form_streak": "WDWWLDDWDD",
+  "goals_for_last10": 11,
+  "goals_against_last10": 4
+}

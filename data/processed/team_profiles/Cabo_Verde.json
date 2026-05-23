@@ -1,0 +1,147 @@
+{
+  "name_es": "Cabo Verde",
+  "name_en": "Cape Verde",
+  "iso_code": "cv",
+  "flag_url": "https://flagcdn.com/w160/cv.png",
+  "confederation": "CAF",
+  "wc_titles": 0,
+  "group": "H",
+  "elo_base": 1626.830933036104,
+  "last_10_matches": [
+    {
+      "date": "2026-03-30",
+      "home": "Cabo Verde",
+      "away": "Finland",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA Series",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Chile",
+      "away": "Cabo Verde",
+      "home_goals": 4,
+      "away_goals": 2,
+      "tournament": "FIFA Series",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-17",
+      "home": "Cabo Verde",
+      "away": "Egipto",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Al Ain International Cup",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-13",
+      "home": "Iran",
+      "away": "Cabo Verde",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Al Ain International Cup",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-13",
+      "home": "Cabo Verde",
+      "away": "Eswatini",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-08",
+      "home": "Libya",
+      "away": "Cabo Verde",
+      "home_goals": 3,
+      "away_goals": 3,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Cabo Verde",
+      "away": "Cameroon",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Mauritius",
+      "away": "Cabo Verde",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-08",
+      "home": "Georgia",
+      "away": "Cabo Verde",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-03",
+      "home": "Malaysia",
+      "away": "Cabo Verde",
+      "home_goals": 0,
+      "away_goals": 3,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-15",
+      "home": "Espana",
+      "away": "Cabo Verde",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Uruguay",
+      "away": "Cabo Verde",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Cabo Verde",
+      "away": "Arabia Saudi",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    }
+  ],
+  "form_streak": "WDWWDWDDLD",
+  "goals_for_last10": 17,
+  "goals_against_last10": 10
+}

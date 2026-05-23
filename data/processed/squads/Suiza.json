@@ -1,0 +1,232 @@
+{
+  "team": "Suiza",
+  "coach": "Murat Yakin",
+  "captain": "Granit Xhaka",
+  "formation": "3-4-2-1",
+  "star_player": "Gregor Kobel",
+  "notes": "Lista definitiva confirmada. Suiza llega con un mediocampo experimentado capitaneado por Xhaka, la solvencia de Kobel bajo palos y el poder de Akanji atrás.",
+  "ratings": {
+    "attack": 7,
+    "defense": 8,
+    "midfield": 9,
+    "bench_depth": 8,
+    "experience": 9,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Gregor Kobel",
+      "position": "POR",
+      "club": "Borussia Dortmund",
+      "number": 1,
+      "market_value": 40.0,
+      "starter": true,
+      "notes": "Guardameta élite mundial titular."
+    },
+    {
+      "name": "Marvin Keller",
+      "position": "POR",
+      "club": "Young Boys",
+      "number": 12,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Yvon Mvogo",
+      "position": "POR",
+      "club": "Lorient",
+      "number": 21,
+      "market_value": 3.5,
+      "starter": false
+    },
+    {
+      "name": "Manuel Akanji",
+      "position": "DEF",
+      "club": "Inter",
+      "number": 5,
+      "market_value": 45.0,
+      "starter": true,
+      "notes": "El pilar central de la defensa."
+    },
+    {
+      "name": "Aurèle Amenda",
+      "position": "DEF",
+      "club": "Eintracht",
+      "number": 4,
+      "market_value": 8.0,
+      "starter": true
+    },
+    {
+      "name": "Eray Cömert",
+      "position": "DEF",
+      "club": "Valencia",
+      "number": 15,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Nico Elvedi",
+      "position": "DEF",
+      "club": "Borussia Mönchengladbach",
+      "number": 18,
+      "market_value": 15.0,
+      "starter": true
+    },
+    {
+      "name": "Luca Jaquez",
+      "position": "DEF",
+      "club": "Stuttgart",
+      "number": 16,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Miro Muheim",
+      "position": "DEF",
+      "club": "Hamburgo",
+      "number": 3,
+      "market_value": 4.5,
+      "starter": false
+    },
+    {
+      "name": "Ricardo Rodriguez",
+      "position": "DEF",
+      "club": "Betis",
+      "number": 13,
+      "market_value": 3.5,
+      "starter": true
+    },
+    {
+      "name": "Silvan Widmer",
+      "position": "DEF",
+      "club": "Mainz 05",
+      "number": 2,
+      "market_value": 3.0,
+      "starter": true
+    },
+    {
+      "name": "Granit Xhaka",
+      "position": "MED",
+      "club": "Sunderland",
+      "number": 10,
+      "market_value": 15.0,
+      "starter": true,
+      "notes": "Capitán y motor indiscutible."
+    },
+    {
+      "name": "Denis Zakaria",
+      "position": "MED",
+      "club": "Mónaco",
+      "number": 6,
+      "market_value": 25.0,
+      "starter": true
+    },
+    {
+      "name": "Michel Aebischer",
+      "position": "MED",
+      "club": "Pisa",
+      "number": 8,
+      "market_value": 10.0,
+      "starter": true
+    },
+    {
+      "name": "Christian Fassnacht",
+      "position": "MED",
+      "club": "Young Boys",
+      "number": 11,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Remo Freuler",
+      "position": "MED",
+      "club": "Bologna",
+      "number": 20,
+      "market_value": 6.5,
+      "starter": true
+    },
+    {
+      "name": "Ardon Jashari",
+      "position": "MED",
+      "club": "Milan",
+      "number": 14,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Johan Manzambi",
+      "position": "MED",
+      "club": "Friburgo",
+      "number": 24,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Fabian Rieder",
+      "position": "MED",
+      "club": "Augsburgo",
+      "number": 26,
+      "market_value": 10.0,
+      "starter": false
+    },
+    {
+      "name": "Djibril Sow",
+      "position": "MED",
+      "club": "Sevilla",
+      "number": 17,
+      "market_value": 10.0,
+      "starter": false
+    },
+    {
+      "name": "Zeki Amdouni",
+      "position": "DEL",
+      "club": "Burnley",
+      "number": 25,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Breel Embolo",
+      "position": "DEL",
+      "club": "Stade Rennes",
+      "number": 7,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "Gran referencia en punta."
+    },
+    {
+      "name": "Cedric Itten",
+      "position": "DEL",
+      "club": "Fortuna Düsseldorf",
+      "number": 9,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Dan Ndoye",
+      "position": "DEL",
+      "club": "Nottingham Forest",
+      "number": 19,
+      "market_value": 22.0,
+      "starter": true,
+      "notes": "Extremo titular potente."
+    },
+    {
+      "name": "Noah Okafor",
+      "position": "DEL",
+      "club": "Leeds",
+      "number": 22,
+      "market_value": 20.0,
+      "starter": false
+    },
+    {
+      "name": "Ruben Vargas",
+      "position": "DEL",
+      "club": "Sevilla",
+      "number": 23,
+      "market_value": 10.0,
+      "starter": true
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

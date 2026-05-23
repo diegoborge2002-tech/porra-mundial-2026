@@ -1,0 +1,147 @@
+{
+  "name_es": "Paises Bajos",
+  "name_en": "Netherlands",
+  "iso_code": "nl",
+  "flag_url": "https://flagcdn.com/w160/nl.png",
+  "confederation": "UEFA",
+  "wc_titles": 0,
+  "group": "F",
+  "elo_base": 1851.0415875201927,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Paises Bajos",
+      "away": "Ecuador",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Paises Bajos",
+      "away": "Noruega",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-17",
+      "home": "Paises Bajos",
+      "away": "Lithuania",
+      "home_goals": 4,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-14",
+      "home": "Poland",
+      "away": "Paises Bajos",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-12",
+      "home": "Paises Bajos",
+      "away": "Finland",
+      "home_goals": 4,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-09",
+      "home": "Malta",
+      "away": "Paises Bajos",
+      "home_goals": 0,
+      "away_goals": 4,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-07",
+      "home": "Lithuania",
+      "away": "Paises Bajos",
+      "home_goals": 2,
+      "away_goals": 3,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Paises Bajos",
+      "away": "Poland",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-10",
+      "home": "Paises Bajos",
+      "away": "Malta",
+      "home_goals": 8,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-07",
+      "home": "Finland",
+      "away": "Paises Bajos",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-14",
+      "home": "Paises Bajos",
+      "away": "Japon",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Paises Bajos",
+      "away": "Suecia",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Tunez",
+      "away": "Paises Bajos",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "WWDWWWDWWD",
+  "goals_for_last10": 30,
+  "goals_against_last10": 6
+}

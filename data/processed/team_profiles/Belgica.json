@@ -1,0 +1,147 @@
+{
+  "name_es": "Belgica",
+  "name_en": "Belgium",
+  "iso_code": "be",
+  "flag_url": "https://flagcdn.com/w160/be.png",
+  "confederation": "UEFA",
+  "wc_titles": 0,
+  "group": "G",
+  "elo_base": 1766.8544397385433,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Mexico",
+      "away": "Belgica",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-28",
+      "home": "Estados Unidos",
+      "away": "Belgica",
+      "home_goals": 2,
+      "away_goals": 5,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Belgica",
+      "away": "Liechtenstein",
+      "home_goals": 7,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-15",
+      "home": "Kazakhstan",
+      "away": "Belgica",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-13",
+      "home": "Wales",
+      "away": "Belgica",
+      "home_goals": 2,
+      "away_goals": 4,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Belgica",
+      "away": "North Macedonia",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-07",
+      "home": "Belgica",
+      "away": "Kazakhstan",
+      "home_goals": 6,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Liechtenstein",
+      "away": "Belgica",
+      "home_goals": 0,
+      "away_goals": 6,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-09",
+      "home": "Belgica",
+      "away": "Wales",
+      "home_goals": 4,
+      "away_goals": 3,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-06",
+      "home": "North Macedonia",
+      "away": "Belgica",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-15",
+      "home": "Belgica",
+      "away": "Egipto",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Belgica",
+      "away": "Iran",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Nueva Zelanda",
+      "away": "Belgica",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "DWWWDWDWWD",
+  "goals_for_last10": 35,
+  "goals_against_last10": 10
+}

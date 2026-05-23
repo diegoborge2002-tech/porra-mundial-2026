@@ -1,0 +1,230 @@
+{
+  "team": "Suecia",
+  "coach": "Jon Dahl Tomasson",
+  "captain": "Victor Nilsson Lindelöf",
+  "formation": "4-2-3-1",
+  "star_player": "Viktor Gyökeres",
+  "notes": "Lista confirmada Suecia 2026. Tomasson dispone de una de las delanteras más en forma del fútbol europeo con Gyökeres en el Arsenal e Isak en el Liverpool.",
+  "ratings": {
+    "attack": 9,
+    "defense": 7,
+    "midfield": 8,
+    "bench_depth": 8,
+    "experience": 8,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Viktor Johansson",
+      "position": "POR",
+      "club": "Stoke City",
+      "number": 1,
+      "market_value": 4.0,
+      "starter": true
+    },
+    {
+      "name": "Kristoffer Nordfeldt",
+      "position": "POR",
+      "club": "AIK",
+      "number": 12,
+      "market_value": 0.5,
+      "starter": false
+    },
+    {
+      "name": "Jacob Widell Zetterström",
+      "position": "POR",
+      "club": "Derby",
+      "number": 23,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Victor Nilsson Lindelöf",
+      "position": "DEF",
+      "club": "Aston Villa",
+      "number": 3,
+      "market_value": 15.0,
+      "starter": true,
+      "notes": "Capitán y experimentado zaguero."
+    },
+    {
+      "name": "Isak Hien",
+      "position": "DEF",
+      "club": "Atalanta",
+      "number": 4,
+      "market_value": 25.0,
+      "starter": true
+    },
+    {
+      "name": "Emil Holm",
+      "position": "DEF",
+      "club": "Juventus",
+      "number": 2,
+      "market_value": 12.0,
+      "starter": true
+    },
+    {
+      "name": "Gabriel Gudmundsson",
+      "position": "DEF",
+      "club": "Leeds United",
+      "number": 5,
+      "market_value": 8.0,
+      "starter": true
+    },
+    {
+      "name": "Hjalmar Ekdal",
+      "position": "DEF",
+      "club": "Burnley",
+      "number": 15,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Gustaf Lagerbielke",
+      "position": "DEF",
+      "club": "SC Braga",
+      "number": 16,
+      "market_value": 3.5,
+      "starter": false
+    },
+    {
+      "name": "Eric Smith",
+      "position": "DEF",
+      "club": "St. Pauli",
+      "number": 6,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Carl Starfelt",
+      "position": "DEF",
+      "club": "Celta de Vigo",
+      "number": 13,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Elliot Stroud",
+      "position": "DEF",
+      "club": "Mjallby",
+      "number": 24,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Daniel Svensson",
+      "position": "DEF",
+      "club": "Borussia Dortmund",
+      "number": 22,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Yasin Ayari",
+      "position": "MED",
+      "club": "Brighton",
+      "number": 8,
+      "market_value": 10.0,
+      "starter": true
+    },
+    {
+      "name": "Lucas Bergvall",
+      "position": "MED",
+      "club": "Tottenham",
+      "number": 18,
+      "market_value": 15.0,
+      "starter": true
+    },
+    {
+      "name": "Alexander Bernhardsson",
+      "position": "MED",
+      "club": "Kiel",
+      "number": 17,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Jesper Karlström",
+      "position": "MED",
+      "club": "Udinese",
+      "number": 6,
+      "market_value": 5.0,
+      "starter": true
+    },
+    {
+      "name": "Ken Sema",
+      "position": "MED",
+      "club": "Pafos",
+      "number": 11,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Mattias Svanberg",
+      "position": "MED",
+      "club": "Wolfsburgo",
+      "number": 19,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Besfort Zeneli",
+      "position": "MED",
+      "club": "Royale Union SG",
+      "number": 25,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Viktor Gyökeres",
+      "position": "DEL",
+      "club": "Arsenal",
+      "number": 9,
+      "market_value": 70.0,
+      "starter": true,
+      "notes": "Máxima carta goleadora, estrella de la Premier."
+    },
+    {
+      "name": "Alexander Isak",
+      "position": "DEL",
+      "club": "Liverpool",
+      "number": 11,
+      "market_value": 75.0,
+      "starter": true,
+      "notes": "Delantero de élite."
+    },
+    {
+      "name": "Anthony Elanga",
+      "position": "DEL",
+      "club": "Newcastle",
+      "number": 17,
+      "market_value": 22.0,
+      "starter": true
+    },
+    {
+      "name": "Taha Ali",
+      "position": "DEL",
+      "club": "Malmö",
+      "number": 20,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Gustaf Nilsson",
+      "position": "DEL",
+      "club": "Brujas",
+      "number": 10,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Benjamin Nygren",
+      "position": "DEL",
+      "club": "Celtic",
+      "number": 26,
+      "market_value": 4.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

@@ -1,0 +1,230 @@
+{
+  "team": "Escocia",
+  "coach": "Steve Clarke",
+  "captain": "Andy Robertson",
+  "formation": "5-4-1",
+  "star_player": "Andy Robertson",
+  "notes": "Lista confirmada para Escocia. Bloque sumamente batallador con el estandarte Robertson en el lateral y una sólida medular en Italia con Gilmour y McTominay.",
+  "ratings": {
+    "attack": 7,
+    "defense": 7,
+    "midfield": 8,
+    "bench_depth": 7,
+    "experience": 8,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Craig Gordon",
+      "position": "POR",
+      "club": "Hearts",
+      "number": 1,
+      "market_value": 0.2,
+      "starter": false
+    },
+    {
+      "name": "Angus Gunn",
+      "position": "POR",
+      "club": "Nottingham Forest",
+      "number": 21,
+      "market_value": 8.0,
+      "starter": true
+    },
+    {
+      "name": "Liam Kelly",
+      "position": "POR",
+      "club": "Rangers",
+      "number": 12,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Andy Robertson",
+      "position": "DEF",
+      "club": "Liverpool",
+      "number": 3,
+      "market_value": 30.0,
+      "starter": true,
+      "notes": "Capitán y máxima estrella del equipo."
+    },
+    {
+      "name": "Grant Hanley",
+      "position": "DEF",
+      "club": "Hibernian",
+      "number": 5,
+      "market_value": 1.0,
+      "starter": true
+    },
+    {
+      "name": "Jack Hendry",
+      "position": "DEF",
+      "club": "Al Ettifaq",
+      "number": 13,
+      "market_value": 3.5,
+      "starter": true
+    },
+    {
+      "name": "Aaron Hickey",
+      "position": "DEF",
+      "club": "Brentford",
+      "number": 2,
+      "market_value": 22.0,
+      "starter": true
+    },
+    {
+      "name": "Dom Hyam",
+      "position": "DEF",
+      "club": "Wrexham",
+      "number": 15,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Scott McKenna",
+      "position": "DEF",
+      "club": "Dinamo Zagreb",
+      "number": 16,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Nathan Patterson",
+      "position": "DEF",
+      "club": "Everton",
+      "number": 22,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Anthony Ralston",
+      "position": "DEF",
+      "club": "Celtic",
+      "number": 24,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "John Souttar",
+      "position": "DEF",
+      "club": "Hearts",
+      "number": 6,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Kieran Tierney",
+      "position": "DEF",
+      "club": "Celtic",
+      "number": 4,
+      "market_value": 12.0,
+      "starter": true
+    },
+    {
+      "name": "Ryan Christie",
+      "position": "MED",
+      "club": "Bournemouth",
+      "number": 11,
+      "market_value": 15.0,
+      "starter": true
+    },
+    {
+      "name": "Findlay Curtis",
+      "position": "MED",
+      "club": "Rangers",
+      "number": 25,
+      "market_value": 0.5,
+      "starter": false
+    },
+    {
+      "name": "Lewis Ferguson",
+      "position": "MED",
+      "club": "Bologna",
+      "number": 18,
+      "market_value": 24.0,
+      "starter": false
+    },
+    {
+      "name": "Ben Gannon-Doak",
+      "position": "MED",
+      "club": "Bournemouth",
+      "number": 19,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Billy Gilmour",
+      "position": "MED",
+      "club": "Nápoles",
+      "number": 14,
+      "market_value": 18.0,
+      "starter": true
+    },
+    {
+      "name": "John McGinn",
+      "position": "MED",
+      "club": "Aston Villa",
+      "number": 7,
+      "market_value": 30.0,
+      "starter": true
+    },
+    {
+      "name": "Kenny McLean",
+      "position": "MED",
+      "club": "Norwich City",
+      "number": 23,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Scott McTominay",
+      "position": "MED",
+      "club": "Nápoles",
+      "number": 8,
+      "market_value": 32.0,
+      "starter": true,
+      "notes": "Interior goleador estrella del equipo."
+    },
+    {
+      "name": "Ché Adams",
+      "position": "DEL",
+      "club": "Torino",
+      "number": 10,
+      "market_value": 15.0,
+      "starter": true,
+      "notes": "Punta titular."
+    },
+    {
+      "name": "Lyndon Dykes",
+      "position": "DEL",
+      "club": "Charlton",
+      "number": 9,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "George Hirst",
+      "position": "DEL",
+      "club": "Ipswich Town",
+      "number": 20,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Lawrence Shankland",
+      "position": "DEL",
+      "club": "Hearts",
+      "number": 26,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Ross Stewart",
+      "position": "DEL",
+      "club": "Southampton",
+      "number": 25,
+      "market_value": 4.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

@@ -1,0 +1,147 @@
+{
+  "name_es": "Iran",
+  "name_en": "Iran",
+  "iso_code": "ir",
+  "flag_url": "https://flagcdn.com/w160/ir.png",
+  "confederation": "AFC",
+  "wc_titles": 0,
+  "group": "G",
+  "elo_base": 1823.998553780056,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Costa Rica",
+      "away": "Iran",
+      "home_goals": 0,
+      "away_goals": 5,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Iran",
+      "away": "Nigeria",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Iran",
+      "away": "Uzbekistan",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Al Ain International Cup",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-13",
+      "home": "Iran",
+      "away": "Cabo Verde",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Al Ain International Cup",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Iran",
+      "away": "Tanzania",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Russia",
+      "away": "Iran",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-10",
+      "home": "Iran",
+      "away": "North Korea",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-05",
+      "home": "Catar",
+      "away": "Iran",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-03-25",
+      "home": "Iran",
+      "away": "Uzbekistan",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-03-20",
+      "home": "Iran",
+      "away": "United Arab Emirates",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-15",
+      "home": "Iran",
+      "away": "Nueva Zelanda",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Belgica",
+      "away": "Iran",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Egipto",
+      "away": "Iran",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "WDLWLWDDLW",
+  "goals_for_last10": 16,
+  "goals_against_last10": 7
+}

@@ -1,0 +1,35 @@
+{
+  "groups": {
+    "A": ["Corea del Sur", "Mexico", "Sudafrica"],
+    "B": ["Suiza", "Canada", "Catar"],
+    "C": ["Brasil", "Marruecos", "Escocia"],
+    "D": ["Estados Unidos", "Turquia", "Paraguay"],
+    "E": ["Alemania", "Ecuador", "Curazao"],
+    "F": ["Paises Bajos", "Suecia", "Japon"],
+    "G": ["Belgica", "Egipto", "Iran"],
+    "H": ["Espana", "Uruguay", "Arabia Saudi"],
+    "I": ["Francia", "Noruega", "Senegal"],
+    "J": ["Argentina", "Austria", "Jordania"],
+    "K": ["Portugal", "Colombia", "Uzbekistan"],
+    "L": ["Inglaterra", "Croacia", "Ghana"]
+  },
+  "r16": [
+    "Argentina", "Inglaterra", "Espana", "Francia", "Brasil", "Portugal", "Alemania", "Paises Bajos",
+    "Uruguay", "Belgica", "Colombia", "Croacia", "Marruecos", "Estados Unidos", "Canada", "Suecia"
+  ],
+  "qf": [
+    "Argentina", "Inglaterra", "Espana", "Francia", "Brasil", "Portugal", "Alemania", "Paises Bajos"
+  ],
+  "sf": [
+    "Argentina", "Inglaterra", "Espana", "Francia"
+  ],
+  "final": [
+    "Argentina", "Inglaterra"
+  ],
+  "champion": "Argentina",
+  "mvp_gold": "Lionel Messi",
+  "mvp_silver": "Jude Bellingham",
+  "mvp_bronze": "Kylian Mbappé",
+  "top_scorer": "Lionel Messi",
+  "total_goals": 260
+}

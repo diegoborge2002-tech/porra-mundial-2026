@@ -1,0 +1,147 @@
+{
+  "name_es": "Paraguay",
+  "name_en": "Paraguay",
+  "iso_code": "py",
+  "flag_url": "https://flagcdn.com/w160/py.png",
+  "confederation": "CONMEBOL",
+  "wc_titles": 0,
+  "group": "D",
+  "elo_base": 1708.9839600660673,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Marruecos",
+      "away": "Paraguay",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Greece",
+      "away": "Paraguay",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Mexico",
+      "away": "Paraguay",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-15",
+      "home": "Estados Unidos",
+      "away": "Paraguay",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Corea del Sur",
+      "away": "Paraguay",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Japon",
+      "away": "Paraguay",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "Kirin Cup",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Peru",
+      "away": "Paraguay",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Paraguay",
+      "away": "Ecuador",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-10",
+      "home": "Brasil",
+      "away": "Paraguay",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-05",
+      "home": "Paraguay",
+      "away": "Uruguay",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-12",
+      "home": "Estados Unidos",
+      "away": "Paraguay",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Turquia",
+      "away": "Paraguay",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Paraguay",
+      "away": "Australia",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    }
+  ],
+  "form_streak": "WLDWDLLWWL",
+  "goals_for_last10": 10,
+  "goals_against_last10": 10
+}

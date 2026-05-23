@@ -1,0 +1,147 @@
+{
+  "name_es": "Egipto",
+  "name_en": "Egypt",
+  "iso_code": "eg",
+  "flag_url": "https://flagcdn.com/w160/eg.png",
+  "confederation": "CAF",
+  "wc_titles": 0,
+  "group": "G",
+  "elo_base": 1765.009658864448,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Espana",
+      "away": "Egipto",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Arabia Saudi",
+      "away": "Egipto",
+      "home_goals": 0,
+      "away_goals": 4,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2026-01-17",
+      "home": "Egipto",
+      "away": "Nigeria",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2026-01-14",
+      "home": "Senegal",
+      "away": "Egipto",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2026-01-10",
+      "home": "Egipto",
+      "away": "Costa Marfil",
+      "home_goals": 3,
+      "away_goals": 2,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2026-01-05",
+      "home": "Egipto",
+      "away": "Benin",
+      "home_goals": 3,
+      "away_goals": 1,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-29",
+      "home": "Angola",
+      "away": "Egipto",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-26",
+      "home": "Egipto",
+      "away": "Sudafrica",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-22",
+      "home": "Egipto",
+      "away": "Zimbabwe",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-09",
+      "home": "Egipto",
+      "away": "Jordania",
+      "home_goals": 0,
+      "away_goals": 3,
+      "tournament": "Arab Cup",
+      "result": "L",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-15",
+      "home": "Belgica",
+      "away": "Egipto",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Nueva Zelanda",
+      "away": "Egipto",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Egipto",
+      "away": "Iran",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    }
+  ],
+  "form_streak": "LWWDWWLDWD",
+  "goals_for_last10": 13,
+  "goals_against_last10": 8
+}

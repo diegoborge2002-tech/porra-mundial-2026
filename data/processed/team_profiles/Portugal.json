@@ -1,0 +1,147 @@
+{
+  "name_es": "Portugal",
+  "name_en": "Portugal",
+  "iso_code": "pt",
+  "flag_url": "https://flagcdn.com/w160/pt.png",
+  "confederation": "UEFA",
+  "wc_titles": 0,
+  "group": "K",
+  "elo_base": 1867.6472275705532,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Estados Unidos",
+      "away": "Portugal",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-28",
+      "home": "Mexico",
+      "away": "Portugal",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-16",
+      "home": "Portugal",
+      "away": "Armenia",
+      "home_goals": 9,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-13",
+      "home": "Republic of Ireland",
+      "away": "Portugal",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Portugal",
+      "away": "Hungary",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-11",
+      "home": "Portugal",
+      "away": "Republic of Ireland",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Hungary",
+      "away": "Portugal",
+      "home_goals": 2,
+      "away_goals": 3,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-06",
+      "home": "Armenia",
+      "away": "Portugal",
+      "home_goals": 0,
+      "away_goals": 5,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-08",
+      "home": "Portugal",
+      "away": "Espana",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "UEFA Nations League",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-04",
+      "home": "Alemania",
+      "away": "Portugal",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "UEFA Nations League",
+      "result": "W",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-17",
+      "home": "Portugal",
+      "away": "R.D. Congo",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Colombia",
+      "away": "Portugal",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "WDWWWDLWDW",
+  "goals_for_last10": 26,
+  "goals_against_last10": 10
+}

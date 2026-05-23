@@ -1,0 +1,247 @@
+{
+  "team": "Senegal",
+  "coach": "Pape Thiaw",
+  "captain": "Kalidou Koulibaly",
+  "formation": "4-3-3",
+  "star_player": "Nicolas Jackson",
+  "notes": "Lista oficial confirmada para Senegal 2026. Liderados por Koulibaly e Jackson en la delantera y una medular aguerrida con Lamine Camara.",
+  "ratings": {
+    "attack": 8,
+    "defense": 8,
+    "midfield": 8,
+    "bench_depth": 7,
+    "experience": 9,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Edouard Mendy",
+      "position": "POR",
+      "club": "Al Ahli",
+      "number": 1,
+      "market_value": 8.0,
+      "starter": true
+    },
+    {
+      "name": "Mory Diaw",
+      "position": "POR",
+      "club": "Le Havre",
+      "number": 12,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Yehvann Diouf",
+      "position": "POR",
+      "club": "Niza",
+      "number": 23,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "position": "DEF",
+      "club": "Al Ahli",
+      "number": 3,
+      "market_value": 8.0,
+      "starter": true,
+      "notes": "Capitán y baluarte principal."
+    },
+    {
+      "name": "Krépin Diatta",
+      "position": "DEF",
+      "club": "Mónaco",
+      "number": 2,
+      "market_value": 12.0,
+      "starter": true
+    },
+    {
+      "name": "Moussa Niakhaté",
+      "position": "DEF",
+      "club": "O. Lyon",
+      "number": 4,
+      "market_value": 15.0,
+      "starter": true
+    },
+    {
+      "name": "Ismaïl Jakobs",
+      "position": "DEF",
+      "club": "Galatasaray",
+      "number": 3,
+      "market_value": 8.0,
+      "starter": true
+    },
+    {
+      "name": "Antoine Mendy",
+      "position": "DEF",
+      "club": "Niza",
+      "number": 13,
+      "market_value": 4.5,
+      "starter": false
+    },
+    {
+      "name": "El Hadji Malick Diouf",
+      "position": "DEF",
+      "club": "West Ham",
+      "number": 15,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Mamadou Sarr",
+      "position": "DEF",
+      "club": "Estrasburgo",
+      "number": 16,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Moustapha Mbow",
+      "position": "DEF",
+      "club": "Paris",
+      "number": 14,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Abdoulaye Seck",
+      "position": "DEF",
+      "club": "Maccabi Haifa",
+      "number": 5,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Ilay Camara",
+      "position": "DEF",
+      "club": "Anderlecht",
+      "number": 22,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Idrissa Gana Gueye",
+      "position": "MED",
+      "club": "Everton",
+      "number": 5,
+      "market_value": 1.5,
+      "starter": true
+    },
+    {
+      "name": "Pape Gueye",
+      "position": "MED",
+      "club": "Villarreal",
+      "number": 6,
+      "market_value": 10.0,
+      "starter": true
+    },
+    {
+      "name": "Lamine Camara",
+      "position": "MED",
+      "club": "Mónaco",
+      "number": 8,
+      "market_value": 15.0,
+      "starter": true,
+      "notes": "Cerebro organizador dinámico."
+    },
+    {
+      "name": "Habib Diarra",
+      "position": "MED",
+      "club": "Sunderland",
+      "number": 14,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Pathé Ciss",
+      "position": "MED",
+      "club": "Rayo Vallecano",
+      "number": 16,
+      "market_value": 3.5,
+      "starter": false
+    },
+    {
+      "name": "Pape Matar Sarr",
+      "position": "MED",
+      "club": "Tottenham",
+      "number": 17,
+      "market_value": 40.0,
+      "starter": false
+    },
+    {
+      "name": "Bara Sapoko Ndiaye",
+      "position": "MED",
+      "club": "Bayern",
+      "number": 18,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Sadio Mané",
+      "position": "DEL",
+      "club": "Al Nassr",
+      "number": 10,
+      "market_value": 15.0,
+      "starter": true,
+      "notes": "Leyenda y líder moral."
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "position": "DEL",
+      "club": "Crystal Palace",
+      "number": 18,
+      "market_value": 18.0,
+      "starter": true
+    },
+    {
+      "name": "Nicolas Jackson",
+      "position": "DEL",
+      "club": "Bayern",
+      "number": 9,
+      "market_value": 45.0,
+      "starter": true,
+      "notes": "Delantero centro estrella en racha."
+    },
+    {
+      "name": "Iliman Ndiaye",
+      "position": "DEL",
+      "club": "Everton",
+      "number": 11,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Assane Diao",
+      "position": "DEL",
+      "club": "Como",
+      "number": 19,
+      "market_value": 10.0,
+      "starter": false
+    },
+    {
+      "name": "Ibrahim Mbaye",
+      "position": "DEL",
+      "club": "PSG",
+      "number": 20,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Bamba Dieng",
+      "position": "DEL",
+      "club": "Lorient",
+      "number": 21,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Cherif Ndiaye",
+      "position": "DEL",
+      "club": "Samsunspor",
+      "number": 25,
+      "market_value": 3.5,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

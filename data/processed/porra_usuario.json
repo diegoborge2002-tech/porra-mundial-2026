@@ -1,0 +1,108 @@
+{
+  "groups": {
+    "A": [
+      "Mexico",
+      "Corea del Sur",
+      "Sudafrica"
+    ],
+    "B": [
+      "Suiza",
+      "Canada",
+      "Catar"
+    ],
+    "C": [
+      "Marruecos",
+      "Brasil",
+      "Haiti"
+    ],
+    "D": [
+      "Australia",
+      "Turquia",
+      "Paraguay"
+    ],
+    "E": [
+      "Ecuador",
+      "Alemania",
+      "Costa Marfil"
+    ],
+    "F": [
+      "Paises Bajos",
+      "Japon",
+      "Tunez"
+    ],
+    "G": [
+      "Iran",
+      "Belgica",
+      "Nueva Zelanda"
+    ],
+    "H": [
+      "Espana",
+      "Uruguay",
+      "Arabia Saudi"
+    ],
+    "I": [
+      "Francia",
+      "Senegal",
+      "Noruega"
+    ],
+    "J": [
+      "Argentina",
+      "Argelia",
+      "Austria"
+    ],
+    "K": [
+      "Portugal",
+      "Colombia",
+      "Uzbekistan"
+    ],
+    "L": [
+      "Inglaterra",
+      "Croacia",
+      "Panama"
+    ]
+  },
+  "r16": [
+    "Espana",
+    "Francia",
+    "Portugal",
+    "Argentina",
+    "Paises Bajos",
+    "Marruecos",
+    "Mexico",
+    "Suiza",
+    "Inglaterra",
+    "Ecuador",
+    "Alemania",
+    "Colombia",
+    "Iran",
+    "Australia",
+    "Brasil",
+    "Corea del Sur"
+  ],
+  "qf": [
+    "Espana",
+    "Francia",
+    "Argentina",
+    "Paises Bajos",
+    "Portugal",
+    "Marruecos",
+    "Inglaterra",
+    "Ecuador"
+  ],
+  "sf": [
+    "Espana",
+    "Francia",
+    "Argentina",
+    "Paises Bajos"
+  ],
+  "final": [
+    "Espana",
+    "Francia"
+  ],
+  "champion": "Espana",
+  "mvp_gold": "",
+  "mvp_silver": "",
+  "mvp_bronze": "",
+  "top_scorer": "",
+  "total_goals": 273
+}

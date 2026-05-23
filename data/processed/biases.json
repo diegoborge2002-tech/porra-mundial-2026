@@ -1,0 +1,84 @@
+{
+  "team_biases": {
+    "Suiza": {
+      "team": "Suiza",
+      "elo_delta": 50,
+      "reason": "Usuario la ve favorita sobre Canada en Grupo B"
+    },
+    "Canada": {
+      "team": "Canada",
+      "elo_delta": -10,
+      "reason": "Por debajo de Suiza (neto: -30 + 20 anfitrion)"
+    },
+    "Ecuador": {
+      "team": "Ecuador",
+      "elo_delta": 60,
+      "reason": "Usuario la ve potencia ganadora"
+    },
+    "Alemania": {
+      "team": "Alemania",
+      "elo_delta": 30,
+      "reason": "Favorito para Grupo E"
+    },
+    "Paises Bajos": {
+      "team": "Paises Bajos",
+      "elo_delta": 80,
+      "reason": "Mucho mas favorito que el modelo, top opcion Grupo F"
+    },
+    "Suecia": {
+      "team": "Suecia",
+      "elo_delta": 30,
+      "reason": "Segunda opcion Grupo F"
+    },
+    "Japon": {
+      "team": "Japon",
+      "elo_delta": -40,
+      "reason": "Modelo lo sobrevalora segun usuario"
+    },
+    "Espana": {
+      "team": "Espana",
+      "elo_delta": 50,
+      "reason": "Top candidato a campeon"
+    },
+    "Francia": {
+      "team": "Francia",
+      "elo_delta": 40,
+      "reason": "Top candidato a campeon"
+    },
+    "Portugal": {
+      "team": "Portugal",
+      "elo_delta": 80,
+      "reason": "Infravalorado por el modelo, candidato real a campeon"
+    },
+    "Brasil": {
+      "team": "Brasil",
+      "elo_delta": -20,
+      "reason": "Selecciones mejores aunque en Mundiales nunca se sabe"
+    },
+    "Colombia": {
+      "team": "Colombia",
+      "elo_delta": 30,
+      "reason": "Pasa de grupo seguro segun usuario"
+    },
+    "Uzbekistan": {
+      "team": "Uzbekistan",
+      "elo_delta": -40,
+      "reason": "Usuario lo descarta"
+    },
+    "Mexico": {
+      "team": "Mexico",
+      "elo_delta": 30,
+      "reason": "Anfitrion"
+    },
+    "Estados Unidos": {
+      "team": "Estados Unidos",
+      "elo_delta": 30,
+      "reason": "Anfitrion"
+    }
+  },
+  "notes": [
+    "Pendiente: confirmar convocatorias oficiales (finales mayo 2026) para fijar predicciones de Bota de Oro y Balon de Oro.",
+    "Idea inicial del usuario para Bota de Oro: jugador de Argentina (Messi/Lautaro/Julian Alvarez), Francia (Mbappe/Dembele/Olise) o Inglaterra (Kane).",
+    "Idea inicial del usuario para campeon: Espana, Francia, Portugal o Alemania."
+  ]
+}

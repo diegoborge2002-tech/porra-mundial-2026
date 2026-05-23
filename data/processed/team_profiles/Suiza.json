@@ -1,0 +1,147 @@
+{
+  "name_es": "Suiza",
+  "name_en": "Switzerland",
+  "iso_code": "ch",
+  "flag_url": "https://flagcdn.com/w160/ch.png",
+  "confederation": "UEFA",
+  "wc_titles": 0,
+  "group": "B",
+  "elo_base": 1782.6954540822865,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Noruega",
+      "away": "Suiza",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Suiza",
+      "away": "Alemania",
+      "home_goals": 3,
+      "away_goals": 4,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Kosovo",
+      "away": "Suiza",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-15",
+      "home": "Suiza",
+      "away": "Suecia",
+      "home_goals": 4,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-13",
+      "home": "Slovenia",
+      "away": "Suiza",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Suecia",
+      "away": "Suiza",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-08",
+      "home": "Suiza",
+      "away": "Slovenia",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-05",
+      "home": "Suiza",
+      "away": "Kosovo",
+      "home_goals": 4,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-10",
+      "home": "Estados Unidos",
+      "away": "Suiza",
+      "home_goals": 0,
+      "away_goals": 4,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-07",
+      "home": "Mexico",
+      "away": "Suiza",
+      "home_goals": 2,
+      "away_goals": 4,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-13",
+      "home": "Catar",
+      "away": "Suiza",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Suiza",
+      "away": "Bosnia Herz.",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Canada",
+      "away": "Suiza",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "WWWWWDWDLD",
+  "goals_for_last10": 25,
+  "goals_against_last10": 8
+}

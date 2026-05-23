@@ -1,0 +1,147 @@
+{
+  "name_es": "Tunez",
+  "name_en": "Tunisia",
+  "iso_code": "tn",
+  "flag_url": "https://flagcdn.com/w160/tn.png",
+  "confederation": "CAF",
+  "wc_titles": 0,
+  "group": "F",
+  "elo_base": 1707.6929058816836,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Canada",
+      "away": "Tunez",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-28",
+      "home": "Haiti",
+      "away": "Tunez",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2026-01-03",
+      "home": "Mali",
+      "away": "Tunez",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "African Cup of Nations",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-30",
+      "home": "Tanzania",
+      "away": "Tunez",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "African Cup of Nations",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-27",
+      "home": "Nigeria",
+      "away": "Tunez",
+      "home_goals": 3,
+      "away_goals": 2,
+      "tournament": "African Cup of Nations",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-23",
+      "home": "Tunez",
+      "away": "Uganda",
+      "home_goals": 3,
+      "away_goals": 1,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-07",
+      "home": "Catar",
+      "away": "Tunez",
+      "home_goals": 0,
+      "away_goals": 3,
+      "tournament": "Arab Cup",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-04",
+      "home": "Palestine",
+      "away": "Tunez",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "Arab Cup",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-01",
+      "home": "Tunez",
+      "away": "Syria",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Arab Cup",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Brasil",
+      "away": "Tunez",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-14",
+      "home": "Suecia",
+      "away": "Tunez",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Tunez",
+      "away": "Japon",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Tunez",
+      "away": "Paises Bajos",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    }
+  ],
+  "form_streak": "DLDWWLDDWD",
+  "goals_for_last10": 14,
+  "goals_against_last10": 10
+}

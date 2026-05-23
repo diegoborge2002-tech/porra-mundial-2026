@@ -1,0 +1,147 @@
+{
+  "name_es": "Uruguay",
+  "name_en": "Uruguay",
+  "iso_code": "uy",
+  "flag_url": "https://flagcdn.com/w160/uy.png",
+  "confederation": "CONMEBOL",
+  "wc_titles": 2,
+  "group": "H",
+  "elo_base": 1791.6665373555488,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Argelia",
+      "away": "Uruguay",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Inglaterra",
+      "away": "Uruguay",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Estados Unidos",
+      "away": "Uruguay",
+      "home_goals": 5,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-15",
+      "home": "Mexico",
+      "away": "Uruguay",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-13",
+      "home": "Uzbekistan",
+      "away": "Uruguay",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Uruguay",
+      "away": "Dominican Republic",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Chile",
+      "away": "Uruguay",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Uruguay",
+      "away": "Peru",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-10",
+      "home": "Uruguay",
+      "away": "Venezuela",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-05",
+      "home": "Paraguay",
+      "away": "Uruguay",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-15",
+      "home": "Arabia Saudi",
+      "away": "Uruguay",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Uruguay",
+      "away": "Cabo Verde",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Uruguay",
+      "away": "Espana",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    }
+  ],
+  "form_streak": "LWWDWWDLDD",
+  "goals_for_last10": 10,
+  "goals_against_last10": 9
+}

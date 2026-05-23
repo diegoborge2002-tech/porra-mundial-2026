@@ -1,0 +1,147 @@
+{
+  "name_es": "Escocia",
+  "name_en": "Scotland",
+  "iso_code": "gb-sct",
+  "flag_url": "https://flagcdn.com/w160/gb-sct.png",
+  "confederation": "UEFA",
+  "wc_titles": 0,
+  "group": "C",
+  "elo_base": 1660.1196875759742,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Costa Marfil",
+      "away": "Escocia",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-28",
+      "home": "Escocia",
+      "away": "Japon",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Escocia",
+      "away": "Denmark",
+      "home_goals": 4,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-15",
+      "home": "Greece",
+      "away": "Escocia",
+      "home_goals": 3,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-12",
+      "home": "Escocia",
+      "away": "Belarus",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-09",
+      "home": "Escocia",
+      "away": "Greece",
+      "home_goals": 3,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-08",
+      "home": "Belarus",
+      "away": "Escocia",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-05",
+      "home": "Denmark",
+      "away": "Escocia",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-09",
+      "home": "Liechtenstein",
+      "away": "Escocia",
+      "home_goals": 0,
+      "away_goals": 4,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-06",
+      "home": "Escocia",
+      "away": "Iceland",
+      "home_goals": 1,
+      "away_goals": 3,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-13",
+      "home": "Haiti",
+      "away": "Escocia",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Escocia",
+      "away": "Marruecos",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Escocia",
+      "away": "Brasil",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    }
+  ],
+  "form_streak": "LWDWWWLWLL",
+  "goals_for_last10": 18,
+  "goals_against_last10": 12
+}

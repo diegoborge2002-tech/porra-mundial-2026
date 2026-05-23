@@ -1,0 +1,231 @@
+{
+  "team": "Corea del Sur",
+  "coach": "Hong Myung-bo",
+  "captain": "Song Heung-Min",
+  "formation": "4-2-3-1",
+  "star_player": "Song Heung-Min",
+  "notes": "Lista oficial confirmada para el Mundial 2026. Liderada por el legendario atacante Song Heung-Min del LA FC y la solidez defensiva de Kim Min-Jae en el Bayern de Múnich.",
+  "ratings": {
+    "attack": 8,
+    "defense": 7,
+    "midfield": 8,
+    "bench_depth": 7,
+    "experience": 8,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Kim Seung-Gyu",
+      "position": "POR",
+      "club": "FC Tokyo",
+      "number": 1,
+      "market_value": 1.0,
+      "starter": true
+    },
+    {
+      "name": "Song Bum Keun",
+      "position": "POR",
+      "club": "Jeonbuk Hyundai",
+      "number": 12,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Jo Hyeon-Woo",
+      "position": "POR",
+      "club": "Ulsan HD",
+      "number": 21,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Kim Moon-Hwan",
+      "position": "DEF",
+      "club": "Daejon Hana",
+      "number": 2,
+      "market_value": 1.0,
+      "starter": true
+    },
+    {
+      "name": "Kim Min-Jae",
+      "position": "DEF",
+      "club": "Bayern de Múnich",
+      "number": 4,
+      "market_value": 50.0,
+      "starter": true,
+      "notes": "Zaguero central estrella de nivel mundial."
+    },
+    {
+      "name": "Kim Tae-Hwan",
+      "position": "DEF",
+      "club": "Kashima Antlers",
+      "number": 23,
+      "market_value": 0.4,
+      "starter": false
+    },
+    {
+      "name": "Park Jin-Seob",
+      "position": "DEF",
+      "club": "Jeonbuk Hyundai",
+      "number": 20,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Seol Young-Woo",
+      "position": "DEF",
+      "club": "Estrella Roja",
+      "number": 22,
+      "market_value": 2.5,
+      "starter": true
+    },
+    {
+      "name": "Jens Castrop",
+      "position": "DEF",
+      "club": "Borussia Mönchengladbach",
+      "number": 15,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Lee Ki-Hyuk",
+      "position": "DEF",
+      "club": "Gangwon FC",
+      "number": 3,
+      "market_value": 0.6,
+      "starter": false
+    },
+    {
+      "name": "Lee Tae-Seok",
+      "position": "DEF",
+      "club": "Austria de Viena",
+      "number": 13,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Lee Han-Beom",
+      "position": "DEF",
+      "club": "Midtjylland",
+      "number": 5,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Cho Yumin",
+      "position": "DEF",
+      "club": "Sharjah FC",
+      "number": 6,
+      "market_value": 1.2,
+      "starter": true
+    },
+    {
+      "name": "Kim Jin-Gyu",
+      "position": "MED",
+      "club": "Jeonbuk Hyundai",
+      "number": 8,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Bae Jun-Ho",
+      "position": "MED",
+      "club": "Stoke City",
+      "number": 14,
+      "market_value": 5.0,
+      "starter": true
+    },
+    {
+      "name": "Paik Seung-Ho",
+      "position": "MED",
+      "club": "Brimingham City",
+      "number": 16,
+      "market_value": 1.5,
+      "starter": true
+    },
+    {
+      "name": "Yang Hyun-Jun",
+      "position": "MED",
+      "club": "Celtic",
+      "number": 17,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Eom Ji-Sung",
+      "position": "MED",
+      "club": "Swansea City",
+      "number": 18,
+      "market_value": 1.8,
+      "starter": false
+    },
+    {
+      "name": "Lee Kang-In",
+      "position": "MED",
+      "club": "PSG",
+      "number": 10,
+      "market_value": 25.0,
+      "starter": true,
+      "notes": "Cerebro creativo titular de excelente técnica."
+    },
+    {
+      "name": "Lee Dong-Gyeong",
+      "position": "MED",
+      "club": "Ulsan HD",
+      "number": 19,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Lee Jjae-Sung",
+      "position": "MED",
+      "club": "Mainz 05",
+      "number": 7,
+      "market_value": 3.0,
+      "starter": true
+    },
+    {
+      "name": "Hwang In-Beom",
+      "position": "MED",
+      "club": "Feyenoord",
+      "number": 5,
+      "market_value": 10.0,
+      "starter": true
+    },
+    {
+      "name": "Hwang Hee-Chan",
+      "position": "MED",
+      "club": "Wolverhampton",
+      "number": 11,
+      "market_value": 25.0,
+      "starter": true,
+      "notes": "Extremo de tremenda potencia en la Premier."
+    },
+    {
+      "name": "Song Heung-Min",
+      "position": "DEL",
+      "club": "LA FC",
+      "number": 9,
+      "market_value": 30.0,
+      "starter": true,
+      "notes": "Capitán, leyenda y máximo anotador del equipo."
+    },
+    {
+      "name": "Oh Hyeon-Gyu",
+      "position": "DEL",
+      "club": "Besiktas",
+      "number": 25,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Cho Gue-Sung",
+      "position": "DEL",
+      "club": "Midtjylland",
+      "number": 26,
+      "market_value": 3.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

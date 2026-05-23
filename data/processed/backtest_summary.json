@@ -1,0 +1,963 @@
+{
+  "tournaments": [
+    {
+      "name": "Mundial 2010",
+      "n_matches": 64,
+      "brier": 0.5881378276088908,
+      "log_loss": 0.9920081561725501,
+      "rps": 0.19992255012541638,
+      "hit_rate_top1": 0.5625,
+      "accuracy_by_confidence": {
+        "<40%": [
+          17,
+          0.47058823529411764
+        ],
+        "40-50%": [
+          16,
+          0.5
+        ],
+        "50-60%": [
+          12,
+          0.5833333333333334
+        ],
+        "60-70%": [
+          12,
+          0.6666666666666666
+        ],
+        "70-80%": [
+          4,
+          0.75
+        ],
+        ">=80%": [
+          3,
+          0.6666666666666666
+        ]
+      },
+      "reliability": [
+        {
+          "bin_low": 0.0,
+          "bin_high": 0.1,
+          "mid": 0.05,
+          "n": 6,
+          "pred_sum": 0.5177805237393712,
+          "obs_sum": 1.0,
+          "predicted_mean": 0.08629675395656188,
+          "observed_freq": 0.16666666666666666
+        },
+        {
+          "bin_low": 0.1,
+          "bin_high": 0.2,
+          "mid": 0.15000000000000002,
+          "n": 30,
+          "pred_sum": 4.70566680218572,
+          "obs_sum": 5.0,
+          "predicted_mean": 0.15685556007285734,
+          "observed_freq": 0.16666666666666666
+        },
+        {
+          "bin_low": 0.2,
+          "bin_high": 0.3,
+          "mid": 0.25,
+          "n": 56,
+          "pred_sum": 14.168340934681979,
+          "obs_sum": 11.0,
+          "predicted_mean": 0.25300608811932107,
+          "observed_freq": 0.19642857142857142
+        },
+        {
+          "bin_low": 0.3,
+          "bin_high": 0.4,
+          "mid": 0.35,
+          "n": 53,
+          "pred_sum": 17.628896588542506,
+          "obs_sum": 19.0,
+          "predicted_mean": 0.33262069034985864,
+          "observed_freq": 0.3584905660377358
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "mid": 0.45,
+          "n": 16,
+          "pred_sum": 7.081787114754391,
+          "obs_sum": 8.0,
+          "predicted_mean": 0.44261169467214945,
+          "observed_freq": 0.5
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6,
+          "mid": 0.55,
+          "n": 12,
+          "pred_sum": 6.6335557081725485,
+          "obs_sum": 7.0,
+          "predicted_mean": 0.552796309014379,
+          "observed_freq": 0.5833333333333334
+        },
+        {
+          "bin_low": 0.6,
+          "bin_high": 0.7,
+          "mid": 0.6499999999999999,
+          "n": 12,
+          "pred_sum": 7.776449800616231,
+          "obs_sum": 8.0,
+          "predicted_mean": 0.6480374833846859,
+          "observed_freq": 0.6666666666666666
+        },
+        {
+          "bin_low": 0.7,
+          "bin_high": 0.8,
+          "mid": 0.75,
+          "n": 4,
+          "pred_sum": 3.030742689899259,
+          "obs_sum": 3.0,
+          "predicted_mean": 0.7576856724748148,
+          "observed_freq": 0.75
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "mid": 0.8500000000000001,
+          "n": 3,
+          "pred_sum": 2.4567798374080025,
+          "obs_sum": 2.0,
+          "predicted_mean": 0.8189266124693342,
+          "observed_freq": 0.6666666666666666
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "mid": 0.95,
+          "n": 0,
+          "pred_sum": 0.0,
+          "obs_sum": 0.0,
+          "predicted_mean": null,
+          "observed_freq": null
+        }
+      ]
+    },
+    {
+      "name": "Mundial 2014",
+      "n_matches": 64,
+      "brier": 0.5683262393251243,
+      "log_loss": 0.9648059137811719,
+      "rps": 0.19977852863195994,
+      "hit_rate_top1": 0.609375,
+      "accuracy_by_confidence": {
+        "<40%": [
+          14,
+          0.42857142857142855
+        ],
+        "40-50%": [
+          24,
+          0.625
+        ],
+        "50-60%": [
+          15,
+          0.7333333333333333
+        ],
+        "60-70%": [
+          4,
+          0.75
+        ],
+        "70-80%": [
+          5,
+          0.4
+        ],
+        ">=80%": [
+          2,
+          1.0
+        ]
+      },
+      "reliability": [
+        {
+          "bin_low": 0.0,
+          "bin_high": 0.1,
+          "mid": 0.05,
+          "n": 4,
+          "pred_sum": 0.25853514188950494,
+          "obs_sum": 0.0,
+          "predicted_mean": 0.06463378547237623,
+          "observed_freq": 0.0
+        },
+        {
+          "bin_low": 0.1,
+          "bin_high": 0.2,
+          "mid": 0.15000000000000002,
+          "n": 20,
+          "pred_sum": 3.161603906643742,
+          "obs_sum": 5.0,
+          "predicted_mean": 0.1580801953321871,
+          "observed_freq": 0.25
+        },
+        {
+          "bin_low": 0.2,
+          "bin_high": 0.3,
+          "mid": 0.25,
+          "n": 75,
+          "pred_sum": 19.483844421082985,
+          "obs_sum": 12.0,
+          "predicted_mean": 0.25978459228110645,
+          "observed_freq": 0.16
+        },
+        {
+          "bin_low": 0.3,
+          "bin_high": 0.4,
+          "mid": 0.35,
+          "n": 43,
+          "pred_sum": 14.323082121669167,
+          "obs_sum": 14.0,
+          "predicted_mean": 0.33309493306207366,
+          "observed_freq": 0.32558139534883723
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "mid": 0.45,
+          "n": 24,
+          "pred_sum": 10.803044486906932,
+          "obs_sum": 15.0,
+          "predicted_mean": 0.4501268536211222,
+          "observed_freq": 0.625
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6,
+          "mid": 0.55,
+          "n": 15,
+          "pred_sum": 8.031949019002528,
+          "obs_sum": 11.0,
+          "predicted_mean": 0.5354632679335019,
+          "observed_freq": 0.7333333333333333
+        },
+        {
+          "bin_low": 0.6,
+          "bin_high": 0.7,
+          "mid": 0.6499999999999999,
+          "n": 4,
+          "pred_sum": 2.555611511252031,
+          "obs_sum": 3.0,
+          "predicted_mean": 0.6389028778130077,
+          "observed_freq": 0.75
+        },
+        {
+          "bin_low": 0.7,
+          "bin_high": 0.8,
+          "mid": 0.75,
+          "n": 5,
+          "pred_sum": 3.6408645334426106,
+          "obs_sum": 2.0,
+          "predicted_mean": 0.7281729066885221,
+          "observed_freq": 0.4
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "mid": 0.8500000000000001,
+          "n": 1,
+          "pred_sum": 0.8413851364296354,
+          "obs_sum": 1.0,
+          "predicted_mean": 0.8413851364296354,
+          "observed_freq": 1.0
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "mid": 0.95,
+          "n": 1,
+          "pred_sum": 0.9000797216808596,
+          "obs_sum": 1.0,
+          "predicted_mean": 0.9000797216808596,
+          "observed_freq": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Eurocopa 2016",
+      "n_matches": 51,
+      "brier": 0.6527546355628673,
+      "log_loss": 1.0779350812630066,
+      "rps": 0.22511982373859718,
+      "hit_rate_top1": 0.43137254901960786,
+      "accuracy_by_confidence": {
+        "<40%": [
+          8,
+          0.375
+        ],
+        "40-50%": [
+          12,
+          0.3333333333333333
+        ],
+        "50-60%": [
+          12,
+          0.4166666666666667
+        ],
+        "60-70%": [
+          12,
+          0.3333333333333333
+        ],
+        "70-80%": [
+          5,
+          0.8
+        ],
+        ">=80%": [
+          2,
+          1.0
+        ]
+      },
+      "reliability": [
+        {
+          "bin_low": 0.0,
+          "bin_high": 0.1,
+          "mid": 0.05,
+          "n": 3,
+          "pred_sum": 0.22256456666628827,
+          "obs_sum": 0.0,
+          "predicted_mean": 0.07418818888876276,
+          "observed_freq": 0.0
+        },
+        {
+          "bin_low": 0.1,
+          "bin_high": 0.2,
+          "mid": 0.15000000000000002,
+          "n": 33,
+          "pred_sum": 5.211028681664624,
+          "obs_sum": 7.0,
+          "predicted_mean": 0.15790996005044317,
+          "observed_freq": 0.21212121212121213
+        },
+        {
+          "bin_low": 0.2,
+          "bin_high": 0.3,
+          "mid": 0.25,
+          "n": 47,
+          "pred_sum": 11.677985588649477,
+          "obs_sum": 15.0,
+          "predicted_mean": 0.24846777848190377,
+          "observed_freq": 0.3191489361702128
+        },
+        {
+          "bin_low": 0.3,
+          "bin_high": 0.4,
+          "mid": 0.35,
+          "n": 27,
+          "pred_sum": 8.938456864751943,
+          "obs_sum": 10.0,
+          "predicted_mean": 0.3310539579537757,
+          "observed_freq": 0.37037037037037035
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "mid": 0.45,
+          "n": 12,
+          "pred_sum": 5.292990714804911,
+          "obs_sum": 4.0,
+          "predicted_mean": 0.4410825595670759,
+          "observed_freq": 0.3333333333333333
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6,
+          "mid": 0.55,
+          "n": 12,
+          "pred_sum": 6.645726543524844,
+          "obs_sum": 5.0,
+          "predicted_mean": 0.553810545293737,
+          "observed_freq": 0.4166666666666667
+        },
+        {
+          "bin_low": 0.6,
+          "bin_high": 0.7,
+          "mid": 0.6499999999999999,
+          "n": 12,
+          "pred_sum": 7.723159309222208,
+          "obs_sum": 4.0,
+          "predicted_mean": 0.6435966091018507,
+          "observed_freq": 0.3333333333333333
+        },
+        {
+          "bin_low": 0.7,
+          "bin_high": 0.8,
+          "mid": 0.75,
+          "n": 5,
+          "pred_sum": 3.622577968239093,
+          "obs_sum": 4.0,
+          "predicted_mean": 0.7245155936478186,
+          "observed_freq": 0.8
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "mid": 0.8500000000000001,
+          "n": 2,
+          "pred_sum": 1.665509762476616,
+          "obs_sum": 2.0,
+          "predicted_mean": 0.832754881238308,
+          "observed_freq": 1.0
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "mid": 0.95,
+          "n": 0,
+          "pred_sum": 0.0,
+          "obs_sum": 0.0,
+          "predicted_mean": null,
+          "observed_freq": null
+        }
+      ]
+    },
+    {
+      "name": "Mundial 2018",
+      "n_matches": 64,
+      "brier": 0.5983535239666204,
+      "log_loss": 1.0051015485499777,
+      "rps": 0.21379163815655927,
+      "hit_rate_top1": 0.546875,
+      "accuracy_by_confidence": {
+        "<40%": [
+          14,
+          0.5
+        ],
+        "40-50%": [
+          24,
+          0.5
+        ],
+        "50-60%": [
+          11,
+          0.5454545454545454
+        ],
+        "60-70%": [
+          12,
+          0.6666666666666666
+        ],
+        "70-80%": [
+          3,
+          0.6666666666666666
+        ],
+        ">=80%": [
+          0,
+          0.0
+        ]
+      },
+      "reliability": [
+        {
+          "bin_low": 0.0,
+          "bin_high": 0.1,
+          "mid": 0.05,
+          "n": 1,
+          "pred_sum": 0.09475807380808905,
+          "obs_sum": 0.0,
+          "predicted_mean": 0.09475807380808905,
+          "observed_freq": 0.0
+        },
+        {
+          "bin_low": 0.1,
+          "bin_high": 0.2,
+          "mid": 0.15000000000000002,
+          "n": 26,
+          "pred_sum": 4.249588282349846,
+          "obs_sum": 5.0,
+          "predicted_mean": 0.16344570316730175,
+          "observed_freq": 0.19230769230769232
+        },
+        {
+          "bin_low": 0.2,
+          "bin_high": 0.3,
+          "mid": 0.25,
+          "n": 69,
+          "pred_sum": 17.802063535613613,
+          "obs_sum": 15.0,
+          "predicted_mean": 0.2580009208059944,
+          "observed_freq": 0.21739130434782608
+        },
+        {
+          "bin_low": 0.3,
+          "bin_high": 0.4,
+          "mid": 0.35,
+          "n": 46,
+          "pred_sum": 15.263570070304807,
+          "obs_sum": 16.0,
+          "predicted_mean": 0.3318167406588001,
+          "observed_freq": 0.34782608695652173
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "mid": 0.45,
+          "n": 24,
+          "pred_sum": 10.604913512525975,
+          "obs_sum": 12.0,
+          "predicted_mean": 0.44187139635524897,
+          "observed_freq": 0.5
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6,
+          "mid": 0.55,
+          "n": 11,
+          "pred_sum": 6.005432033877365,
+          "obs_sum": 6.0,
+          "predicted_mean": 0.5459483667161241,
+          "observed_freq": 0.5454545454545454
+        },
+        {
+          "bin_low": 0.6,
+          "bin_high": 0.7,
+          "mid": 0.6499999999999999,
+          "n": 12,
+          "pred_sum": 7.725405047479201,
+          "obs_sum": 8.0,
+          "predicted_mean": 0.6437837539566001,
+          "observed_freq": 0.6666666666666666
+        },
+        {
+          "bin_low": 0.7,
+          "bin_high": 0.8,
+          "mid": 0.75,
+          "n": 3,
+          "pred_sum": 2.2542694440411073,
+          "obs_sum": 2.0,
+          "predicted_mean": 0.7514231480137025,
+          "observed_freq": 0.6666666666666666
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "mid": 0.8500000000000001,
+          "n": 0,
+          "pred_sum": 0.0,
+          "obs_sum": 0.0,
+          "predicted_mean": null,
+          "observed_freq": null
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "mid": 0.95,
+          "n": 0,
+          "pred_sum": 0.0,
+          "obs_sum": 0.0,
+          "predicted_mean": null,
+          "observed_freq": null
+        }
+      ]
+    },
+    {
+      "name": "Eurocopa 2020",
+      "n_matches": 51,
+      "brier": 0.5510553343923296,
+      "log_loss": 0.9495543029095348,
+      "rps": 0.1834919839320593,
+      "hit_rate_top1": 0.6274509803921569,
+      "accuracy_by_confidence": {
+        "<40%": [
+          6,
+          0.3333333333333333
+        ],
+        "40-50%": [
+          13,
+          0.6153846153846154
+        ],
+        "50-60%": [
+          11,
+          0.6363636363636364
+        ],
+        "60-70%": [
+          10,
+          0.9
+        ],
+        "70-80%": [
+          7,
+          0.42857142857142855
+        ],
+        ">=80%": [
+          4,
+          0.75
+        ]
+      },
+      "reliability": [
+        {
+          "bin_low": 0.0,
+          "bin_high": 0.1,
+          "mid": 0.05,
+          "n": 8,
+          "pred_sum": 0.6079370078092688,
+          "obs_sum": 1.0,
+          "predicted_mean": 0.0759921259761586,
+          "observed_freq": 0.125
+        },
+        {
+          "bin_low": 0.1,
+          "bin_high": 0.2,
+          "mid": 0.15000000000000002,
+          "n": 36,
+          "pred_sum": 5.612397598532804,
+          "obs_sum": 6.0,
+          "predicted_mean": 0.1558999332925779,
+          "observed_freq": 0.16666666666666666
+        },
+        {
+          "bin_low": 0.2,
+          "bin_high": 0.3,
+          "mid": 0.25,
+          "n": 45,
+          "pred_sum": 11.393462847768106,
+          "obs_sum": 8.0,
+          "predicted_mean": 0.25318806328373566,
+          "observed_freq": 0.17777777777777778
+        },
+        {
+          "bin_low": 0.3,
+          "bin_high": 0.4,
+          "mid": 0.35,
+          "n": 19,
+          "pred_sum": 6.305109614526502,
+          "obs_sum": 6.0,
+          "predicted_mean": 0.3318478744487633,
+          "observed_freq": 0.3157894736842105
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "mid": 0.45,
+          "n": 13,
+          "pred_sum": 5.931722693505061,
+          "obs_sum": 8.0,
+          "predicted_mean": 0.45628636103885084,
+          "observed_freq": 0.6153846153846154
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6,
+          "mid": 0.55,
+          "n": 11,
+          "pred_sum": 6.054498503944398,
+          "obs_sum": 7.0,
+          "predicted_mean": 0.5504089549040362,
+          "observed_freq": 0.6363636363636364
+        },
+        {
+          "bin_low": 0.6,
+          "bin_high": 0.7,
+          "mid": 0.6499999999999999,
+          "n": 10,
+          "pred_sum": 6.5661631407162595,
+          "obs_sum": 9.0,
+          "predicted_mean": 0.6566163140716259,
+          "observed_freq": 0.9
+        },
+        {
+          "bin_low": 0.7,
+          "bin_high": 0.8,
+          "mid": 0.75,
+          "n": 7,
+          "pred_sum": 5.145060515070525,
+          "obs_sum": 3.0,
+          "predicted_mean": 0.735008645010075,
+          "observed_freq": 0.42857142857142855
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "mid": 0.8500000000000001,
+          "n": 4,
+          "pred_sum": 3.3836480781270746,
+          "obs_sum": 3.0,
+          "predicted_mean": 0.8459120195317686,
+          "observed_freq": 0.75
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "mid": 0.95,
+          "n": 0,
+          "pred_sum": 0.0,
+          "obs_sum": 0.0,
+          "predicted_mean": null,
+          "observed_freq": null
+        }
+      ]
+    },
+    {
+      "name": "Mundial 2022",
+      "n_matches": 64,
+      "brier": 0.6206603674220982,
+      "log_loss": 1.0338182275622487,
+      "rps": 0.2243196662261256,
+      "hit_rate_top1": 0.46875,
+      "accuracy_by_confidence": {
+        "<40%": [
+          19,
+          0.21052631578947367
+        ],
+        "40-50%": [
+          18,
+          0.6111111111111112
+        ],
+        "50-60%": [
+          15,
+          0.5333333333333333
+        ],
+        "60-70%": [
+          8,
+          0.625
+        ],
+        "70-80%": [
+          3,
+          0.6666666666666666
+        ],
+        ">=80%": [
+          1,
+          0.0
+        ]
+      },
+      "reliability": [
+        {
+          "bin_low": 0.0,
+          "bin_high": 0.1,
+          "mid": 0.05,
+          "n": 2,
+          "pred_sum": 0.16145995313734576,
+          "obs_sum": 1.0,
+          "predicted_mean": 0.08072997656867288,
+          "observed_freq": 0.5
+        },
+        {
+          "bin_low": 0.1,
+          "bin_high": 0.2,
+          "mid": 0.15000000000000002,
+          "n": 23,
+          "pred_sum": 3.831940904935029,
+          "obs_sum": 4.0,
+          "predicted_mean": 0.166606126301523,
+          "observed_freq": 0.17391304347826086
+        },
+        {
+          "bin_low": 0.2,
+          "bin_high": 0.3,
+          "mid": 0.25,
+          "n": 65,
+          "pred_sum": 16.507500415275686,
+          "obs_sum": 13.0,
+          "predicted_mean": 0.2539615448503952,
+          "observed_freq": 0.2
+        },
+        {
+          "bin_low": 0.3,
+          "bin_high": 0.4,
+          "mid": 0.35,
+          "n": 57,
+          "pred_sum": 19.013150664881028,
+          "obs_sum": 20.0,
+          "predicted_mean": 0.3335640467522987,
+          "observed_freq": 0.3508771929824561
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "mid": 0.45,
+          "n": 18,
+          "pred_sum": 8.160769811882027,
+          "obs_sum": 11.0,
+          "predicted_mean": 0.4533761006601126,
+          "observed_freq": 0.6111111111111112
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6,
+          "mid": 0.55,
+          "n": 15,
+          "pred_sum": 8.2459344978156,
+          "obs_sum": 8.0,
+          "predicted_mean": 0.54972896652104,
+          "observed_freq": 0.5333333333333333
+        },
+        {
+          "bin_low": 0.6,
+          "bin_high": 0.7,
+          "mid": 0.6499999999999999,
+          "n": 8,
+          "pred_sum": 5.104408254936342,
+          "obs_sum": 5.0,
+          "predicted_mean": 0.6380510318670427,
+          "observed_freq": 0.625
+        },
+        {
+          "bin_low": 0.7,
+          "bin_high": 0.8,
+          "mid": 0.75,
+          "n": 3,
+          "pred_sum": 2.1362954502742917,
+          "obs_sum": 2.0,
+          "predicted_mean": 0.7120984834247639,
+          "observed_freq": 0.6666666666666666
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "mid": 0.8500000000000001,
+          "n": 1,
+          "pred_sum": 0.8385400468626543,
+          "obs_sum": 0.0,
+          "predicted_mean": 0.8385400468626543,
+          "observed_freq": 0.0
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "mid": 0.95,
+          "n": 0,
+          "pred_sum": 0.0,
+          "obs_sum": 0.0,
+          "predicted_mean": null,
+          "observed_freq": null
+        }
+      ]
+    },
+    {
+      "name": "Eurocopa 2024",
+      "n_matches": 51,
+      "brier": 0.631488877893767,
+      "log_loss": 1.0595654379502022,
+      "rps": 0.19745930596005878,
+      "hit_rate_top1": 0.5098039215686274,
+      "accuracy_by_confidence": {
+        "<40%": [
+          10,
+          0.5
+        ],
+        "40-50%": [
+          11,
+          0.45454545454545453
+        ],
+        "50-60%": [
+          11,
+          0.36363636363636365
+        ],
+        "60-70%": [
+          10,
+          0.7
+        ],
+        "70-80%": [
+          6,
+          0.6666666666666666
+        ],
+        ">=80%": [
+          3,
+          0.3333333333333333
+        ]
+      },
+      "reliability": [
+        {
+          "bin_low": 0.0,
+          "bin_high": 0.1,
+          "mid": 0.05,
+          "n": 5,
+          "pred_sum": 0.3894804739295772,
+          "obs_sum": 1.0,
+          "predicted_mean": 0.07789609478591544,
+          "observed_freq": 0.2
+        },
+        {
+          "bin_low": 0.1,
+          "bin_high": 0.2,
+          "mid": 0.15000000000000002,
+          "n": 35,
+          "pred_sum": 5.404593536671522,
+          "obs_sum": 8.0,
+          "predicted_mean": 0.1544169581906149,
+          "observed_freq": 0.22857142857142856
+        },
+        {
+          "bin_low": 0.2,
+          "bin_high": 0.3,
+          "mid": 0.25,
+          "n": 42,
+          "pred_sum": 10.603887136277688,
+          "obs_sum": 12.0,
+          "predicted_mean": 0.25247350324470685,
+          "observed_freq": 0.2857142857142857
+        },
+        {
+          "bin_low": 0.3,
+          "bin_high": 0.4,
+          "mid": 0.35,
+          "n": 30,
+          "pred_sum": 10.037905475528603,
+          "obs_sum": 9.0,
+          "predicted_mean": 0.3345968491842868,
+          "observed_freq": 0.3
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "mid": 0.45,
+          "n": 11,
+          "pred_sum": 4.968599941223029,
+          "obs_sum": 5.0,
+          "predicted_mean": 0.45169090374754806,
+          "observed_freq": 0.45454545454545453
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6,
+          "mid": 0.55,
+          "n": 11,
+          "pred_sum": 6.097295259170475,
+          "obs_sum": 4.0,
+          "predicted_mean": 0.5542995690154977,
+          "observed_freq": 0.36363636363636365
+        },
+        {
+          "bin_low": 0.6,
+          "bin_high": 0.7,
+          "mid": 0.6499999999999999,
+          "n": 10,
+          "pred_sum": 6.549047850700776,
+          "obs_sum": 7.0,
+          "predicted_mean": 0.6549047850700777,
+          "observed_freq": 0.7
+        },
+        {
+          "bin_low": 0.7,
+          "bin_high": 0.8,
+          "mid": 0.75,
+          "n": 6,
+          "pred_sum": 4.474394337791971,
+          "obs_sum": 4.0,
+          "predicted_mean": 0.7457323896319951,
+          "observed_freq": 0.6666666666666666
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "mid": 0.8500000000000001,
+          "n": 3,
+          "pred_sum": 2.474795988706362,
+          "obs_sum": 1.0,
+          "predicted_mean": 0.824931996235454,
+          "observed_freq": 0.3333333333333333
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "mid": 0.95,
+          "n": 0,
+          "pred_sum": 0.0,
+          "obs_sum": 0.0,
+          "predicted_mean": null,
+          "observed_freq": null
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "n_matches": 409,
+    "weighted_brier": 0.6005643779289782,
+    "weighted_log_loss": 1.0101876823385834,
+    "weighted_rps": 0.20667388585850952,
+    "weighted_hit_rate": 0.5378973105134475
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "name_es": "Arabia Saudi",
+  "name_en": "Saudi Arabia",
+  "iso_code": "sa",
+  "flag_url": "https://flagcdn.com/w160/sa.png",
+  "confederation": "AFC",
+  "wc_titles": 0,
+  "group": "H",
+  "elo_base": 1646.1570129692086,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Serbia",
+      "away": "Arabia Saudi",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Arabia Saudi",
+      "away": "Egipto",
+      "home_goals": 0,
+      "away_goals": 4,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-15",
+      "home": "Arabia Saudi",
+      "away": "Jordania",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "Arab Cup",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-11",
+      "home": "Palestine",
+      "away": "Arabia Saudi",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "Arab Cup",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-08",
+      "home": "Marruecos",
+      "away": "Arabia Saudi",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Arab Cup",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-05",
+      "home": "Comoros",
+      "away": "Arabia Saudi",
+      "home_goals": 1,
+      "away_goals": 3,
+      "tournament": "Arab Cup",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-12-02",
+      "home": "Arabia Saudi",
+      "away": "Oman",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Arab Cup",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Arabia Saudi",
+      "away": "Argelia",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-14",
+      "home": "Arabia Saudi",
+      "away": "Costa Marfil",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Arabia Saudi",
+      "away": "Irak",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-15",
+      "home": "Arabia Saudi",
+      "away": "Uruguay",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Espana",
+      "away": "Arabia Saudi",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Cabo Verde",
+      "away": "Arabia Saudi",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "DWLWWLWLLL",
+  "goals_for_last10": 9,
+  "goals_against_last10": 13
+}

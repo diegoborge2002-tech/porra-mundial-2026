@@ -1,0 +1,230 @@
+{
+  "team": "Bosnia Herz.",
+  "coach": "Sergej Barbarez",
+  "captain": "Edin Dzeko",
+  "formation": "4-2-3-1",
+  "star_player": "Ermedin Demirovic",
+  "notes": "Lista confirmada para el Mundial 2026. Mezcla de juventud emergente liderada por Demirovic en el Stuttgart y la veteranía imperecedera del gran capitán Edin Dzeko.",
+  "ratings": {
+    "attack": 7,
+    "defense": 6,
+    "midfield": 7,
+    "bench_depth": 6,
+    "experience": 7,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Nikola Vasilj",
+      "position": "POR",
+      "club": "St Pauli",
+      "number": 1,
+      "market_value": 2.0,
+      "starter": true
+    },
+    {
+      "name": "Martin Zlomislic",
+      "position": "POR",
+      "club": "Rijeka",
+      "number": 12,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Osman Hadzikic",
+      "position": "POR",
+      "club": "Slaven Belupo",
+      "number": 23,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Sead Kolasinac",
+      "position": "DEF",
+      "club": "Atalanta",
+      "number": 3,
+      "market_value": 3.0,
+      "starter": true
+    },
+    {
+      "name": "Amar Dedic",
+      "position": "DEF",
+      "club": "Benfica",
+      "number": 2,
+      "market_value": 20.0,
+      "starter": true,
+      "notes": "Lateral de gran vocación ofensiva."
+    },
+    {
+      "name": "Nihad Mujakic",
+      "position": "DEF",
+      "club": "Gaziantep",
+      "number": 4,
+      "market_value": 1.5,
+      "starter": true
+    },
+    {
+      "name": "Nikola Katic",
+      "position": "DEF",
+      "club": "Schalke 04",
+      "number": 5,
+      "market_value": 2.5,
+      "starter": true
+    },
+    {
+      "name": "Tarik Muharemovic",
+      "position": "DEF",
+      "club": "Sassuolo",
+      "number": 15,
+      "market_value": 1.2,
+      "starter": false
+    },
+    {
+      "name": "Stjepan Radeljic",
+      "position": "DEF",
+      "club": "Rijeka",
+      "number": 16,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Dennis Hadzikadunic",
+      "position": "DEF",
+      "club": "Sampdoria",
+      "number": 6,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Nidal Celik",
+      "position": "DEF",
+      "club": "Lens",
+      "number": 13,
+      "market_value": 0.5,
+      "starter": false
+    },
+    {
+      "name": "Amir Hadziahmetovic",
+      "position": "MED",
+      "club": "Hull City",
+      "number": 8,
+      "market_value": 4.5,
+      "starter": true
+    },
+    {
+      "name": "Ivan Sunjic",
+      "position": "MED",
+      "club": "Pafos",
+      "number": 14,
+      "market_value": 2.0,
+      "starter": true
+    },
+    {
+      "name": "Ivan Basic",
+      "position": "MED",
+      "club": "Astana",
+      "number": 18,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Dzenis Burnic",
+      "position": "MED",
+      "club": "Karlsruher SC",
+      "number": 7,
+      "market_value": 1.2,
+      "starter": true
+    },
+    {
+      "name": "Ermin Mahmic",
+      "position": "MED",
+      "club": "Slovan Liberec",
+      "number": 20,
+      "market_value": 0.5,
+      "starter": false
+    },
+    {
+      "name": "Benjamin Tahirovic",
+      "position": "MED",
+      "club": "Brondby",
+      "number": 24,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Amar Memic",
+      "position": "MED",
+      "club": "Viktoria Plzen",
+      "number": 17,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Armin Gigovic",
+      "position": "MED",
+      "club": "Young Boys",
+      "number": 21,
+      "market_value": 3.5,
+      "starter": false
+    },
+    {
+      "name": "Kerim Alajbegovic",
+      "position": "MED",
+      "club": "RB Salzburg",
+      "number": 25,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Esmir Bajraktarevic",
+      "position": "MED",
+      "club": "PSV Eindhoven",
+      "number": 19,
+      "market_value": 2.5,
+      "starter": true
+    },
+    {
+      "name": "Ermedin Demirovic",
+      "position": "DEL",
+      "club": "VfB Stuttgart",
+      "number": 10,
+      "market_value": 28.0,
+      "starter": true,
+      "notes": "Delantero centro de gran nivel en la Bundesliga."
+    },
+    {
+      "name": "Jovo Lukic",
+      "position": "DEL",
+      "club": "Universitatea Cluj",
+      "number": 11,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Samed Bazdar",
+      "position": "DEL",
+      "club": "Jagiellonia Bialystok",
+      "number": 22,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Haris Tabakovic",
+      "position": "DEL",
+      "club": "Borussia Moenchengladbach",
+      "number": 26,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Edin Dzeko",
+      "position": "DEL",
+      "club": "Schalke 04",
+      "number": 9,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "Máxima leyenda del fútbol bosnio."
+    }
+  ],
+  "updated_at": "2026-05-21 19:27"
+}

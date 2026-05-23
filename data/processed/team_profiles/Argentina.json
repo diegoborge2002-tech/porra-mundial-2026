@@ -1,0 +1,147 @@
+{
+  "name_es": "Argentina",
+  "name_en": "Argentina",
+  "iso_code": "ar",
+  "flag_url": "https://flagcdn.com/w160/ar.png",
+  "confederation": "CONMEBOL",
+  "wc_titles": 3,
+  "group": "J",
+  "elo_base": 1965.179762934455,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Argentina",
+      "away": "Zambia",
+      "home_goals": 5,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Argentina",
+      "away": "Mauritania",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-14",
+      "home": "Angola",
+      "away": "Argentina",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Puerto Rico",
+      "away": "Argentina",
+      "home_goals": 0,
+      "away_goals": 6,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Argentina",
+      "away": "Venezuela",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Ecuador",
+      "away": "Argentina",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Argentina",
+      "away": "Venezuela",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-10",
+      "home": "Argentina",
+      "away": "Colombia",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-05",
+      "home": "Chile",
+      "away": "Argentina",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-03-25",
+      "home": "Argentina",
+      "away": "Brasil",
+      "home_goals": 4,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-16",
+      "home": "Argentina",
+      "away": "Argelia",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Argentina",
+      "away": "Austria",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Jordania",
+      "away": "Argentina",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "WWDWLWWWWW",
+  "goals_for_last10": 25,
+  "goals_against_last10": 4
+}

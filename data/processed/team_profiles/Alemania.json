@@ -1,0 +1,147 @@
+{
+  "name_es": "Alemania",
+  "name_en": "Germany",
+  "iso_code": "de",
+  "flag_url": "https://flagcdn.com/w160/de.png",
+  "confederation": "UEFA",
+  "wc_titles": 4,
+  "group": "E",
+  "elo_base": 1830.4443647246649,
+  "last_10_matches": [
+    {
+      "date": "2026-03-30",
+      "home": "Alemania",
+      "away": "Ghana",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Suiza",
+      "away": "Alemania",
+      "home_goals": 3,
+      "away_goals": 4,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-17",
+      "home": "Alemania",
+      "away": "Slovakia",
+      "home_goals": 6,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-14",
+      "home": "Luxembourg",
+      "away": "Alemania",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-13",
+      "home": "Northern Ireland",
+      "away": "Alemania",
+      "home_goals": 0,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Alemania",
+      "away": "Luxembourg",
+      "home_goals": 4,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-07",
+      "home": "Alemania",
+      "away": "Northern Ireland",
+      "home_goals": 3,
+      "away_goals": 1,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-04",
+      "home": "Slovakia",
+      "away": "Alemania",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-08",
+      "home": "Alemania",
+      "away": "Francia",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "UEFA Nations League",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-04",
+      "home": "Alemania",
+      "away": "Portugal",
+      "home_goals": 1,
+      "away_goals": 2,
+      "tournament": "UEFA Nations League",
+      "result": "L",
+      "is_home": true
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-14",
+      "home": "Alemania",
+      "away": "Curazao",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Alemania",
+      "away": "Costa Marfil",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Ecuador",
+      "away": "Alemania",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "LLLWWWWWWW",
+  "goals_for_last10": 23,
+  "goals_against_last10": 11
+}

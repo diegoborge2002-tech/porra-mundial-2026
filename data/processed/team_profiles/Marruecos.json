@@ -1,0 +1,147 @@
+{
+  "name_es": "Marruecos",
+  "name_en": "Morocco",
+  "iso_code": "ma",
+  "flag_url": "https://flagcdn.com/w160/ma.png",
+  "confederation": "CAF",
+  "wc_titles": 0,
+  "group": "C",
+  "elo_base": 1919.1548172500593,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Marruecos",
+      "away": "Paraguay",
+      "home_goals": 2,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2026-03-27",
+      "home": "Marruecos",
+      "away": "Ecuador",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2026-01-18",
+      "home": "Marruecos",
+      "away": "Senegal",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2026-01-14",
+      "home": "Marruecos",
+      "away": "Nigeria",
+      "home_goals": 0,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2026-01-09",
+      "home": "Marruecos",
+      "away": "Cameroon",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2026-01-04",
+      "home": "Marruecos",
+      "away": "Tanzania",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-29",
+      "home": "Marruecos",
+      "away": "Zambia",
+      "home_goals": 3,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-26",
+      "home": "Marruecos",
+      "away": "Mali",
+      "home_goals": 1,
+      "away_goals": 1,
+      "tournament": "African Cup of Nations",
+      "result": "D",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-21",
+      "home": "Marruecos",
+      "away": "Comoros",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "African Cup of Nations",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-12-18",
+      "home": "Jordania",
+      "away": "Marruecos",
+      "home_goals": 2,
+      "away_goals": 3,
+      "tournament": "Arab Cup",
+      "result": "W",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-13",
+      "home": "Brasil",
+      "away": "Marruecos",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Escocia",
+      "away": "Marruecos",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Marruecos",
+      "away": "Haiti",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    }
+  ],
+  "form_streak": "WWDWWWDWDW",
+  "goals_for_last10": 18,
+  "goals_against_last10": 5
+}

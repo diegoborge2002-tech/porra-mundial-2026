@@ -1,0 +1,147 @@
+{
+  "name_es": "Corea del Sur",
+  "name_en": "South Korea",
+  "iso_code": "kr",
+  "flag_url": "https://flagcdn.com/w160/kr.png",
+  "confederation": "AFC",
+  "wc_titles": 0,
+  "group": "A",
+  "elo_base": 1792.4888761563302,
+  "last_10_matches": [
+    {
+      "date": "2026-03-31",
+      "home": "Austria",
+      "away": "Corea del Sur",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2026-03-28",
+      "home": "Costa Marfil",
+      "away": "Corea del Sur",
+      "home_goals": 4,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": false
+    },
+    {
+      "date": "2025-11-18",
+      "home": "Corea del Sur",
+      "away": "Ghana",
+      "home_goals": 1,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-11-14",
+      "home": "Corea del Sur",
+      "away": "Bolivia",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-14",
+      "home": "Corea del Sur",
+      "away": "Paraguay",
+      "home_goals": 2,
+      "away_goals": 0,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-10-10",
+      "home": "Corea del Sur",
+      "away": "Brasil",
+      "home_goals": 0,
+      "away_goals": 5,
+      "tournament": "Friendly",
+      "result": "L",
+      "is_home": true
+    },
+    {
+      "date": "2025-09-09",
+      "home": "Mexico",
+      "away": "Corea del Sur",
+      "home_goals": 2,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "D",
+      "is_home": false
+    },
+    {
+      "date": "2025-09-06",
+      "home": "Estados Unidos",
+      "away": "Corea del Sur",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "Friendly",
+      "result": "W",
+      "is_home": false
+    },
+    {
+      "date": "2025-06-10",
+      "home": "Corea del Sur",
+      "away": "Kuwait",
+      "home_goals": 4,
+      "away_goals": 0,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": true
+    },
+    {
+      "date": "2025-06-05",
+      "home": "Irak",
+      "away": "Corea del Sur",
+      "home_goals": 0,
+      "away_goals": 2,
+      "tournament": "FIFA World Cup qualification",
+      "result": "W",
+      "is_home": false
+    }
+  ],
+  "upcoming_wc_matches": [
+    {
+      "date": "2026-06-11",
+      "home": "Corea del Sur",
+      "away": "Rep. Checa",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": true
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Mexico",
+      "away": "Corea del Sur",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Sudafrica",
+      "away": "Corea del Sur",
+      "home_goals": null,
+      "away_goals": null,
+      "tournament": "FIFA World Cup",
+      "result": "-",
+      "is_home": false
+    }
+  ],
+  "form_streak": "WWWDLWWWLL",
+  "goals_for_last10": 15,
+  "goals_against_last10": 12
+}
