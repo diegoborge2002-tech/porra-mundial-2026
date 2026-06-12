@@ -1,0 +1,272 @@
+{
+  "team": "Ecuador",
+  "coach": "Sebastián Beccacece",
+  "captain": "Enner Valencia",
+  "formation": "4-2-3-1",
+  "star_player": "Moisés Caicedo",
+  "notes": "Defensa de élite mundial (Pacho, Hincapié, Caicedo). Le falta gol, pero es durísima de batir.",
+  "ratings": {
+    "attack": 5,
+    "defense": 9,
+    "midfield": 8,
+    "bench_depth": 6,
+    "experience": 7,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Hernán Galíndez",
+      "position": "POR",
+      "club": "Huracán",
+      "number": 1,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Moisés Ramírez",
+      "position": "POR",
+      "club": "Independiente del Valle",
+      "number": 22,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Gonzalo Valle",
+      "position": "POR",
+      "club": "LDU Quito",
+      "number": 12,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Ángelo Preciado",
+      "position": "DEF",
+      "club": "Sparta Praga",
+      "number": 17,
+      "market_value": 8.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Joel Ordóñez",
+      "position": "DEF",
+      "club": "Club Brujas",
+      "number": 14,
+      "market_value": 30.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Willian Pacho",
+      "position": "DEF",
+      "club": "PSG",
+      "number": 3,
+      "market_value": 60.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Piero Hincapié",
+      "position": "DEF",
+      "club": "Arsenal",
+      "number": 2,
+      "market_value": 55.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Félix Torres",
+      "position": "DEF",
+      "club": "Corinthians",
+      "number": 25,
+      "market_value": 6.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Pervis Estupiñán",
+      "position": "DEF",
+      "club": "Milan",
+      "number": 7,
+      "market_value": 22.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Jhoanner Chávez",
+      "position": "DEF",
+      "club": "Lens",
+      "number": 18,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Moisés Caicedo",
+      "position": "MED",
+      "club": "Chelsea",
+      "number": 23,
+      "market_value": 110.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Alan Franco",
+      "position": "MED",
+      "club": "Atlético Mineiro",
+      "number": 21,
+      "market_value": 5.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Carlos Gruezo",
+      "position": "MED",
+      "club": "LDU Quito",
+      "number": 8,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Kendry Páez",
+      "position": "MED",
+      "club": "Estrasburgo",
+      "number": 10,
+      "market_value": 22.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Pedro Vite",
+      "position": "MED",
+      "club": "Pumas",
+      "number": 16,
+      "market_value": 6.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Alexander Alvarado",
+      "position": "MED",
+      "club": "LDU Quito",
+      "number": 11,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Gonzalo Plata",
+      "position": "DEL",
+      "club": "Flamengo",
+      "number": 19,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Nilson Angulo",
+      "position": "DEL",
+      "club": "Anderlecht",
+      "number": 15,
+      "market_value": 10.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Jeremy Sarmiento",
+      "position": "DEL",
+      "club": "Brighton",
+      "number": 20,
+      "market_value": 7.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "John Yeboah",
+      "position": "DEL",
+      "club": "Venezia",
+      "number": 24,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Enner Valencia",
+      "position": "DEL",
+      "club": "Pachuca",
+      "number": 13,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Kevin Rodríguez",
+      "position": "DEL",
+      "club": "Union SG",
+      "number": 9,
+      "market_value": 6.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Allen Obando",
+      "position": "DEL",
+      "club": "Barcelona SC",
+      "number": 26,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

@@ -1,0 +1,261 @@
+{
+  "team": "Paraguay",
+  "coach": "Gustavo Alfaro",
+  "captain": "Gustavo Gómez",
+  "formation": "4-3-3",
+  "star_player": "Julio Enciso",
+  "notes": "Volvió a un Mundial 16 años después. Bloque bajo, balón parado y la chispa de Enciso y Almirón.",
+  "ratings": {
+    "attack": 5,
+    "defense": 7,
+    "midfield": 6,
+    "bench_depth": 5,
+    "experience": 6,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Roberto Fernández",
+      "position": "POR",
+      "club": "Botafogo",
+      "number": 1,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Carlos Coronel",
+      "position": "POR",
+      "club": "NY Red Bulls",
+      "number": 12,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Orlando Gill",
+      "position": "POR",
+      "club": "São Paulo",
+      "number": 23,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Juan Cáceres",
+      "position": "DEF",
+      "club": "Mineiro",
+      "number": 4,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Robert Rojas",
+      "position": "DEF",
+      "club": "Vasco da Gama",
+      "number": 13,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Gustavo Gómez",
+      "position": "DEF",
+      "club": "Palmeiras",
+      "number": 3,
+      "market_value": 4.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Omar Alderete",
+      "position": "DEF",
+      "club": "Sunderland",
+      "number": 2,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Fabián Balbuena",
+      "position": "DEF",
+      "club": "Cerro Porteño",
+      "number": 5,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Junior Alonso",
+      "position": "DEF",
+      "club": "Atlético Mineiro",
+      "number": 15,
+      "market_value": 3.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Agustín Sández",
+      "position": "DEF",
+      "club": "Rosario Central",
+      "number": 16,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Andrés Cubas",
+      "position": "MED",
+      "club": "Vancouver",
+      "number": 20,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Mathías Villasanti",
+      "position": "MED",
+      "club": "Gremio",
+      "number": 14,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Diego Gómez",
+      "position": "MED",
+      "club": "Brighton",
+      "number": 8,
+      "market_value": 15.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Damián Bobadilla",
+      "position": "MED",
+      "club": "São Paulo",
+      "number": 17,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Óscar Romero",
+      "position": "MED",
+      "club": "Pendiente",
+      "number": 10,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Matías Rojas",
+      "position": "MED",
+      "club": "Portland",
+      "number": 18,
+      "market_value": 3.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Julio Enciso",
+      "position": "DEL",
+      "club": "Estrasburgo",
+      "number": 7,
+      "market_value": 18.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Miguel Almirón",
+      "position": "DEL",
+      "club": "Atlanta United",
+      "number": 11,
+      "market_value": 9.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Ramón Sosa",
+      "position": "DEL",
+      "club": "Palmeiras",
+      "number": 21,
+      "market_value": 9.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Antonio Sanabria",
+      "position": "DEL",
+      "club": "Cremonese",
+      "number": 9,
+      "market_value": 4.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Adam Bareiro",
+      "position": "DEL",
+      "club": "Fortaleza",
+      "number": 19,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Alex Arce",
+      "position": "DEL",
+      "club": "LDU Quito",
+      "number": 26,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

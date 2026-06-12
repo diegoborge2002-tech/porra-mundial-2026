@@ -1,0 +1,206 @@
+{
+  "team": "Jordania",
+  "coach": "Jamal Sellami",
+  "captain": "Yazan Al-Arab",
+  "formation": "4-3-3",
+  "star_player": "Mousa Al-Taamari",
+  "notes": "Debutante absoluto. Subcampeona de Asia 2024: contragolpe letal con Al-Taamari.",
+  "ratings": {
+    "attack": 4,
+    "defense": 5,
+    "midfield": 4,
+    "bench_depth": 3,
+    "experience": 3,
+    "motivation": 10
+  },
+  "players": [
+    {
+      "name": "Yazeed Abulaila",
+      "position": "POR",
+      "club": "Al-Hussein",
+      "number": 1,
+      "market_value": 0.8,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Abdallah Al-Fakhouri",
+      "position": "POR",
+      "club": "Al-Faisaly",
+      "number": 22,
+      "market_value": 0.4,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Ihsan Haddad",
+      "position": "DEF",
+      "club": "Al-Hussein",
+      "number": 2,
+      "market_value": 0.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Mohammad Abu Hasheesh",
+      "position": "DEF",
+      "club": "Al-Hussein",
+      "number": 3,
+      "market_value": 0.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Yazan Al-Arab",
+      "position": "DEF",
+      "club": "Konyaspor",
+      "number": 5,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Abdallah Nasib",
+      "position": "DEF",
+      "club": "Pendiente",
+      "number": 4,
+      "market_value": 0.8,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Bara' Marei",
+      "position": "DEF",
+      "club": "Al-Faisaly",
+      "number": 13,
+      "market_value": 0.4,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Salem Al-Ajalin",
+      "position": "DEF",
+      "club": "Al-Wehdat",
+      "number": 15,
+      "market_value": 0.3,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Nizar Al-Rashdan",
+      "position": "MED",
+      "club": "Al-Ahli Amán",
+      "number": 6,
+      "market_value": 0.6,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Rajaei Ayed",
+      "position": "MED",
+      "club": "Al-Hussein",
+      "number": 8,
+      "market_value": 0.6,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Noor Al-Rawabdeh",
+      "position": "MED",
+      "club": "Al-Wehdat",
+      "number": 14,
+      "market_value": 0.6,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Mohammad Abu Zrayq",
+      "position": "MED",
+      "club": "Al-Salt",
+      "number": 16,
+      "market_value": 0.3,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Mahmoud Al-Mardi",
+      "position": "DEL",
+      "club": "Al-Wakrah",
+      "number": 7,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Anas Al-Awadat",
+      "position": "DEL",
+      "club": "Al-Wehdat",
+      "number": 18,
+      "market_value": 0.4,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Mousa Al-Taamari",
+      "position": "DEL",
+      "club": "Rennes",
+      "number": 10,
+      "market_value": 9.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Yazan Al-Naimat",
+      "position": "DEL",
+      "club": "Al-Ahli Doha",
+      "number": 9,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Ali Olwan",
+      "position": "DEL",
+      "club": "Al-Wehdat",
+      "number": 11,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

@@ -1,0 +1,261 @@
+{
+  "team": "Iran",
+  "coach": "Amir Ghalenoei",
+  "captain": "Mehdi Taremi",
+  "formation": "4-3-3",
+  "star_player": "Mehdi Taremi",
+  "notes": "Veteranía arriba (Taremi-Azmoun) y orden defensivo. Séptimo Mundial de su historia.",
+  "ratings": {
+    "attack": 5,
+    "defense": 6,
+    "midfield": 5,
+    "bench_depth": 4,
+    "experience": 8,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Alireza Beiranvand",
+      "position": "POR",
+      "club": "Tractor",
+      "number": 1,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Payam Niazmand",
+      "position": "POR",
+      "club": "Sepahan",
+      "number": 12,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Sadegh Moharrami",
+      "position": "DEF",
+      "club": "Dinamo Zagreb",
+      "number": 2,
+      "market_value": 3.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Danial Esmaeilifar",
+      "position": "DEF",
+      "club": "Sepahan",
+      "number": 23,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Majid Hosseini",
+      "position": "DEF",
+      "club": "Kayserispor",
+      "number": 4,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Hossein Kanani",
+      "position": "DEF",
+      "club": "Persepolis",
+      "number": 8,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Shoja Khalilzadeh",
+      "position": "DEF",
+      "club": "Tractor",
+      "number": 3,
+      "market_value": 0.8,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Aref Aghasi",
+      "position": "DEF",
+      "club": "Foolad",
+      "number": 13,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Milad Mohammadi",
+      "position": "DEF",
+      "club": "Persepolis",
+      "number": 5,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Abolfazl Jalali",
+      "position": "DEF",
+      "club": "Esteghlal",
+      "number": 15,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Saeid Ezatolahi",
+      "position": "MED",
+      "club": "Shabab Al-Ahli",
+      "number": 6,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Ahmad Nourollahi",
+      "position": "MED",
+      "club": "Tractor",
+      "number": 21,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Saman Ghoddos",
+      "position": "MED",
+      "club": "Esteghlal",
+      "number": 14,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Mehdi Torabi",
+      "position": "MED",
+      "club": "Tractor",
+      "number": 17,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Saeid Sadeghi",
+      "position": "MED",
+      "club": "Gol Gohar",
+      "number": 18,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Mohammad Mohebi",
+      "position": "DEL",
+      "club": "Rostov",
+      "number": 11,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Mehdi Ghayedi",
+      "position": "DEL",
+      "club": "Ittihad Kalba",
+      "number": 10,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Alireza Jahanbakhsh",
+      "position": "DEL",
+      "club": "Heerenveen",
+      "number": 7,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Allahyar Sayyadmanesh",
+      "position": "DEL",
+      "club": "Ferencváros",
+      "number": 20,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Mehdi Taremi",
+      "position": "DEL",
+      "club": "Olympiacos",
+      "number": 9,
+      "market_value": 10.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Sardar Azmoun",
+      "position": "DEL",
+      "club": "Shabab Al-Ahli",
+      "number": 19,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Amirhossein Hosseinzadeh",
+      "position": "DEL",
+      "club": "Charleroi",
+      "number": 16,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

@@ -1,0 +1,272 @@
+{
+  "team": "Turquia",
+  "coach": "Vincenzo Montella",
+  "captain": "Hakan Çalhanoğlu",
+  "formation": "4-2-3-1",
+  "star_player": "Arda Güler",
+  "notes": "Generación dorada: Güler dirige, Yıldız desequilibra. Cuartos en la Euro 2024 y a más.",
+  "ratings": {
+    "attack": 8,
+    "defense": 6,
+    "midfield": 8,
+    "bench_depth": 7,
+    "experience": 6,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Uğurcan Çakır",
+      "position": "POR",
+      "club": "Galatasaray",
+      "number": 1,
+      "market_value": 16.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Altay Bayındır",
+      "position": "POR",
+      "club": "Manchester United",
+      "number": 12,
+      "market_value": 6.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Mert Günok",
+      "position": "POR",
+      "club": "Beşiktaş",
+      "number": 23,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Mert Müldür",
+      "position": "DEF",
+      "club": "Fenerbahçe",
+      "number": 2,
+      "market_value": 8.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Zeki Çelik",
+      "position": "DEF",
+      "club": "Roma",
+      "number": 22,
+      "market_value": 8.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Merih Demiral",
+      "position": "DEF",
+      "club": "Al-Ahli",
+      "number": 3,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Abdülkerim Bardakcı",
+      "position": "DEF",
+      "club": "Galatasaray",
+      "number": 14,
+      "market_value": 9.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Çağlar Söyüncü",
+      "position": "DEF",
+      "club": "Fenerbahçe",
+      "number": 4,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Samet Akaydin",
+      "position": "DEF",
+      "club": "Fenerbahçe",
+      "number": 18,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Ferdi Kadıoğlu",
+      "position": "DEF",
+      "club": "Brighton",
+      "number": 13,
+      "market_value": 22.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Eren Elmalı",
+      "position": "DEF",
+      "club": "Galatasaray",
+      "number": 20,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Hakan Çalhanoğlu",
+      "position": "MED",
+      "club": "Inter",
+      "number": 10,
+      "market_value": 28.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "İsmail Yüksek",
+      "position": "MED",
+      "club": "Fenerbahçe",
+      "number": 15,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Orkun Kökçü",
+      "position": "MED",
+      "club": "Beşiktaş",
+      "number": 6,
+      "market_value": 20.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Salih Özcan",
+      "position": "MED",
+      "club": "Borussia Dortmund",
+      "number": 5,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Arda Güler",
+      "position": "MED",
+      "club": "Real Madrid",
+      "number": 8,
+      "market_value": 60.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "İrfan Can Kahveci",
+      "position": "MED",
+      "club": "Fenerbahçe",
+      "number": 17,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Kenan Yıldız",
+      "position": "DEL",
+      "club": "Juventus",
+      "number": 7,
+      "market_value": 75.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Kerem Aktürkoğlu",
+      "position": "DEL",
+      "club": "Fenerbahçe",
+      "number": 11,
+      "market_value": 18.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Barış Alper Yılmaz",
+      "position": "DEL",
+      "club": "Galatasaray",
+      "number": 21,
+      "market_value": 22.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Oğuz Aydın",
+      "position": "DEL",
+      "club": "Fenerbahçe",
+      "number": 16,
+      "market_value": 6.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Semih Kılıçsoy",
+      "position": "DEL",
+      "club": "Beşiktaş",
+      "number": 9,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Deniz Gül",
+      "position": "DEL",
+      "club": "Porto",
+      "number": 19,
+      "market_value": 8.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

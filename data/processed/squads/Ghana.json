@@ -1,0 +1,272 @@
+{
+  "team": "Ghana",
+  "coach": "Otto Addo",
+  "captain": "Jordan Ayew",
+  "formation": "4-3-3",
+  "star_player": "Mohammed Kudus",
+  "notes": "Kudus y Semenyo, dos puñales de Premier. Partey ordena. Físico y verticalidad.",
+  "ratings": {
+    "attack": 7,
+    "defense": 5,
+    "midfield": 7,
+    "bench_depth": 6,
+    "experience": 6,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Benjamin Asare",
+      "position": "POR",
+      "club": "Hearts of Oak",
+      "number": 1,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Lawrence Ati-Zigi",
+      "position": "POR",
+      "club": "St. Gallen",
+      "number": 16,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Joseph Wollacott",
+      "position": "POR",
+      "club": "Crawley Town",
+      "number": 12,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Tariq Lamptey",
+      "position": "DEF",
+      "club": "Fiorentina",
+      "number": 2,
+      "market_value": 10.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Alidu Seidu",
+      "position": "DEF",
+      "club": "Rennes",
+      "number": 14,
+      "market_value": 9.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Mohammed Salisu",
+      "position": "DEF",
+      "club": "Mónaco",
+      "number": 4,
+      "market_value": 10.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Alexander Djiku",
+      "position": "DEF",
+      "club": "Spartak Moscú",
+      "number": 5,
+      "market_value": 5.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Jerome Opoku",
+      "position": "DEF",
+      "club": "Basaksehir",
+      "number": 15,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Abdul Mumin",
+      "position": "DEF",
+      "club": "Rayo Vallecano",
+      "number": 18,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Gideon Mensah",
+      "position": "DEF",
+      "club": "Auxerre",
+      "number": 3,
+      "market_value": 3.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Caleb Yirenkyi",
+      "position": "DEF",
+      "club": "Nordsjaelland",
+      "number": 21,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Thomas Partey",
+      "position": "MED",
+      "club": "Villarreal",
+      "number": 5,
+      "market_value": 8.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Elisha Owusu",
+      "position": "MED",
+      "club": "Auxerre",
+      "number": 17,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Abu Francis",
+      "position": "MED",
+      "club": "Toulouse",
+      "number": 8,
+      "market_value": 8.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Lawrence Agyekum",
+      "position": "MED",
+      "club": "Cercle Brugge",
+      "number": 20,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Mohammed Kudus",
+      "position": "MED",
+      "club": "Tottenham",
+      "number": 10,
+      "market_value": 55.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Kwasi Sibo",
+      "position": "MED",
+      "club": "Watford",
+      "number": 6,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Antoine Semenyo",
+      "position": "DEL",
+      "club": "Bournemouth",
+      "number": 7,
+      "market_value": 45.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Kamaldeen Sulemana",
+      "position": "DEL",
+      "club": "Atalanta",
+      "number": 11,
+      "market_value": 12.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Ernest Nuamah",
+      "position": "DEL",
+      "club": "Lyon",
+      "number": 19,
+      "market_value": 14.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Iñaki Williams",
+      "position": "DEL",
+      "club": "Athletic Club",
+      "number": 9,
+      "market_value": 14.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Jordan Ayew",
+      "position": "DEL",
+      "club": "Leicester City",
+      "number": 13,
+      "market_value": 3.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Felix Afena-Gyan",
+      "position": "DEL",
+      "club": "Pendiente",
+      "number": 22,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

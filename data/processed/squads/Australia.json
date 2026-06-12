@@ -1,0 +1,272 @@
+{
+  "team": "Australia",
+  "coach": "Tony Popovic",
+  "captain": "Jackson Irvine",
+  "formation": "4-2-3-1",
+  "star_player": "Jackson Irvine",
+  "notes": "Sexto Mundial seguido. Sin estrellas rutilantes pero con oficio, físico y balón parado.",
+  "ratings": {
+    "attack": 4,
+    "defense": 6,
+    "midfield": 5,
+    "bench_depth": 5,
+    "experience": 7,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Mathew Ryan",
+      "position": "POR",
+      "club": "Levante",
+      "number": 1,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Joe Gauci",
+      "position": "POR",
+      "club": "Port Vale",
+      "number": 18,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Paul Izzo",
+      "position": "POR",
+      "club": "Randers",
+      "number": 12,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Lewis Miller",
+      "position": "DEF",
+      "club": "Hibernian",
+      "number": 2,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Nathaniel Atkinson",
+      "position": "DEF",
+      "club": "Melbourne City",
+      "number": 19,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Harry Souttar",
+      "position": "DEF",
+      "club": "Sheffield United",
+      "number": 4,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Cameron Burgess",
+      "position": "DEF",
+      "club": "Swansea",
+      "number": 15,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Kye Rowles",
+      "position": "DEF",
+      "club": "DC United",
+      "number": 5,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Milos Degenek",
+      "position": "DEF",
+      "club": "TSC",
+      "number": 3,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Jordan Bos",
+      "position": "DEF",
+      "club": "Westerlo",
+      "number": 16,
+      "market_value": 6.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Aziz Behich",
+      "position": "DEF",
+      "club": "Melbourne City",
+      "number": 13,
+      "market_value": 0.8,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Aiden O'Neill",
+      "position": "MED",
+      "club": "Standard Lieja",
+      "number": 6,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Patrick Yazbek",
+      "position": "MED",
+      "club": "Nashville",
+      "number": 26,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Jackson Irvine",
+      "position": "MED",
+      "club": "St. Pauli",
+      "number": 22,
+      "market_value": 5.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Connor Metcalfe",
+      "position": "MED",
+      "club": "St. Pauli",
+      "number": 14,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Riley McGree",
+      "position": "MED",
+      "club": "Middlesbrough",
+      "number": 8,
+      "market_value": 9.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Ajdin Hrustic",
+      "position": "MED",
+      "club": "Salernitana",
+      "number": 10,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Craig Goodwin",
+      "position": "DEL",
+      "club": "Adelaide United",
+      "number": 23,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Nestory Irankunda",
+      "position": "DEL",
+      "club": "Watford",
+      "number": 21,
+      "market_value": 7.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Martin Boyle",
+      "position": "DEL",
+      "club": "Hibernian",
+      "number": 7,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Mitchell Duke",
+      "position": "DEL",
+      "club": "Machida Zelvia",
+      "number": 9,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Kusini Yengi",
+      "position": "DEL",
+      "club": "Aberdeen",
+      "number": 20,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Adam Taggart",
+      "position": "DEL",
+      "club": "Perth Glory",
+      "number": 11,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

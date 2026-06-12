@@ -1,0 +1,250 @@
+{
+  "team": "Irak",
+  "coach": "Graham Arnold",
+  "captain": "Jalal Hassan",
+  "formation": "4-2-3-1",
+  "star_player": "Ali Al-Hamadi",
+  "notes": "Vuelve a un Mundial 40 años después vía repesca. Arnold le dio estructura australiana.",
+  "ratings": {
+    "attack": 4,
+    "defense": 5,
+    "midfield": 5,
+    "bench_depth": 4,
+    "experience": 4,
+    "motivation": 10
+  },
+  "players": [
+    {
+      "name": "Jalal Hassan",
+      "position": "POR",
+      "club": "Al-Zawraa",
+      "number": 1,
+      "market_value": 0.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Fahad Talib",
+      "position": "POR",
+      "club": "Al-Najma",
+      "number": 22,
+      "market_value": 0.4,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Hussein Ali",
+      "position": "DEF",
+      "club": "Erbil SC",
+      "number": 2,
+      "market_value": 0.8,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Alai Ghasem",
+      "position": "DEF",
+      "club": "Al-Shorta",
+      "number": 16,
+      "market_value": 0.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Rebin Sulaka",
+      "position": "DEF",
+      "club": "Al-Quwa Al-Jawiya",
+      "number": 4,
+      "market_value": 0.8,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Akam Hashim",
+      "position": "DEF",
+      "club": "Al-Shorta",
+      "number": 5,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Zaid Tahseen",
+      "position": "DEF",
+      "club": "Al-Shorta",
+      "number": 13,
+      "market_value": 0.8,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Frans Dhia Putros",
+      "position": "DEF",
+      "club": "Pendiente",
+      "number": 3,
+      "market_value": 0.6,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Merchas Doski",
+      "position": "DEF",
+      "club": "Duhok",
+      "number": 15,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Hussein Jabbar",
+      "position": "DEF",
+      "club": "Al-Quwa Al-Jawiya",
+      "number": 21,
+      "market_value": 0.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Osama Rashid",
+      "position": "MED",
+      "club": "Al-Karkh",
+      "number": 6,
+      "market_value": 0.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Amir Al-Ammari",
+      "position": "MED",
+      "club": "Halmstads",
+      "number": 8,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Zidane Iqbal",
+      "position": "MED",
+      "club": "Utrecht",
+      "number": 14,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Kevin Yakob",
+      "position": "MED",
+      "club": "AEK Larnaca",
+      "number": 18,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Ibrahim Bayesh",
+      "position": "MED",
+      "club": "Al-Quwa Al-Jawiya",
+      "number": 10,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Youssef Amyn",
+      "position": "DEL",
+      "club": "Beerschot",
+      "number": 7,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Ali Jasim",
+      "position": "DEL",
+      "club": "Como",
+      "number": 11,
+      "market_value": 5.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Mohammed Ali Jasim",
+      "position": "DEL",
+      "club": "Karbala",
+      "number": 17,
+      "market_value": 0.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Ali Al-Hamadi",
+      "position": "DEL",
+      "club": "Ipswich Town",
+      "number": 9,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Aymen Hussein",
+      "position": "DEL",
+      "club": "Al-Quwa Al-Jawiya",
+      "number": 19,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Mohanad Ali",
+      "position": "DEL",
+      "club": "Al-Shorta",
+      "number": 20,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

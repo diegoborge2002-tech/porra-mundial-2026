@@ -1,0 +1,239 @@
+{
+  "team": "Catar",
+  "coach": "Julen Lopetegui",
+  "captain": "Akram Afif",
+  "formation": "4-3-3",
+  "star_player": "Akram Afif",
+  "notes": "Primera clasificación por méritos propios. Afif, dos veces mejor jugador de Asia, es su faro.",
+  "ratings": {
+    "attack": 4,
+    "defense": 4,
+    "midfield": 4,
+    "bench_depth": 4,
+    "experience": 5,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Meshaal Barsham",
+      "position": "POR",
+      "club": "Al-Sadd",
+      "number": 22,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Saad Al-Sheeb",
+      "position": "POR",
+      "club": "Al-Sadd",
+      "number": 1,
+      "market_value": 0.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Sultan Al-Brake",
+      "position": "DEF",
+      "club": "Al-Duhail",
+      "number": 2,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Pedro Miguel",
+      "position": "DEF",
+      "club": "Al-Sadd",
+      "number": 3,
+      "market_value": 0.8,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Boualem Khoukhi",
+      "position": "DEF",
+      "club": "Al-Sadd",
+      "number": 16,
+      "market_value": 0.6,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Tarek Salman",
+      "position": "DEF",
+      "club": "Al-Sadd",
+      "number": 14,
+      "market_value": 0.8,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Lucas Mendes",
+      "position": "DEF",
+      "club": "Al-Wakrah",
+      "number": 5,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Homam Ahmed",
+      "position": "DEF",
+      "club": "Al-Gharafa",
+      "number": 4,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Sultan Al-Anazi",
+      "position": "DEF",
+      "club": "Al-Sadd",
+      "number": 13,
+      "market_value": 0.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Karim Boudiaf",
+      "position": "MED",
+      "club": "Al-Duhail",
+      "number": 6,
+      "market_value": 0.8,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Jassem Gaber",
+      "position": "MED",
+      "club": "Al-Arabi",
+      "number": 12,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Mohammed Waad",
+      "position": "MED",
+      "club": "Al-Sadd",
+      "number": 8,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Mostafa Meshaal",
+      "position": "MED",
+      "club": "Al-Sadd",
+      "number": 10,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Abdulaziz Hatem",
+      "position": "MED",
+      "club": "Al-Rayyan",
+      "number": 18,
+      "market_value": 0.6,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Akram Afif",
+      "position": "DEL",
+      "club": "Al-Sadd",
+      "number": 11,
+      "market_value": 9.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Yusuf Abdurisag",
+      "position": "DEL",
+      "club": "Al-Sadd",
+      "number": 17,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Edmilson Junior",
+      "position": "DEL",
+      "club": "Al-Duhail",
+      "number": 7,
+      "market_value": 3.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Ahmed Alaaeldin",
+      "position": "DEL",
+      "club": "Al-Gharafa",
+      "number": 19,
+      "market_value": 0.6,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Almoez Ali",
+      "position": "DEL",
+      "club": "Al-Duhail",
+      "number": 9,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Mohammed Muntari",
+      "position": "DEL",
+      "club": "Al-Duhail",
+      "number": 20,
+      "market_value": 0.8,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

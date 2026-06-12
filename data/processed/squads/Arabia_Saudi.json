@@ -1,0 +1,261 @@
+{
+  "team": "Arabia Saudi",
+  "coach": "Hervé Renard",
+  "captain": "Salem Al-Dawsari",
+  "formation": "4-3-3",
+  "star_player": "Salem Al-Dawsari",
+  "notes": "Renard, el mago de los Mundiales (tumbó a Argentina en 2022). Bloque de Al-Hilal.",
+  "ratings": {
+    "attack": 5,
+    "defense": 5,
+    "midfield": 5,
+    "bench_depth": 5,
+    "experience": 6,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Mohammed Al-Owais",
+      "position": "POR",
+      "club": "Al-Hilal",
+      "number": 21,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Nawaf Al-Aqidi",
+      "position": "POR",
+      "club": "Al-Nassr",
+      "number": 1,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Saud Abdulhamid",
+      "position": "DEF",
+      "club": "Lens",
+      "number": 12,
+      "market_value": 5.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Sultan Al-Ghannam",
+      "position": "DEF",
+      "club": "Al-Nassr",
+      "number": 2,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Hassan Al-Tambakti",
+      "position": "DEF",
+      "club": "Al-Hilal",
+      "number": 5,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Ali Al-Bulaihi",
+      "position": "DEF",
+      "club": "Al-Hilal",
+      "number": 4,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Abdulelah Al-Amri",
+      "position": "DEF",
+      "club": "Al-Taawoun",
+      "number": 17,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Ali Lajami",
+      "position": "DEF",
+      "club": "Al-Nassr",
+      "number": 3,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Yasser Al-Shahrani",
+      "position": "DEF",
+      "club": "Al-Hilal",
+      "number": 13,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Moteb Al-Harbi",
+      "position": "DEF",
+      "club": "Al-Shabab",
+      "number": 16,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Mohamed Kanno",
+      "position": "MED",
+      "club": "Al-Hilal",
+      "number": 28,
+      "market_value": 3.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Abdullah Al-Khaibari",
+      "position": "MED",
+      "club": "Al-Nassr",
+      "number": 6,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Nasser Al-Dawsari",
+      "position": "MED",
+      "club": "Al-Hilal",
+      "number": 8,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Sami Al-Najei",
+      "position": "MED",
+      "club": "Al-Nassr",
+      "number": 14,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Musab Al-Juwayr",
+      "position": "MED",
+      "club": "Al-Shabab",
+      "number": 15,
+      "market_value": 6.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Faisal Al-Ghamdi",
+      "position": "MED",
+      "club": "Beerschot",
+      "number": 23,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Salem Al-Dawsari",
+      "position": "DEL",
+      "club": "Al-Hilal",
+      "number": 10,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Abdulrahman Ghareeb",
+      "position": "DEL",
+      "club": "Al-Ahli",
+      "number": 24,
+      "market_value": 3.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Ayman Yahya",
+      "position": "DEL",
+      "club": "Al-Nassr",
+      "number": 20,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Firas Al-Buraikan",
+      "position": "DEL",
+      "club": "Al-Ahli",
+      "number": 9,
+      "market_value": 6.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Saleh Al-Shehri",
+      "position": "DEL",
+      "club": "Al-Ittihad",
+      "number": 11,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Abdullah Radif",
+      "position": "DEL",
+      "club": "Al-Taawoun",
+      "number": 19,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

@@ -1,0 +1,272 @@
+{
+  "team": "Canada",
+  "coach": "Jesse Marsch",
+  "captain": "Alphonso Davies",
+  "formation": "4-3-3",
+  "star_player": "Jonathan David",
+  "notes": "Anfitriona. Pressing agresivo de Marsch, Davies y David en su prime. Mejor generación de su historia.",
+  "ratings": {
+    "attack": 7,
+    "defense": 6,
+    "midfield": 6,
+    "bench_depth": 6,
+    "experience": 6,
+    "motivation": 10
+  },
+  "players": [
+    {
+      "name": "Maxime Crépeau",
+      "position": "POR",
+      "club": "Portland Timbers",
+      "number": 16,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Dayne St. Clair",
+      "position": "POR",
+      "club": "Minnesota United",
+      "number": 1,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Alistair Johnston",
+      "position": "DEF",
+      "club": "Celtic",
+      "number": 2,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Richie Laryea",
+      "position": "DEF",
+      "club": "Toronto FC",
+      "number": 22,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Moïse Bombito",
+      "position": "DEF",
+      "club": "Niza",
+      "number": 4,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Derek Cornelius",
+      "position": "DEF",
+      "club": "Marsella",
+      "number": 13,
+      "market_value": 6.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Kamal Miller",
+      "position": "DEF",
+      "club": "Portland Timbers",
+      "number": 5,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Luc de Fougerolles",
+      "position": "DEF",
+      "club": "Fulham",
+      "number": 17,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Alphonso Davies",
+      "position": "DEF",
+      "club": "Bayern Múnich",
+      "number": 19,
+      "market_value": 50.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Sam Adekugbe",
+      "position": "DEF",
+      "club": "Vancouver",
+      "number": 3,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Stephen Eustáquio",
+      "position": "MED",
+      "club": "Porto",
+      "number": 7,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Ismaël Koné",
+      "position": "MED",
+      "club": "Sassuolo",
+      "number": 8,
+      "market_value": 9.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Niko Sigur",
+      "position": "MED",
+      "club": "Hajduk Split",
+      "number": 14,
+      "market_value": 6.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Mathieu Choinière",
+      "position": "MED",
+      "club": "Grasshopper",
+      "number": 23,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Nathan Saliba",
+      "position": "MED",
+      "club": "Anderlecht",
+      "number": 6,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Jonathan Osorio",
+      "position": "MED",
+      "club": "Toronto FC",
+      "number": 21,
+      "market_value": 3.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Jonathan David",
+      "position": "DEL",
+      "club": "Juventus",
+      "number": 9,
+      "market_value": 45.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Cyle Larin",
+      "position": "DEL",
+      "club": "Mallorca",
+      "number": 17,
+      "market_value": 7.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Promise David",
+      "position": "DEL",
+      "club": "Union SG",
+      "number": 20,
+      "market_value": 10.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Tajon Buchanan",
+      "position": "DEL",
+      "club": "Villarreal",
+      "number": 11,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Jacob Shaffelburg",
+      "position": "DEL",
+      "club": "Nashville SC",
+      "number": 24,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Liam Millar",
+      "position": "DEL",
+      "club": "Hull City",
+      "number": 10,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Ali Ahmed",
+      "position": "DEL",
+      "club": "Vancouver",
+      "number": 15,
+      "market_value": 3.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

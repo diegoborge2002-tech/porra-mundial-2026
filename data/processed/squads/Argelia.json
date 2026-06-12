@@ -1,0 +1,261 @@
+{
+  "team": "Argelia",
+  "coach": "Vladimir Petković",
+  "captain": "Riyad Mahrez",
+  "formation": "4-3-3",
+  "star_player": "Mohamed Amoura",
+  "notes": "Amoura llega on fire y Mahrez pone la magia. Atrás, Aït-Nouri es lujo de Champions.",
+  "ratings": {
+    "attack": 7,
+    "defense": 6,
+    "midfield": 7,
+    "bench_depth": 6,
+    "experience": 7,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Anthony Mandrea",
+      "position": "POR",
+      "club": "Caen",
+      "number": 1,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Luca Zidane",
+      "position": "POR",
+      "club": "Granada",
+      "number": 16,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Alexis Guendouz",
+      "position": "POR",
+      "club": "MC Alger",
+      "number": 23,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Youcef Atal",
+      "position": "DEF",
+      "club": "Al-Sadd",
+      "number": 20,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Mehdi Dorval",
+      "position": "DEF",
+      "club": "Bari",
+      "number": 12,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Aïssa Mandi",
+      "position": "DEF",
+      "club": "Lille",
+      "number": 2,
+      "market_value": 3.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Mohamed Amine Tougai",
+      "position": "DEF",
+      "club": "Esperance",
+      "number": 4,
+      "market_value": 3.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Abdelkader Bedrane",
+      "position": "DEF",
+      "club": "Esperance",
+      "number": 5,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Rayan Aït-Nouri",
+      "position": "DEF",
+      "club": "Manchester City",
+      "number": 3,
+      "market_value": 38.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Jaouen Hadjam",
+      "position": "DEF",
+      "club": "Young Boys",
+      "number": 21,
+      "market_value": 8.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Nabil Bentaleb",
+      "position": "MED",
+      "club": "Lille",
+      "number": 13,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Ismaël Bennacer",
+      "position": "MED",
+      "club": "Dinamo Zagreb",
+      "number": 8,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Houssem Aouar",
+      "position": "MED",
+      "club": "Al-Ittihad",
+      "number": 10,
+      "market_value": 11.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Hicham Boudaoui",
+      "position": "MED",
+      "club": "Niza",
+      "number": 14,
+      "market_value": 10.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Adem Zorgane",
+      "position": "MED",
+      "club": "Charleroi",
+      "number": 6,
+      "market_value": 7.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Ibrahim Maza",
+      "position": "MED",
+      "club": "Bayer Leverkusen",
+      "number": 17,
+      "market_value": 15.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "position": "DEL",
+      "club": "Al-Ahli",
+      "number": 7,
+      "market_value": 14.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Anis Hadj Moussa",
+      "position": "DEL",
+      "club": "Feyenoord",
+      "number": 22,
+      "market_value": 12.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Amine Gouiri",
+      "position": "DEL",
+      "club": "Marsella",
+      "number": 9,
+      "market_value": 20.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Saïd Benrahma",
+      "position": "DEL",
+      "club": "Neom SC",
+      "number": 18,
+      "market_value": 7.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Mohamed Amoura",
+      "position": "DEL",
+      "club": "Wolfsburgo",
+      "number": 11,
+      "market_value": 25.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Baghdad Bounedjah",
+      "position": "DEL",
+      "club": "Al-Shahania",
+      "number": 15,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

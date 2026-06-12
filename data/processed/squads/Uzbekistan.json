@@ -1,0 +1,239 @@
+{
+  "team": "Uzbekistan",
+  "coach": "Fabio Cannavaro",
+  "captain": "Eldor Shomurodov",
+  "formation": "4-3-3",
+  "star_player": "Abdukodir Khusanov",
+  "notes": "Debutante absoluto. Khusanov (City) lidera atrás y Fayzullaev crea. Cannavaro al mando.",
+  "ratings": {
+    "attack": 4,
+    "defense": 6,
+    "midfield": 5,
+    "bench_depth": 4,
+    "experience": 3,
+    "motivation": 10
+  },
+  "players": [
+    {
+      "name": "Utkir Yusupov",
+      "position": "POR",
+      "club": "Spartak Moscú",
+      "number": 12,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Botirali Ergashev",
+      "position": "POR",
+      "club": "Pakhtakor",
+      "number": 1,
+      "market_value": 0.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Khojiakbar Alijonov",
+      "position": "DEF",
+      "club": "Dinamo Zagreb",
+      "number": 2,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Sherzod Nasrullaev",
+      "position": "DEF",
+      "club": "AGMK",
+      "number": 13,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Abdukodir Khusanov",
+      "position": "DEF",
+      "club": "Manchester City",
+      "number": 5,
+      "market_value": 40.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Rustam Ashurmatov",
+      "position": "DEF",
+      "club": "Gangwon",
+      "number": 4,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Khusniddin Alikulov",
+      "position": "DEF",
+      "club": "Esteghlal",
+      "number": 15,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Farrukh Sayfiev",
+      "position": "DEF",
+      "club": "Pakhtakor",
+      "number": 3,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Mukhammadkodir Khamraliev",
+      "position": "DEF",
+      "club": "Navbahor",
+      "number": 21,
+      "market_value": 0.8,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Otabek Shukurov",
+      "position": "MED",
+      "club": "Sharjah FC",
+      "number": 6,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Odiljon Hamrobekov",
+      "position": "MED",
+      "club": "Navbahor",
+      "number": 8,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Abbosbek Fayzullaev",
+      "position": "MED",
+      "club": "Basaksehir",
+      "number": 10,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Jasur Jaloliddinov",
+      "position": "MED",
+      "club": "Pakhtakor",
+      "number": 17,
+      "market_value": 1.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Diyor Kholmatov",
+      "position": "MED",
+      "club": "Pakhtakor",
+      "number": 14,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Jaloliddin Masharipov",
+      "position": "DEL",
+      "club": "Pakhtakor",
+      "number": 11,
+      "market_value": 1.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Khojimat Erkinov",
+      "position": "DEL",
+      "club": "Tashkent City",
+      "number": 7,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Oston Urunov",
+      "position": "DEL",
+      "club": "Pakhtakor",
+      "number": 20,
+      "market_value": 2.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "position": "DEL",
+      "club": "Basaksehir",
+      "number": 9,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Igor Sergeev",
+      "position": "DEL",
+      "club": "Pakhtakor",
+      "number": 19,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Ulugbek Khoshimov",
+      "position": "DEL",
+      "club": "AGMK",
+      "number": 16,
+      "market_value": 0.8,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}

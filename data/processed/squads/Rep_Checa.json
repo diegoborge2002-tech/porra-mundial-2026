@@ -1,0 +1,261 @@
+{
+  "team": "Rep. Checa",
+  "coach": "Ivan Hašek",
+  "captain": "Ladislav Krejčí",
+  "formation": "4-2-3-1",
+  "star_player": "Patrik Schick",
+  "notes": "Cayó 2-1 ante Corea en el debut pese al gol de Krejčí. Schick es su seguro de gol.",
+  "ratings": {
+    "attack": 6,
+    "defense": 6,
+    "midfield": 6,
+    "bench_depth": 5,
+    "experience": 6,
+    "motivation": 7
+  },
+  "players": [
+    {
+      "name": "Jindřich Staněk",
+      "position": "POR",
+      "club": "Slavia Praga",
+      "number": 1,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Matěj Kovář",
+      "position": "POR",
+      "club": "PSV",
+      "number": 23,
+      "market_value": 7.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Vítězslav Jaroš",
+      "position": "POR",
+      "club": "Liverpool",
+      "number": 16,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "POR"
+    },
+    {
+      "name": "Vladimír Coufal",
+      "position": "DEF",
+      "club": "Hoffenheim",
+      "number": 5,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LD"
+    },
+    {
+      "name": "Martin Vitík",
+      "position": "DEF",
+      "club": "Bolonia",
+      "number": 4,
+      "market_value": 10.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Ladislav Krejčí",
+      "position": "DEF",
+      "club": "Wolverhampton",
+      "number": 3,
+      "market_value": 18.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Robin Hranáč",
+      "position": "DEF",
+      "club": "Hoffenheim",
+      "number": 15,
+      "market_value": 8.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "Jakub Brabec",
+      "position": "DEF",
+      "club": "Aris",
+      "number": 2,
+      "market_value": 1.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "CT"
+    },
+    {
+      "name": "David Jurásek",
+      "position": "DEF",
+      "club": "Slavia Praga",
+      "number": 18,
+      "market_value": 5.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Matěj Ryneš",
+      "position": "DEF",
+      "club": "Sparta Praga",
+      "number": 21,
+      "market_value": 3.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "LI"
+    },
+    {
+      "name": "Tomáš Souček",
+      "position": "MED",
+      "club": "West Ham",
+      "number": 22,
+      "market_value": 11.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Lukáš Provod",
+      "position": "MED",
+      "club": "Slavia Praga",
+      "number": 10,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Alex Král",
+      "position": "MED",
+      "club": "Espanyol",
+      "number": 6,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCD"
+    },
+    {
+      "name": "Lukáš Červ",
+      "position": "MED",
+      "club": "Viktoria Plzeň",
+      "number": 8,
+      "market_value": 5.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MC"
+    },
+    {
+      "name": "Pavel Šulc",
+      "position": "MED",
+      "club": "Lyon",
+      "number": 14,
+      "market_value": 14.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Ondřej Lingr",
+      "position": "MED",
+      "club": "Slavia Praga",
+      "number": 11,
+      "market_value": 3.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "MCO"
+    },
+    {
+      "name": "Václav Černý",
+      "position": "DEL",
+      "club": "Rangers",
+      "number": 7,
+      "market_value": 7.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Matěj Jurásek",
+      "position": "DEL",
+      "club": "Slavia Praga",
+      "number": 20,
+      "market_value": 7.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "ED"
+    },
+    {
+      "name": "Adam Hložek",
+      "position": "DEL",
+      "club": "Hoffenheim",
+      "number": 19,
+      "market_value": 11.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "EI"
+    },
+    {
+      "name": "Patrik Schick",
+      "position": "DEL",
+      "club": "Bayer Leverkusen",
+      "number": 9,
+      "market_value": 26.0,
+      "starter": true,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Mojmír Chytil",
+      "position": "DEL",
+      "club": "Slavia Praga",
+      "number": 13,
+      "market_value": 4.0,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    },
+    {
+      "name": "Tomáš Chorý",
+      "position": "DEL",
+      "club": "Slavia Praga",
+      "number": 17,
+      "market_value": 2.5,
+      "starter": false,
+      "notes": "",
+      "recent_form": 6.0,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-12 15:23"
+}
