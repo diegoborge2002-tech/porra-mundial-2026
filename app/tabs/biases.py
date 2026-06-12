@@ -127,6 +127,47 @@ def render():
                     use_container_width=True
                 )
 
+    # --- Mezcla de modelos: Elo vs XGBoost de stats ---
+    st.markdown("<div style='height: 10px;'></div>", unsafe_allow_html=True)
+    st.markdown(f"##### 🧬 Mezcla de modelos (Elo ↔ XGBoost de stats)", unsafe_allow_html=True)
+    from src.model import ensemble as _ens
+    if _ens.stats_available():
+        meta = _ens.get_stats_meta()
+        st.caption(
+            "El Elo solo ve resultados; el modelo XGBoost (repo Simulaciones_Mundial) ve CÓMO juega "
+            "cada equipo: xG, posesión, remates y ranking FIFA de los últimos 5 años. "
+            "Si crees que el Elo no es representativo, sube este peso."
+        )
+        new_sw = st.slider(
+            "Peso del modelo de stats en los goles esperados",
+            0.0, 1.0, float(cfg.stats_weight), step=0.05,
+            key="model_stats_weight",
+            help=(
+                "0.0 = solo Elo (modelo clásico) · 1.0 = solo XGBoost-stats. "
+                f"El modelo de stats acertó el {meta.get('holdout', {}).get('accuracy', 0)*100:.0f}% "
+                "de los 1X2 en su holdout temporal 2025-26. Recomendado: 0.5."
+            ),
+        )
+        if new_sw != cfg.stats_weight:
+            cfg.stats_weight = new_sw
+            _ens.set_stats_weight(new_sw)
+            st.rerun()
+        wl, wr = (1 - cfg.stats_weight) * 100, cfg.stats_weight * 100
+        st.markdown(
+            f'<div style="display:flex; height:8px; border-radius:4px; overflow:hidden; max-width:480px;">'
+            f'<div style="width:{wl:.0f}%; background:{PRIMARY};" title="Elo {wl:.0f}%"></div>'
+            f'<div style="width:{wr:.0f}%; background:{ACCENT};" title="Stats {wr:.0f}%"></div></div>'
+            f'<p style="color:{TEXT_DIM}; font-size:0.75rem; margin-top:4px;">'
+            f'<span style="color:{PRIMARY};">⚖️ Elo {wl:.0f}%</span> · '
+            f'<span style="color:{ACCENT};">🤖 XGBoost-stats {wr:.0f}%</span></p>',
+            unsafe_allow_html=True,
+        )
+    else:
+        st.info(
+            "Modelo de stats no disponible. Genera `data/processed/stats_model.json` con "
+            "`python notebooks/04_entrenar_stats_model.py` para activar el ensemble."
+        )
+
     st.markdown("</div>", unsafe_allow_html=True)
     st.markdown("<div style='height: 15px;'></div>", unsafe_allow_html=True)
 
@@ -234,7 +275,7 @@ def render():
             hide_index=True, use_container_width=True,
         )
     else:
-        st.info("Sin ajustes activos. Modelo Elo puro.")
+        st.info("Sin sesgos manuales activos: Elo base sin retoques (la mezcla con XGBoost se controla arriba).")
 
     st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
     _render_news_editor()

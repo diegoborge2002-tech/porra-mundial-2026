@@ -4,7 +4,7 @@
   "captain": "Joshua Kimmich",
   "formation": "4-2-3-1",
   "star_player": "Florian Wirtz",
-  "notes": "Lista definitiva confirmada. Nagelsmann lidera Die Mannschaft con el talento colosal de Wirtz y Musiala y el veterano baluarte defensivo Rüdiger.",
+  "notes": "Lista oficial 2026 con Nagelsmann. Wirtz lidera la creación desde Liverpool, Musiala y Pavlovic encadenan el medio y Neuer cierra la era con la 1.",
   "ratings": {
     "attack": 9,
     "defense": 9,
@@ -19,25 +19,54 @@
       "position": "POR",
       "club": "Bayern",
       "number": 1,
-      "market_value": 5.0,
+      "market_value": 8.0,
       "starter": true,
-      "notes": "El veterano guardameta titular indiscutible."
+      "role": "POR"
     },
     {
       "name": "Oliver Baumann",
       "position": "POR",
       "club": "Hoffenheim",
       "number": 12,
-      "market_value": 3.0,
-      "starter": false
+      "market_value": 2.5,
+      "starter": false,
+      "role": "POR"
     },
     {
       "name": "Alexander Nübel",
       "position": "POR",
       "club": "Stuttgart",
       "number": 22,
-      "market_value": 15.0,
-      "starter": false
+      "market_value": 18.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Waldemar Anton",
+      "position": "DEF",
+      "club": "Dortmund",
+      "number": 14,
+      "market_value": 22.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Nathaniel Brown",
+      "position": "DEF",
+      "club": "Frankfurt",
+      "number": 3,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Pascal Groß",
+      "position": "DEF",
+      "club": "Brighton",
+      "number": 18,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "MC"
     },
     {
       "name": "Joshua Kimmich",
@@ -46,112 +75,78 @@
       "number": 6,
       "market_value": 50.0,
       "starter": true,
-      "notes": "Capitán y lateral derecho titular."
-    },
-    {
-      "name": "Antonio Rüdiger",
-      "position": "DEF",
-      "club": "Real Madrid",
-      "number": 2,
-      "market_value": 25.0,
-      "starter": true,
-      "notes": "Líder indiscutible de la zaga."
-    },
-    {
-      "name": "Jonathan Tah",
-      "position": "DEF",
-      "club": "Bayern",
-      "number": 4,
-      "market_value": 30.0,
-      "starter": true
+      "notes": "Capitán, lateral derecho titular.",
+      "role": "LD"
     },
     {
       "name": "David Raum",
       "position": "DEF",
       "club": "Leipzig",
-      "number": 3,
-      "market_value": 17.0,
-      "starter": true
+      "number": 2,
+      "market_value": 22.0,
+      "starter": false,
+      "role": "LI"
     },
     {
-      "name": "Waldemar Anton",
+      "name": "Antonio Rüdiger",
       "position": "DEF",
-      "club": "Dortmund",
-      "number": 16,
-      "market_value": 20.0,
-      "starter": false
-    },
-    {
-      "name": "Nathaniel Brown",
-      "position": "DEF",
-      "club": "Frankfurt",
-      "number": 15,
-      "market_value": 5.0,
-      "starter": false
-    },
-    {
-      "name": "Pascal Groß",
-      "position": "DEF",
-      "club": "Brighton & Hove Albion",
-      "number": 5,
-      "market_value": 8.0,
-      "starter": false
+      "club": "Real Madrid",
+      "number": 4,
+      "market_value": 28.0,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Nico Schlotterbeck",
       "position": "DEF",
       "club": "Dortmund",
-      "number": 15,
-      "market_value": 40.0,
-      "starter": false
+      "number": 23,
+      "market_value": 45.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Jonathan Tah",
+      "position": "DEF",
+      "club": "Bayern",
+      "number": 5,
+      "market_value": 45.0,
+      "starter": false,
+      "role": "CT"
     },
     {
       "name": "Malick Thiaw",
       "position": "DEF",
       "club": "Newcastle",
-      "number": 24,
-      "market_value": 25.0,
+      "number": 15,
+      "market_value": 30.0,
       "starter": false
     },
     {
       "name": "Aleksandar Pavlovic",
       "position": "MED",
       "club": "Bayern",
-      "number": 16,
+      "number": 8,
       "market_value": 50.0,
-      "starter": true
+      "starter": true,
+      "notes": "Joya del medio, llegó para quedarse.",
+      "role": "MCD"
     },
     {
       "name": "Jamal Musiala",
       "position": "MED",
       "club": "Bayern",
       "number": 10,
-      "market_value": 130.0,
+      "market_value": 140.0,
       "starter": true,
-      "notes": "Magia pura en la mediapunta titular."
-    },
-    {
-      "name": "Florian Wirtz",
-      "position": "MED",
-      "club": "Liverpool",
-      "number": 17,
-      "market_value": 130.0,
-      "starter": true,
-      "notes": "La gran estrella creativa desequilibrante."
-    },
-    {
-      "name": "Angelo Stiller",
-      "position": "MED",
-      "club": "Stuttgart",
-      "number": 18,
-      "market_value": 28.0,
-      "starter": true
+      "notes": "Conductor creativo de nivel mundial.",
+      "role": "MCO"
     },
     {
       "name": "Nadiem Amiri",
       "position": "MED",
       "club": "Mainz",
-      "number": 8,
+      "number": 17,
       "market_value": 8.0,
       "starter": false
     },
@@ -159,75 +154,98 @@
       "name": "Jamie Leweling",
       "position": "MED",
       "club": "Stuttgart",
-      "number": 21,
-      "market_value": 15.0,
+      "number": 19,
+      "market_value": 12.0,
       "starter": false
     },
     {
       "name": "Felix Nmecha",
       "position": "MED",
       "club": "Dortmund",
-      "number": 19,
+      "number": 20,
       "market_value": 22.0,
       "starter": false
+    },
+    {
+      "name": "Angelo Stiller",
+      "position": "MED",
+      "club": "Stuttgart",
+      "number": 21,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "MC"
     },
     {
       "name": "Leon Goretzka",
       "position": "MED",
       "club": "Bayern",
-      "number": 13,
-      "market_value": 20.0,
-      "starter": false
+      "number": 24,
+      "market_value": 22.0,
+      "starter": false,
+      "role": "MC"
     },
     {
       "name": "Lennart Karl",
       "position": "MED",
       "club": "Bayern",
       "number": 25,
-      "market_value": 2.0,
+      "market_value": 15.0,
       "starter": false
     },
     {
-      "name": "Kai Havertz",
-      "position": "DEL",
-      "club": "Arsenal",
-      "number": 7,
-      "market_value": 75.0,
+      "name": "Florian Wirtz",
+      "position": "MED",
+      "club": "Liverpool",
+      "number": 11,
+      "market_value": 160.0,
       "starter": true,
-      "notes": "Falso nueve de enorme inteligencia táctica."
+      "notes": "Estrella absoluta, traspaso récord al Liverpool.",
+      "role": "MCO"
     },
     {
       "name": "Deniz Undav",
       "position": "DEL",
       "club": "Stuttgart",
       "number": 9,
-      "market_value": 25.0,
-      "starter": true
+      "market_value": 28.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Kai Havertz",
+      "position": "DEL",
+      "club": "Arsenal",
+      "number": 7,
+      "market_value": 70.0,
+      "starter": true,
+      "role": "DC"
     },
     {
       "name": "Maximilian Beier",
       "position": "DEL",
       "club": "Dortmund",
-      "number": 14,
-      "market_value": 30.0,
-      "starter": false
+      "number": 26,
+      "market_value": 25.0,
+      "starter": false,
+      "role": "DC"
     },
     {
       "name": "Leroy Sané",
       "position": "DEL",
-      "club": "Istanbul",
-      "number": 19,
-      "market_value": 70.0,
-      "starter": false
+      "club": "Galatasaray",
+      "number": 27,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "ED"
     },
     {
       "name": "Nick Woltemade",
       "position": "DEL",
       "club": "Newcastle",
-      "number": 26,
-      "market_value": 6.0,
+      "number": 13,
+      "market_value": 45.0,
       "starter": false
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

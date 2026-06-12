@@ -1,18 +1,253 @@
 {
   "team": "Argentina",
   "coach": "Lionel Scaloni",
-  "captain": "",
+  "captain": "Lionel Messi",
   "formation": "4-3-3",
-  "star_player": "",
-  "notes": "Lista por confirmar",
+  "star_player": "Lionel Messi",
+  "notes": "Argentina defiende título. Scaloni mantiene el bloque campeón con Messi como capitán y nueva generación Álvarez-Mac Allister-Almada.",
   "ratings": {
-    "attack": 5,
-    "defense": 5,
-    "midfield": 5,
-    "bench_depth": 5,
-    "experience": 5,
-    "motivation": 5
+    "attack": 10,
+    "defense": 9,
+    "midfield": 9,
+    "bench_depth": 9,
+    "experience": 10,
+    "motivation": 10
   },
-  "players": [],
-  "updated_at": "2026-05-21 19:37"
+  "players": [
+    {
+      "name": "Dibu Martínez",
+      "position": "POR",
+      "club": "Aston Villa",
+      "number": 23,
+      "market_value": 30.0,
+      "starter": true,
+      "notes": "Mejor portero del mundo.",
+      "role": "POR"
+    },
+    {
+      "name": "Gerónimo Rulli",
+      "position": "POR",
+      "club": "Olympique de Marsella",
+      "number": 12,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Juan Musso",
+      "position": "POR",
+      "club": "Atlético Madrid",
+      "number": 1,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Cristian Romero",
+      "position": "DEF",
+      "club": "Tottenham",
+      "number": 13,
+      "market_value": 50.0,
+      "starter": true,
+      "notes": "Central de élite.",
+      "role": "CT"
+    },
+    {
+      "name": "Nicolás Otamendi",
+      "position": "DEF",
+      "club": "Benfica",
+      "number": 19,
+      "market_value": 4.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Nahuel Molina",
+      "position": "DEF",
+      "club": "Atlético Madrid",
+      "number": 26,
+      "market_value": 25.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Nicolás Tagliafico",
+      "position": "DEF",
+      "club": "Ajax",
+      "number": 3,
+      "market_value": 4.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Gonzalo Montiel",
+      "position": "DEF",
+      "club": "River Plate",
+      "number": 4,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "LD"
+    },
+    {
+      "name": "Leonardo Balerdi",
+      "position": "DEF",
+      "club": "Olympique de Marsella",
+      "number": 25,
+      "market_value": 18.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Lisandro Martínez",
+      "position": "DEF",
+      "club": "Manchester United",
+      "number": 6,
+      "market_value": 35.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Facundo Medina",
+      "position": "DEF",
+      "club": "Olympique de Marsella",
+      "number": 15,
+      "market_value": 22.0,
+      "starter": false
+    },
+    {
+      "name": "Enzo Fernández",
+      "position": "MED",
+      "club": "Chelsea",
+      "number": 24,
+      "market_value": 70.0,
+      "starter": true,
+      "notes": "Conductor del medio.",
+      "role": "MC"
+    },
+    {
+      "name": "Rodrigo de Paul",
+      "position": "MED",
+      "club": "Inter Miami",
+      "number": 7,
+      "market_value": 18.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "position": "MED",
+      "club": "Liverpool",
+      "number": 20,
+      "market_value": 70.0,
+      "starter": true,
+      "notes": "Cerebro creativo titular.",
+      "role": "MC"
+    },
+    {
+      "name": "Leandro Paredes",
+      "position": "MED",
+      "club": "Boca Juniors",
+      "number": 5,
+      "market_value": 6.0,
+      "starter": false,
+      "role": "MCD"
+    },
+    {
+      "name": "Exequiel Palacios",
+      "position": "MED",
+      "club": "Bayer Leverkusen",
+      "number": 8,
+      "market_value": 25.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Valentín Barco",
+      "position": "MED",
+      "club": "Estrasburgo",
+      "number": 14,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Giovani Lo Celso",
+      "position": "MED",
+      "club": "Real Betis",
+      "number": 16,
+      "market_value": 14.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Lionel Messi",
+      "position": "DEL",
+      "club": "Inter Miami",
+      "number": 10,
+      "market_value": 25.0,
+      "starter": true,
+      "notes": "Capitán, GOAT y líder del proyecto.",
+      "role": "SD"
+    },
+    {
+      "name": "Julián Álvarez",
+      "position": "DEL",
+      "club": "Atlético Madrid",
+      "number": 9,
+      "market_value": 110.0,
+      "starter": true,
+      "notes": "9 referencia.",
+      "role": "DC"
+    },
+    {
+      "name": "Lautaro Martínez",
+      "position": "DEL",
+      "club": "Inter",
+      "number": 22,
+      "market_value": 95.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "José Manuel López",
+      "position": "DEL",
+      "club": "Palmeiras",
+      "number": 17,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Nico González",
+      "position": "DEL",
+      "club": "Atlético Madrid",
+      "number": 11,
+      "market_value": 25.0,
+      "starter": true,
+      "role": "EI"
+    },
+    {
+      "name": "Thiago Almada",
+      "position": "DEL",
+      "club": "Atlético Madrid",
+      "number": 18,
+      "market_value": 30.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Giuliano Simeone",
+      "position": "DEL",
+      "club": "Atlético Madrid",
+      "number": 21,
+      "market_value": 22.0,
+      "starter": false
+    },
+    {
+      "name": "Nico Paz",
+      "position": "DEL",
+      "club": "Como",
+      "number": 27,
+      "market_value": 50.0,
+      "starter": false,
+      "notes": "Joven joya creativa."
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
 }

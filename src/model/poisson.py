@@ -44,18 +44,41 @@ def elo_to_expected_goals(
     return lambda_h, lambda_a
 
 
+def expected_goals_ensemble(
+    elo_home: float, elo_away: float,
+    team_home: str | None = None, team_away: str | None = None,
+    home_advantage: float = 0.0,
+    total_goals: float = EXPECTED_TOTAL_GOALS_WC,
+) -> tuple[float, float]:
+    """Goles esperados del ensemble Elo + modelo de stats (XGBoost).
+
+    Si se pasan los nombres de los equipos y el modelo de stats está
+    disponible, mezcla ambas señales según el peso configurado en
+    src.model.ensemble; si no, degrada al mapeo Elo puro.
+    """
+    lh, la = elo_to_expected_goals(elo_home, elo_away, home_advantage, total_goals)
+    if team_home and team_away:
+        from src.model.ensemble import blended_lambdas
+        lh, la = blended_lambdas(lh, la, team_home, team_away, home_advantage)
+    return lh, la
+
+
 def simulate_match(
     elo_home: float, elo_away: float,
     rng: Generator,
     home_advantage: float = 0.0,
     knockout: bool = False,
+    team_home: str | None = None,
+    team_away: str | None = None,
 ) -> tuple[int, int, int, int]:
     """Simula un partido y devuelve (goles_local, goles_visit, pens_local, pens_visit).
 
+    Si se pasan team_home/team_away, las lambdas salen del ensemble
+    Elo + stats; si no, del Elo puro (compatibilidad hacia atrás).
     En knockout, si hay empate, simulamos prorroga (+30%) y luego penaltis.
     Penaltis se modelan como prob 50-50 con sesgo leve por Elo.
     """
-    lh, la = elo_to_expected_goals(elo_home, elo_away, home_advantage)
+    lh, la = expected_goals_ensemble(elo_home, elo_away, team_home, team_away, home_advantage)
     gh = int(rng.poisson(lh))
     ga = int(rng.poisson(la))
 

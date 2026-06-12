@@ -1,10 +1,10 @@
 {
   "team": "Suecia",
   "coach": "Jon Dahl Tomasson",
-  "captain": "Victor Nilsson Lindelöf",
-  "formation": "4-2-3-1",
-  "star_player": "Viktor Gyökeres",
-  "notes": "Lista confirmada Suecia 2026. Tomasson dispone de una de las delanteras más en forma del fútbol europeo con Gyökeres en el Arsenal e Isak en el Liverpool.",
+  "captain": "Victor Lindelöf",
+  "formation": "4-4-2",
+  "star_player": "Alexander Isak",
+  "notes": "Suecia llega con uno de los ataques top del Mundial: Gyökeres, Isak, Elanga y Bergvall lideran la nueva generación.",
   "ratings": {
     "attack": 9,
     "defense": 7,
@@ -19,33 +19,42 @@
       "position": "POR",
       "club": "Stoke City",
       "number": 1,
-      "market_value": 4.0,
-      "starter": true
+      "market_value": 6.0,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Kristoffer Nordfeldt",
       "position": "POR",
       "club": "AIK",
       "number": 12,
-      "market_value": 0.5,
+      "market_value": 1.0,
       "starter": false
     },
     {
       "name": "Jacob Widell Zetterström",
       "position": "POR",
-      "club": "Derby",
-      "number": 23,
-      "market_value": 2.5,
+      "club": "Derby County",
+      "number": 22,
+      "market_value": 4.0,
       "starter": false
     },
     {
-      "name": "Victor Nilsson Lindelöf",
+      "name": "Hjalmar Ekdal",
       "position": "DEF",
-      "club": "Aston Villa",
+      "club": "Burnley",
+      "number": 14,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Gabriel Gudmundsson",
+      "position": "DEF",
+      "club": "Leeds United",
       "number": 3,
-      "market_value": 15.0,
+      "market_value": 12.0,
       "starter": true,
-      "notes": "Capitán y experimentado zaguero."
+      "role": "LI"
     },
     {
       "name": "Isak Hien",
@@ -53,7 +62,8 @@
       "club": "Atalanta",
       "number": 4,
       "market_value": 25.0,
-      "starter": true
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Emil Holm",
@@ -61,31 +71,26 @@
       "club": "Juventus",
       "number": 2,
       "market_value": 12.0,
-      "starter": true
-    },
-    {
-      "name": "Gabriel Gudmundsson",
-      "position": "DEF",
-      "club": "Leeds United",
-      "number": 5,
-      "market_value": 8.0,
-      "starter": true
-    },
-    {
-      "name": "Hjalmar Ekdal",
-      "position": "DEF",
-      "club": "Burnley",
-      "number": 15,
-      "market_value": 4.0,
-      "starter": false
+      "starter": true,
+      "role": "LD"
     },
     {
       "name": "Gustaf Lagerbielke",
       "position": "DEF",
-      "club": "SC Braga",
-      "number": 16,
-      "market_value": 3.5,
+      "club": "Braga",
+      "number": 15,
+      "market_value": 6.0,
       "starter": false
+    },
+    {
+      "name": "Victor Lindelöf",
+      "position": "DEF",
+      "club": "Aston Villa",
+      "number": 5,
+      "market_value": 8.0,
+      "starter": true,
+      "notes": "Capitán y central referente.",
+      "role": "CT"
     },
     {
       "name": "Eric Smith",
@@ -98,16 +103,16 @@
     {
       "name": "Carl Starfelt",
       "position": "DEF",
-      "club": "Celta de Vigo",
-      "number": 13,
-      "market_value": 6.0,
+      "club": "Celta Vigo",
+      "number": 16,
+      "market_value": 5.0,
       "starter": false
     },
     {
       "name": "Elliot Stroud",
       "position": "DEF",
-      "club": "Mjallby",
-      "number": 24,
+      "club": "Mjällby",
+      "number": 17,
       "market_value": 1.5,
       "starter": false
     },
@@ -115,8 +120,17 @@
       "name": "Daniel Svensson",
       "position": "DEF",
       "club": "Borussia Dortmund",
-      "number": 22,
-      "market_value": 15.0,
+      "number": 18,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "LI"
+    },
+    {
+      "name": "Taha Ali",
+      "position": "MED",
+      "club": "Malmö",
+      "number": 19,
+      "market_value": 1.5,
       "starter": false
     },
     {
@@ -124,107 +138,107 @@
       "position": "MED",
       "club": "Brighton",
       "number": 8,
-      "market_value": 10.0,
-      "starter": true
+      "market_value": 18.0,
+      "starter": true,
+      "role": "MC"
     },
     {
       "name": "Lucas Bergvall",
       "position": "MED",
       "club": "Tottenham",
-      "number": 18,
-      "market_value": 15.0,
-      "starter": true
-    },
-    {
-      "name": "Alexander Bernhardsson",
-      "position": "MED",
-      "club": "Kiel",
-      "number": 17,
-      "market_value": 2.5,
-      "starter": false
+      "number": 10,
+      "market_value": 38.0,
+      "starter": true,
+      "notes": "Joven joya creativa, sale del Tottenham.",
+      "role": "MC"
     },
     {
       "name": "Jesper Karlström",
       "position": "MED",
       "club": "Udinese",
-      "number": 6,
+      "number": 20,
       "market_value": 5.0,
-      "starter": true
+      "starter": false
     },
     {
       "name": "Ken Sema",
       "position": "MED",
       "club": "Pafos",
-      "number": 11,
-      "market_value": 2.0,
+      "number": 7,
+      "market_value": 1.5,
       "starter": false
     },
     {
       "name": "Mattias Svanberg",
       "position": "MED",
-      "club": "Wolfsburgo",
-      "number": 19,
+      "club": "Wolfsburg",
+      "number": 17,
       "market_value": 15.0,
-      "starter": false
+      "starter": true,
+      "role": "MCO"
     },
     {
       "name": "Besfort Zeneli",
       "position": "MED",
-      "club": "Royale Union SG",
-      "number": 25,
-      "market_value": 3.0,
+      "club": "Union Saint-Gilloise",
+      "number": 21,
+      "market_value": 4.0,
       "starter": false
+    },
+    {
+      "name": "Alexander Bernhardsson",
+      "position": "DEL",
+      "club": "Holstein Kiel",
+      "number": 23,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Anthony Elanga",
+      "position": "DEL",
+      "club": "Newcastle United",
+      "number": 11,
+      "market_value": 45.0,
+      "starter": true,
+      "role": "ED"
     },
     {
       "name": "Viktor Gyökeres",
       "position": "DEL",
       "club": "Arsenal",
       "number": 9,
-      "market_value": 70.0,
+      "market_value": 90.0,
       "starter": true,
-      "notes": "Máxima carta goleadora, estrella de la Premier."
+      "notes": "Goleador estrella.",
+      "role": "DC"
     },
     {
       "name": "Alexander Isak",
       "position": "DEL",
       "club": "Liverpool",
-      "number": 11,
-      "market_value": 75.0,
+      "number": 10,
+      "market_value": 130.0,
       "starter": true,
-      "notes": "Delantero de élite."
-    },
-    {
-      "name": "Anthony Elanga",
-      "position": "DEL",
-      "club": "Newcastle",
-      "number": 17,
-      "market_value": 22.0,
-      "starter": true
-    },
-    {
-      "name": "Taha Ali",
-      "position": "DEL",
-      "club": "Malmö",
-      "number": 20,
-      "market_value": 2.5,
-      "starter": false
+      "notes": "Estrella absoluta, fichado por el Liverpool.",
+      "role": "DC"
     },
     {
       "name": "Gustaf Nilsson",
       "position": "DEL",
-      "club": "Brujas",
-      "number": 10,
-      "market_value": 6.0,
+      "club": "Club Brugge",
+      "number": 24,
+      "market_value": 4.0,
       "starter": false
     },
     {
       "name": "Benjamin Nygren",
       "position": "DEL",
       "club": "Celtic",
-      "number": 26,
-      "market_value": 4.0,
-      "starter": false
+      "number": 25,
+      "market_value": 6.0,
+      "starter": false,
+      "role": "MCO"
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

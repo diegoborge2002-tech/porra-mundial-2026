@@ -1,17 +1,17 @@
 {
   "team": "Haiti",
   "coach": "Sébastien Migné",
-  "captain": "Johnny Placide",
+  "captain": "Jeanricner Bellegarde",
   "formation": "4-3-3",
   "star_player": "Jeanricner Bellegarde",
-  "notes": "Lista definitiva de Haití confirmada oficialmente. El mediocampista Bellegarde en los Wolves lidera un bloque caribeño dinámico y batallador.",
+  "notes": "Haití vuelve a un Mundial tras 52 años. Bellegarde y Bellegarde-Pierrot sostienen el ataque; diáspora MLS-Europa con muchos jugadores en segundas divisiones.",
   "ratings": {
     "attack": 6,
     "defense": 5,
     "midfield": 6,
     "bench_depth": 5,
     "experience": 6,
-    "motivation": 8
+    "motivation": 9
   },
   "players": [
     {
@@ -19,23 +19,25 @@
       "position": "POR",
       "club": "SC Bastia",
       "number": 1,
-      "market_value": 0.2,
-      "starter": true
+      "market_value": 0.5,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Alexandre Pierre",
       "position": "POR",
       "club": "FC Sochaux",
       "number": 12,
-      "market_value": 0.5,
-      "starter": false
+      "market_value": 0.3,
+      "starter": false,
+      "role": "POR"
     },
     {
       "name": "Josué Duverger",
       "position": "POR",
       "club": "FC Cosmos Koblenz",
-      "number": 23,
-      "market_value": 0.1,
+      "number": 22,
+      "market_value": 0.2,
       "starter": false
     },
     {
@@ -43,22 +45,23 @@
       "position": "DEF",
       "club": "Angers SCO",
       "number": 2,
-      "market_value": 1.8,
-      "starter": true
+      "market_value": 1.5,
+      "starter": true,
+      "role": "LD"
     },
     {
       "name": "Wilguens Paugain",
       "position": "DEF",
       "club": "SV Zulte Waregem",
-      "number": 13,
-      "market_value": 0.6,
+      "number": 3,
+      "market_value": 0.8,
       "starter": false
     },
     {
       "name": "Duke Lacroix",
       "position": "DEF",
       "club": "Colorado Springs",
-      "number": 15,
+      "number": 13,
       "market_value": 0.3,
       "starter": false
     },
@@ -66,7 +69,7 @@
       "name": "Martin Experience",
       "position": "DEF",
       "club": "AS Nancy-Lorraine",
-      "number": 3,
+      "number": 4,
       "market_value": 0.4,
       "starter": false
     },
@@ -74,33 +77,35 @@
       "name": "JK Duverne",
       "position": "DEF",
       "club": "KAA Gent",
-      "number": 4,
-      "market_value": 2.0,
-      "starter": true
+      "number": 5,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Ricardo Adé",
       "position": "DEF",
       "club": "LDU Quito",
-      "number": 6,
-      "market_value": 0.8,
-      "starter": true
+      "number": 14,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Hannes Delcroix",
       "position": "DEF",
       "club": "FC Lugano",
-      "number": 5,
-      "market_value": 3.0,
+      "number": 6,
+      "market_value": 2.5,
       "starter": true,
-      "notes": "Zaguero central clave en la zaga."
+      "role": "CT"
     },
     {
       "name": "Keeto Thermoncy",
       "position": "DEF",
       "club": "BSC Young Boys II",
-      "number": 14,
-      "market_value": 0.3,
+      "number": 15,
+      "market_value": 0.4,
       "starter": false
     },
     {
@@ -108,23 +113,24 @@
       "position": "MED",
       "club": "FC Vizela",
       "number": 8,
-      "market_value": 0.8,
-      "starter": true
+      "market_value": 1.0,
+      "starter": true,
+      "role": "MCD"
     },
     {
       "name": "Carl-Fred Sainthe",
       "position": "MED",
       "club": "El Paso Locomotive FC",
       "number": 16,
-      "market_value": 0.4,
+      "market_value": 0.5,
       "starter": false
     },
     {
       "name": "Jean-Jacques Danley",
       "position": "MED",
       "club": "Philadelphia Union",
-      "number": 6,
-      "market_value": 1.5,
+      "number": 17,
+      "market_value": 0.6,
       "starter": true
     },
     {
@@ -132,88 +138,94 @@
       "position": "MED",
       "club": "Wolverhampton",
       "number": 10,
-      "market_value": 15.0,
+      "market_value": 18.0,
       "starter": true,
-      "notes": "La máxima estrella de Haití en la Premier League."
+      "notes": "Capitán y estrella, juega en Premier.",
+      "role": "MC"
     },
     {
       "name": "Pierre Woodenski",
       "position": "MED",
       "club": "Violette AC",
       "number": 18,
-      "market_value": 0.1,
+      "market_value": 0.3,
       "starter": false
     },
     {
       "name": "Dominique Simon",
       "position": "MED",
       "club": "FC Tatran Prešov",
-      "number": 17,
-      "market_value": 0.2,
+      "number": 19,
+      "market_value": 0.5,
       "starter": false
     },
     {
       "name": "Louicius Deedson",
       "position": "DEL",
       "club": "FC Dallas",
-      "number": 11,
-      "market_value": 2.0,
-      "starter": true
+      "number": 7,
+      "market_value": 1.0,
+      "starter": false
     },
     {
       "name": "Ruben Providence",
       "position": "DEL",
       "club": "Almere City FC",
-      "number": 19,
-      "market_value": 1.2,
-      "starter": false
+      "number": 11,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "ED"
     },
     {
       "name": "Josué Casimir",
       "position": "DEL",
       "club": "AJ Auxerre",
-      "number": 7,
-      "market_value": 3.0,
-      "starter": true
+      "number": 20,
+      "market_value": 1.5,
+      "starter": false
     },
     {
       "name": "Derrick Etienne",
       "position": "DEL",
       "club": "Toronto FC",
-      "number": 15,
+      "number": 21,
       "market_value": 1.5,
-      "starter": false
+      "starter": false,
+      "role": "EI"
     },
     {
       "name": "Wilson Isidor",
       "position": "DEL",
       "club": "Sunderland AFC",
-      "number": 20,
-      "market_value": 3.0,
-      "starter": false
+      "number": 9,
+      "market_value": 8.0,
+      "starter": true,
+      "notes": "9 referencia con paso por la Premier.",
+      "role": "DC"
     },
     {
       "name": "Duckens Nazon",
       "position": "DEL",
       "club": "Esteghlal FC",
-      "number": 9,
-      "market_value": 1.5,
-      "starter": false
+      "number": 23,
+      "market_value": 0.5,
+      "starter": false,
+      "role": "DC"
     },
     {
       "name": "Frantzdy Pierrot",
       "position": "DEL",
       "club": "Çaykur Rizespor",
-      "number": 9,
-      "market_value": 3.5,
+      "number": 24,
+      "market_value": 2.0,
       "starter": true,
-      "notes": "Delantero centro potente titular."
+      "role": "DC"
     },
     {
       "name": "Yassin Fortune",
       "position": "DEL",
       "club": "FC Vizela",
-      "number": 21,
+      "number": 25,
       "market_value": 0.8,
       "starter": false
     },
@@ -221,10 +233,10 @@
       "name": "Lenny Joseph",
       "position": "DEL",
       "club": "Ferencváros TC",
-      "number": 25,
+      "number": 26,
       "market_value": 1.2,
       "starter": false
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

@@ -1,0 +1,249 @@
+{
+  "team": "Colombia",
+  "coach": "Néstor Lorenzo",
+  "captain": "James Rodríguez",
+  "formation": "4-3-3",
+  "star_player": "Luis Díaz",
+  "notes": "Colombia llega tras la final de Copa América con un bloque consolidado: Díaz como referencia, James creando y Lerma-Castaño dándole músculo al medio.",
+  "ratings": {
+    "attack": 9,
+    "defense": 8,
+    "midfield": 8,
+    "bench_depth": 8,
+    "experience": 8,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Camilo Vargas",
+      "position": "POR",
+      "club": "Atlas",
+      "number": 1,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Álvaro Montero",
+      "position": "POR",
+      "club": "Vélez Sarsfield",
+      "number": 12,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "David Ospina",
+      "position": "POR",
+      "club": "Atlético Nacional",
+      "number": 22,
+      "market_value": 1.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Davinson Sánchez",
+      "position": "DEF",
+      "club": "Galatasaray",
+      "number": 4,
+      "market_value": 15.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Jhon Lucumí",
+      "position": "DEF",
+      "club": "Bologna",
+      "number": 3,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Yerry Mina",
+      "position": "DEF",
+      "club": "Cagliari",
+      "number": 5,
+      "market_value": 5.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Willer Ditta",
+      "position": "DEF",
+      "club": "Cruz Azul",
+      "number": 13,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Daniel Muñoz",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "number": 2,
+      "market_value": 28.0,
+      "starter": true,
+      "notes": "Lateral derecho titular indiscutible.",
+      "role": "LD"
+    },
+    {
+      "name": "Santiago Arias",
+      "position": "DEF",
+      "club": "Independiente",
+      "number": 14,
+      "market_value": 1.0,
+      "starter": false,
+      "role": "LD"
+    },
+    {
+      "name": "Johan Mojica",
+      "position": "DEF",
+      "club": "Mallorca",
+      "number": 17,
+      "market_value": 4.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Deiver Machado",
+      "position": "DEF",
+      "club": "Nantes",
+      "number": 18,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "LI"
+    },
+    {
+      "name": "Richard Ríos",
+      "position": "MED",
+      "club": "Benfica",
+      "number": 6,
+      "market_value": 35.0,
+      "starter": true,
+      "notes": "Pulmón joven, salto a Europa confirmado.",
+      "role": "MC"
+    },
+    {
+      "name": "Jefferson Lerma",
+      "position": "MED",
+      "club": "Crystal Palace",
+      "number": 16,
+      "market_value": 12.0,
+      "starter": true,
+      "role": "MCD"
+    },
+    {
+      "name": "Kevin Castaño",
+      "position": "MED",
+      "club": "River Plate",
+      "number": 15,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Juan Camilo Portilla",
+      "position": "MED",
+      "club": "Atlético Paranaense",
+      "number": 20,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Gustavo Puerta",
+      "position": "MED",
+      "club": "Racing Santander",
+      "number": 21,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Jhon Arias",
+      "position": "DEL",
+      "club": "Palmeiras",
+      "number": 11,
+      "market_value": 18.0,
+      "starter": true,
+      "role": "ED"
+    },
+    {
+      "name": "Jorge Carrascal",
+      "position": "MED",
+      "club": "Flamengo",
+      "number": 19,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Juan Fernando Quintero",
+      "position": "MED",
+      "club": "River Plate",
+      "number": 23,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "James Rodríguez",
+      "position": "MED",
+      "club": "Minnesota United",
+      "number": 10,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "Capitán y conductor del proyecto.",
+      "role": "MCO"
+    },
+    {
+      "name": "Jaminton Campaz",
+      "position": "MED",
+      "club": "Rosario Central",
+      "number": 24,
+      "market_value": 3.0,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Juan Camilo Hernández",
+      "position": "DEL",
+      "club": "Real Betis",
+      "number": 9,
+      "market_value": 10.0,
+      "starter": false
+    },
+    {
+      "name": "Luis Díaz",
+      "position": "DEL",
+      "club": "Bayern Munich",
+      "number": 7,
+      "market_value": 75.0,
+      "starter": true,
+      "notes": "Estrella mundial, llega tras fichar por el Bayern.",
+      "role": "EI"
+    },
+    {
+      "name": "Luis Javier Suárez",
+      "position": "DEL",
+      "club": "Sporting CP",
+      "number": 25,
+      "market_value": 18.0,
+      "starter": false
+    },
+    {
+      "name": "Carlos Gómez",
+      "position": "DEL",
+      "club": "Vasco da Gama",
+      "number": 26,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Jhon Córdoba",
+      "position": "DEL",
+      "club": "Krasnodar",
+      "number": 8,
+      "market_value": 4.0,
+      "starter": true,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
+}

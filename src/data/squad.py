@@ -35,6 +35,23 @@ SQUADS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "processed
 POSITIONS = ["POR", "DEF", "MED", "DEL"]
 POSITION_LABELS = {"POR": "Portero", "DEF": "Defensa", "MED": "Mediocampo", "DEL": "Delantero"}
 
+# Demarcación fina (para colocar el once probable en el campo).
+# Es opcional: si un jugador no la tiene, se coloca por heurística.
+ROLES_BY_POSITION = {
+    "POR": ["POR"],
+    "DEF": ["LI", "CT", "LD"],
+    "MED": ["MCD", "MC", "MCO", "MI", "MD"],
+    "DEL": ["EI", "DC", "ED", "SD"],
+}
+ROLE_LABELS = {
+    "POR": "Portero",
+    "LI": "Lateral izquierdo", "CT": "Central", "LD": "Lateral derecho",
+    "MCD": "Pivote", "MC": "Centrocampista", "MCO": "Mediapunta",
+    "MI": "Interior izquierdo", "MD": "Interior derecho",
+    "EI": "Extremo izquierdo", "ED": "Extremo derecho",
+    "DC": "Delantero centro", "SD": "Segunda punta",
+}
+
 RATING_AXES = {
     "attack": "Ataque",
     "defense": "Defensa",
@@ -55,6 +72,7 @@ class Player:
     starter: bool = False
     notes: str = ""
     recent_form: float = 6.0  # de 1.0 a 10.0 (por defecto 6.0)
+    role: Optional[str] = None  # demarcación fina (LI/CT/LD, MCD/MC/MCO..., ver ROLE_LABELS)
 
 
 @dataclass
@@ -103,7 +121,8 @@ def load_squad(team: str) -> Squad:
                 market_value=pl.get("market_value"),
                 starter=bool(pl.get("starter", False)),
                 notes=pl.get("notes", ""),
-                recent_form=float(pl.get("recent_form", 6.0))
+                recent_form=float(pl.get("recent_form", 6.0)),
+                role=pl.get("role"),
             ))
         return Squad(
             team=raw.get("team", team),

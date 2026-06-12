@@ -1,18 +1,252 @@
 {
   "team": "Uruguay",
   "coach": "Marcelo Bielsa",
-  "captain": "",
+  "captain": "Federico Valverde",
   "formation": "4-3-3",
-  "star_player": "",
-  "notes": "Lista por confirmar",
+  "star_player": "Federico Valverde",
+  "notes": "Bielsa apuesta por la nueva generación: Valverde lidera, Araujo manda atrás y Darwin Núñez es la referencia de gol.",
   "ratings": {
-    "attack": 5,
-    "defense": 5,
-    "midfield": 5,
-    "bench_depth": 5,
-    "experience": 5,
-    "motivation": 5
+    "attack": 8,
+    "defense": 8,
+    "midfield": 9,
+    "bench_depth": 8,
+    "experience": 8,
+    "motivation": 9
   },
-  "players": [],
-  "updated_at": "2026-05-21 19:37"
+  "players": [
+    {
+      "name": "Fernando Muslera",
+      "position": "POR",
+      "club": "Estudiantes de La Plata",
+      "number": 1,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Sergio Rochet",
+      "position": "POR",
+      "club": "Internacional",
+      "number": 23,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Santiago Mele",
+      "position": "POR",
+      "club": "Monterrey",
+      "number": 12,
+      "market_value": 2.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Ronald Araujo",
+      "position": "DEF",
+      "club": "FC Barcelona",
+      "number": 4,
+      "market_value": 60.0,
+      "starter": true,
+      "notes": "Central de élite, líder defensivo.",
+      "role": "CT"
+    },
+    {
+      "name": "José María Giménez",
+      "position": "DEF",
+      "club": "Atlético de Madrid",
+      "number": 2,
+      "market_value": 25.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Santiago Bueno",
+      "position": "DEF",
+      "club": "Wolverhampton",
+      "number": 14,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Sebastián Cáceres",
+      "position": "DEF",
+      "club": "Club América",
+      "number": 13,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Mathías Olivera",
+      "position": "DEF",
+      "club": "Napoli",
+      "number": 17,
+      "market_value": 18.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Guillermo Varela",
+      "position": "DEF",
+      "club": "Flamengo",
+      "number": 22,
+      "market_value": 5.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Matías Viña",
+      "position": "DEF",
+      "club": "River Plate",
+      "number": 16,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Joaquín Piquerez",
+      "position": "DEF",
+      "club": "Palmeiras",
+      "number": 3,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "LI"
+    },
+    {
+      "name": "Juan Manuel Sanabria",
+      "position": "DEF",
+      "club": "Real Salt Lake",
+      "number": 15,
+      "market_value": 2.5,
+      "starter": false
+    },
+    {
+      "name": "Federico Valverde",
+      "position": "MED",
+      "club": "Real Madrid",
+      "number": 15,
+      "market_value": 130.0,
+      "starter": true,
+      "notes": "Capitán y motor del equipo.",
+      "role": "MC"
+    },
+    {
+      "name": "Rodrigo Bentancur",
+      "position": "MED",
+      "club": "Tottenham",
+      "number": 6,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Manuel Ugarte",
+      "position": "MED",
+      "club": "Manchester United",
+      "number": 5,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "MCD"
+    },
+    {
+      "name": "Emiliano Martínez",
+      "position": "MED",
+      "club": "Palmeiras",
+      "number": 18,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Rodrigo Zalazar",
+      "position": "MED",
+      "club": "Sporting CP",
+      "number": 19,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Giorgian De Arrascaeta",
+      "position": "MED",
+      "club": "Flamengo",
+      "number": 10,
+      "market_value": 14.0,
+      "starter": false,
+      "notes": "Conductor creativo.",
+      "role": "MCO"
+    },
+    {
+      "name": "Nicolás De La Cruz",
+      "position": "MED",
+      "club": "Flamengo",
+      "number": 8,
+      "market_value": 18.0,
+      "starter": false
+    },
+    {
+      "name": "Agustín Canobbio",
+      "position": "MED",
+      "club": "Fluminense",
+      "number": 20,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Maximiliano Araújo",
+      "position": "MED",
+      "club": "Sporting CP",
+      "number": 11,
+      "market_value": 18.0,
+      "starter": true,
+      "role": "EI"
+    },
+    {
+      "name": "Brian Rodríguez",
+      "position": "MED",
+      "club": "Club América",
+      "number": 21,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Facundo Pellistri",
+      "position": "MED",
+      "club": "Panathinaikos",
+      "number": 7,
+      "market_value": 8.0,
+      "starter": true,
+      "role": "ED"
+    },
+    {
+      "name": "Darwin Núñez",
+      "position": "DEL",
+      "club": "Al-Hilal",
+      "number": 9,
+      "market_value": 38.0,
+      "starter": true,
+      "notes": "9 referencia.",
+      "role": "DC"
+    },
+    {
+      "name": "Federico Viñas",
+      "position": "DEL",
+      "club": "Real Oviedo",
+      "number": 24,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Rodrigo Aguirre",
+      "position": "DEL",
+      "club": "Tigres",
+      "number": 25,
+      "market_value": 4.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
 }

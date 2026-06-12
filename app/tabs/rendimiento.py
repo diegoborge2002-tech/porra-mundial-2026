@@ -87,6 +87,41 @@ def render():
 
         st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
 
+        # === Comparativa Elo vs XGBoost vs Ensemble sobre los partidos reales ===
+        from src.model import ensemble as _ens
+        if _ens.stats_available():
+            st.subheader("🥊 Elo vs XGBoost vs Ensemble (partidos reales)")
+            st.caption(
+                "Mismas métricas, tres motores: el Elo clásico, el modelo de stats XGBoost "
+                "(repo Simulaciones_Mundial) y la mezcla que estás usando. Así ves con datos "
+                "si el Elo es o no representativo en ESTE Mundial."
+            )
+            w_user = get_biases().stats_weight
+            comp_rows = []
+            for label, w in [("⚖️ Elo puro", 0.0),
+                             (f"🎯 Ensemble actual ({w_user*100:.0f}% stats)", w_user),
+                             ("🤖 XGBoost stats", 1.0)]:
+                _ens.set_stats_weight(w)
+                diags_w = compute_match_diagnostics(base_elo, real_results)
+                preds_w = [((d.p_home, d.p_draw, d.p_away), d.outcome) for d in diags_w]
+                s_w = aggregate_metrics(preds_w)
+                comp_rows.append({
+                    "Modelo": label,
+                    "Top-1 aciertos": f"{s_w.hit_rate_top1*100:.0f}%",
+                    "Brier ↓": round(s_w.mean_brier, 3),
+                    "Log-loss ↓": round(s_w.mean_log_loss, 3),
+                    "RPS ↓": round(s_w.mean_rps, 3),
+                })
+            _ens.set_stats_weight(w_user)  # restaurar el peso del usuario
+            df_comp = pd.DataFrame(comp_rows)
+            best_brier = df_comp["Brier ↓"].idxmin()
+            st.dataframe(df_comp, hide_index=True, use_container_width=True)
+            st.caption(
+                f"🏆 Mejor Brier hasta ahora: **{df_comp.loc[best_brier, 'Modelo']}**. "
+                "Con pocos partidos esto baila mucho; gana valor a medida que avanza el torneo."
+            )
+            st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
+
         # === Tabla diagnóstica por partido ===
         st.subheader("Diagnóstico partido a partido")
         st.caption(

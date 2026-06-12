@@ -2,12 +2,23 @@
 
 Web app de predicción del Mundial 2026 (USA / Canadá / México) basada en:
 
-- **Modelo Elo dinámico** con half-life ajustable y ventaja de campo (+65 Elo anfitriones)
+- **Ensemble de dos modelos** con peso configurable (slider en 🎯 Mis ajustes):
+  - **Elo dinámico** con half-life ajustable y ventaja de campo (+65 Elo anfitriones)
+  - **XGBoost de stats** (integrado del repo [Simulaciones_Mundial](https://github.com/jytsss/Simulaciones_Mundial)):
+    regresores Tweedie de goles + clasificador 1X2 calibrado, entrenados con
+    1.259 partidos 2021-26 de stats scrapeadas (xG, posesión, remates, ranking FIFA)
 - **Monte Carlo** 10.000 torneos
 - **Dixon-Coles** sobre Poisson para marcadores exactos
+- **Resultado esperado por partido** (pestaña 🔮 Partidos): marcador más probable,
+  xG y 1X2 de cada partido, con comparación Elo vs XGBoost vs Ensemble
 - **Calibración** del modelo (Brier, log-loss, RPS) sobre Mundiales 2010-2022 y Eurocopas 2016-2024
 - **Live in-play** probabilities condicionadas a minuto + marcador
 - **Análisis de plantillas** con valor Transfermarkt y forma reciente del club 2025-26
+
+> El modelo XGBoost se entrena offline con `python notebooks/04_entrenar_stats_model.py`
+> (requiere `xgboost` + `scikit-learn`) y deja las predicciones de los 1.128 cruces
+> posibles precomputadas en `data/processed/stats_model.json`, así la web no
+> necesita xgboost en runtime.
 
 ## Arrancar local
 
@@ -40,6 +51,7 @@ data/
 | Tab | Qué hace |
 |---|---|
 | 📊 Predicciones | Resumen MC, top campeón / finalistas / favoritos, evolución longitudinal |
+| 🔮 Partidos | Resultado esperado de cada partido: marcador, xG, 1X2, Elo vs XGBoost |
 | 🌍 Selecciones | Ficha completa con once probable, scouting, h2h |
 | 🆚 Comparador | Radar 2-3 equipos cara a cara |
 | 👥 Plantilla | Valor mercado, club performance, impacto Elo |

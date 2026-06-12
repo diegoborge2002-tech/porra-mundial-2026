@@ -11,7 +11,7 @@ from src.model.match_day import (
 )
 from src.data.team_names import EN_TO_ES
 from src.data.team_profile import ISO_CODES
-from src.model.poisson import elo_to_expected_goals
+from src.model.poisson import expected_goals_ensemble
 from src.model.match_day import _host_advantage
 from src.tournament.groups import HOST_NATIONS
 from src.model.match_probs import top_exact_scores, match_outcome_probs
@@ -61,7 +61,7 @@ def render():
     elo_h = elo.get(home_es, 1500.0)
     elo_a = elo.get(away_es, 1500.0)
     ha = _host_advantage(home_es, away_es) if not row.get("neutral", True) else 0.0
-    lh, la = elo_to_expected_goals(elo_h, elo_a, home_advantage=ha)
+    lh, la = expected_goals_ensemble(elo_h, elo_a, home_es, away_es, home_advantage=ha)
     p_h, p_d, p_a = match_outcome_probs(lh, la, use_dc=True)
     top = top_exact_scores(lh, la, n=5, use_dc=True)
 

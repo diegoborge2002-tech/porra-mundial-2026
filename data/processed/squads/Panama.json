@@ -1,0 +1,249 @@
+{
+  "team": "Panama",
+  "coach": "Thomas Christiansen",
+  "captain": "Aníbal Godoy",
+  "formation": "4-3-3",
+  "star_player": "José Córdoba",
+  "notes": "Panamá vuelve a una Copa del Mundo apoyada en su mezcla MLS-Liga MX y la solidez de José Córdoba (Norwich) y Amir Murillo (Besiktas).",
+  "ratings": {
+    "attack": 6,
+    "defense": 7,
+    "midfield": 6,
+    "bench_depth": 5,
+    "experience": 7,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Orlando Mosquera",
+      "position": "POR",
+      "club": "Al-Fayha",
+      "number": 1,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Luis Mejía",
+      "position": "POR",
+      "club": "Nacional",
+      "number": 12,
+      "market_value": 0.8,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "César Samudio",
+      "position": "POR",
+      "club": "Marathón",
+      "number": 22,
+      "market_value": 0.4,
+      "starter": false
+    },
+    {
+      "name": "César Blackman",
+      "position": "DEF",
+      "club": "Slovan Bratislava",
+      "number": 2,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Jorge Gutiérrez",
+      "position": "DEF",
+      "club": "Deportivo La Guaira",
+      "number": 13,
+      "market_value": 0.5,
+      "starter": false
+    },
+    {
+      "name": "Amir Murillo",
+      "position": "DEF",
+      "club": "Besiktas",
+      "number": 4,
+      "market_value": 4.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Fidel Escobar",
+      "position": "DEF",
+      "club": "Saprissa",
+      "number": 5,
+      "market_value": 0.8,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Andrés Andrade",
+      "position": "DEF",
+      "club": "LASK",
+      "number": 14,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Edgardo Fariña",
+      "position": "DEF",
+      "club": "Pari Nizhniy Novgorod",
+      "number": 15,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "José Córdoba",
+      "position": "DEF",
+      "club": "Norwich City",
+      "number": 3,
+      "market_value": 6.0,
+      "starter": true,
+      "notes": "Central referente, mejor proyección.",
+      "role": "CT"
+    },
+    {
+      "name": "Eric Davis",
+      "position": "DEF",
+      "club": "Plaza Amador",
+      "number": 16,
+      "market_value": 0.5,
+      "starter": false,
+      "role": "LI"
+    },
+    {
+      "name": "Jiovany Ramos",
+      "position": "DEF",
+      "club": "Puerto Cabello",
+      "number": 17,
+      "market_value": 0.8,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Roderick Miller",
+      "position": "DEF",
+      "club": "Turan Tovuz",
+      "number": 18,
+      "market_value": 0.4,
+      "starter": false
+    },
+    {
+      "name": "Aníbal Godoy",
+      "position": "MED",
+      "club": "San Diego FC",
+      "number": 20,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "Capitán y veterano.",
+      "role": "MCD"
+    },
+    {
+      "name": "Adalberto Carrasquilla",
+      "position": "MED",
+      "club": "Pumas UNAM",
+      "number": 6,
+      "market_value": 3.5,
+      "starter": true,
+      "notes": "Conductor titular.",
+      "role": "MC"
+    },
+    {
+      "name": "Carlos Harvey",
+      "position": "MED",
+      "club": "Minnesota United",
+      "number": 8,
+      "market_value": 1.8,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Cristian Martínez",
+      "position": "MED",
+      "club": "Ironi Kiryat Shmona",
+      "number": 19,
+      "market_value": 0.8,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "José Luis Rodríguez",
+      "position": "MED",
+      "club": "Juárez",
+      "number": 11,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "César Yanis",
+      "position": "MED",
+      "club": "Cobresal",
+      "number": 21,
+      "market_value": 0.6,
+      "starter": false
+    },
+    {
+      "name": "Yoel Bárcenas",
+      "position": "MED",
+      "club": "Mazatlán FC",
+      "number": 23,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Alberto Quintero",
+      "position": "MED",
+      "club": "Plaza Amador",
+      "number": 24,
+      "market_value": 0.4,
+      "starter": false,
+      "role": "ED"
+    },
+    {
+      "name": "Azarías Londoño",
+      "position": "MED",
+      "club": "Universidad Católica",
+      "number": 25,
+      "market_value": 0.6,
+      "starter": false
+    },
+    {
+      "name": "Ismael Díaz",
+      "position": "DEL",
+      "club": "León",
+      "number": 9,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "9 referencia, goleador del proyecto.",
+      "role": "EI"
+    },
+    {
+      "name": "Cecilio Waterman",
+      "position": "DEL",
+      "club": "Universidad de Concepción",
+      "number": 7,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "DC"
+    },
+    {
+      "name": "José Fajardo",
+      "position": "DEL",
+      "club": "Universidad Católica",
+      "number": 10,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "DC"
+    },
+    {
+      "name": "Tomás Rodríguez",
+      "position": "DEL",
+      "club": "Saprissa",
+      "number": 26,
+      "market_value": 0.4,
+      "starter": false,
+      "role": "ED"
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
+}

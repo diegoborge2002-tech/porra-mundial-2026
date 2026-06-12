@@ -4,14 +4,14 @@
   "captain": "Kylian Mbappé",
   "formation": "4-3-3",
   "star_player": "Kylian Mbappé",
-  "notes": "Lista definitiva de Francia confirmada. Liderados por Mbappé, integran al central Saliba y la gran estrella de la banda ofensiva Michael Olise.",
+  "notes": "Lista oficial 2026. Bloque PSG-Real Madrid encabezado por Mbappé. Deschamps cierra ciclo intentando recuperar la corona.",
   "ratings": {
     "attack": 10,
     "defense": 9,
     "midfield": 8,
-    "bench_depth": 9,
+    "bench_depth": 10,
     "experience": 9,
-    "motivation": 8
+    "motivation": 9
   },
   "players": [
     {
@@ -19,32 +19,84 @@
       "position": "POR",
       "club": "AC Milan",
       "number": 1,
-      "market_value": 40.0,
-      "starter": true
-    },
-    {
-      "name": "Brice Samba",
-      "position": "POR",
-      "club": "Rennes",
-      "number": 16,
-      "market_value": 15.0,
-      "starter": false
+      "market_value": 35.0,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Robin Risser",
       "position": "POR",
       "club": "Lens",
-      "number": 23,
-      "market_value": 5.0,
+      "number": 12,
+      "market_value": 6.0,
       "starter": false
     },
     {
-      "name": "Jules Kounde",
+      "name": "Brice Samba",
+      "position": "POR",
+      "club": "Rennes",
+      "number": 22,
+      "market_value": 10.0,
+      "starter": false
+    },
+    {
+      "name": "Lucas Digne",
       "position": "DEF",
-      "club": "FC Barcelona",
+      "club": "Aston Villa",
+      "number": 18,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Malo Gusto",
+      "position": "DEF",
+      "club": "Chelsea",
+      "number": 13,
+      "market_value": 35.0,
+      "starter": false
+    },
+    {
+      "name": "Lucas Hernandez",
+      "position": "DEF",
+      "club": "PSG",
+      "number": 21,
+      "market_value": 22.0,
+      "starter": false
+    },
+    {
+      "name": "Theo Hernandez",
+      "position": "DEF",
+      "club": "Al-Hilal",
+      "number": 22,
+      "market_value": 25.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Ibrahima Konaté",
+      "position": "DEF",
+      "club": "Liverpool",
       "number": 5,
       "market_value": 50.0,
-      "starter": true
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Jules Koundé",
+      "position": "DEF",
+      "club": "Barcelona",
+      "number": 2,
+      "market_value": 55.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Maxence Lacroix",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "number": 14,
+      "market_value": 18.0,
+      "starter": false
     },
     {
       "name": "William Saliba",
@@ -53,103 +105,112 @@
       "number": 4,
       "market_value": 80.0,
       "starter": true,
-      "notes": "Líder de la defensa."
+      "role": "CT"
     },
     {
       "name": "Dayot Upamecano",
       "position": "DEF",
-      "club": "FC Bayern",
-      "number": 18,
-      "market_value": 50.0,
-      "starter": true
-    },
-    {
-      "name": "Theo Hernández",
-      "position": "DEF",
-      "club": "Al Hilal",
-      "number": 22,
-      "market_value": 45.0,
-      "starter": true
-    },
-    {
-      "name": "Malo Gusto",
-      "position": "DEF",
-      "club": "Chelsea",
-      "number": 2,
-      "market_value": 35.0,
-      "starter": false
-    },
-    {
-      "name": "Ibrahima Konaté",
-      "position": "DEF",
-      "club": "Liverpool",
-      "number": 24,
-      "market_value": 45.0,
-      "starter": false
-    },
-    {
-      "name": "Lucas Hernández",
-      "position": "DEF",
-      "club": "PSG",
-      "number": 21,
-      "market_value": 40.0,
-      "starter": false
-    },
-    {
-      "name": "Lucas Digne",
-      "position": "DEF",
-      "club": "Aston Villa",
+      "club": "Bayern Munich",
       "number": 3,
-      "market_value": 15.0,
-      "starter": false
-    },
-    {
-      "name": "Maxence Lacroix",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "number": 15,
-      "market_value": 30.0,
-      "starter": false
-    },
-    {
-      "name": "Aurélien Tchouaméni",
-      "position": "MED",
-      "club": "Real Madrid",
-      "number": 8,
-      "market_value": 90.0,
+      "market_value": 60.0,
       "starter": true,
-      "notes": "Pivote titular."
+      "role": "CT"
+    },
+    {
+      "name": "N'Golo Kanté",
+      "position": "MED",
+      "club": "Fenerbahçe",
+      "number": 13,
+      "market_value": 14.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Manu Koné",
+      "position": "MED",
+      "club": "AS Roma",
+      "number": 6,
+      "market_value": 45.0,
+      "starter": false,
+      "role": "MC"
     },
     {
       "name": "Adrien Rabiot",
       "position": "MED",
       "club": "AC Milan",
       "number": 14,
-      "market_value": 35.0,
-      "starter": true
+      "market_value": 25.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "position": "MED",
+      "club": "Real Madrid",
+      "number": 8,
+      "market_value": 80.0,
+      "starter": true,
+      "role": "MCD"
     },
     {
       "name": "Warren Zaïre-Emery",
       "position": "MED",
       "club": "PSG",
       "number": 6,
-      "market_value": 60.0,
-      "starter": true
+      "market_value": 55.0,
+      "starter": true,
+      "notes": "Joya joven, salto al primer once.",
+      "role": "MC"
     },
     {
-      "name": "N’Golo Kanté",
-      "position": "MED",
-      "club": "Fenerbache",
-      "number": 13,
-      "market_value": 10.0,
+      "name": "Maghnes Akliouche",
+      "position": "DEL",
+      "club": "Mónaco",
+      "number": 26,
+      "market_value": 35.0,
       "starter": false
     },
     {
-      "name": "Manu Koné",
-      "position": "MED",
-      "club": "AS Roma",
-      "number": 19,
-      "market_value": 25.0,
+      "name": "Bradley Barcola",
+      "position": "DEL",
+      "club": "PSG",
+      "number": 15,
+      "market_value": 70.0,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Rayan Cherki",
+      "position": "DEL",
+      "club": "Manchester City",
+      "number": 23,
+      "market_value": 50.0,
+      "starter": false
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "position": "DEL",
+      "club": "PSG",
+      "number": 11,
+      "market_value": 90.0,
+      "starter": true,
+      "notes": "Balón de Oro candidato.",
+      "role": "ED"
+    },
+    {
+      "name": "Désiré Doué",
+      "position": "DEL",
+      "club": "PSG",
+      "number": 24,
+      "market_value": 90.0,
+      "starter": false
+    },
+    {
+      "name": "Jean-Philippe Mateta",
+      "position": "DEL",
+      "club": "Crystal Palace",
+      "number": 17,
+      "market_value": 35.0,
       "starter": false
     },
     {
@@ -159,72 +220,27 @@
       "number": 10,
       "market_value": 180.0,
       "starter": true,
-      "notes": "Máxima estrella mundial."
-    },
-    {
-      "name": "Ousmane Dembélé",
-      "position": "DEL",
-      "club": "PSG",
-      "number": 11,
-      "market_value": 60.0,
-      "starter": true
-    },
-    {
-      "name": "Marcus Thuram",
-      "position": "DEL",
-      "club": "Inter",
-      "number": 9,
-      "market_value": 65.0,
-      "starter": true
+      "notes": "Capitán y estrella absoluta.",
+      "role": "EI"
     },
     {
       "name": "Michael Olise",
       "position": "DEL",
-      "club": "FC Bayern",
+      "club": "Bayern Munich",
       "number": 7,
-      "market_value": 55.0,
-      "starter": false
+      "market_value": 90.0,
+      "starter": true,
+      "role": "ED"
     },
     {
-      "name": "Désiré Doué",
+      "name": "Marcus Thuram",
       "position": "DEL",
-      "club": "PSG",
-      "number": 26,
-      "market_value": 30.0,
-      "starter": false
-    },
-    {
-      "name": "Bradley Barcola",
-      "position": "DEL",
-      "club": "PSG",
-      "number": 20,
-      "market_value": 40.0,
-      "starter": false
-    },
-    {
-      "name": "Maghnes Akliouche",
-      "position": "DEL",
-      "club": "Mónaco",
-      "number": 25,
-      "market_value": 25.0,
-      "starter": false
-    },
-    {
-      "name": "Jean-Philippe Mateta",
-      "position": "DEL",
-      "club": "Crystal Palace",
-      "number": 12,
-      "market_value": 30.0,
-      "starter": false
-    },
-    {
-      "name": "Rayan Cherki",
-      "position": "DEL",
-      "club": "Manchester City",
-      "number": 17,
-      "market_value": 35.0,
-      "starter": false
+      "club": "Inter Milan",
+      "number": 9,
+      "market_value": 70.0,
+      "starter": false,
+      "role": "DC"
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

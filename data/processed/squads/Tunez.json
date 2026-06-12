@@ -3,8 +3,8 @@
   "coach": "Faouzi Benzarti",
   "captain": "Ellyes Skhiri",
   "formation": "4-3-3",
-  "star_player": "Ellyes Skhiri",
-  "notes": "Lista definitiva de Túnez confirmada oficialmente para 2026. Liderados por Skhiri en el Eintracht y el extremo habilidoso Elias Achouri.",
+  "star_player": "Hannibal Mejbri",
+  "notes": "Túnez con bloque experimentado de Bundesliga (Skhiri, Khedira, Saad) y la joven joya Mejbri creando.",
   "ratings": {
     "attack": 7,
     "defense": 7,
@@ -19,23 +19,24 @@
       "position": "POR",
       "club": "CS Sfaxien",
       "number": 1,
-      "market_value": 1.5,
-      "starter": true
+      "market_value": 1.0,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "A. Chamakh",
       "position": "POR",
       "club": "Club Africain",
       "number": 12,
-      "market_value": 0.8,
+      "market_value": 0.5,
       "starter": false
     },
     {
       "name": "Sabri Ben Hassen",
       "position": "POR",
       "club": "Etoile du Sahel",
-      "number": 23,
-      "market_value": 0.6,
+      "number": 22,
+      "market_value": 0.4,
       "starter": false
     },
     {
@@ -44,14 +45,15 @@
       "club": "Young Boys",
       "number": 2,
       "market_value": 3.0,
-      "starter": true
+      "starter": true,
+      "role": "LD"
     },
     {
       "name": "Moutaz Neffati",
       "position": "DEF",
       "club": "Norrköping",
-      "number": 13,
-      "market_value": 0.8,
+      "number": 3,
+      "market_value": 1.5,
       "starter": false
     },
     {
@@ -59,24 +61,25 @@
       "position": "DEF",
       "club": "Servette",
       "number": 4,
-      "market_value": 1.5,
-      "starter": true
+      "market_value": 3.0,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Montassar Talbi",
       "position": "DEF",
       "club": "Lorient",
-      "number": 3,
-      "market_value": 6.0,
+      "number": 5,
+      "market_value": 4.0,
       "starter": true,
-      "notes": "Central líder de la defensa."
+      "role": "CT"
     },
     {
       "name": "Omar Rekik",
       "position": "DEF",
       "club": "Maribor",
-      "number": 15,
-      "market_value": 1.0,
+      "number": 13,
+      "market_value": 2.0,
       "starter": false
     },
     {
@@ -84,137 +87,146 @@
       "position": "DEF",
       "club": "Kasimpasa",
       "number": 14,
-      "market_value": 0.8,
+      "market_value": 1.5,
       "starter": false
     },
     {
       "name": "Raed Chikhaoui",
       "position": "DEF",
       "club": "Monastir",
-      "number": 5,
-      "market_value": 0.5,
+      "number": 15,
+      "market_value": 0.8,
       "starter": false
     },
     {
       "name": "Ali Abdi",
       "position": "DEF",
       "club": "Niza",
-      "number": 12,
-      "market_value": 4.5,
-      "starter": true
+      "number": 16,
+      "market_value": 4.0,
+      "starter": true,
+      "role": "LI"
     },
     {
-      "name": "M.A Ben Hmida",
+      "name": "M.A. Ben Hmida",
       "position": "DEF",
       "club": "Espérance de Tunis",
-      "number": 24,
+      "number": 17,
       "market_value": 1.0,
       "starter": false
     },
     {
       "name": "Ellyes Skhiri",
       "position": "MED",
-      "club": "Eintracht de Frankfurt",
+      "club": "Eintracht Frankfurt",
       "number": 6,
-      "market_value": 13.0,
+      "market_value": 18.0,
       "starter": true,
-      "notes": "Capitán y cerebro del equipo."
+      "notes": "Capitán y motor del medio.",
+      "role": "MCD"
     },
     {
       "name": "M. Hadj Mahmoud",
       "position": "MED",
       "club": "Lugano",
-      "number": 8,
-      "market_value": 2.5,
-      "starter": true
+      "number": 18,
+      "market_value": 2.0,
+      "starter": false
     },
     {
       "name": "Rani Khedira",
       "position": "MED",
       "club": "Union Berlin",
-      "number": 14,
-      "market_value": 4.0,
-      "starter": true
+      "number": 8,
+      "market_value": 6.0,
+      "starter": true,
+      "role": "MCD"
     },
     {
       "name": "Anis Ben Slimane",
       "position": "MED",
       "club": "Norwich",
-      "number": 18,
-      "market_value": 3.0,
+      "number": 19,
+      "market_value": 4.0,
       "starter": false
     },
     {
       "name": "Mortadha Ben Ouanes",
       "position": "MED",
       "club": "Kasimpasa",
-      "number": 16,
-      "market_value": 2.0,
-      "starter": false
+      "number": 20,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "LI"
     },
     {
       "name": "Ismaël Gharbi",
       "position": "MED",
       "club": "Augsburgo",
-      "number": 10,
-      "market_value": 7.5,
+      "number": 21,
+      "market_value": 6.0,
       "starter": false
     },
     {
       "name": "Hannibal Mejbri",
       "position": "MED",
       "club": "Burnley",
-      "number": 17,
-      "market_value": 8.0,
-      "starter": false
+      "number": 10,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "Estrella creativa joven.",
+      "role": "MCO"
     },
     {
       "name": "Khalil Ayari",
       "position": "DEL",
       "club": "PSG",
-      "number": 11,
-      "market_value": 3.0,
+      "number": 23,
+      "market_value": 5.0,
       "starter": false
     },
     {
       "name": "Elias Achouri",
       "position": "DEL",
       "club": "Copenhague",
-      "number": 7,
+      "number": 11,
       "market_value": 8.0,
       "starter": true,
-      "notes": "Extremo desequilibrante titular."
+      "role": "EI"
     },
     {
       "name": "Elias Saad",
       "position": "DEL",
       "club": "Hannover 96",
-      "number": 19,
-      "market_value": 3.0,
-      "starter": true
+      "number": 7,
+      "market_value": 5.0,
+      "starter": false,
+      "role": "EI"
     },
     {
       "name": "Firas Chaouat",
       "position": "DEL",
       "club": "Club Africain",
       "number": 9,
-      "market_value": 1.0,
-      "starter": true
+      "market_value": 1.5,
+      "starter": false,
+      "role": "DC"
     },
     {
       "name": "Hazem Mastouri",
       "position": "DEL",
       "club": "Dynamo Makhachkala",
-      "number": 20,
-      "market_value": 0.8,
-      "starter": false
+      "number": 24,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "DC"
     },
     {
       "name": "Rayan Elloumi",
       "position": "DEL",
       "club": "Vancouver Whitecaps",
       "number": 25,
-      "market_value": 0.5,
+      "market_value": 1.5,
       "starter": false
     },
     {
@@ -222,9 +234,10 @@
       "position": "DEL",
       "club": "Celtic",
       "number": 26,
-      "market_value": 1.2,
-      "starter": false
+      "market_value": 4.0,
+      "starter": true,
+      "role": "ED"
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

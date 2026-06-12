@@ -77,6 +77,35 @@ def top_exact_scores(
     return sorted(m.items(), key=lambda x: -x[1])[:n]
 
 
+def representative_score(
+    lh: float, la: float,
+    use_dc: bool = True, rho: float = DEFAULT_RHO,
+    max_goals: int = 6,
+) -> tuple[tuple[int, int], float]:
+    """Marcador esperado 'coherente': el más probable CONDICIONADO al 1X2 más probable.
+
+    El marcador exacto más probable a secas casi siempre es 1-1/1-0/2-0 (el
+    fútbol es de pocos goles y Dixon-Coles además infla el 1-1), lo que produce
+    cosas raras como 'favorito el visitante pero esperado 1-1'. Aquí primero
+    decidimos el desenlace más probable (1, X o 2) y luego devolvemos el
+    marcador más probable dentro de ese desenlace, con su probabilidad
+    (no condicionada) en la matriz completa.
+    """
+    m = exact_score_matrix(lh, la, max_goals=max_goals, use_dc=use_dc, rho=rho)
+    p_h = sum(p for (h, a), p in m.items() if h > a)
+    p_d = sum(p for (h, a), p in m.items() if h == a)
+    p_a = sum(p for (h, a), p in m.items() if h < a)
+    best_outcome = max((("H", p_h), ("D", p_d), ("A", p_a)), key=lambda x: x[1])[0]
+    if best_outcome == "H":
+        subset = {k: p for k, p in m.items() if k[0] > k[1]}
+    elif best_outcome == "A":
+        subset = {k: p for k, p in m.items() if k[0] < k[1]}
+    else:
+        subset = {k: p for k, p in m.items() if k[0] == k[1]}
+    score = max(subset, key=subset.get)
+    return score, subset[score]
+
+
 def match_outcome_probs(
     lh: float, la: float,
     use_dc: bool = True, rho: float = DEFAULT_RHO,

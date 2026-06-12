@@ -4,7 +4,7 @@
   "captain": "Marquinhos",
   "formation": "4-3-3",
   "star_player": "Vinicius Jr.",
-  "notes": "Nómina oficial de Brasil para 2026. Ancelotti lidera la Canarinha con Vinicius como máxima figura mundial y el regreso mediático de Neymar Jr. desde el Santos.",
+  "notes": "Nómina oficial 2026 con Ancelotti al mando. Vinicius como estrella absoluta, Neymar regresando desde Santos y bloque Flamengo aportando carácter.",
   "ratings": {
     "attack": 10,
     "defense": 9,
@@ -20,15 +20,17 @@
       "club": "Liverpool",
       "number": 1,
       "market_value": 28.0,
-      "starter": true
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Ederson",
       "position": "POR",
-      "club": "Fenerbahce",
+      "club": "Fenerbahçe",
       "number": 23,
-      "market_value": 35.0,
-      "starter": false
+      "market_value": 18.0,
+      "starter": false,
+      "role": "POR"
     },
     {
       "name": "Weverton",
@@ -45,7 +47,8 @@
       "number": 3,
       "market_value": 45.0,
       "starter": true,
-      "notes": "Capitán y baluarte principal."
+      "notes": "Capitán y baluarte principal.",
+      "role": "CT"
     },
     {
       "name": "Gabriel Magalhães",
@@ -53,7 +56,8 @@
       "club": "Arsenal",
       "number": 4,
       "market_value": 70.0,
-      "starter": true
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Bremer",
@@ -64,9 +68,9 @@
       "starter": false
     },
     {
-      "name": "Ibáñez",
+      "name": "Ibañez",
       "position": "DEF",
-      "club": "Al Ahli",
+      "club": "Al-Ahli",
       "number": 15,
       "market_value": 20.0,
       "starter": false
@@ -82,18 +86,20 @@
     {
       "name": "Wesley",
       "position": "DEF",
-      "club": "Roma",
+      "club": "AS Roma",
       "number": 2,
-      "market_value": 15.0,
-      "starter": true
+      "market_value": 25.0,
+      "starter": true,
+      "role": "LD"
     },
     {
       "name": "Danilo",
       "position": "DEF",
       "club": "Flamengo",
       "number": 13,
-      "market_value": 8.0,
-      "starter": false
+      "market_value": 6.0,
+      "starter": false,
+      "role": "LD"
     },
     {
       "name": "Alex Sandro",
@@ -109,7 +115,8 @@
       "club": "Zenit",
       "number": 18,
       "market_value": 5.0,
-      "starter": true
+      "starter": true,
+      "role": "LI"
     },
     {
       "name": "Casemiro",
@@ -117,7 +124,8 @@
       "club": "Manchester United",
       "number": 5,
       "market_value": 12.0,
-      "starter": true
+      "starter": true,
+      "role": "MCD"
     },
     {
       "name": "Bruno Guimarães",
@@ -126,18 +134,19 @@
       "number": 8,
       "market_value": 85.0,
       "starter": true,
-      "notes": "Termómetro dinámico titular."
+      "notes": "Termómetro dinámico titular.",
+      "role": "MC"
     },
     {
       "name": "Fabinho",
       "position": "MED",
-      "club": "Al Ittihad",
+      "club": "Al-Ittihad",
       "number": 17,
       "market_value": 10.0,
       "starter": false
     },
     {
-      "name": "Danilo",
+      "name": "Danilo Pereira",
       "position": "MED",
       "club": "Botafogo",
       "number": 15,
@@ -149,8 +158,9 @@
       "position": "MED",
       "club": "Flamengo",
       "number": 10,
-      "market_value": 45.0,
-      "starter": true
+      "market_value": 38.0,
+      "starter": true,
+      "role": "MCO"
     },
     {
       "name": "Vinicius Jr.",
@@ -159,30 +169,33 @@
       "number": 7,
       "market_value": 180.0,
       "starter": true,
-      "notes": "Máxima estrella desequilibrante."
+      "notes": "Máxima estrella desequilibrante.",
+      "role": "EI"
     },
     {
       "name": "Raphinha",
       "position": "DEL",
       "club": "Barcelona",
       "number": 11,
-      "market_value": 60.0,
-      "starter": true
+      "market_value": 90.0,
+      "starter": true,
+      "role": "ED"
     },
     {
       "name": "Matheus Cunha",
       "position": "DEL",
       "club": "Manchester United",
       "number": 9,
-      "market_value": 35.0,
-      "starter": true
+      "market_value": 45.0,
+      "starter": true,
+      "role": "DC"
     },
     {
       "name": "Luiz Henrique",
       "position": "DEL",
       "club": "Zenit",
       "number": 19,
-      "market_value": 22.0,
+      "market_value": 28.0,
       "starter": false
     },
     {
@@ -196,35 +209,38 @@
     {
       "name": "Endrick",
       "position": "DEL",
-      "club": "Lyon/Real Madrid",
+      "club": "Lyon",
       "number": 16,
-      "market_value": 60.0,
-      "starter": false
+      "market_value": 35.0,
+      "starter": false,
+      "role": "DC"
     },
     {
-      "name": "Martinelli",
+      "name": "Gabriel Martinelli",
       "position": "DEL",
       "club": "Arsenal",
       "number": 21,
-      "market_value": 70.0,
-      "starter": false
+      "market_value": 50.0,
+      "starter": false,
+      "role": "EI"
     },
     {
       "name": "Rayan",
       "position": "DEL",
       "club": "Bournemouth",
       "number": 25,
-      "market_value": 10.0,
+      "market_value": 18.0,
       "starter": false
     },
     {
-      "name": "Neymar",
+      "name": "Neymar Jr.",
       "position": "DEL",
       "club": "Santos",
       "number": 10,
       "market_value": 15.0,
-      "starter": false
+      "starter": false,
+      "notes": "Regreso mediático desde el Santos."
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

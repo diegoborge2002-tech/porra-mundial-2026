@@ -75,7 +75,8 @@ def simulate_group(
             ha = _host_advantage_for(ta, tb)
             gh, ga, _, _ = simulate_match(
                 stats[ta].elo, stats[tb].elo, rng,
-                home_advantage=ha, knockout=False
+                home_advantage=ha, knockout=False,
+                team_home=ta, team_away=tb,
             )
 
         stats[ta].gf += gh; stats[ta].ga += ga

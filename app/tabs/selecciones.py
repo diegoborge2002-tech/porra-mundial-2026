@@ -12,10 +12,10 @@ from src.data.squad import (
     load_squad, save_squad, squad_completeness, ratings_to_elo_bias,
     Player, POSITIONS, POSITION_LABELS, RATING_AXES,
 )
+from src.data.squad_analysis import get_team_analysis, excluded_teams as analysis_excluded_teams
 from src.model.schedule_difficulty import compute_schedule_difficulty
 from src.data.h2h import get_h2h
 from src.data.venues import get_team_schedule, VENUE_ALTITUDE
-from src.model.elo import win_draw_loss_probs
 
 
 def render():
@@ -96,6 +96,9 @@ def render():
     c6.markdown(big_stat(f"{p_camp*100:.1f}%", "Campeon"), unsafe_allow_html=True)
 
     st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
+
+    # ====== TARJETA DE ANALISIS CUALITATIVO (solo si hay lista definitiva) ======
+    _render_squad_analysis_card(team_es)
 
     # ====== TABS DENTRO DE LA FICHA ======
     sub_t1, sub_t2, sub_t3, sub_t4, sub_t5, sub_t6 = st.tabs([
@@ -216,10 +219,13 @@ def _render_h2h(team_es, elo):
         )
         st.markdown(bar_html, unsafe_allow_html=True)
 
-    # Predicción si jugaran ahora
+    # Predicción si jugaran ahora (ensemble Elo + stats, igual que el resto de la app)
     elo_a = elo.get(team_es, 1500.0)
     elo_b = elo.get(rival, 1500.0)
-    p_h, p_d, p_a = win_draw_loss_probs(elo_a, elo_b, home_advantage=0.0)
+    from src.model.poisson import expected_goals_ensemble
+    from src.model.match_probs import match_outcome_probs
+    _lh, _la = expected_goals_ensemble(elo_a, elo_b, team_es, rival, home_advantage=0.0)
+    p_h, p_d, p_a = match_outcome_probs(_lh, _la, use_dc=True)
     st.markdown("##### Si jugaran hoy (sede neutral)")
     st.caption(f"Elos actuales: {team_es} {elo_a:.0f} · {rival} {elo_b:.0f}")
     pred_html = (
@@ -926,8 +932,12 @@ def _render_squad_editor(team_es):
 
     if squad.players:
         # Tabla editable
+        from src.data.squad import ROLE_LABELS
+        all_roles = list(ROLE_LABELS.keys())
         players_df = pd.DataFrame([{
-            "Nombre": p.name, "Pos": p.position, "Club": p.club,
+            "Nombre": p.name, "Pos": p.position,
+            "Demarcación": p.role if p.role else None,
+            "Club": p.club,
             "Dorsal": p.number if p.number else "",
             "Valor (M€)": p.market_value if p.market_value else "",
             "Forma (3 meses)": p.recent_form if hasattr(p, "recent_form") and p.recent_form is not None else 6.0,
@@ -940,6 +950,11 @@ def _render_squad_editor(team_es):
             use_container_width=True,
             column_config={
                 "Pos": st.column_config.SelectboxColumn("Pos", options=POSITIONS, required=True),
+                "Demarcación": st.column_config.SelectboxColumn(
+                    "Demarcación", options=all_roles, required=False,
+                    help="Posición fina para colocar el once en el campo: "
+                         + " · ".join(f"{k}={v}" for k, v in ROLE_LABELS.items()),
+                ),
                 "Titular": st.column_config.CheckboxColumn("Titular"),
                 "Dorsal": st.column_config.NumberColumn("Dorsal", min_value=1, max_value=99),
                 "Valor (M€)": st.column_config.NumberColumn("Valor (M€)", min_value=0),
@@ -959,6 +974,7 @@ def _render_squad_editor(team_es):
                 recent_form=float(row["Forma (3 meses)"]) if pd.notna(row["Forma (3 meses)"]) and row["Forma (3 meses)"] != "" else 6.0,
                 starter=bool(row["Titular"]),
                 notes=row["Notas"] or "",
+                role=row["Demarcación"] if pd.notna(row["Demarcación"]) and row["Demarcación"] else None,
             ))
         squad.players = new_players
 
@@ -984,3 +1000,103 @@ def _render_squad_editor(team_es):
             "actualiza la plantilla aqui. Los jugadores titulares y el rating "
             "subjetivo nos ayudan a ajustar el modelo."
         )
+
+
+_TIER_COLOR = {
+    "Favorita absoluta": "#4edea3",
+    "Candidata fuerte": "#4cd7f6",
+    "Muy competitiva": "#d0bcff",
+    "Peligrosa si el contexto ayuda": "#f6c177",
+    "Outsider": "#bcc9cd",
+}
+
+
+def _render_squad_analysis_card(team_es: str) -> None:
+    """Pinta la tarjeta de analisis cualitativo (lista definitiva) si existe."""
+    analysis = get_team_analysis(team_es)
+    if analysis is None:
+        if team_es in analysis_excluded_teams():
+            st.info(
+                f"📝 **{team_es}** todavía no tiene lista de convocados definitiva. "
+                "El análisis cualitativo se publicará cuando la federación confirme la convocatoria."
+            )
+        return
+
+    score_pct = max(0.0, min(100.0, analysis.score * 10.0))
+    tier_color = _TIER_COLOR.get(analysis.tier, ACCENT)
+
+    st.markdown(
+        f"""
+        <div style="background:{BG_CARD}; border-radius:12px; padding:18px 20px;
+                    border-left:4px solid {tier_color}; margin-bottom:14px;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap;">
+                <div>
+                    <div style="font-size:0.75rem; color:{TEXT_DIM}; letter-spacing:0.05em; text-transform:uppercase;">
+                        Análisis con lista definitiva
+                    </div>
+                    <div style="font-size:1.05rem; color:{TEXT}; font-weight:600; margin-top:2px;">
+                        {analysis.tier}
+                    </div>
+                </div>
+                <div style="text-align:right;">
+                    <div style="font-size:1.8rem; font-weight:700; color:{tier_color}; line-height:1;">
+                        {analysis.score:.1f}<span style="font-size:0.8rem; color:{TEXT_DIM};"> / 10</span>
+                    </div>
+                    <div style="font-size:0.7rem; color:{TEXT_DIM}; margin-top:4px;">Puntuación inicial</div>
+                </div>
+            </div>
+            <div style="margin-top:10px; height:6px; background:rgba(255,255,255,0.06); border-radius:3px; overflow:hidden;">
+                <div style="width:{score_pct:.1f}%; height:100%; background:linear-gradient(90deg, {tier_color}, {tier_color}aa);"></div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    cA, cB = st.columns(2)
+    with cA:
+        st.markdown(
+            f"""
+            <div style="background:{BG_CARD}; border-radius:12px; padding:14px 16px; height:100%;">
+                <div style="font-size:0.7rem; color:{TEXT_DIM}; letter-spacing:0.05em; text-transform:uppercase;">⭐ Jugador clave</div>
+                <div style="font-size:1.05rem; color:{TEXT}; font-weight:600; margin-top:4px;">{analysis.key_player}</div>
+                <div style="font-size:0.7rem; color:{TEXT_DIM}; letter-spacing:0.05em; text-transform:uppercase; margin-top:12px;">✨ Diferencial</div>
+                <div style="font-size:1.05rem; color:{ACCENT}; font-weight:600; margin-top:4px;">{analysis.differential_player}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+    with cB:
+        st.markdown(
+            f"""
+            <div style="background:{BG_CARD}; border-radius:12px; padding:14px 16px; height:100%;">
+                <div style="font-size:0.7rem; color:{TEXT_DIM}; letter-spacing:0.05em; text-transform:uppercase;">🏟️ Lectura de club</div>
+                <div style="font-size:0.85rem; color:{TEXT}; margin-top:4px; line-height:1.45;">{analysis.club_read}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    cC, cD = st.columns(2)
+    with cC:
+        st.markdown(
+            f"""
+            <div style="background:{BG_CARD}; border-radius:12px; padding:14px 16px; border-left:3px solid {GOOD};">
+                <div style="font-size:0.7rem; color:{TEXT_DIM}; letter-spacing:0.05em; text-transform:uppercase;">💪 Fortaleza principal</div>
+                <div style="font-size:0.9rem; color:{TEXT}; margin-top:4px; line-height:1.45;">{analysis.main_strength}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+    with cD:
+        st.markdown(
+            f"""
+            <div style="background:{BG_CARD}; border-radius:12px; padding:14px 16px; border-left:3px solid {DANGER};">
+                <div style="font-size:0.7rem; color:{TEXT_DIM}; letter-spacing:0.05em; text-transform:uppercase;">⚠️ Riesgo principal</div>
+                <div style="font-size:0.9rem; color:{TEXT}; margin-top:4px; line-height:1.45;">{analysis.main_risk}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)

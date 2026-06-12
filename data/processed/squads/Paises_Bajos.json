@@ -1,0 +1,251 @@
+{
+  "team": "Paises Bajos",
+  "coach": "Ronald Koeman",
+  "captain": "Virgil van Dijk",
+  "formation": "4-3-3",
+  "star_player": "Cody Gakpo",
+  "notes": "Oranje aterriza al Mundial con bloque Premier (Van Dijk, Gakpo, Gravenberch) y la nueva generación creativa de Reijnders y Frenkie de Jong.",
+  "ratings": {
+    "attack": 9,
+    "defense": 9,
+    "midfield": 9,
+    "bench_depth": 8,
+    "experience": 9,
+    "motivation": 8
+  },
+  "players": [
+    {
+      "name": "Bart Verbruggen",
+      "position": "POR",
+      "club": "Brighton",
+      "number": 1,
+      "market_value": 30.0,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Mark Flekken",
+      "position": "POR",
+      "club": "Bayer Leverkusen",
+      "number": 12,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Robin Roefs",
+      "position": "POR",
+      "club": "Sunderland",
+      "number": 22,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Virgil van Dijk",
+      "position": "DEF",
+      "club": "Liverpool",
+      "number": 4,
+      "market_value": 25.0,
+      "starter": true,
+      "notes": "Capitán, líder defensivo total.",
+      "role": "CT"
+    },
+    {
+      "name": "Nathan Aké",
+      "position": "DEF",
+      "club": "Manchester City",
+      "number": 5,
+      "market_value": 30.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Denzel Dumfries",
+      "position": "DEF",
+      "club": "Inter",
+      "number": 22,
+      "market_value": 30.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Jurriën Timber",
+      "position": "DEF",
+      "club": "Arsenal",
+      "number": 17,
+      "market_value": 55.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Jorrel Hato",
+      "position": "DEF",
+      "club": "Chelsea",
+      "number": 3,
+      "market_value": 35.0,
+      "starter": false,
+      "role": "LI"
+    },
+    {
+      "name": "Micky van de Ven",
+      "position": "DEF",
+      "club": "Tottenham",
+      "number": 15,
+      "market_value": 50.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Jan Paul van Hecke",
+      "position": "DEF",
+      "club": "Brighton",
+      "number": 6,
+      "market_value": 30.0,
+      "starter": false
+    },
+    {
+      "name": "Frenkie de Jong",
+      "position": "MED",
+      "club": "Barcelona",
+      "number": 21,
+      "market_value": 60.0,
+      "starter": true,
+      "notes": "Cerebro del medio.",
+      "role": "MCD"
+    },
+    {
+      "name": "Tijjani Reijnders",
+      "position": "MED",
+      "club": "Manchester City",
+      "number": 14,
+      "market_value": 70.0,
+      "starter": true,
+      "notes": "Box-to-box clave del proyecto.",
+      "role": "MC"
+    },
+    {
+      "name": "Ryan Gravenberch",
+      "position": "MED",
+      "club": "Liverpool",
+      "number": 8,
+      "market_value": 65.0,
+      "starter": true,
+      "role": "MCD"
+    },
+    {
+      "name": "Teun Koopmeiners",
+      "position": "MED",
+      "club": "Juventus",
+      "number": 16,
+      "market_value": 35.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Marten de Roon",
+      "position": "MED",
+      "club": "Atalanta",
+      "number": 18,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Mats Wieffer",
+      "position": "MED",
+      "club": "Brighton",
+      "number": 19,
+      "market_value": 22.0,
+      "starter": false
+    },
+    {
+      "name": "Quinten Timber",
+      "position": "MED",
+      "club": "Olympique de Marseille",
+      "number": 20,
+      "market_value": 25.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Noa Lang",
+      "position": "MED",
+      "club": "Galatasaray",
+      "number": 23,
+      "market_value": 20.0,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Crysencio Summerville",
+      "position": "MED",
+      "club": "West Ham",
+      "number": 24,
+      "market_value": 30.0,
+      "starter": false
+    },
+    {
+      "name": "Guus Til",
+      "position": "MED",
+      "club": "PSV",
+      "number": 25,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Cody Gakpo",
+      "position": "DEL",
+      "club": "Liverpool",
+      "number": 11,
+      "market_value": 75.0,
+      "starter": true,
+      "notes": "Estrella ofensiva, fija arriba.",
+      "role": "EI"
+    },
+    {
+      "name": "Memphis Depay",
+      "position": "DEL",
+      "club": "Corinthians",
+      "number": 10,
+      "market_value": 8.0,
+      "starter": true,
+      "role": "DC"
+    },
+    {
+      "name": "Donyell Malen",
+      "position": "DEL",
+      "club": "AS Roma",
+      "number": 7,
+      "market_value": 25.0,
+      "starter": true,
+      "role": "ED"
+    },
+    {
+      "name": "Justin Kluivert",
+      "position": "DEL",
+      "club": "Bournemouth",
+      "number": 9,
+      "market_value": 30.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Brian Brobbey",
+      "position": "DEL",
+      "club": "Sunderland",
+      "number": 26,
+      "market_value": 18.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Wout Weghorst",
+      "position": "DEL",
+      "club": "Ajax",
+      "number": 27,
+      "market_value": 6.0,
+      "starter": false,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
+}

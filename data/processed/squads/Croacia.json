@@ -3,8 +3,8 @@
   "coach": "Zlatko Dalić",
   "captain": "Luka Modric",
   "formation": "4-3-3",
-  "star_player": "Josko Gvardiol",
-  "notes": "Lista definitiva de Croacia. Liderados por el incombustible Luka Modrić en el Milan y la solvencia defensiva de Gvardiol en el Manchester City.",
+  "star_player": "Joško Gvardiol",
+  "notes": "Croacia exprime su última generación dorada: Modrić sostiene, Gvardiol manda atrás, Sučić-Pašalić y la nueva ola Bayern-Como toman el medio.",
   "ratings": {
     "attack": 8,
     "defense": 8,
@@ -15,216 +15,233 @@
   },
   "players": [
     {
-      "name": "Dominic Livakovic",
+      "name": "Dominik Livaković",
       "position": "POR",
-      "club": "Dinamo",
+      "club": "Dinamo Zagreb",
       "number": 1,
-      "market_value": 10.0,
-      "starter": true
+      "market_value": 6.0,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Dominik Kotarski",
       "position": "POR",
-      "club": "Kabenhavn",
+      "club": "FC Copenhague",
       "number": 12,
-      "market_value": 5.0,
+      "market_value": 4.0,
       "starter": false
     },
     {
       "name": "Ivor Pandur",
       "position": "POR",
       "club": "Hull City",
-      "number": 23,
-      "market_value": 2.0,
+      "number": 22,
+      "market_value": 2.5,
       "starter": false
     },
     {
-      "name": "Josko Gvardiol",
+      "name": "Joško Gvardiol",
       "position": "DEF",
-      "club": "Man. City",
-      "number": 4,
-      "market_value": 75.0,
+      "club": "Manchester City",
+      "number": 5,
+      "market_value": 80.0,
       "starter": true,
-      "notes": "El mariscal absoluto de la defensa."
+      "notes": "Central de élite, fija del proyecto.",
+      "role": "LI"
+    },
+    {
+      "name": "Duje Ćaleta-Car",
+      "position": "DEF",
+      "club": "Real Sociedad",
+      "number": 6,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "CT"
     },
     {
       "name": "Josip Sutalo",
       "position": "DEF",
       "club": "Ajax",
-      "number": 6,
-      "market_value": 15.0,
-      "starter": true
+      "number": 21,
+      "market_value": 12.0,
+      "starter": true,
+      "role": "CT"
     },
     {
-      "name": "Josip Stanisic",
+      "name": "Josip Stanišić",
       "position": "DEF",
-      "club": "Bayern de Múnich",
-      "number": 2,
+      "club": "Bayern Múnich",
+      "number": 13,
       "market_value": 18.0,
-      "starter": true
+      "starter": true,
+      "role": "LD"
     },
     {
-      "name": "Marin Pongracic",
+      "name": "Marin Pongračić",
       "position": "DEF",
       "club": "Fiorentina",
-      "number": 3,
-      "market_value": 8.0,
-      "starter": true
+      "number": 14,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "CT"
     },
     {
-      "name": "Duje Caleta-Car",
-      "position": "DEF",
-      "club": "Real Sociedad",
-      "number": 5,
-      "market_value": 7.0,
-      "starter": false
-    },
-    {
-      "name": "Martin Erlic",
+      "name": "Martin Erlić",
       "position": "DEF",
       "club": "Midtjylland",
-      "number": 13,
+      "number": 15,
       "market_value": 4.0,
       "starter": false
     },
     {
-      "name": "Luka Vuskovic",
+      "name": "Luka Vušković",
       "position": "DEF",
       "club": "HSV",
-      "number": 15,
-      "market_value": 10.0,
-      "starter": false
+      "number": 4,
+      "market_value": 18.0,
+      "starter": true,
+      "notes": "Joya joven, futuro top.",
+      "role": "CT"
     },
     {
-      "name": "Luka Modric",
+      "name": "Luka Modrić",
       "position": "MED",
       "club": "Milan",
       "number": 10,
-      "market_value": 6.0,
+      "market_value": 5.0,
       "starter": true,
-      "notes": "Capitán y leyenda inmortal del fútbol croata."
+      "notes": "Capitán y leyenda.",
+      "role": "MC"
     },
     {
-      "name": "Mateo Kovacic",
+      "name": "Mateo Kovačić",
       "position": "MED",
-      "club": "Man. City",
+      "club": "Manchester City",
       "number": 8,
-      "market_value": 30.0,
-      "starter": true
+      "market_value": 35.0,
+      "starter": true,
+      "role": "MC"
     },
     {
-      "name": "Mario Pasalic",
+      "name": "Mario Pašalić",
       "position": "MED",
       "club": "Atalanta",
       "number": 15,
-      "market_value": 15.0,
-      "starter": true
+      "market_value": 14.0,
+      "starter": false
     },
     {
-      "name": "Nikola Vlasic",
+      "name": "Nikola Vlašić",
       "position": "MED",
       "club": "Torino",
-      "number": 18,
-      "market_value": 10.0,
+      "number": 7,
+      "market_value": 6.0,
       "starter": false
     },
     {
-      "name": "Luka Sucic",
+      "name": "Luka Sučić",
       "position": "MED",
       "club": "Real Sociedad",
-      "number": 20,
-      "market_value": 15.0,
-      "starter": false
+      "number": 11,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "MC"
     },
     {
       "name": "Martin Baturina",
       "position": "MED",
       "club": "Como",
       "number": 16,
-      "market_value": 20.0,
-      "starter": false
+      "market_value": 22.0,
+      "starter": false,
+      "role": "MCO"
     },
     {
-      "name": "Kristijan Jakic",
+      "name": "Kristijan Jakić",
       "position": "MED",
       "club": "Augsburg",
-      "number": 14,
+      "number": 17,
       "market_value": 6.0,
       "starter": false
     },
     {
-      "name": "Petar Sucic",
+      "name": "Petar Sučić",
       "position": "MED",
       "club": "Inter",
-      "number": 21,
-      "market_value": 8.0,
-      "starter": false
+      "number": 18,
+      "market_value": 22.0,
+      "starter": false,
+      "role": "MC"
     },
     {
       "name": "Nikola Moro",
       "position": "MED",
       "club": "Bologna",
-      "number": 17,
-      "market_value": 6.0,
-      "starter": false
+      "number": 19,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "MCD"
     },
     {
       "name": "Toni Fruk",
       "position": "MED",
       "club": "Rijeka",
-      "number": 25,
+      "number": 20,
       "market_value": 5.0,
       "starter": false
     },
     {
-      "name": "Ivan Perisic",
+      "name": "Ivan Perišić",
       "position": "DEL",
       "club": "PSV",
       "number": 4,
-      "market_value": 2.0,
-      "starter": true
+      "market_value": 6.0,
+      "starter": true,
+      "role": "EI"
     },
     {
-      "name": "Andrej Kramaric",
+      "name": "Andrej Kramarić",
       "position": "DEL",
       "club": "Hoffenheim",
       "number": 9,
-      "market_value": 5.0,
-      "starter": true,
-      "notes": "Referencia ofensiva letal."
+      "market_value": 8.0,
+      "starter": false,
+      "role": "SD"
     },
     {
       "name": "Ante Budimir",
       "position": "DEL",
       "club": "Osasuna",
-      "number": 11,
-      "market_value": 4.0,
-      "starter": true
+      "number": 23,
+      "market_value": 12.0,
+      "starter": true,
+      "role": "DC"
     },
     {
-      "name": "Marco Pasalic",
+      "name": "Marco Pašalić",
       "position": "DEL",
       "club": "Orlando City",
-      "number": 17,
-      "market_value": 3.5,
-      "starter": false
+      "number": 24,
+      "market_value": 6.0,
+      "starter": true,
+      "role": "ED"
     },
     {
       "name": "Petar Musa",
       "position": "DEL",
-      "club": "Dallas",
-      "number": 20,
-      "market_value": 6.0,
+      "club": "FC Dallas",
+      "number": 25,
+      "market_value": 12.0,
       "starter": false
     },
     {
-      "name": "Igor Matanovic",
+      "name": "Igor Matanović",
       "position": "DEL",
       "club": "Friburgo",
       "number": 26,
-      "market_value": 7.0,
+      "market_value": 8.0,
       "starter": false
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

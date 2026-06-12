@@ -4,7 +4,7 @@
   "captain": "Chancel Mbemba",
   "formation": "4-3-3",
   "star_player": "Yoane Wissa",
-  "notes": "Lista definitiva de la RD Congo confirmada. Liderados por Mbemba en el Lille y el desequilibrio atacante de Wissa en el Newcastle.",
+  "notes": "RD Congo combina diáspora europea (Wan-Bissaka, Bakambu, Wissa) con jugadores de fuerza física. Apuesta de outsider con techo alto.",
   "ratings": {
     "attack": 7,
     "defense": 7,
@@ -15,125 +15,128 @@
   },
   "players": [
     {
-      "name": "Lionel Mpasi",
-      "position": "POR",
-      "club": "Le Havre",
-      "number": 1,
-      "market_value": 1.5,
-      "starter": true
-    },
-    {
       "name": "Timothy Fayulu",
       "position": "POR",
       "club": "FC Noah",
+      "number": 1,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Lionel Mpasi",
+      "position": "POR",
+      "club": "Le Havre",
       "number": 12,
-      "market_value": 0.8,
-      "starter": false
+      "market_value": 1.5,
+      "starter": false,
+      "role": "POR"
     },
     {
       "name": "Mattieu Epolo",
       "position": "POR",
       "club": "Standard Lieja",
-      "number": 23,
-      "market_value": 1.2,
+      "number": 22,
+      "market_value": 1.5,
       "starter": false
-    },
-    {
-      "name": "Chancel Mbemba",
-      "position": "DEF",
-      "club": "LOSC Lille",
-      "number": 4,
-      "market_value": 15.0,
-      "starter": true,
-      "notes": "Capitán y máximo líder defensivo."
     },
     {
       "name": "Aaron Wan-Bissaka",
       "position": "DEF",
       "club": "West Ham",
       "number": 2,
-      "market_value": 20.0,
-      "starter": true
-    },
-    {
-      "name": "Axel Tuanzebe",
-      "position": "DEF",
-      "club": "Burnley",
-      "number": 5,
-      "market_value": 4.5,
-      "starter": true
-    },
-    {
-      "name": "Joris Kayembe",
-      "position": "DEF",
-      "club": "KRC Genk",
-      "number": 3,
-      "market_value": 3.0,
-      "starter": true
+      "market_value": 28.0,
+      "starter": true,
+      "notes": "Lateral derecho titular Premier.",
+      "role": "LD"
     },
     {
       "name": "Gedeon Kalulu",
       "position": "DEF",
       "club": "Aris",
       "number": 13,
-      "market_value": 1.5,
+      "market_value": 2.5,
       "starter": false
+    },
+    {
+      "name": "Chancel Mbemba",
+      "position": "DEF",
+      "club": "LOSC Lille",
+      "number": 5,
+      "market_value": 6.0,
+      "starter": true,
+      "notes": "Capitán y central referente.",
+      "role": "CT"
     },
     {
       "name": "Steve Kapuadi",
       "position": "DEF",
-      "club": "Widzeu Lodz",
-      "number": 14,
-      "market_value": 0.8,
+      "club": "Widzew Lodz",
+      "number": 4,
+      "market_value": 1.5,
       "starter": false
+    },
+    {
+      "name": "Axel Tuanzebe",
+      "position": "DEF",
+      "club": "Burnley",
+      "number": 14,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "CT"
     },
     {
       "name": "Dylan Batubinsika",
       "position": "DEF",
       "club": "Larissa",
       "number": 15,
-      "market_value": 1.2,
-      "starter": false
+      "market_value": 3.0,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Rocky Bushiri",
       "position": "DEF",
       "club": "Hibernian",
       "number": 16,
-      "market_value": 1.0,
+      "market_value": 1.5,
       "starter": false
     },
     {
-      "name": "Arthur Masuku",
+      "name": "Arthur Masuaku",
       "position": "DEF",
       "club": "Lens",
-      "number": 6,
-      "market_value": 1.5,
-      "starter": false
+      "number": 3,
+      "market_value": 5.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Joris Kayembe",
+      "position": "DEF",
+      "club": "KRC Genk",
+      "number": 17,
+      "market_value": 5.0,
+      "starter": false,
+      "role": "LI"
     },
     {
       "name": "Samuel Moutoussamy",
       "position": "MED",
       "club": "Atromitos",
-      "number": 8,
-      "market_value": 2.0,
-      "starter": true
+      "number": 18,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "MC"
     },
     {
-      "name": "Ngal’Ayel Mukau",
+      "name": "Ngal'Ayel Mukau",
       "position": "MED",
       "club": "LOSC Lille",
-      "number": 18,
-      "market_value": 5.0,
-      "starter": true
-    },
-    {
-      "name": "Charles Pickel",
-      "position": "MED",
-      "club": "Espanyol",
-      "number": 6,
-      "market_value": 3.0,
-      "starter": true
+      "number": 8,
+      "market_value": 12.0,
+      "starter": true,
+      "role": "MC"
     },
     {
       "name": "Gael Kakuta",
@@ -144,86 +147,104 @@
       "starter": false
     },
     {
+      "name": "Charles Pickel",
+      "position": "MED",
+      "club": "Espanyol",
+      "number": 19,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "MCD"
+    },
+    {
       "name": "Noah Sadiki",
       "position": "MED",
       "club": "Sunderland",
-      "number": 16,
-      "market_value": 4.0,
-      "starter": false
+      "number": 6,
+      "market_value": 18.0,
+      "starter": true,
+      "notes": "Joven motor del medio, llega tras ascender con Sunderland.",
+      "role": "MCD"
     },
     {
       "name": "Edo Kayembe",
       "position": "MED",
       "club": "Watford",
-      "number": 17,
-      "market_value": 5.5,
+      "number": 20,
+      "market_value": 6.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Théo Bongonda",
+      "position": "DEL",
+      "club": "Spartak Moscú",
+      "number": 11,
+      "market_value": 5.0,
+      "starter": true,
+      "role": "EI"
+    },
+    {
+      "name": "Nathanael Mbuku",
+      "position": "DEL",
+      "club": "Montpellier",
+      "number": 21,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Cédric Bakambu",
+      "position": "DEL",
+      "club": "Real Betis",
+      "number": 9,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Simon Banza",
+      "position": "DEL",
+      "club": "Al-Jazira",
+      "number": 23,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Fiston Mayele",
+      "position": "DEL",
+      "club": "Pyramids",
+      "number": 24,
+      "market_value": 5.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Brian Cipenga",
+      "position": "DEL",
+      "club": "Castellón",
+      "number": 25,
+      "market_value": 2.0,
       "starter": false
     },
     {
       "name": "Yoane Wissa",
       "position": "DEL",
       "club": "Newcastle",
-      "number": 11,
-      "market_value": 28.0,
-      "starter": true,
-      "notes": "Máxima figura en punta."
-    },
-    {
-      "name": "Théo Bongonda",
-      "position": "DEL",
-      "club": "Spartak Moscú",
       "number": 7,
-      "market_value": 4.5,
-      "starter": true
-    },
-    {
-      "name": "Cédric Bakambu",
-      "position": "DEL",
-      "club": "Betis",
-      "number": 9,
-      "market_value": 2.5,
-      "starter": true
-    },
-    {
-      "name": "Nathanael Mbuku",
-      "position": "DEL",
-      "club": "Montpellier",
-      "number": 19,
-      "market_value": 3.0,
-      "starter": false
-    },
-    {
-      "name": "Simon Banza",
-      "position": "DEL",
-      "club": "Al-Jazira",
-      "number": 20,
-      "market_value": 12.0,
-      "starter": false
-    },
-    {
-      "name": "Fiston Mayele",
-      "position": "DEL",
-      "club": "Pyramids",
-      "number": 21,
-      "market_value": 2.5,
-      "starter": false
-    },
-    {
-      "name": "Brian Cipenga",
-      "position": "DEL",
-      "club": "Castellón",
-      "number": 22,
-      "market_value": 0.8,
-      "starter": false
+      "market_value": 35.0,
+      "starter": true,
+      "notes": "Estrella ofensiva del equipo.",
+      "role": "DC"
     },
     {
       "name": "Meschack Elia",
       "position": "DEL",
       "club": "Alanyaspor",
-      "number": 25,
+      "number": 26,
       "market_value": 4.0,
-      "starter": false
+      "starter": true,
+      "role": "ED"
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

@@ -1,0 +1,249 @@
+{
+  "team": "Sudafrica",
+  "coach": "Hugo Broos",
+  "captain": "Ronwen Williams",
+  "formation": "4-3-3",
+  "star_player": "Lyle Foster",
+  "notes": "Bafana Bafana vuelve al Mundial tras 16 años, con un bloque hegemónico de Mamelodi Sundowns y Orlando Pirates y Lyle Foster como referencia en Europa.",
+  "ratings": {
+    "attack": 7,
+    "defense": 7,
+    "midfield": 7,
+    "bench_depth": 6,
+    "experience": 6,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Ronwen Williams",
+      "position": "POR",
+      "club": "Mamelodi Sundowns",
+      "number": 1,
+      "market_value": 2.5,
+      "starter": true,
+      "notes": "Capitán y muralla del Sundowns.",
+      "role": "POR"
+    },
+    {
+      "name": "Ricardo Goss",
+      "position": "POR",
+      "club": "Siwelele FC",
+      "number": 12,
+      "market_value": 0.5,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Sipho Chaine",
+      "position": "POR",
+      "club": "Orlando Pirates",
+      "number": 21,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Khuliso Mudau",
+      "position": "DEF",
+      "club": "Mamelodi Sundowns",
+      "number": 2,
+      "market_value": 1.2,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Nkosinathi Sibisi",
+      "position": "DEF",
+      "club": "Orlando Pirates",
+      "number": 4,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Ime Okon",
+      "position": "DEF",
+      "club": "Hannover 96",
+      "number": 5,
+      "market_value": 2.5,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Khulumani Ndamane",
+      "position": "DEF",
+      "club": "Mamelodi Sundowns",
+      "number": 14,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Aubrey Modiba",
+      "position": "DEF",
+      "club": "Mamelodi Sundowns",
+      "number": 3,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Samukelo Kabini",
+      "position": "DEF",
+      "club": "Molde FK",
+      "number": 13,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Thabang Matuludi",
+      "position": "DEF",
+      "club": "Polokwane City",
+      "number": 15,
+      "market_value": 0.5,
+      "starter": false,
+      "role": "LD"
+    },
+    {
+      "name": "Olwethu Makhanya",
+      "position": "DEF",
+      "club": "Philadelphia Union",
+      "number": 16,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Kamogelo Sebelebele",
+      "position": "DEF",
+      "club": "Orlando Pirates",
+      "number": 17,
+      "market_value": 0.6,
+      "starter": false
+    },
+    {
+      "name": "Bradley Cross",
+      "position": "DEF",
+      "club": "Kaizer Chiefs",
+      "number": 18,
+      "market_value": 0.6,
+      "starter": false
+    },
+    {
+      "name": "Mbekezeli Mbokazi",
+      "position": "DEF",
+      "club": "Chicago Fire",
+      "number": 22,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Teboho Mokoena",
+      "position": "MED",
+      "club": "Mamelodi Sundowns",
+      "number": 6,
+      "market_value": 4.0,
+      "starter": true,
+      "notes": "Pulmón y conductor del equipo.",
+      "role": "MC"
+    },
+    {
+      "name": "Thalente Mbatha",
+      "position": "MED",
+      "club": "Orlando Pirates",
+      "number": 8,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Sphephelo Sithole",
+      "position": "MED",
+      "club": "CD Tondela",
+      "number": 19,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "MCD"
+    },
+    {
+      "name": "Jayden Adams",
+      "position": "MED",
+      "club": "Mamelodi Sundowns",
+      "number": 20,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Lyle Foster",
+      "position": "DEL",
+      "club": "Burnley",
+      "number": 9,
+      "market_value": 14.0,
+      "starter": true,
+      "notes": "Estrella ofensiva con paso por la Premier.",
+      "role": "DC"
+    },
+    {
+      "name": "Themba Zwane",
+      "position": "DEL",
+      "club": "Mamelodi Sundowns",
+      "number": 10,
+      "market_value": 1.0,
+      "starter": true,
+      "notes": "Veterano creativo, MVP histórico de la PSL.",
+      "role": "MCO"
+    },
+    {
+      "name": "Relebohile Mofokeng",
+      "position": "DEL",
+      "club": "Orlando Pirates",
+      "number": 11,
+      "market_value": 5.0,
+      "starter": true,
+      "notes": "Joya joven, gran proyección europea.",
+      "role": "EI"
+    },
+    {
+      "name": "Oswin Appollis",
+      "position": "DEL",
+      "club": "Orlando Pirates",
+      "number": 7,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Iqraam Rayners",
+      "position": "DEL",
+      "club": "Mamelodi Sundowns",
+      "number": 23,
+      "market_value": 1.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Tshepang Moremi",
+      "position": "DEL",
+      "club": "Orlando Pirates",
+      "number": 24,
+      "market_value": 0.8,
+      "starter": false
+    },
+    {
+      "name": "Evidence Makgopa",
+      "position": "DEL",
+      "club": "Orlando Pirates",
+      "number": 25,
+      "market_value": 1.2,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Thapelo Maseko",
+      "position": "DEL",
+      "club": "AEL Limassol",
+      "number": 26,
+      "market_value": 0.8,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
+}

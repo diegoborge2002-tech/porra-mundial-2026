@@ -4,55 +4,59 @@
   "captain": "Leandro Bacuna",
   "formation": "4-3-3",
   "star_player": "Tahith Chong",
-  "notes": "Lista definitiva oficial de Curazao. Dirigidos por Dick Advocaat, destacan figuras como Tahith Chong y Leandro Bacuna.",
+  "notes": "Curazao hace historia: clasifica con Dick Advocaat al frente. Diáspora caribeño-neerlandesa con Chong y los hermanos Bacuna como referencia.",
   "ratings": {
     "attack": 6,
     "defense": 5,
     "midfield": 6,
     "bench_depth": 5,
     "experience": 6,
-    "motivation": 8
+    "motivation": 9
   },
   "players": [
     {
-      "name": "Eloy Room",
-      "position": "POR",
-      "club": "Miami FC",
-      "number": 1,
-      "market_value": 0.4,
-      "starter": true
-    },
-    {
       "name": "Tyrick Bodak",
       "position": "POR",
-      "club": "Telsar",
-      "number": 12,
-      "market_value": 0.2,
-      "starter": false
+      "club": "Telstar",
+      "number": 1,
+      "market_value": 0.5,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Trevor Doornbusch",
       "position": "POR",
-      "club": "VVV Venlo",
-      "number": 23,
+      "club": "VVV-Venlo",
+      "number": 12,
       "market_value": 0.3,
       "starter": false
+    },
+    {
+      "name": "Eloy Room",
+      "position": "POR",
+      "club": "Miami FC",
+      "number": 22,
+      "market_value": 0.5,
+      "starter": false,
+      "role": "POR"
     },
     {
       "name": "Riechedly Bazoer",
       "position": "DEF",
       "club": "Konyaspor",
       "number": 4,
-      "market_value": 3.0,
-      "starter": true
+      "market_value": 1.5,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Joshua Brenet",
       "position": "DEF",
       "club": "Kayserispor",
       "number": 2,
-      "market_value": 2.5,
-      "starter": true
+      "market_value": 1.0,
+      "starter": true,
+      "role": "LD"
     },
     {
       "name": "Roshon Van Eijma",
@@ -60,29 +64,30 @@
       "club": "Waalwijk",
       "number": 3,
       "market_value": 0.8,
-      "starter": true
+      "starter": false
     },
     {
       "name": "Sherel Floranus",
       "position": "DEF",
       "club": "PEC Zwolle",
       "number": 5,
-      "market_value": 1.2,
-      "starter": true
+      "market_value": 1.5,
+      "starter": true,
+      "role": "LD"
     },
     {
       "name": "Deveron Fonville",
       "position": "DEF",
-      "club": "Nijmegen",
+      "club": "NEC Nijmegen",
       "number": 13,
-      "market_value": 0.4,
+      "market_value": 1.5,
       "starter": false
     },
     {
       "name": "Jurïen Gaari",
       "position": "DEF",
       "club": "Abha",
-      "number": 15,
+      "number": 14,
       "market_value": 0.5,
       "starter": false
     },
@@ -91,15 +96,16 @@
       "position": "DEF",
       "club": "PSV",
       "number": 6,
-      "market_value": 4.0,
-      "starter": false
+      "market_value": 6.0,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Shurandy Sambo",
       "position": "DEF",
       "club": "Sparta Rotterdam",
-      "number": 14,
-      "market_value": 3.0,
+      "number": 15,
+      "market_value": 2.0,
       "starter": false
     },
     {
@@ -108,23 +114,26 @@
       "club": "FC Volendam",
       "number": 8,
       "market_value": 2.0,
-      "starter": true
+      "starter": true,
+      "role": "MC"
     },
     {
       "name": "Leandro Bacuna",
       "position": "MED",
       "club": "Igdir FK",
       "number": 10,
-      "market_value": 0.8,
-      "starter": true
+      "market_value": 0.6,
+      "starter": true,
+      "notes": "Capitán y veterano del proyecto.",
+      "role": "MC"
     },
     {
       "name": "Livano Comenencia",
       "position": "MED",
-      "club": "Zurich",
+      "club": "FC Zurich",
       "number": 16,
       "market_value": 1.5,
-      "starter": false
+      "starter": true
     },
     {
       "name": "Kevin Felida",
@@ -139,15 +148,15 @@
       "position": "MED",
       "club": "Rotherham",
       "number": 18,
-      "market_value": 0.8,
+      "market_value": 1.0,
       "starter": false
     },
     {
       "name": "Tyrese Noslin",
       "position": "MED",
-      "club": "Telsar",
+      "club": "Telstar",
       "number": 19,
-      "market_value": 0.5,
+      "market_value": 0.6,
       "starter": false
     },
     {
@@ -155,55 +164,60 @@
       "position": "MED",
       "club": "Waalwijk",
       "number": 20,
-      "market_value": 1.2,
-      "starter": true
+      "market_value": 1.0,
+      "starter": false
     },
     {
       "name": "Jeremy Antonisse",
       "position": "DEL",
-      "club": "Kifisia",
-      "number": 11,
+      "club": "AEK Atenas/Kifisia",
+      "number": 21,
       "market_value": 0.8,
-      "starter": false
+      "starter": false,
+      "role": "ED"
     },
     {
       "name": "Tahith Chong",
       "position": "DEL",
       "club": "Sheffield United",
       "number": 7,
-      "market_value": 12.0,
+      "market_value": 5.0,
       "starter": true,
-      "notes": "La gran estrella del ataque."
+      "notes": "Estrella del proyecto, formado en el Manchester United.",
+      "role": "MCO"
     },
     {
       "name": "Kenji Gorré",
       "position": "DEL",
       "club": "Maccabi Haifa",
-      "number": 21,
-      "market_value": 1.0,
-      "starter": true
+      "number": 11,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "EI"
     },
     {
       "name": "Sontje Hansen",
       "position": "DEL",
       "club": "Middlesbrough",
-      "number": 22,
+      "number": 9,
       "market_value": 4.0,
-      "starter": false
+      "starter": true,
+      "role": "ED"
     },
     {
       "name": "Gervane Kastaneer",
       "position": "DEL",
       "club": "Terengganu",
-      "number": 15,
-      "market_value": 0.4,
-      "starter": false
+      "number": 23,
+      "market_value": 0.3,
+      "starter": false,
+      "role": "EI"
     },
     {
       "name": "Brandley Kuwas",
       "position": "DEL",
       "club": "FC Volendam",
-      "number": 25,
+      "number": 24,
       "market_value": 0.5,
       "starter": false
     },
@@ -211,18 +225,19 @@
       "name": "Jürgen Locadia",
       "position": "DEL",
       "club": "Miami FC",
-      "number": 9,
-      "market_value": 1.5,
-      "starter": true
+      "number": 25,
+      "market_value": 0.6,
+      "starter": false
     },
     {
       "name": "Jearl Margaritha",
       "position": "DEL",
       "club": "SK Beveren",
       "number": 26,
-      "market_value": 0.8,
-      "starter": false
+      "market_value": 0.5,
+      "starter": false,
+      "role": "DC"
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

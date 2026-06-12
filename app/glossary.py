@@ -49,8 +49,8 @@ GLOSSARY: dict[str, str] = {
         "y vale 10 pts, su EV es 3 pts."
     ),
     "xg": (
-        "**xG (Expected Goals)**: goles esperados según el modelo Poisson basado en la "
-        "diferencia de Elo. No es el xG de StatsBomb (que se calcula tiro a tiro)."
+        "**xG (Expected Goals)**: goles esperados del ensemble (mezcla de Elo y el modelo "
+        "XGBoost de stats). No es el xG de StatsBomb (que se calcula tiro a tiro)."
     ),
     "dixon_coles": (
         "**Dixon-Coles**: refinamiento del modelo Poisson independiente que corrige el "

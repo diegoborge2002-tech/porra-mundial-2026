@@ -38,6 +38,9 @@ class BiasesConfig:
     weight_market_value: float = 1.0
     weight_club_pedigree: float = 1.0
     weight_recent_form: float = 1.0
+    # Peso del modelo de stats (XGBoost) en el ensemble de goles esperados:
+    # 0 = solo Elo, 1 = solo stats. Ver src/model/ensemble.py
+    stats_weight: float = 0.5
 
     def get_delta(self, team: str) -> float:
         if team in self.team_biases:
@@ -81,6 +84,7 @@ class BiasesConfig:
             "weight_market_value": self.weight_market_value,
             "weight_club_pedigree": self.weight_club_pedigree,
             "weight_recent_form": self.weight_recent_form,
+            "stats_weight": self.stats_weight,
         }
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False))
 
@@ -100,6 +104,7 @@ class BiasesConfig:
             weight_market_value=float(raw.get("weight_market_value", 1.0)),
             weight_club_pedigree=float(raw.get("weight_club_pedigree", 1.0)),
             weight_recent_form=float(raw.get("weight_recent_form", 1.0)),
+            stats_weight=float(raw.get("stats_weight", 0.5)),
         )
         for t, b in raw.get("team_biases", {}).items():
             cfg.team_biases[t] = TeamBias(**b)

@@ -1,0 +1,251 @@
+{
+  "team": "Estados Unidos",
+  "coach": "Mauricio Pochettino",
+  "captain": "Christian Pulisic",
+  "formation": "4-3-3",
+  "star_player": "Christian Pulisic",
+  "notes": "USMNT juega como anfitrión con la presión añadida de un Mundial casero. Pochettino apuesta por mezcla Premier-Europa con Pulisic, Reyna y Balogun arriba.",
+  "ratings": {
+    "attack": 8,
+    "defense": 8,
+    "midfield": 8,
+    "bench_depth": 7,
+    "experience": 7,
+    "motivation": 10
+  },
+  "players": [
+    {
+      "name": "Matt Turner",
+      "position": "POR",
+      "club": "New England Revolution",
+      "number": 1,
+      "market_value": 6.0,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Matt Freese",
+      "position": "POR",
+      "club": "New York City FC",
+      "number": 12,
+      "market_value": 3.5,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Chris Brady",
+      "position": "POR",
+      "club": "Chicago Fire",
+      "number": 22,
+      "market_value": 3.0,
+      "starter": false
+    },
+    {
+      "name": "Sergiño Dest",
+      "position": "DEF",
+      "club": "PSV Eindhoven",
+      "number": 2,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Chris Richards",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "number": 3,
+      "market_value": 30.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Antonee Robinson",
+      "position": "DEF",
+      "club": "Fulham",
+      "number": 5,
+      "market_value": 35.0,
+      "starter": true,
+      "notes": "Lateral izquierdo titular indiscutible.",
+      "role": "LI"
+    },
+    {
+      "name": "Tim Ream",
+      "position": "DEF",
+      "club": "Charlotte FC",
+      "number": 13,
+      "market_value": 1.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Auston Trusty",
+      "position": "DEF",
+      "club": "Celtic",
+      "number": 14,
+      "market_value": 8.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Miles Robinson",
+      "position": "DEF",
+      "club": "FC Cincinnati",
+      "number": 15,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Alex Freeman",
+      "position": "DEF",
+      "club": "Villarreal CF",
+      "number": 16,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Max Arfsten",
+      "position": "DEF",
+      "club": "Columbus Crew",
+      "number": 17,
+      "market_value": 3.0,
+      "starter": false,
+      "role": "LI"
+    },
+    {
+      "name": "Mark McKenzie",
+      "position": "DEF",
+      "club": "Toulouse",
+      "number": 18,
+      "market_value": 5.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Joe Scally",
+      "position": "DEF",
+      "club": "Borussia Mönchengladbach",
+      "number": 19,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "LD"
+    },
+    {
+      "name": "Tyler Adams",
+      "position": "MED",
+      "club": "Bournemouth",
+      "number": 4,
+      "market_value": 25.0,
+      "starter": true,
+      "notes": "Pivote y motor.",
+      "role": "MCD"
+    },
+    {
+      "name": "Weston McKennie",
+      "position": "MED",
+      "club": "Juventus",
+      "number": 8,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Gio Reyna",
+      "position": "MED",
+      "club": "Borussia Mönchengladbach",
+      "number": 7,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Malik Tillman",
+      "position": "MED",
+      "club": "Bayer Leverkusen",
+      "number": 6,
+      "market_value": 30.0,
+      "starter": true,
+      "role": "MCO"
+    },
+    {
+      "name": "Brenden Aaronson",
+      "position": "MED",
+      "club": "Leeds United",
+      "number": 11,
+      "market_value": 18.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Sebastian Berhalter",
+      "position": "MED",
+      "club": "Vancouver Whitecaps",
+      "number": 20,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Cristian Roldan",
+      "position": "MED",
+      "club": "Seattle Sounders",
+      "number": 21,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Christian Pulisic",
+      "position": "DEL",
+      "club": "AC Milan",
+      "number": 10,
+      "market_value": 60.0,
+      "starter": true,
+      "notes": "Capitán y estrella indiscutible.",
+      "role": "EI"
+    },
+    {
+      "name": "Folarin Balogun",
+      "position": "DEL",
+      "club": "Monaco",
+      "number": 9,
+      "market_value": 30.0,
+      "starter": true,
+      "role": "DC"
+    },
+    {
+      "name": "Ricardo Pepi",
+      "position": "DEL",
+      "club": "PSV Eindhoven",
+      "number": 16,
+      "market_value": 20.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Haji Wright",
+      "position": "DEL",
+      "club": "Coventry City",
+      "number": 25,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Tim Weah",
+      "position": "DEL",
+      "club": "Olympique de Marseille",
+      "number": 23,
+      "market_value": 15.0,
+      "starter": true,
+      "role": "ED"
+    },
+    {
+      "name": "Alejandro Zendejas",
+      "position": "DEL",
+      "club": "Club América",
+      "number": 24,
+      "market_value": 7.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
+}

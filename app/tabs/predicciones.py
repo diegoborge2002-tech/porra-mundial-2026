@@ -35,7 +35,7 @@ def plotly_theme(**overrides) -> dict:
 
 def render():
     st.header("Predicciones del modelo")
-    st.caption("Monte Carlo de 10.000 torneos · Elo entrenado con 49.215 partidos historicos + tus ajustes")
+    st.caption("Monte Carlo de 10.000 torneos · Ensemble: Elo (49.215 partidos históricos) + XGBoost de stats (xG, posesión, ranking FIFA) + tus ajustes")
 
     # =========================================================================
     # 🎓 ACADEMIA DE MODELADO & CALCULADORA INTERACTIVA 1X2

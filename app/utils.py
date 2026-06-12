@@ -33,7 +33,7 @@ def load_base_elo() -> dict[str, float]:
     return load_base_elo_with_half_life(cfg.half_life)
 
 
-@st.cache_data(show_spinner="Retrenando modelo Elo con nueva ponderación...")
+@st.cache_data(show_spinner="Reentrenando el Elo con la nueva vida media…")
 def load_base_elo_with_half_life(half_life: float) -> dict[str, float]:
     """Entrena y devuelve los Elo base indexados por nombre en espanol, usando la vida media indicada."""
     results_path = ROOT / "data" / "raw" / "results.csv"
@@ -127,8 +127,11 @@ def run_simulation(
     real_results_str: str = "",
     porra_str: str = "",
     amigos_fingerprint: str = "",  # part of cache key, no use inside
+    stats_weight: float = 0.5,
 ) -> dict:
-    """Ejecuta Monte Carlo. Cacheado por elos+resultados+porra propia+huella amigos."""
+    """Ejecuta Monte Carlo. Cacheado por elos+resultados+porra propia+peso ensemble."""
+    from src.model import ensemble
+    ensemble.set_stats_weight(stats_weight)
     elo = dict(elo_dict_frozen)
     real_results = json.loads(real_results_str) if real_results_str else None
     user_porra = json.loads(porra_str) if porra_str else None
@@ -179,7 +182,7 @@ def run_simulation_with_real(elo: dict[str, float], n_sims: int = 10_000, seed: 
 
     porra_str = json.dumps(porra_dict, sort_keys=True) if porra_dict else ""
     result = run_simulation(freeze_elo(elo), n_sims, seed, real_results_str, porra_str,
-                            _amigos_fingerprint())
+                            _amigos_fingerprint(), stats_weight=get_biases().stats_weight)
     # Snapshot diario de probabilidades (idempotente: 1/día)
     try:
         from src.data.snapshots import take_snapshot
@@ -205,7 +208,17 @@ def get_biases() -> BiasesConfig:
         b.weight_market_value = 1.0
     if not hasattr(b, "weight_club_pedigree"):
         b.weight_club_pedigree = 1.0
-        
+    if not hasattr(b, "stats_weight"):
+        b.stats_weight = 0.5
+
+    # Sincronizar el peso del ensemble Elo+stats con la config del usuario
+    # (todas las rutas de la app pasan por aquí antes de calcular lambdas)
+    try:
+        from src.model import ensemble
+        ensemble.set_stats_weight(b.stats_weight)
+    except Exception:
+        pass
+
     return b
 
 

@@ -1,18 +1,252 @@
 {
   "team": "Inglaterra",
   "coach": "Thomas Tuchel",
-  "captain": "",
+  "captain": "Harry Kane",
   "formation": "4-2-3-1",
-  "star_player": "",
-  "notes": "Lista por confirmar",
+  "star_player": "Jude Bellingham",
+  "notes": "Tuchel apuesta por bloque sólido: Kane arriba, Bellingham conduciendo y Saka-Eze-Rogers en banda. Plantilla con plata garantizada en cualquier eliminatoria.",
   "ratings": {
-    "attack": 5,
-    "defense": 5,
-    "midfield": 5,
-    "bench_depth": 5,
-    "experience": 5,
-    "motivation": 5
+    "attack": 10,
+    "defense": 9,
+    "midfield": 9,
+    "bench_depth": 10,
+    "experience": 8,
+    "motivation": 10
   },
-  "players": [],
-  "updated_at": "2026-05-21 19:37"
+  "players": [
+    {
+      "name": "Jordan Pickford",
+      "position": "POR",
+      "club": "Everton",
+      "number": 1,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Dean Henderson",
+      "position": "POR",
+      "club": "Crystal Palace",
+      "number": 12,
+      "market_value": 14.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "James Trafford",
+      "position": "POR",
+      "club": "Manchester City",
+      "number": 22,
+      "market_value": 25.0,
+      "starter": false
+    },
+    {
+      "name": "Reece James",
+      "position": "DEF",
+      "club": "Chelsea",
+      "number": 2,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Tino Livramento",
+      "position": "DEF",
+      "club": "Newcastle",
+      "number": 14,
+      "market_value": 30.0,
+      "starter": false
+    },
+    {
+      "name": "John Stones",
+      "position": "DEF",
+      "club": "Manchester City",
+      "number": 5,
+      "market_value": 30.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Marc Guéhi",
+      "position": "DEF",
+      "club": "Manchester City",
+      "number": 6,
+      "market_value": 50.0,
+      "starter": true,
+      "notes": "Central titular tras su salto al City.",
+      "role": "CT"
+    },
+    {
+      "name": "Ezri Konsa",
+      "position": "DEF",
+      "club": "Aston Villa",
+      "number": 15,
+      "market_value": 35.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Dan Burn",
+      "position": "DEF",
+      "club": "Newcastle",
+      "number": 16,
+      "market_value": 8.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Jarell Quansah",
+      "position": "DEF",
+      "club": "Bayer Leverkusen",
+      "number": 4,
+      "market_value": 35.0,
+      "starter": false
+    },
+    {
+      "name": "Nico O'Reilly",
+      "position": "DEF",
+      "club": "Manchester City",
+      "number": 13,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Djed Spence",
+      "position": "DEF",
+      "club": "Tottenham",
+      "number": 17,
+      "market_value": 25.0,
+      "starter": false
+    },
+    {
+      "name": "Jordan Henderson",
+      "position": "MED",
+      "club": "Brentford",
+      "number": 8,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Elliot Anderson",
+      "position": "MED",
+      "club": "Nottingham Forest",
+      "number": 18,
+      "market_value": 50.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Declan Rice",
+      "position": "MED",
+      "club": "Arsenal",
+      "number": 4,
+      "market_value": 110.0,
+      "starter": true,
+      "notes": "Pivote estrella.",
+      "role": "MCD"
+    },
+    {
+      "name": "Kobbie Mainoo",
+      "position": "MED",
+      "club": "Manchester United",
+      "number": 14,
+      "market_value": 60.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Eberechi Eze",
+      "position": "MED",
+      "club": "Arsenal",
+      "number": 21,
+      "market_value": 70.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Jude Bellingham",
+      "position": "MED",
+      "club": "Real Madrid",
+      "number": 10,
+      "market_value": 180.0,
+      "starter": true,
+      "notes": "Estrella absoluta del proyecto.",
+      "role": "MCO"
+    },
+    {
+      "name": "Morgan Rogers",
+      "position": "MED",
+      "club": "Aston Villa",
+      "number": 23,
+      "market_value": 55.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Bukayo Saka",
+      "position": "DEL",
+      "club": "Arsenal",
+      "number": 7,
+      "market_value": 130.0,
+      "starter": true,
+      "role": "ED"
+    },
+    {
+      "name": "Noni Madueke",
+      "position": "DEL",
+      "club": "Arsenal",
+      "number": 11,
+      "market_value": 50.0,
+      "starter": false,
+      "role": "ED"
+    },
+    {
+      "name": "Marcus Rashford",
+      "position": "DEL",
+      "club": "Barcelona",
+      "number": 19,
+      "market_value": 30.0,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Anthony Gordon",
+      "position": "DEL",
+      "club": "Newcastle",
+      "number": 24,
+      "market_value": 60.0,
+      "starter": true,
+      "role": "EI"
+    },
+    {
+      "name": "Harry Kane",
+      "position": "DEL",
+      "club": "Bayern Múnich",
+      "number": 9,
+      "market_value": 50.0,
+      "starter": true,
+      "notes": "Capitán y máximo goleador histórico.",
+      "role": "DC"
+    },
+    {
+      "name": "Ollie Watkins",
+      "position": "DEL",
+      "club": "Aston Villa",
+      "number": 25,
+      "market_value": 45.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Ivan Toney",
+      "position": "DEL",
+      "club": "Al-Ahli",
+      "number": 26,
+      "market_value": 18.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
 }

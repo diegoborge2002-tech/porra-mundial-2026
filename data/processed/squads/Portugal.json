@@ -2,9 +2,9 @@
   "team": "Portugal",
   "coach": "Roberto Martínez",
   "captain": "Cristiano Ronaldo",
-  "formation": "4-2-3-1",
-  "star_player": "Cristiano Ronaldo",
-  "notes": "Lista definitiva de Portugal para 2026. Liderada por Cristiano Ronaldo en su sexta cita mundialista, y con la inmensa magia de Bernardo Silva y Bruno Fernandes.",
+  "formation": "4-3-3",
+  "star_player": "Bruno Fernandes",
+  "notes": "Portugal con plantilla de lujo: Ronaldo, Bruno, Bernardo Silva, Vitinha y João Neves. Última oportunidad para CR7 con un mediocampo top mundial.",
   "ratings": {
     "attack": 10,
     "defense": 9,
@@ -19,202 +19,223 @@
       "position": "POR",
       "club": "Oporto",
       "number": 1,
-      "market_value": 45.0,
-      "starter": true
+      "market_value": 35.0,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "José Sá",
       "position": "POR",
       "club": "Wolverhampton",
       "number": 12,
-      "market_value": 14.0,
-      "starter": false
+      "market_value": 8.0,
+      "starter": false,
+      "role": "POR"
     },
     {
       "name": "Rui Silva",
       "position": "POR",
       "club": "Sporting CP",
       "number": 22,
-      "market_value": 15.0,
-      "starter": false
+      "market_value": 4.0,
+      "starter": false,
+      "role": "POR"
     },
     {
       "name": "Ricardo Velho",
       "position": "POR",
       "club": "Farense",
       "number": 23,
-      "market_value": 5.0,
+      "market_value": 1.0,
       "starter": false
-    },
-    {
-      "name": "Rúben Dias",
-      "position": "DEF",
-      "club": "Manchester City",
-      "number": 4,
-      "market_value": 80.0,
-      "starter": true,
-      "notes": "Líder de la zaga."
     },
     {
       "name": "Diogo Dalot",
       "position": "DEF",
       "club": "Manchester United",
-      "number": 5,
-      "market_value": 35.0,
-      "starter": true
-    },
-    {
-      "name": "João Cancelo",
-      "position": "DEF",
-      "club": "Barcelona",
       "number": 2,
-      "market_value": 25.0,
-      "starter": true
+      "market_value": 35.0,
+      "starter": true,
+      "role": "LD"
     },
     {
-      "name": "Nuno Mendes",
+      "name": "Matheus Nunes",
       "position": "DEF",
-      "club": "PSG",
-      "number": 19,
-      "market_value": 55.0,
-      "starter": true
+      "club": "Manchester City",
+      "number": 14,
+      "market_value": 25.0,
+      "starter": false
     },
     {
       "name": "Nélson Semedo",
       "position": "DEF",
       "club": "Fenerbahçe",
       "number": 13,
-      "market_value": 12.0,
-      "starter": false
+      "market_value": 5.0,
+      "starter": false,
+      "role": "LD"
+    },
+    {
+      "name": "João Cancelo",
+      "position": "DEF",
+      "club": "Barcelona",
+      "number": 20,
+      "market_value": 18.0,
+      "starter": false,
+      "role": "LD"
+    },
+    {
+      "name": "Nuno Mendes",
+      "position": "DEF",
+      "club": "PSG",
+      "number": 19,
+      "market_value": 80.0,
+      "starter": true,
+      "notes": "Mejor lateral izquierdo del mundo.",
+      "role": "LI"
     },
     {
       "name": "Gonçalo Inácio",
       "position": "DEF",
       "club": "Sporting CP",
-      "number": 14,
+      "number": 4,
       "market_value": 45.0,
-      "starter": false
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Renato Veiga",
       "position": "DEF",
       "club": "Villarreal",
       "number": 15,
-      "market_value": 15.0,
-      "starter": false
+      "market_value": 25.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Rúben Dias",
+      "position": "DEF",
+      "club": "Manchester City",
+      "number": 3,
+      "market_value": 70.0,
+      "starter": true,
+      "notes": "Central de élite.",
+      "role": "CT"
     },
     {
       "name": "Tomás Araújo",
       "position": "DEF",
       "club": "Benfica",
-      "number": 3,
-      "market_value": 15.0,
+      "number": 16,
+      "market_value": 18.0,
+      "starter": false
+    },
+    {
+      "name": "Rúben Neves",
+      "position": "MED",
+      "club": "Al Hilal",
+      "number": 18,
+      "market_value": 18.0,
+      "starter": false,
+      "role": "MCD"
+    },
+    {
+      "name": "Samu Costa",
+      "position": "MED",
+      "club": "Mallorca",
+      "number": 24,
+      "market_value": 12.0,
       "starter": false
     },
     {
       "name": "João Neves",
       "position": "MED",
       "club": "PSG",
-      "number": 18,
-      "market_value": 55.0,
-      "starter": true
+      "number": 8,
+      "market_value": 90.0,
+      "starter": true,
+      "notes": "Joven motor del medio, joya del PSG.",
+      "role": "MC"
     },
     {
       "name": "Vitinha",
       "position": "MED",
       "club": "PSG",
       "number": 23,
-      "market_value": 55.0,
-      "starter": true
+      "market_value": 90.0,
+      "starter": true,
+      "notes": "Cerebro creativo del PSG.",
+      "role": "MCD"
     },
     {
       "name": "Bruno Fernandes",
       "position": "MED",
       "club": "Manchester United",
       "number": 8,
-      "market_value": 70.0,
+      "market_value": 50.0,
       "starter": true,
-      "notes": "Máximo organizador ofensivo."
+      "notes": "Conductor titular.",
+      "role": "MCO"
     },
     {
       "name": "Bernardo Silva",
       "position": "MED",
       "club": "Manchester City",
       "number": 10,
-      "market_value": 70.0,
-      "starter": true
-    },
-    {
-      "name": "Rúben Neves",
-      "position": "MED",
-      "club": "Al Hilal",
-      "number": 16,
-      "market_value": 32.0,
-      "starter": false
-    },
-    {
-      "name": "Samu Costa",
-      "position": "MED",
-      "club": "Mallorca",
-      "number": 6,
-      "market_value": 12.0,
-      "starter": false
-    },
-    {
-      "name": "Cristiano Ronaldo",
-      "position": "DEL",
-      "club": "Al Nassr",
-      "number": 7,
-      "market_value": 15.0,
+      "market_value": 50.0,
       "starter": true,
-      "notes": "Capitán, goleador y leyenda indiscutible."
-    },
-    {
-      "name": "Rafael Leão",
-      "position": "DEL",
-      "club": "Milan",
-      "number": 17,
-      "market_value": 75.0,
-      "starter": true
+      "role": "MD"
     },
     {
       "name": "João Félix",
       "position": "DEL",
       "club": "Al Nassr",
       "number": 11,
-      "market_value": 30.0,
-      "starter": false
+      "market_value": 22.0,
+      "starter": false,
+      "role": "SD"
     },
     {
       "name": "Francisco Trincão",
       "position": "DEL",
       "club": "Sporting CP",
-      "number": 20,
-      "market_value": 20.0,
+      "number": 17,
+      "market_value": 35.0,
       "starter": false
     },
     {
       "name": "Francisco Conceição",
       "position": "DEL",
       "club": "Juventus",
-      "number": 26,
-      "market_value": 22.0,
-      "starter": false
+      "number": 16,
+      "market_value": 30.0,
+      "starter": false,
+      "role": "ED"
     },
     {
       "name": "Pedro Neto",
       "position": "DEL",
       "club": "Chelsea",
-      "number": 18,
-      "market_value": 55.0,
-      "starter": false
+      "number": 21,
+      "market_value": 38.0,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Rafael Leão",
+      "position": "DEL",
+      "club": "Milan",
+      "number": 17,
+      "market_value": 70.0,
+      "starter": true,
+      "role": "EI"
     },
     {
       "name": "Gonçalo Guedes",
       "position": "DEL",
       "club": "Real Sociedad",
-      "number": 21,
-      "market_value": 15.0,
+      "number": 26,
+      "market_value": 10.0,
       "starter": false
     },
     {
@@ -222,9 +243,20 @@
       "position": "DEL",
       "club": "PSG",
       "number": 9,
-      "market_value": 50.0,
-      "starter": false
+      "market_value": 60.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "position": "DEL",
+      "club": "Al Nassr",
+      "number": 7,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "Capitán histórico, leyenda absoluta.",
+      "role": "DC"
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

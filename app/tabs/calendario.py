@@ -9,7 +9,7 @@ from app.utils import ROOT, get_elo_with_biases
 from app.styles import TEXT_DIM, PRIMARY, ACCENT, GOOD, DANGER
 from src.data.team_names import EN_TO_ES
 from src.data.venues import VENUE_ALTITUDE
-from src.model.poisson import elo_to_expected_goals
+from src.model.poisson import expected_goals_ensemble
 from src.model.match_probs import top_exact_scores, match_outcome_probs
 from src.tournament.groups import GROUPS
 
@@ -32,7 +32,7 @@ def _load_wc_matches() -> pd.DataFrame:
 
 def render():
     st.header("Calendario del Mundial")
-    st.caption("Los 72 partidos de la fase de grupos (los cruces eliminatorios se definen segun los clasificados)")
+    st.caption("Los 72 partidos de la fase de grupos · los 32 cruces eliminatorios están en la pestaña 🔮 Partidos")
 
     elo = get_elo_with_biases()
     matches = _load_wc_matches()
@@ -114,7 +114,7 @@ def render():
         for _, m in group.iterrows():
             home, away = m["home_es"], m["away_es"]
             elo_h, elo_a = elo.get(home, 1500), elo.get(away, 1500)
-            lh, la = elo_to_expected_goals(elo_h, elo_a)
+            lh, la = expected_goals_ensemble(elo_h, elo_a, home, away)
             iso_h = ISO_CODES.get(home, "un")
             iso_a = ISO_CODES.get(away, "un")
             
@@ -128,9 +128,9 @@ def render():
             if m["jugado"]:
                 score_html = f'<span class="match-score">{int(m["home_score"])} - {int(m["away_score"])}</span>'
             else:
-                # Prediccion del modelo: probabilidades 1X2 a partir del Elo
-                from src.model.elo import win_draw_loss_probs
-                p_h, p_d, p_a = win_draw_loss_probs(elo_h, elo_a)
+                # Prediccion del modelo: 1X2 desde las lambdas del ensemble (Dixon-Coles)
+                from src.model.match_probs import match_outcome_probs
+                p_h, p_d, p_a = match_outcome_probs(lh, la, use_dc=True)
                 score_html = (
                     f'<span style="color:{TEXT_DIM}; font-size:0.8rem; text-align:right;">'
                     f'<span title="Probabilidad victoria local">{p_h*100:.0f}%</span> · '

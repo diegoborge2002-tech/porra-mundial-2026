@@ -4,14 +4,14 @@
   "captain": "Ryan Mendes",
   "formation": "4-3-3",
   "star_player": "Logan Costa",
-  "notes": "Lista definitiva confirmada. Cabo Verde llega con un bloque consolidado en Europa liderado por Logan Costa en el Villarreal.",
+  "notes": "Cabo Verde debuta en un Mundial. Mendes lidera, Logan Costa (Villarreal) aporta nivel europeo y Jamiro Monteiro maneja el medio.",
   "ratings": {
     "attack": 7,
     "defense": 7,
     "midfield": 7,
     "bench_depth": 6,
     "experience": 7,
-    "motivation": 8
+    "motivation": 9
   },
   "players": [
     {
@@ -19,63 +19,48 @@
       "position": "POR",
       "club": "Chaves",
       "number": 1,
-      "market_value": 0.4,
-      "starter": true
+      "market_value": 1.5,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Márcio da Rosa",
       "position": "POR",
       "club": "Montana",
       "number": 12,
-      "market_value": 0.2,
+      "market_value": 0.4,
       "starter": false
     },
     {
       "name": "Carlos Santos",
       "position": "POR",
-      "club": "San Diego",
-      "number": 23,
-      "market_value": 0.3,
+      "club": "San Diego FC",
+      "number": 22,
+      "market_value": 1.0,
       "starter": false
-    },
-    {
-      "name": "Logan Costa",
-      "position": "DEF",
-      "club": "Villarreal",
-      "number": 4,
-      "market_value": 15.0,
-      "starter": true,
-      "notes": "Zaguero central estrella del equipo."
     },
     {
       "name": "Steven Moreira",
       "position": "DEF",
       "club": "Columbus Crew",
       "number": 2,
-      "market_value": 2.5,
-      "starter": true
+      "market_value": 2.0,
+      "starter": true,
+      "role": "LD"
     },
     {
       "name": "Wagner Pina",
       "position": "DEF",
       "club": "Trabzonspor",
-      "number": 3,
-      "market_value": 1.8,
-      "starter": true
-    },
-    {
-      "name": "Roberto Lopes",
-      "position": "DEF",
-      "club": "Shamrock Rovers",
-      "number": 5,
-      "market_value": 0.4,
-      "starter": true
+      "number": 13,
+      "market_value": 1.5,
+      "starter": false
     },
     {
       "name": "João Paulo Fernandes",
       "position": "DEF",
       "club": "FCSB",
-      "number": 6,
+      "number": 3,
       "market_value": 1.5,
       "starter": false
     },
@@ -83,16 +68,36 @@
       "name": "Sidny Lopes Cabral",
       "position": "DEF",
       "club": "Benfica",
-      "number": 13,
-      "market_value": 0.8,
-      "starter": false
+      "number": 4,
+      "market_value": 3.0,
+      "starter": false,
+      "role": "LI"
+    },
+    {
+      "name": "Logan Costa",
+      "position": "DEF",
+      "club": "Villarreal",
+      "number": 5,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "Estrella defensiva, juega en LaLiga.",
+      "role": "CT"
+    },
+    {
+      "name": "Roberto Lopes",
+      "position": "DEF",
+      "club": "Shamrock Rovers",
+      "number": 6,
+      "market_value": 0.5,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Kelvin Pires",
       "position": "DEF",
       "club": "SJK Seinäjoki",
       "number": 14,
-      "market_value": 0.4,
+      "market_value": 0.5,
       "starter": false
     },
     {
@@ -100,7 +105,7 @@
       "position": "DEF",
       "club": "Torreense",
       "number": 15,
-      "market_value": 0.3,
+      "market_value": 0.6,
       "starter": false
     },
     {
@@ -108,104 +113,114 @@
       "position": "DEF",
       "club": "Al-Bataeh CSC",
       "number": 16,
-      "market_value": 0.5,
-      "starter": false
-    },
-    {
-      "name": "Kevin Pina",
-      "position": "MED",
-      "club": "Krasnodar",
-      "number": 8,
-      "market_value": 4.0,
-      "starter": true
+      "market_value": 0.8,
+      "starter": true,
+      "role": "LI"
     },
     {
       "name": "Jamiro Monteiro",
       "position": "MED",
-      "club": "Zwolle",
-      "number": 10,
-      "market_value": 1.8,
-      "starter": true
-    },
-    {
-      "name": "Deroy Duarte",
-      "position": "MED",
-      "club": "Ludogorets",
-      "number": 18,
-      "market_value": 2.2,
-      "starter": true
+      "club": "PEC Zwolle",
+      "number": 8,
+      "market_value": 2.0,
+      "starter": true,
+      "notes": "Conductor del medio.",
+      "role": "MC"
     },
     {
       "name": "Telmo Arcanjo",
       "position": "MED",
       "club": "Vitoria Guimarães",
-      "number": 14,
-      "market_value": 3.0,
-      "starter": false
+      "number": 17,
+      "market_value": 2.5,
+      "starter": true,
+      "role": "MC"
     },
     {
       "name": "Yannick Semedo",
       "position": "MED",
       "club": "Farense",
-      "number": 16,
-      "market_value": 1.0,
+      "number": 18,
+      "market_value": 1.5,
       "starter": false
     },
     {
       "name": "Laros Duarte",
       "position": "MED",
-      "club": "Puskas AFC",
-      "number": 17,
-      "market_value": 1.5,
+      "club": "Puskás AFC",
+      "number": 19,
+      "market_value": 0.8,
       "starter": false
+    },
+    {
+      "name": "Deroy Duarte",
+      "position": "MED",
+      "club": "Ludogorets",
+      "number": 20,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Kevin Pina",
+      "position": "MED",
+      "club": "Krasnodar",
+      "number": 21,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "MCD"
     },
     {
       "name": "Ryan Mendes",
       "position": "DEL",
       "club": "Igdir FK",
-      "number": 7,
-      "market_value": 0.8,
+      "number": 10,
+      "market_value": 1.0,
       "starter": true,
-      "notes": "Capitán del equipo."
-    },
-    {
-      "name": "Garry Rodrigues",
-      "position": "DEL",
-      "club": "Apollon Limassol",
-      "number": 11,
-      "market_value": 1.2,
-      "starter": true
+      "notes": "Capitán y goleador histórico.",
+      "role": "EI"
     },
     {
       "name": "Willy Semedo",
       "position": "DEL",
       "club": "Omonia Nicosia",
-      "number": 19,
-      "market_value": 1.5,
-      "starter": true
+      "number": 11,
+      "market_value": 0.5,
+      "starter": true,
+      "role": "DC"
+    },
+    {
+      "name": "Garry Rodrigues",
+      "position": "DEL",
+      "club": "Apollon Limassol",
+      "number": 7,
+      "market_value": 0.8,
+      "starter": false,
+      "role": "EI"
     },
     {
       "name": "Jovane Cabral",
       "position": "DEL",
       "club": "Estrela Amadora",
-      "number": 10,
-      "market_value": 2.5,
-      "starter": false
+      "number": 9,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "ED"
     },
     {
       "name": "Nuno da Costa",
       "position": "DEL",
-      "club": "Basaksehir FK",
-      "number": 9,
-      "market_value": 2.0,
+      "club": "Başakşehir FK",
+      "number": 23,
+      "market_value": 1.5,
       "starter": false
     },
     {
       "name": "Dailon Livramento",
       "position": "DEL",
       "club": "Casa Pia",
-      "number": 20,
-      "market_value": 1.2,
+      "number": 24,
+      "market_value": 1.5,
       "starter": false
     },
     {
@@ -221,9 +236,9 @@
       "position": "DEL",
       "club": "Maccabi Tel Aviv",
       "number": 26,
-      "market_value": 1.8,
+      "market_value": 1.0,
       "starter": false
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

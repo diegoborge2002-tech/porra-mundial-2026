@@ -4,7 +4,7 @@
   "captain": "Chris Wood",
   "formation": "4-3-3",
   "star_player": "Chris Wood",
-  "notes": "Lista definitiva de Nueva Zelanda confirmada. Liderados por Chris Wood en el Nottingham Forest y el pivote Marko Stamenic en el Swansea.",
+  "notes": "Los All Whites apuestan por Chris Wood y Tyler Bindon (Forest) como referencias, con mucho jugador de A-League y MLS.",
   "ratings": {
     "attack": 6,
     "defense": 6,
@@ -19,136 +19,193 @@
       "position": "POR",
       "club": "Millwall",
       "number": 1,
-      "market_value": 0.8,
-      "starter": true
+      "market_value": 1.5,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Alex Paulsen",
       "position": "POR",
-      "club": "Lechia",
+      "club": "Lechia Gdańsk",
       "number": 12,
-      "market_value": 1.0,
-      "starter": false
+      "market_value": 2.0,
+      "starter": false,
+      "role": "POR"
     },
     {
       "name": "Michael Woud",
       "position": "POR",
       "club": "Auckland FC",
-      "number": 23,
-      "market_value": 0.4,
+      "number": 22,
+      "market_value": 0.8,
       "starter": false
+    },
+    {
+      "name": "Tim Payne",
+      "position": "DEF",
+      "club": "Wellington Phoenix",
+      "number": 2,
+      "market_value": 0.6,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Francis de Vries",
+      "position": "DEF",
+      "club": "Auckland FC",
+      "number": 3,
+      "market_value": 0.6,
+      "starter": true,
+      "role": "LI"
     },
     {
       "name": "Tyler Bindon",
       "position": "DEF",
-      "club": "Sheffield United",
+      "club": "Nottingham Forest",
       "number": 4,
-      "market_value": 2.5,
-      "starter": true
+      "market_value": 8.0,
+      "starter": true,
+      "notes": "Central referente, juega en la Premier.",
+      "role": "CT"
     },
     {
       "name": "Michael Boxall",
       "position": "DEF",
       "club": "Minnesota United",
       "number": 5,
-      "market_value": 0.3,
-      "starter": true
+      "market_value": 1.0,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Liberato Cacace",
       "position": "DEF",
       "club": "Wrexham",
-      "number": 3,
-      "market_value": 1.5,
-      "starter": true
-    },
-    {
-      "name": "Tim Payne",
-      "position": "DEF",
-      "club": "Wellington",
-      "number": 2,
-      "market_value": 0.8,
-      "starter": true
-    },
-    {
-      "name": "Francis De Vries",
-      "position": "DEF",
-      "club": "Auckland FC",
-      "number": 15,
-      "market_value": 0.3,
-      "starter": false
-    },
-    {
-      "name": "Callan Elliot",
-      "position": "DEF",
-      "club": "Auckland FC",
       "number": 13,
-      "market_value": 0.4,
-      "starter": false
+      "market_value": 4.0,
+      "starter": false,
+      "role": "LI"
     },
     {
       "name": "Nando Pijnaker",
       "position": "DEF",
       "club": "Auckland FC",
-      "number": 16,
-      "market_value": 0.6,
-      "starter": false
-    },
-    {
-      "name": "Tommy Smith",
-      "position": "DEF",
-      "club": "Braintree",
-      "number": 6,
-      "market_value": 0.1,
-      "starter": false
+      "number": 14,
+      "market_value": 1.0,
+      "starter": false,
+      "role": "CT"
     },
     {
       "name": "Finn Surman",
       "position": "DEF",
       "club": "Portland Timbers",
-      "number": 14,
+      "number": 15,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Callan Elliot",
+      "position": "DEF",
+      "club": "Auckland FC",
+      "number": 16,
       "market_value": 0.5,
+      "starter": false
+    },
+    {
+      "name": "Tommy Smith",
+      "position": "DEF",
+      "club": "Braintree Town",
+      "number": 17,
+      "market_value": 0.3,
       "starter": false
     },
     {
       "name": "Joe Bell",
       "position": "MED",
       "club": "Viking",
+      "number": 6,
+      "market_value": 1.5,
+      "starter": true,
+      "role": "MCD"
+    },
+    {
+      "name": "Matthew Garbett",
+      "position": "MED",
+      "club": "Peterborough United",
       "number": 8,
-      "market_value": 1.8,
-      "starter": true
+      "market_value": 1.5,
+      "starter": true,
+      "role": "MC"
     },
     {
       "name": "Marko Stamenić",
       "position": "MED",
-      "club": "Swansea",
-      "number": 6,
-      "market_value": 5.0,
+      "club": "Swansea City",
+      "number": 18,
+      "market_value": 4.0,
       "starter": true,
-      "notes": "Cerebro creativo del equipo."
+      "role": "MC"
+    },
+    {
+      "name": "Sarpreet Singh",
+      "position": "MED",
+      "club": "Wellington Phoenix",
+      "number": 10,
+      "market_value": 1.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Elijah Just",
+      "position": "MED",
+      "club": "Motherwell",
+      "number": 19,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Alex Rufer",
+      "position": "MED",
+      "club": "Wellington Phoenix",
+      "number": 20,
+      "market_value": 0.6,
+      "starter": false,
+      "role": "MCD"
+    },
+    {
+      "name": "Ben Old",
+      "position": "MED",
+      "club": "Saint-Étienne",
+      "number": 21,
+      "market_value": 2.0,
+      "starter": false,
+      "role": "ED"
+    },
+    {
+      "name": "Callum McCowatt",
+      "position": "MED",
+      "club": "Silkeborg",
+      "number": 23,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "EI"
     },
     {
       "name": "Ryan Thomas",
       "position": "MED",
       "club": "PEC Zwolle",
-      "number": 10,
-      "market_value": 1.0,
-      "starter": true
+      "number": 24,
+      "market_value": 1.5,
+      "starter": false
     },
     {
       "name": "Lachlan Bayliss",
       "position": "MED",
-      "club": "Newcastle",
-      "number": 16,
-      "market_value": 0.3,
-      "starter": false
-    },
-    {
-      "name": "Alex Rufer",
-      "position": "MED",
-      "club": "Wellington",
-      "number": 17,
-      "market_value": 0.6,
+      "club": "Newcastle Jets",
+      "number": 25,
+      "market_value": 0.4,
       "starter": false
     },
     {
@@ -156,9 +213,10 @@
       "position": "DEL",
       "club": "Nottingham Forest",
       "number": 9,
-      "market_value": 12.0,
+      "market_value": 16.0,
       "starter": true,
-      "notes": "Capitán y máximo goleador histórico."
+      "notes": "Capitán y estrella, goleador en la Premier.",
+      "role": "DC"
     },
     {
       "name": "Kosta Barbarouses",
@@ -166,64 +224,26 @@
       "club": "Western Sydney Wanderers",
       "number": 7,
       "market_value": 0.4,
-      "starter": true
-    },
-    {
-      "name": "Matt Garbett",
-      "position": "DEL",
-      "club": "Peterborough",
-      "number": 11,
-      "market_value": 1.5,
-      "starter": true
-    },
-    {
-      "name": "Eli Just",
-      "position": "DEL",
-      "club": "Motherwell",
-      "number": 18,
-      "market_value": 0.8,
-      "starter": false
-    },
-    {
-      "name": "Callum McCowatt",
-      "position": "DEL",
-      "club": "Silkeborg",
-      "number": 20,
-      "market_value": 0.8,
-      "starter": false
-    },
-    {
-      "name": "Ben Old",
-      "position": "DEL",
-      "club": "Saint-Étienne",
-      "number": 21,
-      "market_value": 2.0,
-      "starter": false
-    },
-    {
-      "name": "Jesse Randall",
-      "position": "DEL",
-      "club": "Auckland FC",
-      "number": 22,
-      "market_value": 0.3,
-      "starter": false
-    },
-    {
-      "name": "Sarpreet Singh",
-      "position": "DEL",
-      "club": "Wellington",
-      "number": 10,
-      "market_value": 1.5,
-      "starter": false
+      "starter": true,
+      "role": "ED"
     },
     {
       "name": "Ben Waine",
       "position": "DEL",
       "club": "Port Vale",
+      "number": 11,
+      "market_value": 1.0,
+      "starter": true,
+      "role": "DC"
+    },
+    {
+      "name": "Jesse Randall",
+      "position": "DEL",
+      "club": "Auckland FC",
       "number": 26,
-      "market_value": 0.8,
+      "market_value": 0.5,
       "starter": false
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

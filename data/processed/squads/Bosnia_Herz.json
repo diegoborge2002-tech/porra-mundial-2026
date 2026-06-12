@@ -1,10 +1,10 @@
 {
   "team": "Bosnia Herz.",
   "coach": "Sergej Barbarez",
-  "captain": "Edin Dzeko",
+  "captain": "Edin Džeko",
   "formation": "4-2-3-1",
-  "star_player": "Ermedin Demirovic",
-  "notes": "Lista confirmada para el Mundial 2026. Mezcla de juventud emergente liderada por Demirovic en el Stuttgart y la veteranía imperecedera del gran capitán Edin Dzeko.",
+  "star_player": "Ermedin Demirović",
+  "notes": "Lista oficial 2026. Mezcla de veteranía (Džeko, Kolašinac) y la nueva generación PSV/Salzburg/RB.",
   "ratings": {
     "attack": 7,
     "defense": 6,
@@ -19,212 +19,229 @@
       "position": "POR",
       "club": "St Pauli",
       "number": 1,
-      "market_value": 2.0,
-      "starter": true
+      "market_value": 4.0,
+      "starter": true,
+      "role": "POR"
     },
     {
-      "name": "Martin Zlomislic",
+      "name": "Martin Zlomislić",
       "position": "POR",
       "club": "Rijeka",
       "number": 12,
-      "market_value": 1.2,
-      "starter": false
+      "market_value": 1.0,
+      "starter": false,
+      "role": "POR"
     },
     {
-      "name": "Osman Hadzikic",
+      "name": "Osman Hadžikić",
       "position": "POR",
       "club": "Slaven Belupo",
-      "number": 23,
-      "market_value": 0.8,
+      "number": 22,
+      "market_value": 0.6,
       "starter": false
     },
     {
-      "name": "Sead Kolasinac",
+      "name": "Sead Kolašinac",
       "position": "DEF",
       "club": "Atalanta",
       "number": 3,
-      "market_value": 3.0,
-      "starter": true
+      "market_value": 6.0,
+      "starter": true,
+      "role": "LI"
     },
     {
-      "name": "Amar Dedic",
+      "name": "Amar Dedić",
       "position": "DEF",
       "club": "Benfica",
       "number": 2,
-      "market_value": 20.0,
+      "market_value": 18.0,
       "starter": true,
-      "notes": "Lateral de gran vocación ofensiva."
+      "role": "LD"
     },
     {
-      "name": "Nihad Mujakic",
+      "name": "Nihad Mujakić",
       "position": "DEF",
       "club": "Gaziantep",
       "number": 4,
       "market_value": 1.5,
-      "starter": true
+      "starter": false
     },
     {
-      "name": "Nikola Katic",
+      "name": "Nikola Katić",
       "position": "DEF",
       "club": "Schalke 04",
       "number": 5,
       "market_value": 2.5,
-      "starter": true
+      "starter": true,
+      "role": "CT"
     },
     {
-      "name": "Tarik Muharemovic",
+      "name": "Tarik Muharemović",
       "position": "DEF",
       "club": "Sassuolo",
-      "number": 15,
-      "market_value": 1.2,
-      "starter": false
+      "number": 14,
+      "market_value": 5.0,
+      "starter": true,
+      "role": "CT"
     },
     {
-      "name": "Stjepan Radeljic",
+      "name": "Stjepan Radeljić",
       "position": "DEF",
       "club": "Rijeka",
-      "number": 16,
+      "number": 15,
       "market_value": 1.0,
       "starter": false
     },
     {
-      "name": "Dennis Hadzikadunic",
+      "name": "Dennis Hadžikadunić",
       "position": "DEF",
       "club": "Sampdoria",
-      "number": 6,
-      "market_value": 3.0,
-      "starter": false
+      "number": 16,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "CT"
     },
     {
-      "name": "Nidal Celik",
+      "name": "Nidal Čelik",
       "position": "DEF",
       "club": "Lens",
-      "number": 13,
-      "market_value": 0.5,
-      "starter": false
+      "number": 17,
+      "market_value": 5.0,
+      "starter": false,
+      "role": "CT"
     },
     {
-      "name": "Amir Hadziahmetovic",
+      "name": "Amir Hadžiahmetović",
       "position": "MED",
       "club": "Hull City",
-      "number": 8,
-      "market_value": 4.5,
-      "starter": true
+      "number": 6,
+      "market_value": 4.0,
+      "starter": true,
+      "role": "MCD"
     },
     {
-      "name": "Ivan Sunjic",
+      "name": "Ivan Šunjić",
       "position": "MED",
       "club": "Pafos",
-      "number": 14,
+      "number": 8,
       "market_value": 2.0,
-      "starter": true
+      "starter": true,
+      "role": "MCD"
     },
     {
-      "name": "Ivan Basic",
+      "name": "Ivan Bašić",
       "position": "MED",
       "club": "Astana",
       "number": 18,
-      "market_value": 1.5,
+      "market_value": 1.0,
       "starter": false
     },
     {
-      "name": "Dzenis Burnic",
+      "name": "Dženis Burnić",
       "position": "MED",
       "club": "Karlsruher SC",
-      "number": 7,
-      "market_value": 1.2,
-      "starter": true
+      "number": 19,
+      "market_value": 1.0,
+      "starter": false
     },
     {
-      "name": "Ermin Mahmic",
+      "name": "Ermin Mahmić",
       "position": "MED",
       "club": "Slovan Liberec",
       "number": 20,
-      "market_value": 0.5,
-      "starter": false
-    },
-    {
-      "name": "Benjamin Tahirovic",
-      "position": "MED",
-      "club": "Brondby",
-      "number": 24,
-      "market_value": 5.0,
-      "starter": false
-    },
-    {
-      "name": "Amar Memic",
-      "position": "MED",
-      "club": "Viktoria Plzen",
-      "number": 17,
       "market_value": 0.8,
       "starter": false
     },
     {
-      "name": "Armin Gigovic",
+      "name": "Benjamin Tahirović",
+      "position": "MED",
+      "club": "Brøndby",
+      "number": 21,
+      "market_value": 3.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Amar Memić",
+      "position": "MED",
+      "club": "Viktoria Plzeň",
+      "number": 23,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Armin Gigović",
       "position": "MED",
       "club": "Young Boys",
-      "number": 21,
+      "number": 24,
       "market_value": 3.5,
       "starter": false
     },
     {
-      "name": "Kerim Alajbegovic",
+      "name": "Kerim Alajbegović",
       "position": "MED",
       "club": "RB Salzburg",
       "number": 25,
-      "market_value": 0.8,
-      "starter": false
+      "market_value": 6.0,
+      "starter": true,
+      "notes": "Joya creativa joven.",
+      "role": "MCO"
     },
     {
-      "name": "Esmir Bajraktarevic",
+      "name": "Esmir Bajraktarević",
       "position": "MED",
       "club": "PSV Eindhoven",
-      "number": 19,
-      "market_value": 2.5,
-      "starter": true
+      "number": 26,
+      "market_value": 5.0,
+      "starter": true,
+      "role": "ED"
     },
     {
-      "name": "Ermedin Demirovic",
+      "name": "Ermedin Demirović",
       "position": "DEL",
       "club": "VfB Stuttgart",
-      "number": 10,
-      "market_value": 28.0,
-      "starter": true,
-      "notes": "Delantero centro de gran nivel en la Bundesliga."
+      "number": 9,
+      "market_value": 22.0,
+      "starter": false,
+      "notes": "9 referencia, gran momento en la Bundesliga.",
+      "role": "DC"
     },
     {
-      "name": "Jovo Lukic",
+      "name": "Jovo Lukić",
       "position": "DEL",
       "club": "Universitatea Cluj",
       "number": 11,
-      "market_value": 0.8,
+      "market_value": 1.5,
       "starter": false
     },
     {
-      "name": "Samed Bazdar",
+      "name": "Samed Baždar",
       "position": "DEL",
-      "club": "Jagiellonia Bialystok",
-      "number": 22,
-      "market_value": 2.0,
-      "starter": false
+      "club": "Jagiellonia Białystok",
+      "number": 27,
+      "market_value": 2.5,
+      "starter": false,
+      "role": "DC"
     },
     {
-      "name": "Haris Tabakovic",
+      "name": "Haris Tabaković",
       "position": "DEL",
-      "club": "Borussia Moenchengladbach",
-      "number": 26,
-      "market_value": 3.0,
-      "starter": false
+      "club": "Borussia Mönchengladbach",
+      "number": 28,
+      "market_value": 6.0,
+      "starter": false,
+      "role": "DC"
     },
     {
-      "name": "Edin Dzeko",
+      "name": "Edin Džeko",
       "position": "DEL",
       "club": "Schalke 04",
-      "number": 9,
-      "market_value": 2.5,
+      "number": 7,
+      "market_value": 1.5,
       "starter": true,
-      "notes": "Máxima leyenda del fútbol bosnio."
+      "notes": "Capitán histórico, leyenda viva.",
+      "role": "DC"
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

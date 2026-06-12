@@ -49,6 +49,7 @@ CUSTOM_CSS = f"""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@700;800&display=swap');
 
 /* ========================================================================
    GLOBAL
@@ -682,6 +683,263 @@ footer {{ visibility: hidden; }}
     border: 1px solid {BORDER} !important;
     backdrop-filter: blur(12px);
 }}
+
+/* ========================================================================
+   ⚽ CAPA ESTADIO — atmósfera de Mundial
+   ======================================================================== */
+
+/* Focos del estadio: dos haces de luz cruzados arriba */
+.stApp::before {{
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+        conic-gradient(from 115deg at 12% -8%, transparent 0deg, rgba(76,215,246,0.07) 8deg, transparent 22deg),
+        conic-gradient(from 245deg at 88% -8%, transparent 0deg, rgba(208,188,255,0.06) 8deg, transparent 22deg),
+        radial-gradient(ellipse 90% 35% at 50% -10%, rgba(124, 224, 255, 0.07), transparent 70%);
+    animation: floodSweep 14s ease-in-out infinite alternate;
+}}
+@keyframes floodSweep {{
+    0%   {{ opacity: 0.65; }}
+    50%  {{ opacity: 1.0; }}
+    100% {{ opacity: 0.75; }}
+}}
+
+@keyframes ballBounce {{
+    0%, 100% {{ transform: translateY(0) rotate(0deg); }}
+    35%      {{ transform: translateY(-9px) rotate(12deg); }}
+    65%      {{ transform: translateY(-3px) rotate(-6deg); }}
+}}
+@keyframes titleShine {{
+    0%   {{ background-position: 0% 50%; }}
+    100% {{ background-position: 200% 50%; }}
+}}
+@keyframes tickerScroll {{
+    0%   {{ transform: translateX(0); }}
+    100% {{ transform: translateX(-50%); }}
+}}
+@keyframes goalFlash {{
+    0%, 100% {{ box-shadow: 0 0 0 rgba(78,222,163,0); }}
+    50%      {{ box-shadow: 0 0 18px rgba(78,222,163,0.45); }}
+}}
+@keyframes livePulse {{
+    0%, 100% {{ opacity: 1; }}
+    50%      {{ opacity: 0.35; }}
+}}
+
+/* --- HERO header --- */
+.wc-hero {{
+    position: relative;
+    margin: -8px 0 6px 0;
+}}
+.wc-hero .ball {{
+    display: inline-block;
+    animation: ballBounce 2.6s ease-in-out infinite;
+    transform-origin: 50% 90%;
+}}
+.wc-hero h1.wc-title {{
+    margin: 0 !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em !important;
+    background: linear-gradient(90deg, {PRIMARY} 0%, #ffe08a 30%, {ACCENT} 55%, {PRIMARY} 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleShine 7s linear infinite;
+}}
+.wc-hero .hosts {{
+    font-size: 1.2rem; letter-spacing: 0.18em; vertical-align: middle;
+}}
+.wc-hero .sub {{
+    color: {TEXT_DIM}; margin: 4px 0 0 0; font-size: 0.92rem;
+}}
+
+/* --- Ticker LED tipo videomarcador --- */
+.wc-ticker {{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #050a18 0%, #0a1226 100%);
+    border: 1px solid rgba(76,215,246,0.22);
+    border-radius: 10px;
+    margin: 12px 0 18px 0;
+    box-shadow: inset 0 0 22px rgba(0,0,0,0.65), 0 0 14px rgba(76,215,246,0.08);
+}}
+.wc-ticker::before, .wc-ticker::after {{
+    content: ""; position: absolute; top: 0; bottom: 0; width: 60px; z-index: 2;
+    pointer-events: none;
+}}
+.wc-ticker::before {{ left: 0;  background: linear-gradient(90deg, #050a18, transparent); }}
+.wc-ticker::after  {{ right: 0; background: linear-gradient(-90deg, #050a18, transparent); }}
+.wc-ticker-track {{
+    display: inline-flex; white-space: nowrap;
+    animation: tickerScroll 45s linear infinite;
+    padding: 8px 0;
+}}
+.wc-ticker:hover .wc-ticker-track {{ animation-play-state: paused; }}
+.wc-tick {{
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 0 26px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem; font-weight: 700;
+    color: {TEXT};
+    border-right: 1px solid rgba(76,215,246,0.14);
+}}
+.wc-tick img {{ width: 20px; height: 14px; border-radius: 2px; }}
+.wc-tick .score {{ color: {PRIMARY}; text-shadow: 0 0 8px rgba(76,215,246,0.55); }}
+.wc-tick .ok    {{ color: {TERTIARY}; }}
+.wc-tick .ko    {{ color: {DANGER}; }}
+.wc-tick .when  {{ color: {TEXT_DIM}; font-weight: 700; font-size: 0.72rem; }}
+.wc-tick .exp   {{ color: {ACCENT}; }}
+
+/* --- Panel PRÓXIMO PARTIDO --- */
+.next-match {{
+    position: relative;
+    background:
+        radial-gradient(ellipse 70% 120% at 50% -30%, rgba(76,215,246,0.10), transparent 60%),
+        linear-gradient(135deg, rgba(13, 20, 38, 0.92) 0%, rgba(10, 26, 34, 0.92) 100%);
+    border: 1px solid rgba(76,215,246,0.25);
+    border-radius: 18px;
+    padding: 18px 26px 14px 26px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+    animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}}
+/* césped: franja inferior con rayas de corte */
+.next-match::after {{
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 7px;
+    background: repeating-linear-gradient(90deg,
+        #0c5c3d 0 46px, #0a4a31 46px 92px);
+    box-shadow: 0 -1px 8px rgba(12, 92, 61, 0.55);
+}}
+.next-match .nm-label {{
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.68rem; font-weight: 800; letter-spacing: 0.22em;
+    color: {PRIMARY}; text-transform: uppercase;
+}}
+.next-match .nm-label .dot {{
+    width: 7px; height: 7px; border-radius: 50%;
+    background: {TERTIARY};
+    box-shadow: 0 0 8px {TERTIARY};
+    animation: livePulse 1.6s ease-in-out infinite;
+}}
+.next-match .nm-grid {{
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 18px; margin-top: 8px;
+}}
+.next-match .nm-team {{
+    flex: 1.5; display: flex; align-items: center; gap: 13px;
+    font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.35rem;
+}}
+.next-match .nm-team.right {{ justify-content: flex-end; text-align: right; }}
+.next-match .nm-team img {{
+    width: 52px; height: 37px; border-radius: 6px;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+}}
+.next-match .nm-center {{ flex: 1.4; text-align: center; }}
+.next-match .nm-score {{
+    font-family: 'Bebas Neue', 'Outfit', sans-serif;
+    font-size: 3.1rem; line-height: 1;
+    letter-spacing: 0.06em;
+    color: {PRIMARY};
+    text-shadow: 0 0 26px rgba(76,215,246,0.45);
+}}
+.next-match .nm-score .sep {{ color: {TEXT_DIM}; padding: 0 6px; }}
+.next-match .nm-meta {{ color: {TEXT_DIM}; font-size: 0.72rem; margin-top: 3px; }}
+.next-match .nm-kick {{
+    font-family: 'JetBrains Mono', monospace;
+    color: {TERTIARY}; font-weight: 800; font-size: 0.8rem;
+}}
+
+/* --- Ticket de partido (pestaña Partidos) --- */
+.ticket {{
+    position: relative;
+    background:
+        linear-gradient(135deg, rgba(18, 25, 44, 0.88) 0%, rgba(13, 20, 38, 0.92) 100%);
+    border: 1px solid {BORDER};
+    border-left: 4px solid #0c5c3d;
+    border-radius: 14px;
+    padding: 13px 18px 11px 18px;
+    margin-bottom: 10px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+    backdrop-filter: blur(10px);
+}}
+.ticket:hover {{
+    transform: translateY(-3px);
+    border-color: rgba(76,215,246,0.40);
+    border-left-color: {TERTIARY};
+    box-shadow: 0 12px 32px rgba(0,0,0,0.45), 0 0 18px rgba(76,215,246,0.10);
+}}
+.ticket .t-row {{
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}}
+.ticket .t-team {{
+    flex: 1.4; display: flex; align-items: center; gap: 9px;
+    font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.02rem;
+}}
+.ticket .t-team.right {{ justify-content: flex-end; text-align: right; }}
+.ticket .t-team img {{
+    width: 27px; height: 19px; border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}}
+.ticket .t-team .fav {{
+    text-shadow: 0 0 14px rgba(76,215,246,0.55);
+    color: #eaf6ff;
+}}
+.ticket .t-center {{ flex: 1.1; text-align: center; }}
+.ticket .t-score {{
+    font-family: 'Bebas Neue', 'Outfit', sans-serif;
+    font-size: 1.9rem; line-height: 1; letter-spacing: 0.07em;
+    color: {PRIMARY};
+    text-shadow: 0 0 16px rgba(76,215,246,0.40);
+}}
+.ticket .t-score.played {{ color: {TEXT}; text-shadow: none; }}
+.ticket .t-tag {{
+    font-size: 0.62rem; color: {TEXT_DIM};
+    text-transform: uppercase; letter-spacing: 0.14em; font-weight: 700;
+}}
+.ticket .t-sub {{ font-size: 0.66rem; color: {TEXT_DIM}; margin-top: 2px; }}
+.ticket .t-foot {{
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: 6px; font-size: 0.66rem; color: {TEXT_DIM};
+}}
+.ticket .t-badge {{
+    border: 1px solid #334155; border-radius: 6px; padding: 1px 8px;
+    font-size: 0.62rem; letter-spacing: 0.06em;
+}}
+.ticket .hit  {{ color: {TERTIARY}; animation: goalFlash 2.4s ease-in-out infinite; border-radius: 6px; padding: 1px 7px; }}
+.ticket .miss {{ color: {DANGER}; }}
+
+/* barra 1X2 dentro del ticket */
+.ticket .t-bar {{
+    display: flex; height: 9px; border-radius: 5px; overflow: hidden;
+    margin-top: 7px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}}
+.ticket .t-bar .b1 {{ background: linear-gradient(90deg, #2bb8e0, {PRIMARY}); }}
+.ticket .t-bar .bx {{ background: #3c4659; }}
+.ticket .t-bar .b2 {{ background: linear-gradient(90deg, {ACCENT}, #b39ef5); }}
+.ticket .t-legend {{
+    display: flex; justify-content: space-between;
+    font-size: 0.68rem; margin-top: 3px;
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+}}
+
+/* sección de ronda eliminatoria */
+.ko-round-title {{
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Outfit', sans-serif; font-weight: 800;
+    color: {TEXT}; font-size: 1.0rem;
+    margin: 18px 0 8px 0;
+}}
+.ko-round-title .line {{ flex: 1; height: 1px; background: linear-gradient(90deg, rgba(76,215,246,0.35), transparent); }}
+.ko-round-title .dates {{ color: {TEXT_DIM}; font-size: 0.72rem; font-weight: 600; }}
 </style>
 """
 

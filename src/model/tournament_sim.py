@@ -140,7 +140,8 @@ def _simulate_knockout_round(
         else:
             gh, ga, ph, pa = simulate_match(
                 teams_elo[home], teams_elo[away], rng,
-                home_advantage=0.0, knockout=True
+                home_advantage=0.0, knockout=True,
+                team_home=home, team_away=away,
             )
             winner = home if (gh > ga or (gh == ga and ph > pa)) else away
 

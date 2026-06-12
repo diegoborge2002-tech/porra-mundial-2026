@@ -10,7 +10,8 @@ from src.data.team_profile import build_profile, ISO_CODES
 from src.tournament.groups import GROUPS, ALL_TEAMS
 from src.data.h2h import get_h2h
 from src.data.squad import load_squad
-from src.model.elo import win_draw_loss_probs
+from src.model.poisson import expected_goals_ensemble
+from src.model.match_probs import match_outcome_probs
 
 
 PALETTE = [PRIMARY, ACCENT, "#a78bfa"]  # hasta 3 equipos
@@ -163,7 +164,8 @@ def render():
             c3.markdown(big_stat(f"{h2h.draws}", "Empates"), unsafe_allow_html=True)
             c4.markdown(big_stat(f"{h2h.wins_b}", f"V {tb}"), unsafe_allow_html=True)
             # Predicción si jugaran ahora
-            p_h, p_d, p_a = win_draw_loss_probs(elo[ta], elo[tb])
+            _lh, _la = expected_goals_ensemble(elo[ta], elo[tb], ta, tb)
+            p_h, p_d, p_a = match_outcome_probs(_lh, _la, use_dc=True)
             st.markdown(
                 f"<div style='margin-top:10px; padding:14px; background:{BG_CARD}; "
                 f"border:1px solid #1f2937; border-radius:10px;'>"
@@ -178,11 +180,12 @@ def render():
     elif len(teams_to_compare) == 3:
         st.subheader("Matrix de partidos hipotéticos (sede neutral)")
         teams = teams_to_compare
-        st.caption("Probabilidades 1X2 según Elo si se enfrentaran ahora.")
+        st.caption("Probabilidades 1X2 según el ensemble Elo + XGBoost si se enfrentaran ahora.")
         for i in range(len(teams)):
             for j in range(i + 1, len(teams)):
                 ta, tb = teams[i], teams[j]
-                p_h, p_d, p_a = win_draw_loss_probs(elo[ta], elo[tb])
+                _lh, _la = expected_goals_ensemble(elo[ta], elo[tb], ta, tb)
+                p_h, p_d, p_a = match_outcome_probs(_lh, _la, use_dc=True)
                 st.markdown(
                     f"<div style='margin:6px 0; padding:10px; background:{BG_CARD}; "
                     f"border:1px solid #1f2937; border-radius:8px;'>"

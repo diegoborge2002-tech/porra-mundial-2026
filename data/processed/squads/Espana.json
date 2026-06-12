@@ -1,18 +1,259 @@
 {
   "team": "Espana",
   "coach": "Luis de la Fuente",
-  "captain": "",
+  "captain": "Aymeric Laporte",
   "formation": "4-3-3",
-  "star_player": "",
-  "notes": "Lista por confirmar",
+  "star_player": "Lamine Yamal",
+  "notes": "Campeona de Europa y favorita absoluta al título. Generación dorada Pedri-Gavi-Lamine al mando, Rodri liberando el medio y Cubarsí afianzando atrás.",
   "ratings": {
-    "attack": 5,
-    "defense": 5,
-    "midfield": 5,
-    "bench_depth": 5,
-    "experience": 5,
-    "motivation": 5
+    "attack": 10,
+    "defense": 9,
+    "midfield": 10,
+    "bench_depth": 10,
+    "experience": 8,
+    "motivation": 10
   },
-  "players": [],
-  "updated_at": "2026-05-21 19:37"
+  "players": [
+    {
+      "name": "Unai Simón",
+      "position": "POR",
+      "club": "Athletic",
+      "number": 1,
+      "market_value": 28.0,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "David Raya",
+      "position": "POR",
+      "club": "Arsenal",
+      "number": 23,
+      "market_value": 35.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Joan García",
+      "position": "POR",
+      "club": "FC Barcelona",
+      "number": 13,
+      "market_value": 30.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Marcos Llorente",
+      "position": "DEF",
+      "club": "Atlético",
+      "number": 14,
+      "market_value": 25.0,
+      "starter": false,
+      "role": "LD"
+    },
+    {
+      "name": "Pedro Porro",
+      "position": "DEF",
+      "club": "Tottenham",
+      "number": 2,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Eric García",
+      "position": "DEF",
+      "club": "FC Barcelona",
+      "number": 16,
+      "market_value": 25.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Marc Pubill",
+      "position": "DEF",
+      "club": "Atlético de Madrid",
+      "number": 22,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "LD"
+    },
+    {
+      "name": "Aymeric Laporte",
+      "position": "DEF",
+      "club": "Athletic",
+      "number": 4,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "Capitán y jerarquía atrás.",
+      "role": "CT"
+    },
+    {
+      "name": "Pau Cubarsí",
+      "position": "DEF",
+      "club": "FC Barcelona",
+      "number": 5,
+      "market_value": 80.0,
+      "starter": true,
+      "notes": "Joya defensiva del proyecto.",
+      "role": "CT"
+    },
+    {
+      "name": "Marc Cucurella",
+      "position": "DEF",
+      "club": "Chelsea",
+      "number": 3,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Alejandro Grimaldo",
+      "position": "DEF",
+      "club": "Bayer Leverkusen",
+      "number": 18,
+      "market_value": 35.0,
+      "starter": false,
+      "role": "LI"
+    },
+    {
+      "name": "Pedri",
+      "position": "MED",
+      "club": "FC Barcelona",
+      "number": 8,
+      "market_value": 130.0,
+      "starter": true,
+      "notes": "Cerebro creativo del medio.",
+      "role": "MC"
+    },
+    {
+      "name": "Fabián Ruiz",
+      "position": "MED",
+      "club": "PSG",
+      "number": 12,
+      "market_value": 50.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Martín Zubimendi",
+      "position": "MED",
+      "club": "Arsenal",
+      "number": 6,
+      "market_value": 65.0,
+      "starter": false,
+      "role": "MCD"
+    },
+    {
+      "name": "Gavi",
+      "position": "MED",
+      "club": "FC Barcelona",
+      "number": 9,
+      "market_value": 70.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Rodri",
+      "position": "MED",
+      "club": "Manchester City",
+      "number": 16,
+      "market_value": 130.0,
+      "starter": true,
+      "notes": "Balón de Oro 2024, motor titular.",
+      "role": "MCD"
+    },
+    {
+      "name": "Álex Baena",
+      "position": "MED",
+      "club": "Atlético de Madrid",
+      "number": 20,
+      "market_value": 40.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Mikel Merino",
+      "position": "MED",
+      "club": "Arsenal",
+      "number": 17,
+      "market_value": 50.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "position": "DEL",
+      "club": "Real Sociedad",
+      "number": 21,
+      "market_value": 35.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Dani Olmo",
+      "position": "DEL",
+      "club": "FC Barcelona",
+      "number": 10,
+      "market_value": 60.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Nico Williams",
+      "position": "DEL",
+      "club": "Athletic",
+      "number": 11,
+      "market_value": 80.0,
+      "starter": true,
+      "notes": "Extremo desequilibrante titular.",
+      "role": "EI"
+    },
+    {
+      "name": "Yeremy Pino",
+      "position": "DEL",
+      "club": "Crystal Palace",
+      "number": 19,
+      "market_value": 22.0,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Ferran Torres",
+      "position": "DEL",
+      "club": "FC Barcelona",
+      "number": 7,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "DC"
+    },
+    {
+      "name": "Borja Iglesias",
+      "position": "DEL",
+      "club": "Real Betis",
+      "number": 24,
+      "market_value": 12.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Víctor Muñoz",
+      "position": "DEL",
+      "club": "Osasuna",
+      "number": 25,
+      "market_value": 6.0,
+      "starter": false,
+      "role": "ED"
+    },
+    {
+      "name": "Lamine Yamal",
+      "position": "DEL",
+      "club": "FC Barcelona",
+      "number": 19,
+      "market_value": 200.0,
+      "starter": true,
+      "notes": "Estrella mundial, joya del fútbol global.",
+      "role": "ED"
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
 }

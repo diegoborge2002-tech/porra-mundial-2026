@@ -3,8 +3,8 @@
   "coach": "Emerse Faé",
   "captain": "Franck Kessié",
   "formation": "4-3-3",
-  "star_player": "Ousmane Diomande",
-  "notes": "Lista definitiva de Costa de Marfil para 2026. Liderados por Franck Kessié y el central Ousmane Diomande, campeones defensores africanos.",
+  "star_player": "Amad Diallo",
+  "notes": "Costa de Marfil llega como campeona de África con Faé y un bloque ofensivo demoledor: Amad, Adingra, Wahi y Bonny.",
   "ratings": {
     "attack": 9,
     "defense": 8,
@@ -19,23 +19,40 @@
       "position": "POR",
       "club": "Çaykur Rizespor",
       "number": 1,
-      "market_value": 10.0,
-      "starter": true
+      "market_value": 4.0,
+      "starter": true,
+      "role": "POR"
     },
     {
       "name": "Mohamed Kone",
       "position": "POR",
       "club": "Charleroi",
       "number": 12,
-      "market_value": 1.2,
+      "market_value": 1.0,
       "starter": false
     },
     {
       "name": "Alban Lafont",
       "position": "POR",
       "club": "Panathinaikos",
-      "number": 23,
-      "market_value": 15.0,
+      "number": 22,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Emmanuel Agbadou",
+      "position": "DEF",
+      "club": "Besiktas",
+      "number": 14,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Clément Akpa",
+      "position": "DEF",
+      "club": "Auxerre",
+      "number": 15,
+      "market_value": 4.0,
       "starter": false
     },
     {
@@ -45,174 +62,170 @@
       "number": 4,
       "market_value": 40.0,
       "starter": true,
-      "notes": "Uno de los centrales con más proyección."
+      "notes": "Central de élite.",
+      "role": "CT"
+    },
+    {
+      "name": "Guéla Doué",
+      "position": "DEF",
+      "club": "Estrasburgo",
+      "number": 2,
+      "market_value": 18.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Ghislain Konan",
+      "position": "DEF",
+      "club": "Gil Vicente",
+      "number": 16,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "LI"
     },
     {
       "name": "Odilon Kossounou",
       "position": "DEF",
       "club": "Atalanta",
       "number": 5,
-      "market_value": 35.0,
-      "starter": true
+      "market_value": 18.0,
+      "starter": true,
+      "role": "CT"
     },
     {
-      "name": "Evan N’Dicka",
+      "name": "Evan N'Dicka",
       "position": "DEF",
       "club": "Roma",
-      "number": 21,
-      "market_value": 24.0,
-      "starter": true
+      "number": 3,
+      "market_value": 28.0,
+      "starter": true,
+      "role": "CT"
     },
     {
       "name": "Wilfried Singo",
       "position": "DEF",
       "club": "Mónaco",
-      "number": 2,
-      "market_value": 25.0,
-      "starter": true
-    },
-    {
-      "name": "Emmanuel Agbadou",
-      "position": "DEF",
-      "club": "Besiktas",
-      "number": 3,
-      "market_value": 8.0,
-      "starter": false
-    },
-    {
-      "name": "Clément Akpa",
-      "position": "DEF",
-      "club": "Auxerre",
-      "number": 15,
-      "market_value": 2.5,
-      "starter": false
-    },
-    {
-      "name": "Guéla Doué",
-      "position": "DEF",
-      "club": "Estrasburgo",
-      "number": 14,
-      "market_value": 7.0,
-      "starter": false
-    },
-    {
-      "name": "Ghislain Konan",
-      "position": "DEF",
-      "club": "Gil Vicente",
       "number": 6,
-      "market_value": 5.0,
-      "starter": false
-    },
-    {
-      "name": "Franck Kessié",
-      "position": "MED",
-      "club": "Al Ahli",
-      "number": 8,
-      "market_value": 18.0,
-      "starter": true,
-      "notes": "Capitán e indiscutible en la medular."
+      "market_value": 22.0,
+      "starter": false,
+      "role": "LD"
     },
     {
       "name": "Seko Fofana",
       "position": "MED",
       "club": "Oporto",
-      "number": 6,
-      "market_value": 14.0,
-      "starter": true
-    },
-    {
-      "name": "Ibrahim Sangaré",
-      "position": "MED",
-      "club": "Notts. Forest",
-      "number": 18,
-      "market_value": 30.0,
-      "starter": true
+      "number": 8,
+      "market_value": 12.0,
+      "starter": true,
+      "role": "MC"
     },
     {
       "name": "Parfait Guiagon",
       "position": "MED",
       "club": "Charleroi",
-      "number": 16,
-      "market_value": 4.5,
+      "number": 17,
+      "market_value": 2.0,
       "starter": false
     },
     {
       "name": "Christ Inao Oulai",
       "position": "MED",
       "club": "Trabzonspor",
-      "number": 17,
-      "market_value": 1.2,
+      "number": 18,
+      "market_value": 6.0,
       "starter": false
+    },
+    {
+      "name": "Franck Kessié",
+      "position": "MED",
+      "club": "Al Ahli",
+      "number": 19,
+      "market_value": 18.0,
+      "starter": true,
+      "notes": "Capitán y motor del medio.",
+      "role": "MC"
+    },
+    {
+      "name": "Ibrahim Sangaré",
+      "position": "MED",
+      "club": "Nottingham Forest",
+      "number": 20,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "MCD"
     },
     {
       "name": "Jean Michaël Seri",
       "position": "MED",
       "club": "Maribor",
-      "number": 14,
+      "number": 21,
       "market_value": 1.5,
       "starter": false
     },
     {
-      "name": "Simón Adingra",
+      "name": "Simon Adingra",
       "position": "DEL",
       "club": "Mónaco",
-      "number": 7,
+      "number": 11,
       "market_value": 30.0,
-      "starter": true
+      "starter": true,
+      "role": "EI"
     },
     {
       "name": "Ange-Yoan Bonny",
       "position": "DEL",
       "club": "Inter",
-      "number": 11,
-      "market_value": 15.0,
+      "number": 23,
+      "market_value": 28.0,
       "starter": false
     },
     {
       "name": "Amad Diallo",
       "position": "DEL",
       "club": "Manchester United",
-      "number": 10,
-      "market_value": 22.0,
-      "starter": true
+      "number": 7,
+      "market_value": 55.0,
+      "starter": true,
+      "notes": "Estrella de la selección, brilla en la Premier.",
+      "role": "ED"
     },
     {
       "name": "Oumar Diakite",
       "position": "DEL",
       "club": "Círculo Brujas",
-      "number": 9,
-      "market_value": 12.0,
-      "starter": true
+      "number": 24,
+      "market_value": 5.0,
+      "starter": false
     },
     {
       "name": "Yan Diomande",
       "position": "DEL",
       "club": "Leipzig",
-      "number": 19,
-      "market_value": 3.0,
+      "number": 25,
+      "market_value": 15.0,
       "starter": false
     },
     {
       "name": "Evann Guessand",
       "position": "DEL",
       "club": "Crystal Palace",
-      "number": 20,
-      "market_value": 18.0,
+      "number": 26,
+      "market_value": 22.0,
       "starter": false
     },
     {
       "name": "Nicolas Pepe",
       "position": "DEL",
       "club": "Villarreal",
-      "number": 22,
-      "market_value": 10.0,
+      "number": 9,
+      "market_value": 8.0,
       "starter": false
     },
     {
       "name": "Bazoumana Toure",
       "position": "DEL",
       "club": "Hoffenheim",
-      "number": 25,
+      "number": 13,
       "market_value": 8.0,
       "starter": false
     },
@@ -220,10 +233,11 @@
       "name": "Elye Wahi",
       "position": "DEL",
       "club": "Niza",
-      "number": 26,
-      "market_value": 35.0,
-      "starter": false
+      "number": 10,
+      "market_value": 18.0,
+      "starter": true,
+      "role": "DC"
     }
   ],
-  "updated_at": "2026-05-21 19:27"
+  "updated_at": "2026-06-01 12:00"
 }

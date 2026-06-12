@@ -16,7 +16,8 @@ from src.model.elo import (
     expected_score, goal_diff_multiplier, win_draw_loss_probs,
 )
 from src.model.elo_dynamic import _wc_match_dates, K_WORLD_CUP
-from src.model.poisson import elo_to_expected_goals
+from src.model.poisson import expected_goals_ensemble
+from src.model.match_probs import match_outcome_probs
 from src.model.calibration import outcome_from_score, brier_multi, log_loss, rps
 from src.tournament.groups import GROUPS, HOST_NATIONS
 
@@ -103,8 +104,8 @@ def compute_match_diagnostics(
 
         r_h = elo.get(h, 1500.0)
         r_a = elo.get(a, 1500.0)
-        p_h, p_d, p_aw = win_draw_loss_probs(r_h, r_a, home_advantage=ha)
-        xg_h, xg_a = elo_to_expected_goals(r_h, r_a, home_advantage=ha)
+        xg_h, xg_a = expected_goals_ensemble(r_h, r_a, h, a, home_advantage=ha)
+        p_h, p_d, p_aw = match_outcome_probs(xg_h, xg_a)
         outcome = outcome_from_score(gh, ga)
         probs = (p_h, p_d, p_aw)
         p_outcome = {"H": p_h, "D": p_d, "A": p_aw}[outcome]
@@ -141,8 +142,8 @@ def compute_match_diagnostics(
             h = mi["home"]; a = mi["away"]
             gh = int(mi.get("home_score", 0)); ga = int(mi.get("away_score", 0))
             r_h = elo.get(h, 1500.0); r_a = elo.get(a, 1500.0)
-            p_h, p_d, p_aw = win_draw_loss_probs(r_h, r_a, home_advantage=0.0)
-            xg_h, xg_a = elo_to_expected_goals(r_h, r_a, home_advantage=0.0)
+            xg_h, xg_a = expected_goals_ensemble(r_h, r_a, h, a, home_advantage=0.0)
+            p_h, p_d, p_aw = match_outcome_probs(xg_h, xg_a)
             # En eliminatoria, decidimos outcome final por marcador ó penaltis (winner)
             winner = mi.get("winner")
             if gh > ga:

@@ -1,0 +1,246 @@
+{
+  "team": "Marruecos",
+  "coach": "Walid Regragui",
+  "captain": "Achraf Hakimi",
+  "formation": "4-3-3",
+  "star_player": "Achraf Hakimi",
+  "notes": "Marruecos llega como cuarto del Mundial 2022 y favorito africano. Hakimi lidera, Brahim Díaz aporta talento y Ayoub El Kaabi remata el ataque.",
+  "ratings": {
+    "attack": 8,
+    "defense": 9,
+    "midfield": 8,
+    "bench_depth": 8,
+    "experience": 8,
+    "motivation": 9
+  },
+  "players": [
+    {
+      "name": "Yassine Bono",
+      "position": "POR",
+      "club": "Al-Hilal",
+      "number": 1,
+      "market_value": 12.0,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Munir El Kajoui",
+      "position": "POR",
+      "club": "RS Berkane",
+      "number": 12,
+      "market_value": 1.0,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Ahmed Reda Tagnaouti",
+      "position": "POR",
+      "club": "AS FAR",
+      "number": 22,
+      "market_value": 1.0,
+      "starter": false
+    },
+    {
+      "name": "Achraf Hakimi",
+      "position": "DEF",
+      "club": "Paris Saint-Germain",
+      "number": 2,
+      "market_value": 75.0,
+      "starter": true,
+      "notes": "Capitán y mejor lateral del mundo.",
+      "role": "LD"
+    },
+    {
+      "name": "Noussair Mazraoui",
+      "position": "DEF",
+      "club": "Manchester United",
+      "number": 3,
+      "market_value": 30.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Anass Salah-Eddine",
+      "position": "DEF",
+      "club": "PSV Eindhoven",
+      "number": 13,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Nayef Aguerd",
+      "position": "DEF",
+      "club": "Olympique de Marsella",
+      "number": 5,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Issa Diop",
+      "position": "DEF",
+      "club": "Fulham",
+      "number": 4,
+      "market_value": 12.0,
+      "starter": false
+    },
+    {
+      "name": "Chadi Riad",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "number": 15,
+      "market_value": 18.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Youssef Belammari",
+      "position": "DEF",
+      "club": "Al-Ahly SC",
+      "number": 16,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Redouane Halhal",
+      "position": "DEF",
+      "club": "KV Mechelen",
+      "number": 17,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Zakaria El Ouahdi",
+      "position": "DEF",
+      "club": "KRC Genk",
+      "number": 18,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Azzedine Ounahi",
+      "position": "MED",
+      "club": "Girona FC",
+      "number": 8,
+      "market_value": 15.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Neil El Aynaoui",
+      "position": "MED",
+      "club": "AS Roma",
+      "number": 6,
+      "market_value": 20.0,
+      "starter": true,
+      "role": "MC"
+    },
+    {
+      "name": "Sofyan Amrabat",
+      "position": "MED",
+      "club": "Real Betis",
+      "number": 4,
+      "market_value": 18.0,
+      "starter": true,
+      "role": "MCD"
+    },
+    {
+      "name": "Ayyoub Bouaddi",
+      "position": "MED",
+      "club": "LOSC Lille",
+      "number": 20,
+      "market_value": 15.0,
+      "starter": false
+    },
+    {
+      "name": "Samir El Mourabet",
+      "position": "MED",
+      "club": "RC Estrasburgo",
+      "number": 21,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Bilal El Khannouss",
+      "position": "MED",
+      "club": "VfB Stuttgart",
+      "number": 10,
+      "market_value": 28.0,
+      "starter": true,
+      "notes": "Conductor creativo joven.",
+      "role": "MCO"
+    },
+    {
+      "name": "Ismael Saibari",
+      "position": "MED",
+      "club": "PSV Eindhoven",
+      "number": 14,
+      "market_value": 25.0,
+      "starter": false,
+      "role": "MCO"
+    },
+    {
+      "name": "Brahim Díaz",
+      "position": "MED",
+      "club": "Real Madrid",
+      "number": 19,
+      "market_value": 50.0,
+      "starter": true,
+      "notes": "Diferencial creativo del Real Madrid.",
+      "role": "MD"
+    },
+    {
+      "name": "Abde Ezzalzouli",
+      "position": "DEL",
+      "club": "Real Betis",
+      "number": 11,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "EI"
+    },
+    {
+      "name": "Yassine Gessime",
+      "position": "DEL",
+      "club": "RC Estrasburgo",
+      "number": 23,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Chemsdine Talbi",
+      "position": "DEL",
+      "club": "Sunderland",
+      "number": 24,
+      "market_value": 8.0,
+      "starter": false
+    },
+    {
+      "name": "Soufiane Rahimi",
+      "position": "DEL",
+      "club": "Al-Ain",
+      "number": 25,
+      "market_value": 7.0,
+      "starter": false,
+      "role": "EI"
+    },
+    {
+      "name": "Ayoub El Kaabi",
+      "position": "DEL",
+      "club": "Olympiakos",
+      "number": 9,
+      "market_value": 12.0,
+      "starter": true,
+      "notes": "Goleador titular del 9.",
+      "role": "DC"
+    },
+    {
+      "name": "Ayoub Amaimouni-Echghouyab",
+      "position": "DEL",
+      "club": "Eintracht Frankfurt",
+      "number": 26,
+      "market_value": 6.0,
+      "starter": false
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
+}

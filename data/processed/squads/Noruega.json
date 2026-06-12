@@ -1,0 +1,246 @@
+{
+  "team": "Noruega",
+  "coach": "Stale Solbakken",
+  "captain": "Martin Odegaard",
+  "formation": "4-3-3",
+  "star_player": "Erling Haaland",
+  "notes": "Noruega vuelve a una Copa del Mundo tras 28 años con el tridente de oro: Haaland, Ødegaard y Sørloth, respaldados por la generación Bodø-Glimt.",
+  "ratings": {
+    "attack": 10,
+    "defense": 7,
+    "midfield": 8,
+    "bench_depth": 7,
+    "experience": 7,
+    "motivation": 10
+  },
+  "players": [
+    {
+      "name": "Orjan Nyland",
+      "position": "POR",
+      "club": "Sevilla",
+      "number": 1,
+      "market_value": 2.0,
+      "starter": true,
+      "role": "POR"
+    },
+    {
+      "name": "Sander Tangvik",
+      "position": "POR",
+      "club": "Hamburgo",
+      "number": 12,
+      "market_value": 1.5,
+      "starter": false
+    },
+    {
+      "name": "Egil Selvik",
+      "position": "POR",
+      "club": "Watford",
+      "number": 22,
+      "market_value": 1.5,
+      "starter": false,
+      "role": "POR"
+    },
+    {
+      "name": "Kristoffer Ajer",
+      "position": "DEF",
+      "club": "Brentford",
+      "number": 3,
+      "market_value": 14.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "David Moller Wolfe",
+      "position": "DEF",
+      "club": "Wolverhampton",
+      "number": 5,
+      "market_value": 8.0,
+      "starter": true,
+      "role": "LI"
+    },
+    {
+      "name": "Leo Ostigard",
+      "position": "DEF",
+      "club": "Génova",
+      "number": 4,
+      "market_value": 8.0,
+      "starter": true,
+      "role": "CT"
+    },
+    {
+      "name": "Fredrik Bjorkan",
+      "position": "DEF",
+      "club": "Bodo-Glimt",
+      "number": 13,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Marcus Pedersen",
+      "position": "DEF",
+      "club": "Torino",
+      "number": 14,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Torbjorn Heggem",
+      "position": "DEF",
+      "club": "Bologna",
+      "number": 15,
+      "market_value": 7.0,
+      "starter": false,
+      "role": "CT"
+    },
+    {
+      "name": "Sondre Langas",
+      "position": "DEF",
+      "club": "Derby County",
+      "number": 16,
+      "market_value": 4.0,
+      "starter": false
+    },
+    {
+      "name": "Henrik Falchener",
+      "position": "DEF",
+      "club": "Viking FK",
+      "number": 17,
+      "market_value": 2.0,
+      "starter": false
+    },
+    {
+      "name": "Julian Ryerson",
+      "position": "DEF",
+      "club": "Borussia Dortmund",
+      "number": 2,
+      "market_value": 25.0,
+      "starter": true,
+      "role": "LD"
+    },
+    {
+      "name": "Martin Odegaard",
+      "position": "MED",
+      "club": "Arsenal",
+      "number": 10,
+      "market_value": 90.0,
+      "starter": true,
+      "notes": "Capitán y cerebro creativo.",
+      "role": "MCO"
+    },
+    {
+      "name": "Sander Berge",
+      "position": "MED",
+      "club": "Fulham",
+      "number": 6,
+      "market_value": 22.0,
+      "starter": true,
+      "role": "MCD"
+    },
+    {
+      "name": "Patrick Berg",
+      "position": "MED",
+      "club": "Bodo-Glimt",
+      "number": 8,
+      "market_value": 6.0,
+      "starter": true,
+      "role": "MCD"
+    },
+    {
+      "name": "Morten Thorsby",
+      "position": "MED",
+      "club": "Cremonese",
+      "number": 18,
+      "market_value": 4.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Fredrik Aursnes",
+      "position": "MED",
+      "club": "Benfica",
+      "number": 19,
+      "market_value": 22.0,
+      "starter": false
+    },
+    {
+      "name": "Kristian Thorstvedt",
+      "position": "MED",
+      "club": "Sassuolo",
+      "number": 20,
+      "market_value": 10.0,
+      "starter": false,
+      "role": "MC"
+    },
+    {
+      "name": "Thelonious Aasgaard",
+      "position": "MED",
+      "club": "Rangers",
+      "number": 21,
+      "market_value": 6.0,
+      "starter": false
+    },
+    {
+      "name": "Antonio Nusa",
+      "position": "MED",
+      "club": "RB Leipzig",
+      "number": 11,
+      "market_value": 35.0,
+      "starter": true,
+      "role": "EI"
+    },
+    {
+      "name": "Andreas Schjelderup",
+      "position": "MED",
+      "club": "Benfica",
+      "number": 23,
+      "market_value": 18.0,
+      "starter": false
+    },
+    {
+      "name": "Oscar Bobb",
+      "position": "MED",
+      "club": "Fulham",
+      "number": 24,
+      "market_value": 25.0,
+      "starter": true,
+      "role": "ED"
+    },
+    {
+      "name": "Jens Petter Hauge",
+      "position": "MED",
+      "club": "Bodo-Glimt",
+      "number": 25,
+      "market_value": 5.0,
+      "starter": false
+    },
+    {
+      "name": "Erling Haaland",
+      "position": "DEL",
+      "club": "Manchester City",
+      "number": 9,
+      "market_value": 200.0,
+      "starter": true,
+      "notes": "Estrella absoluta, máximo goleador del planeta.",
+      "role": "DC"
+    },
+    {
+      "name": "Alexander Sorloth",
+      "position": "DEL",
+      "club": "Atlético de Madrid",
+      "number": 7,
+      "market_value": 32.0,
+      "starter": false,
+      "role": "DC"
+    },
+    {
+      "name": "Jorgen Strand Larsen",
+      "position": "DEL",
+      "club": "Crystal Palace",
+      "number": 26,
+      "market_value": 20.0,
+      "starter": false,
+      "role": "DC"
+    }
+  ],
+  "updated_at": "2026-06-01 12:00"
+}
