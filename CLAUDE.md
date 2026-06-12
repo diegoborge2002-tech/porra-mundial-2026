@@ -35,6 +35,16 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
 Todo lo que escribe el script lo lee la web (real_results.json, snapshots/):
 no hace falta tocar nada más.
 
+## Deploy
+
+- Repo: https://github.com/diegoborge2002-tech/porra-mundial-2026 (gh CLI autenticado)
+- Hosting: **Streamlit Community Cloud** (share.streamlit.io), entry point
+  `app/streamlit_app.py`. Vercel NO sirve (Streamlit necesita servidor
+  persistente con websockets). Tras `git push origin main` el deploy se
+  actualiza solo en ~1 min.
+- `.gitignore` excluye `scratch/`, `notebooks/` e `informes_tacticos/` del repo:
+  el entrenamiento XGBoost es local; al deploy solo va `stats_model.json`.
+
 ## Estructura clave
 
 - `src/model/ensemble.py` — blend Elo+stats; hook central: `expected_goals_ensemble`
