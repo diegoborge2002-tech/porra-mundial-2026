@@ -20,7 +20,10 @@ Web Streamlit de predicción del Mundial 2026 (11 jun – 19 jul 2026, 48 equipo
 > horarios, registra, `informe` y redespliega. Corre mientras la app de Claude
 > esté abierta (si está cerrada, en el próximo arranque). El flujo manual de abajo
 > sigue valiendo para forzarlo cuando el usuario diga "actualiza"/"ejecuta los
-> nuevos partidos". Horarios de inicio en hora ES: `data/processed/kickoff_times.json`.
+> nuevos partidos". Horarios de inicio en hora ES: `data/processed/kickoff_times.json`,
+> rellenado por `python scripts/fetch_fixtures.py --apply` (API football-data.org;
+> token local en `~/.config/porra/football_data.token`, NO en el repo). Ese script
+> también imprime los partidos FINISHED de la API como fuente fiable de resultados.
 
 Cuando el usuario diga "actualiza", "informe del día", pase resultados, o similar:
 
