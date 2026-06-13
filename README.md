@@ -1,3 +1,15 @@
+---
+title: Porra Mundial 2026
+emoji: ⚽
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: 1.45.1
+app_file: app/streamlit_app.py
+pinned: false
+license: mit
+---
+
 # ⚽ Porra Mundial 2026
 
 Web app de predicción del Mundial 2026 (USA / Canadá / México) basada en:
@@ -64,4 +76,10 @@ data/
 
 ## Deploy
 
-Streamlit Community Cloud: https://share.streamlit.io → conectar este repo y `app/streamlit_app.py` como entry point.
+**Hugging Face Spaces** (recomendado — free tier con ~16 GB RAM, aguanta el Monte Carlo):
+la cabecera YAML de este README ya configura el Space (`sdk: streamlit`,
+`app_file: app/streamlit_app.py`). Crear Space en https://huggingface.co/new-space
+(SDK Streamlit, CPU basic), añadir el remoto `hf` y `git push hf main`.
+
+Streamlit Community Cloud (https://share.streamlit.io): funciona pero su free tier
+da solo 1 GB de RAM → el MC de 10.000 torneos puede tumbar la app (carga infinita).
