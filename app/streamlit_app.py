@@ -16,7 +16,7 @@ import math
 import streamlit as st
 
 from app.styles import inject, TEXT_DIM, PRIMARY, ACCENT
-from app.components_media import render_banner, render_matchday_brief
+from app.components_media import render_banner, render_background, render_matchday_brief
 from app.tabs import (
     predicciones, selecciones, biases, porra, calendario, seguimiento,
     rendimiento, en_vivo, comparador, plantilla, partidos,
@@ -34,6 +34,7 @@ st.set_page_config(
 )
 
 inject()
+render_background()
 
 
 def _header_kpi_bar() -> None:

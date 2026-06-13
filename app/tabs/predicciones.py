@@ -7,6 +7,7 @@ import plotly.graph_objects as go
 from app.utils import load_base_elo, get_biases, get_elo_with_biases, run_simulation_with_real, load_real_results
 from app.components import big_stat
 from app.components_day import render_upcoming_card, render_pre_match_extras
+from app.components_media import render_tab_banner
 from app.styles import PRIMARY, ACCENT, BG_CARD, TEXT, TEXT_DIM, GOOD
 from src.data.team_profile import ISO_CODES
 from src.tournament.groups import ALL_TEAMS, GROUPS
@@ -36,6 +37,7 @@ def plotly_theme(**overrides) -> dict:
 def render():
     st.header("Predicciones del modelo")
     st.caption("Monte Carlo de 10.000 torneos · Ensemble: Elo (49.215 partidos históricos) + XGBoost de stats (xG, posesión, ranking FIFA) + tus ajustes")
+    render_tab_banner("header_strip.png")
 
     # =========================================================================
     # 🎓 ACADEMIA DE MODELADO & CALCULADORA INTERACTIVA 1X2

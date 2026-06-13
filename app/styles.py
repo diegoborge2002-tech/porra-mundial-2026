@@ -940,6 +940,38 @@ footer {{ visibility: hidden; }}
 }}
 .ko-round-title .line {{ flex: 1; height: 1px; background: linear-gradient(90deg, rgba(76,215,246,0.35), transparent); }}
 .ko-round-title .dates {{ color: {TEXT_DIM}; font-size: 0.72rem; font-weight: 600; }}
+
+/* ========================================================================
+   📱 MÓVIL — responsive (pantallas estrechas)
+   ======================================================================== */
+@media (max-width: 640px) {{
+    .block-container {{
+        padding-left: 0.7rem !important; padding-right: 0.7rem !important;
+        padding-top: 0.8rem !important;
+    }}
+    .wc-hero h1.wc-title {{ font-size: 1.8rem !important; }}
+    .wc-hero .hosts {{ font-size: 0.9rem; }}
+    .wc-hero .sub {{ font-size: 0.72rem; }}
+    .headerkpi-bar {{ gap: 6px; margin: 4px 0 14px 0; }}
+    .headerkpi-pill {{ padding: 6px 11px; font-size: 0.72rem; }}
+    .wc-tick {{ font-size: 0.7rem; padding: 0 14px; }}
+    .wc-tick img {{ width: 16px; height: 11px; }}
+    .next-match {{ padding: 13px 13px 11px 13px; border-radius: 14px; }}
+    .next-match .nm-label {{ font-size: 0.55rem; letter-spacing: 0.1em; }}
+    .next-match .nm-kick {{ font-size: 0.62rem; }}
+    .next-match .nm-grid {{ gap: 6px; }}
+    .next-match .nm-team {{ font-size: 0.9rem; gap: 6px; }}
+    .next-match .nm-team img {{ width: 30px; height: 21px; }}
+    .next-match .nm-center {{ flex: 1.1; }}
+    .next-match .nm-score {{ font-size: 1.9rem; }}
+    .next-match .nm-meta {{ font-size: 0.56rem; }}
+    /* apilar columnas de Streamlit en pantalla estrecha */
+    div[data-testid="stHorizontalBlock"] {{ flex-wrap: wrap !important; gap: 0.5rem !important; }}
+    div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"],
+    div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {{
+        flex: 1 1 100% !important; width: 100% !important; min-width: 100% !important;
+    }}
+}}
 </style>
 """
 

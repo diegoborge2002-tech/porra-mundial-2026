@@ -6,6 +6,7 @@ import math
 import datetime
 
 from app.utils import ROOT, get_elo_with_biases
+from app.components_media import render_tab_banner
 from app.styles import TEXT_DIM, PRIMARY, ACCENT, GOOD, DANGER
 from src.data.team_names import EN_TO_ES
 from src.data.venues import VENUE_ALTITUDE
@@ -33,6 +34,7 @@ def _load_wc_matches() -> pd.DataFrame:
 def render():
     st.header("Calendario del Mundial")
     st.caption("Los 72 partidos de la fase de grupos · los 32 cruces eliminatorios están en la pestaña 🔮 Partidos")
+    render_tab_banner("map_motif.png")
 
     elo = get_elo_with_biases()
     matches = _load_wc_matches()

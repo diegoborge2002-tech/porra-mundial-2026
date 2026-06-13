@@ -1,30 +1,74 @@
-"""Media enriquecida con Higgsfield: banner cinematográfico + boletín de jornada.
+"""Media enriquecida: banner, fondo de estadio, boletín de jornada y banners de pestaña.
 
-Los recaps diarios se guardan como ficheros DATADOS en app/assets/recaps/:
-    recap_YYYY-MM-DD.png    -> imagen cinematográfica de la jornada
-    boletin_YYYY-MM-DD.mp3  -> locución del informe del día (voz IA)
-
-La web muestra SIEMPRE el más reciente. Para añadir uno nuevo basta con dejar
-los ficheros con la fecha del día (los genera Higgsfield al actualizar resultados),
-sin tocar código: `render_matchday_brief()` coge el último por nombre.
+Assets fijos y reutilizables (Nano Banana Pro / Higgsfield) en app/assets/custom/.
+Los boletines de audio diarios en app/assets/recaps/ (boletin_YYYY-MM-DD.wav).
 """
 from __future__ import annotations
 
+import base64
 import re
 from datetime import datetime
+from functools import lru_cache
 from pathlib import Path
 
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parent.parent
-BANNER = ROOT / "app" / "assets" / "banner_mundial.png"
-RECAP_DIR = ROOT / "app" / "assets" / "recaps"
+ASSETS = ROOT / "app" / "assets"
+CUSTOM = ASSETS / "custom"
+RECAP_DIR = ASSETS / "recaps"
+
+
+def _first(*paths: Path) -> Path | None:
+    for p in paths:
+        if p.exists():
+            return p
+    return None
 
 
 def render_banner() -> None:
     """Banner cinematográfico a todo lo ancho, en lo alto de la página."""
-    if BANNER.exists():
-        st.image(str(BANNER), use_container_width=True)
+    p = _first(CUSTOM / "banner.png", ASSETS / "banner_mundial.png")
+    if p:
+        st.image(str(p), use_container_width=True)
+
+
+@lru_cache(maxsize=1)
+def _bg_data_uri() -> str:
+    p = _first(CUSTOM / "bg_texture_min.jpg", CUSTOM / "bg_texture.png")
+    if not p:
+        return ""
+    mime = "jpeg" if p.suffix == ".jpg" else "png"
+    return f"data:image/{mime};base64," + base64.b64encode(p.read_bytes()).decode()
+
+
+def render_background() -> None:
+    """Textura de estadio fija y muy atenuada detrás de toda la app (legible)."""
+    uri = _bg_data_uri()
+    if not uri:
+        return
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image:
+                linear-gradient(rgba(2,6,23,0.90), rgba(2,6,23,0.95)),
+                url('{uri}');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_tab_banner(filename: str, caption: str = "") -> None:
+    """Imagen-cabecera decorativa al principio de una pestaña."""
+    p = CUSTOM / filename
+    if p.exists():
+        st.image(str(p), use_container_width=True, caption=caption or None)
 
 
 def _latest(pattern: str) -> Path | None:
@@ -45,13 +89,17 @@ def _nice_date(path: Path) -> str:
 
 
 def render_matchday_brief() -> None:
-    """Boletín de la jornada: imagen cinematográfica + locución del informe del día."""
-    img = _latest("recap_*.png")
+    """Boletín de la jornada: imagen fija (estudio) + locución del informe del día.
+
+    La imagen es un asset reutilizable (engine.png), NO se regenera por partido;
+    lo que cambia cada día es la locución (boletin_*.wav).
+    """
     audio = _latest("boletin_*.wav") or _latest("boletin_*.mp3")
+    img = _first(CUSTOM / "engine.png")
     if not img and not audio:
         return
 
-    fecha = _nice_date(img or audio)
+    fecha = _nice_date(audio) if audio else ""
     titulo = "📻 Boletín de la jornada" + (f" · {fecha}" if fecha else "")
     st.markdown(
         f'<div style="font-size:1.15rem;font-weight:700;margin:.3rem 0 .5rem;">{titulo}</div>',
@@ -64,5 +112,5 @@ def render_matchday_brief() -> None:
     with cols[1]:
         if audio:
             st.audio(str(audio))
-            st.caption("🔊 Resumen del día narrado · voz IA (Higgsfield)")
-        st.caption("Imagen generada con Higgsfield a partir de los resultados del día.")
+            st.caption("🔊 Resumen del día narrado · voz IA")
+        st.caption("Se actualiza cada jornada con los resultados del día.")
