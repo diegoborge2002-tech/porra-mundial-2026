@@ -24,6 +24,8 @@ Web Streamlit de predicción del Mundial 2026 (11 jun – 19 jul 2026, 48 equipo
 > rellenado por `python scripts/fetch_fixtures.py --apply` (API football-data.org;
 > token local en `~/.config/porra/football_data.token`, NO en el repo). Ese script
 > también imprime los partidos FINISHED de la API como fuente fiable de resultados.
+> La rutina además manda el boletín a Telegram con `scripts/notify_telegram.py`
+> (token y chat id en `~/.config/porra/telegram.token` y `telegram_chat_id`).
 
 Cuando el usuario diga "actualiza", "informe del día", pase resultados, o similar:
 
