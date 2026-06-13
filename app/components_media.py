@@ -132,7 +132,9 @@ def render_matchday_brief() -> None:
     La imagen es un asset reutilizable (engine.png), NO se regenera por partido;
     lo que cambia cada día es la locución (boletin_*.wav).
     """
-    audio = _latest("boletin_*.wav") or _latest("boletin_*.mp3")
+    _aud = (list(RECAP_DIR.glob("boletin_*.wav")) + list(RECAP_DIR.glob("boletin_*.mp3"))
+            if RECAP_DIR.exists() else [])
+    audio = max(_aud, key=lambda p: p.stat().st_mtime) if _aud else None
     img = _first(CUSTOM / "engine.png")
     if not img and not audio:
         return
