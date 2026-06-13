@@ -34,8 +34,9 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
    **"Diego (es)"**) y descargarlas a `app/assets/recaps/`. La web muestra SIEMPRE
    el par más reciente por nombre (`app/components_media.py` → `render_matchday_brief`),
    no hay que tocar código. El banner fijo está en `app/assets/banner_mundial.png`.
-5. **Desplegar**: `git add -A && git commit -m "..." && git push origin main && git push hf main`
-   → HF rebuildea en ~40 s y la web online refleja resultados + recap.
+5. **Desplegar**: `git add -A && git commit -m "..." && git push origin main`
+   y luego **`python scripts/deploy_hf.py "..."`** (HF por API; `git push hf`
+   rechaza los binarios de los recaps). HF rebuildea en ~40 s.
 6. **Resumir al usuario**: aciertos/fallos del modelo, qué motor va ganando
    (si el Elo rinde peor de forma sostenida, sugerir subir `stats_weight` en
    🎯 Mis ajustes), movimientos grandes en la porra, y partidos clave de hoy.
@@ -53,10 +54,12 @@ el código no hace falta tocarlo, solo registrar resultados y desplegar.
     la cabecera YAML del README configura el Space (`sdk: docker`, `app_port: 7860`).
   - Free tier ~16 GB RAM → aguanta el MC. (Streamlit Community Cloud daba 1 GB y
     lo tumbaba: "carga y no se ve nada". Vercel tampoco sirve.)
-  - Remoto git `hf`; **`git push hf main`** rebuildea el Space en ~40 s.
-    Login HF: `hf auth login` (token Write, queda cacheado como credencial git).
-- `git push origin main` actualiza GitHub (fuente de verdad). Para que el deploy
-  refleje cambios hay que empujar **también** a `hf` (o a ambos remotos).
+  - **Deploy: `python scripts/deploy_hf.py "mensaje"`** (sube por API/Xet y
+    rebuildea en ~40 s). OJO: `git push hf main` RECHAZA binarios (banner y los
+    recaps png/wav) si no van por LFS — por eso el deploy va por la API.
+    Login HF: `hf auth login` (token Write, queda cacheado).
+- `git push origin main` actualiza GitHub (fuente de verdad, sí acepta binarios).
+  Para que el deploy online refleje cambios, además: `python scripts/deploy_hf.py`.
 - `.gitignore` excluye `scratch/`, `notebooks/` e `informes_tacticos/` del repo:
   el entrenamiento XGBoost es local; al deploy solo va `stats_model.json`.
 
