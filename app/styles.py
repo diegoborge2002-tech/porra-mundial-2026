@@ -984,7 +984,25 @@ footer {{ visibility: hidden; }}
 [data-testid="stVideo"] video {{ border-radius: 14px; }}
 .stButton > button {{ transition: transform .15s ease, box-shadow .15s ease; }}
 .stButton > button:hover {{ transform: translateY(-1px); }}
-</style>
+
+/* ========================================================================
+   🎞️ Imágenes/vídeo integrados (sin "caja" dura: se funden con el fondo)
+   ======================================================================== */
+.stApp {{ overflow-x: hidden; }}
+[data-testid="stImage"] img {{
+    border-radius: 16px;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.55);
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 80%, transparent 100%);
+}}
+[data-testid="stVideo"] {{ margin: -6px -1.2rem 0 -1.2rem; }}
+[data-testid="stVideo"] video {{
+    width: calc(100% + 2.4rem);
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%);
+}}
 """
 
 
