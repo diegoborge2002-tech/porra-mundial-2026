@@ -28,20 +28,35 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
    (Elo / Ensemble / XGBoost), actualiza probabilidades de campeón con deltas
    vs el snapshot anterior, guarda el snapshot del día y lista los próximos
    partidos con resultado esperado.
-4. **Resumir al usuario**: aciertos/fallos del modelo, qué motor va ganando
+4. **Recap visual + boletín (Higgsfield)** — opcional, gasta créditos (~2/img,
+   ~2/audio; free tier ≈10): generar con Higgsfield una imagen `recap_<fecha>.png`
+   y una locución `boletin_<fecha>.wav` (modelo `inworld_text_to_speech`, voz
+   **"Diego (es)"**) y descargarlas a `app/assets/recaps/`. La web muestra SIEMPRE
+   el par más reciente por nombre (`app/components_media.py` → `render_matchday_brief`),
+   no hay que tocar código. El banner fijo está en `app/assets/banner_mundial.png`.
+5. **Desplegar**: `git add -A && git commit -m "..." && git push origin main && git push hf main`
+   → HF rebuildea en ~40 s y la web online refleja resultados + recap.
+6. **Resumir al usuario**: aciertos/fallos del modelo, qué motor va ganando
    (si el Elo rinde peor de forma sostenida, sugerir subir `stats_weight` en
    🎯 Mis ajustes), movimientos grandes en la porra, y partidos clave de hoy.
 
 Todo lo que escribe el script lo lee la web (real_results.json, snapshots/):
-no hace falta tocar nada más.
+el código no hace falta tocarlo, solo registrar resultados y desplegar.
 
 ## Deploy
 
 - Repo: https://github.com/diegoborge2002-tech/porra-mundial-2026 (gh CLI autenticado)
-- Hosting: **Streamlit Community Cloud** (share.streamlit.io), entry point
-  `app/streamlit_app.py`. Vercel NO sirve (Streamlit necesita servidor
-  persistente con websockets). Tras `git push origin main` el deploy se
-  actualiza solo en ~1 min.
+- Hosting: **Hugging Face Spaces** (Docker SDK) —
+  https://huggingface.co/spaces/diegoborge/porra-mundial-2026 ·
+  app live: **https://diegoborge-porra-mundial-2026.hf.space**
+  - El `Dockerfile` corre `streamlit run app/streamlit_app.py` en el puerto 7860;
+    la cabecera YAML del README configura el Space (`sdk: docker`, `app_port: 7860`).
+  - Free tier ~16 GB RAM → aguanta el MC. (Streamlit Community Cloud daba 1 GB y
+    lo tumbaba: "carga y no se ve nada". Vercel tampoco sirve.)
+  - Remoto git `hf`; **`git push hf main`** rebuildea el Space en ~40 s.
+    Login HF: `hf auth login` (token Write, queda cacheado como credencial git).
+- `git push origin main` actualiza GitHub (fuente de verdad). Para que el deploy
+  refleje cambios hay que empujar **también** a `hf` (o a ambos remotos).
 - `.gitignore` excluye `scratch/`, `notebooks/` e `informes_tacticos/` del repo:
   el entrenamiento XGBoost es local; al deploy solo va `stats_model.json`.
 

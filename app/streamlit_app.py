@@ -16,6 +16,7 @@ import math
 import streamlit as st
 
 from app.styles import inject, TEXT_DIM, PRIMARY, ACCENT
+from app.components_media import render_banner, render_matchday_brief
 from app.tabs import (
     predicciones, selecciones, biases, porra, calendario, seguimiento,
     rendimiento, en_vivo, comparador, plantilla, partidos,
@@ -234,6 +235,11 @@ def _global_search() -> None:
 
 
 # ============================================================
+# Banner cinematográfico (Higgsfield)
+# ============================================================
+render_banner()
+
+# ============================================================
 # Header — hero de estadio
 # ============================================================
 hc1, hc2 = st.columns([4, 1])
@@ -257,6 +263,7 @@ _ticker_bar()
 _next_match_panel()
 _header_kpi_bar()
 _news_banner()
+render_matchday_brief()
 
 
 tab1, tab1b, tab2, tab2b, tab2c, tab3, tab4, tab5, tab6, tab7, tab9 = st.tabs([
