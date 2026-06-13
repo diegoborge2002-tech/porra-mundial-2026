@@ -15,6 +15,13 @@ Web Streamlit de predicción del Mundial 2026 (11 jun – 19 jul 2026, 48 equipo
 
 ## 🔁 RUTINA DIARIA (¡importante durante el torneo!)
 
+> **Automatizada:** existe una tarea programada `porra-mundial-auto-update`
+> (10:00 y 23:00 hora España) que ejecuta este ciclo sola — busca resultados +
+> horarios, registra, `informe` y redespliega. Corre mientras la app de Claude
+> esté abierta (si está cerrada, en el próximo arranque). El flujo manual de abajo
+> sigue valiendo para forzarlo cuando el usuario diga "actualiza"/"ejecuta los
+> nuevos partidos". Horarios de inicio en hora ES: `data/processed/kickoff_times.json`.
+
 Cuando el usuario diga "actualiza", "informe del día", pase resultados, o similar:
 
 1. **Buscar los resultados de ayer/hoy en la web** (WebSearch: "resultado <equipos>
