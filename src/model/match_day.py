@@ -1,5 +1,6 @@
 """Detección de partidos próximos y cálculo de impacto en la porra."""
 from __future__ import annotations
+import json
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from functools import lru_cache
@@ -36,11 +37,38 @@ class UpcomingMatch:
     top_scores: list[tuple[tuple[int, int], float]]
 
 
+KICKOFF_TIMES = ROOT / "data" / "processed" / "kickoff_times.json"
+
+
+@lru_cache(maxsize=1)
+def _kickoff_overrides() -> dict[str, str]:
+    """Horas de inicio en hora ESPAÑOLA (Europe/Madrid, ISO naive).
+
+    Clave: 'Local vs Visitante' en español. El CSV solo trae fecha; esto le
+    pone la hora real. Lo rellena la rutina diaria escribiendo este JSON.
+    """
+    if KICKOFF_TIMES.exists():
+        try:
+            return json.loads(KICKOFF_TIMES.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
 @lru_cache(maxsize=1)
 def _wc_schedule() -> pd.DataFrame:
     df = pd.read_csv(RESULTS_CSV)
     df["date"] = pd.to_datetime(df["date"])
-    return df[df["date"] >= "2026-06-01"].copy().reset_index(drop=True)
+    df = df[df["date"] >= "2026-06-01"].copy().reset_index(drop=True)
+    ko = _kickoff_overrides()
+    if ko:
+        def _with_time(row):
+            h = EN_TO_ES.get(row["home_team"], row["home_team"])
+            a = EN_TO_ES.get(row["away_team"], row["away_team"])
+            iso = ko.get(f"{h} vs {a}")
+            return pd.to_datetime(iso) if iso else row["date"]
+        df["date"] = df.apply(_with_time, axis=1)
+    return df
 
 
 def _team_group(team_es: str) -> str:
