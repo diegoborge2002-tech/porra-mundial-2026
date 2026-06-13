@@ -27,7 +27,11 @@ def _first(*paths: Path) -> Path | None:
 
 
 def render_banner() -> None:
-    """Banner cinematográfico a todo lo ancho, en lo alto de la página."""
+    """Vídeo (o imagen) cinematográfico a todo lo ancho, en lo alto de la página."""
+    vid = _first(CUSTOM / "hero.mp4", CUSTOM / "intro.mp4")
+    if vid:
+        st.video(str(vid), loop=True, autoplay=True, muted=True)
+        return
     p = _first(CUSTOM / "banner.png", ASSETS / "banner_mundial.png")
     if p:
         st.image(str(p), use_container_width=True)
