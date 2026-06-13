@@ -19,6 +19,9 @@ ENV HOME=/app \
     STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
 RUN chmod -R a+w /app/data 2>/dev/null || true
 
+# PWA + OG: parchear el index.html de Streamlit (manifest, service worker, iconos, meta OG)
+RUN python app/pwa/patch_index.py
+
 EXPOSE 7860
 
 CMD ["streamlit", "run", "app/streamlit_app.py", \

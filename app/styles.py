@@ -972,6 +972,18 @@ footer {{ visibility: hidden; }}
         flex: 1 1 100% !important; width: 100% !important; min-width: 100% !important;
     }}
 }}
+
+/* ========================================================================
+   ✨ TRANSICIONES / microinteracciones
+   ======================================================================== */
+@keyframes contentFade {{ from {{ opacity: 0; transform: translateY(7px); }} to {{ opacity: 1; transform: none; }} }}
+[data-testid="stTabs"] [data-baseweb="tab-panel"] {{ animation: contentFade .35s ease both; }}
+.headerkpi-pill:hover {{ transform: translateY(-2px); border-color: rgba(76,215,246,0.55); box-shadow: 0 6px 18px rgba(0,0,0,0.45); }}
+[data-testid="stImage"] img {{ border-radius: 12px; transition: transform .3s ease, box-shadow .3s ease; }}
+[data-testid="stImage"] img:hover {{ transform: scale(1.012); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }}
+[data-testid="stVideo"] video {{ border-radius: 14px; }}
+.stButton > button {{ transition: transform .15s ease, box-shadow .15s ease; }}
+.stButton > button:hover {{ transform: translateY(-1px); }}
 </style>
 """
 

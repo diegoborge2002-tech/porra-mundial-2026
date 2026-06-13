@@ -1,0 +1,22 @@
+name: Keep HF Space awake
+
+# Hace ping al Space cada 15 min para que el free tier no se duerma.
+# Gratis e ilimitado en repos publicos. (GitHub puede retrasar el cron bajo carga.)
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping app
+        run: |
+          for url in \
+            "https://diegoborge-porra-mundial-2026.hf.space/" \
+            "https://diegoborge-porra-mundial-2026.hf.space/_stcore/health"; do
+            code=$(curl -sS -m 40 -o /dev/null -w "%{http_code}" "$url" || echo "000")
+            echo "$url -> $code"
+          done
