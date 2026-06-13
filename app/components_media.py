@@ -38,6 +38,40 @@ def render_banner() -> None:
 
 
 @lru_cache(maxsize=1)
+def _hero_bg_uri() -> str:
+    p = _first(CUSTOM / "banner_hero.jpg", CUSTOM / "banner.png", ASSETS / "banner_mundial.png")
+    if not p:
+        return ""
+    mime = "jpeg" if p.suffix in (".jpg", ".jpeg") else "png"
+    return f"data:image/{mime};base64," + base64.b64encode(p.read_bytes()).decode()
+
+
+def render_hero() -> None:
+    """Hero cinematográfico: imagen/vídeo de fondo con el título superpuesto.
+
+    El vídeo se sirve en /hero.mp4 (lo copia patch_index.py al deploy); si no
+    carga, queda la imagen de fondo (banner_hero.jpg en base64) con el título.
+    """
+    bg = _hero_bg_uri()
+    st.markdown(
+        f"""
+        <div class="hero-cine" style="background-image:url('{bg}');">
+          <video class="hero-vid" autoplay muted loop playsinline>
+            <source src="/hero.mp4" type="video/mp4">
+          </video>
+          <div class="hero-scrim"></div>
+          <div class="hero-text">
+            <h1 class="wc-title"><span class="ball">⚽</span> Porra Mundial 2026
+                <span class="hosts">🇺🇸 🇨🇦 🇲🇽</span></h1>
+            <p class="sub">Ensemble Elo + XGBoost · Monte Carlo 10.000 torneos · 48 equipos · 104 partidos · 11 jun → 19 jul</p>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+@lru_cache(maxsize=1)
 def _bg_data_uri() -> str:
     p = _first(CUSTOM / "bg_texture_min.jpg", CUSTOM / "bg_texture.png")
     if not p:

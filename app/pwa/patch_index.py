@@ -25,6 +25,11 @@ og = pathlib.Path("app/assets/custom/og_image.png")
 if og.exists():
     shutil.copy(og, static / "og_image.png")
 
+# Video hero -> servido en /hero.mp4 (lo usa render_hero)
+hero = pathlib.Path("app/assets/custom/hero.mp4")
+if hero.exists():
+    shutil.copy(hero, static / "hero.mp4")
+
 HEAD = f"""
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#020617">
@@ -36,6 +41,7 @@ HEAD = f"""
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <script>if("serviceWorker" in navigator){{window.addEventListener("load",function(){{navigator.serviceWorker.register("/sw.js")}})}}</script>
+<script src="/effects.js" defer></script>
 """
 
 idx = static / "index.html"

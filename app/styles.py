@@ -1003,6 +1003,58 @@ footer {{ visibility: hidden; }}
     -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%);
     mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%);
 }}
+
+/* ========================================================================
+   💎 Glassmorphism + glow + hero cinematografico + scroll-reveal
+   ======================================================================== */
+.next-match {{
+    background:
+        radial-gradient(ellipse 70% 120% at 50% -30%, rgba(76,215,246,0.12), transparent 60%),
+        linear-gradient(135deg, rgba(15,23,42,0.55), rgba(10,26,34,0.45)) !important;
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    animation: fadeInUp 0.5s cubic-bezier(0.16,1,0.3,1) both, panelGlow 4.5s ease-in-out infinite;
+}}
+@keyframes panelGlow {{
+    0%,100% {{ box-shadow: 0 10px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(76,215,246,0.22), 0 0 20px rgba(76,215,246,0.12); }}
+    50%     {{ box-shadow: 0 10px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(76,215,246,0.55), 0 0 40px rgba(76,215,246,0.34); }}
+}}
+.headerkpi-pill {{
+    background: rgba(15,23,42,0.42) !important;
+    backdrop-filter: blur(14px) saturate(1.2);
+    -webkit-backdrop-filter: blur(14px) saturate(1.2);
+}}
+.news-banner, .wc-ticker {{ backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }}
+
+/* Hero cinematografico: video/imagen de fondo + titulo encima */
+.hero-cine {{
+    position: relative; width: 100%;
+    aspect-ratio: 16 / 6; min-height: 200px; max-height: 400px;
+    border-radius: 18px; overflow: hidden;
+    margin: -4px 0 12px 0;
+    background-size: cover; background-position: center;
+    box-shadow: 0 22px 60px rgba(0,0,0,0.6);
+}}
+.hero-cine .hero-vid {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }}
+.hero-cine .hero-scrim {{
+    position: absolute; inset: 0; z-index: 1;
+    background:
+        linear-gradient(90deg, rgba(2,6,23,0.88) 0%, rgba(2,6,23,0.30) 48%, transparent 78%),
+        linear-gradient(0deg, rgba(2,6,23,0.92) 0%, transparent 58%);
+}}
+.hero-cine .hero-text {{ position: absolute; z-index: 2; left: 5%; right: 5%; bottom: 11%; }}
+.hero-cine .hero-text h1.wc-title {{ margin: 0 !important; }}
+.hero-cine .hero-text .sub {{ max-width: 660px; margin-top: 4px; }}
+@media (max-width: 640px) {{
+    .hero-cine {{ aspect-ratio: 16/10; max-height: 280px; }}
+    .hero-cine .hero-text {{ bottom: 8%; }}
+}}
+
+/* scroll-reveal (lo activa /effects.js) */
+.reveal-init {{ opacity: 0; transform: translateY(18px); }}
+.reveal-in {{ opacity: 1 !important; transform: none !important;
+    transition: opacity .6s ease, transform .6s cubic-bezier(0.16,1,0.3,1); }}
+</style>
 """
 
 

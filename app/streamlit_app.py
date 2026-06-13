@@ -16,7 +16,7 @@ import math
 import streamlit as st
 
 from app.styles import inject, TEXT_DIM, PRIMARY, ACCENT
-from app.components_media import render_banner, render_background, render_matchday_brief
+from app.components_media import render_hero, render_background, render_matchday_brief
 from app.tabs import (
     predicciones, selecciones, biases, porra, calendario, seguimiento,
     rendimiento, en_vivo, comparador, plantilla, partidos,
@@ -241,29 +241,10 @@ def _global_search() -> None:
 
 
 # ============================================================
-# Banner cinematográfico (Higgsfield)
+# Hero cinematográfico (vídeo de fondo + título superpuesto)
 # ============================================================
-render_banner()
-
-# ============================================================
-# Header — hero de estadio
-# ============================================================
-hc1, hc2 = st.columns([4, 1])
-with hc1:
-    st.markdown(
-        f"""
-        <div class="wc-hero">
-            <h1 class="wc-title"><span class="ball">⚽</span> Porra Mundial 2026
-                <span class="hosts">🇺🇸 🇨🇦 🇲🇽</span></h1>
-            <p class="sub">
-                Ensemble Elo + XGBoost · Monte Carlo 10.000 torneos · 48 equipos · 104 partidos · 11 jun → 19 jul
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-with hc2:
-    _global_search()
+render_hero()
+_global_search()
 
 _ticker_bar()
 _next_match_panel()
