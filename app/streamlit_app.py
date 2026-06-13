@@ -55,10 +55,11 @@ def _header_kpi_bar() -> None:
             top_team, top_p, n_eff = "—", 0.0, 0.0
 
         real = load_real_results() or {}
-        n_played = sum(1 for v in (real.get("group_results") or {}).values() if v)
-        # Sumar ko games jugados
+        n_played = sum(1 for v in (real.get("group_matches") or {}).values() if v)
+        # Sumar eliminatorias jugadas
+        ko = real.get("knockout_matches") or {}
         for r in ["r32", "r16", "qf", "sf", "final"]:
-            n_played += len((real.get(f"{r}_winners") or {}))
+            n_played += len(ko.get(r) or {})
     except Exception:
         top_team, top_p, n_eff, n_played = "—", 0.0, 0.0, 0
 
@@ -158,7 +159,11 @@ def _next_match_panel() -> None:
         (bh, ba), bp = representative_score(m.lambda_home, m.lambda_away)
         iso_h = ISO_CODES.get(m.home, "un")
         iso_a = ISO_CODES.get(m.away, "un")
-        kick = m.date.strftime("%a %d %b · %H:%M").upper() if hasattr(m.date, "strftime") else ""
+        if hasattr(m.date, "strftime"):
+            _has_time = bool(getattr(m.date, "hour", 0) or getattr(m.date, "minute", 0))
+            kick = m.date.strftime("%a %d %b · %H:%M h" if _has_time else "%a %d %b").upper()
+        else:
+            kick = ""
         venue = f" · {m.city}" if m.city else ""
         group = f"GRUPO {m.group}" if m.group not in ("?", "KO") else "ELIMINATORIA"
 
