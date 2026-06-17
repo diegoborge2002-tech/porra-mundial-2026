@@ -42,6 +42,14 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
    (Elo / Ensemble / XGBoost), actualiza probabilidades de campeón con deltas
    vs el snapshot anterior, guarda el snapshot del día y lista los próximos
    partidos con resultado esperado.
+3b. **Refrescar Actualidad** (pestaña 🔥): busca en la web los **máximos
+   goleadores** y el **jugador del partido / MVP** de los partidos nuevos y
+   escríbelos en `data/processed/actualidad.json` (`scorers`, `mvps`, `updated`).
+   Coteja siempre los goles con los marcadores registrados (deben sumar por
+   partido) — eso garantiza la calidad. El resto de la pestaña (en forma,
+   movimientos de la porra, clasificaciones, titulares automáticos) se calcula
+   solo desde los resultados; no hay que tocar nada. La API gratuita NO da
+   goleadores, por eso van por búsqueda web.
 4. **Recap visual + boletín (Higgsfield)** — opcional, gasta créditos (~2/img,
    ~2/audio; free tier ≈10): generar con Higgsfield una imagen `recap_<fecha>.png`
    y una locución `boletin_<fecha>.wav` (modelo `inworld_text_to_speech`, voz
@@ -85,6 +93,13 @@ el código no hace falta tocarlo, solo registrar resultados y desplegar.
 - `data/processed/real_results.json` — resultados reales registrados (formato:
   `group_matches: {"A vs B": [gA, gB]}`, `knockout_matches: {r32: {"73": {home, away, ...}}}`)
 - `data/processed/stats_model.json` — 1.128 cruces precomputados del XGBoost
-- `app/tabs/partidos.py` — pestaña "🔮 Partidos" (resultado esperado de los 104)
+- `data/processed/actualidad.json` — goleadores + MVP (datos externos, vía web);
+  los lee `src/data/actualidad.py` (que además deriva en forma / movimientos /
+  clasificaciones / titulares) y los pinta `app/tabs/actualidad.py` (pestaña 🔥)
+- `app/tabs/partidos.py` — pestaña "🔮 Partidos" (resultado esperado de los 104 +
+  mapa de sedes). **Navegación**: `app/streamlit_app.py` usa `st.segmented_control`
+  (lazy: solo renderiza la pestaña activa), 9 pestañas. Retiradas: Comparador
+  (ahora toggle dentro de Selecciones), Calendario (su mapa está en Partidos) y
+  "En vivo" (calculadora minuto a minuto). Deep-link `?goto=<clave>` para saltar.
 - Nombres de equipo: español sin acentos ("Espana", "Rep. Checa", "R.D. Congo",
   "Bosnia Herz.", "Costa Marfil") — ver `src/tournament/groups.py`

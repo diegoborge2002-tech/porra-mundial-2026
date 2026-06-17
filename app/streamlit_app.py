@@ -18,9 +18,12 @@ import streamlit as st
 from app.styles import inject, TEXT_DIM, PRIMARY, ACCENT
 from app.components_media import render_hero, render_background, render_matchday_brief
 from app.tabs import (
-    predicciones, selecciones, biases, porra, calendario, seguimiento,
-    rendimiento, en_vivo, comparador, plantilla, partidos,
+    predicciones, selecciones, biases, porra, seguimiento,
+    rendimiento, plantilla, partidos, actualidad,
 )
+# comparador y calendario ya no son pestañas propias: comparador vive dentro de
+# Selecciones (toggle) y el mapa de Calendario dentro de Partidos. Se importan
+# de forma diferida en esos módulos. 'en_vivo' (calculadora minuto a minuto) se retiró.
 
 
 KICKOFF = datetime(2026, 6, 11, 20, 0, 0)
@@ -255,31 +258,29 @@ render_matchday_brief()
 
 # ============================================================
 # Navegación lazy: solo se renderiza la pestaña activa.
-# Con st.tabs, Streamlit ejecuta el render() de las 11 pestañas en CADA
+# Con st.tabs, Streamlit ejecuta el render() de TODAS las pestañas en CADA
 # interacción (las oculta por CSS, pero el Python corre entero). Con un
-# segmented_control rendereamos únicamente la activa → ~11× menos trabajo
+# segmented_control rendereamos únicamente la activa → mucho menos trabajo
 # por clic. Bonus: permite deep-links con ?goto= (st.tabs no podía).
 # ============================================================
 _TABS = [
     ("📊 Predicciones", predicciones.render),
+    ("🔥 Actualidad", actualidad.render),
     ("🔮 Partidos", partidos.render),
     ("🌍 Selecciones", selecciones.render),
-    ("🆚 Comparador", comparador.render),
     ("👥 Plantilla", plantilla.render),
-    ("🗓 Calendario", calendario.render),
-    ("🎯 Mis ajustes", biases.render),
     ("📋 Mi porra", porra.render),
+    ("🎯 Mis ajustes", biases.render),
     ("📡 Seguimiento en vivo", seguimiento.render),
-    ("⚡ En vivo", en_vivo.render),
     ("📈 Rendimiento del modelo", rendimiento.render),
 ]
 _LABELS = [t[0] for t in _TABS]
 _RENDER = dict(_TABS)
 _GOTO = {  # claves cortas de ?goto= → etiqueta de pestaña
-    "predicciones": _LABELS[0], "partidos": _LABELS[1], "selecciones": _LABELS[2],
-    "comparador": _LABELS[3], "plantilla": _LABELS[4], "calendario": _LABELS[5],
-    "biases": _LABELS[6], "ajustes": _LABELS[6], "porra": _LABELS[7],
-    "seguimiento": _LABELS[8], "en_vivo": _LABELS[9], "rendimiento": _LABELS[10],
+    "predicciones": _LABELS[0], "actualidad": _LABELS[1], "partidos": _LABELS[2],
+    "selecciones": _LABELS[3], "plantilla": _LABELS[4], "porra": _LABELS[5],
+    "biases": _LABELS[6], "ajustes": _LABELS[6], "seguimiento": _LABELS[7],
+    "rendimiento": _LABELS[8],
 }
 
 _NAV_KEY = "active_tab"

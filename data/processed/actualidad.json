@@ -1,0 +1,40 @@
+{
+  "updated": "2026-06-17",
+  "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
+  "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Se refresca en cada 'actualiza'.",
+  "scorers": [
+    {"player": "Kylian Mbappé", "team": "Francia", "goals": 2},
+    {"player": "Kai Havertz", "team": "Alemania", "goals": 2},
+    {"player": "Niclas Füllkrug", "team": "Alemania", "goals": 2},
+    {"player": "Alexander Isak", "team": "Suecia", "goals": 2},
+    {"player": "Folarin Balogun", "team": "Estados Unidos", "goals": 2},
+    {"player": "Jamal Musiala", "team": "Alemania", "goals": 1},
+    {"player": "Leroy Sané", "team": "Alemania", "goals": 1},
+    {"player": "Florian Wirtz", "team": "Alemania", "goals": 1},
+    {"player": "Dejan Kulusevski", "team": "Suecia", "goals": 1},
+    {"player": "Viktor Gyökeres", "team": "Suecia", "goals": 1},
+    {"player": "Emil Forsberg", "team": "Suecia", "goals": 1},
+    {"player": "Cody Gakpo", "team": "Paises Bajos", "goals": 1},
+    {"player": "Memphis Depay", "team": "Paises Bajos", "goals": 1},
+    {"player": "Daizen Maeda", "team": "Japon", "goals": 1},
+    {"player": "Takumi Minamino", "team": "Japon", "goals": 1},
+    {"player": "Julián Quiñones", "team": "Mexico", "goals": 1},
+    {"player": "Raúl Jiménez", "team": "Mexico", "goals": 1},
+    {"player": "Hwang In-beom", "team": "Corea del Sur", "goals": 1},
+    {"player": "Oh Hyeon-gyu", "team": "Corea del Sur", "goals": 1},
+    {"player": "Ladislav Krejčí", "team": "Rep. Checa", "goals": 1},
+    {"player": "Cyle Larin", "team": "Canada", "goals": 1},
+    {"player": "Saša Lukić", "team": "Bosnia Herz.", "goals": 1},
+    {"player": "Breel Embolo", "team": "Suiza", "goals": 1},
+    {"player": "Boualem Khoukhi", "team": "Catar", "goals": 1},
+    {"player": "Sébastien Haller", "team": "Costa Marfil", "goals": 1},
+    {"player": "Juninho Bacuna", "team": "Curazao", "goals": 1},
+    {"player": "Anis Slimane", "team": "Tunez", "goals": 1},
+    {"player": "Emam Ashour", "team": "Egipto", "goals": 1}
+  ],
+  "mvps": [
+    {"player": "Vozinha", "team": "Cabo Verde", "match": "Espana 0-0 Cabo Verde", "date": "2026-06-15", "note": "7 paradas; primer punto histórico de Cabo Verde"},
+    {"player": "Folarin Balogun", "team": "Estados Unidos", "match": "Estados Unidos 4-1 Paraguay", "date": "2026-06-13", "note": "Doblete en el debut"},
+    {"player": "Ismael Koné", "team": "Canada", "match": "Canada 1-1 Bosnia Herz.", "date": "2026-06-12", "note": ""}
+  ]
+}

@@ -127,6 +127,13 @@ def render():
     with sub_t6:
         _render_quick_bias(team_es, elo_delta, cfg)
 
+    # ====== Comparador (fusionado desde la antigua pestaña 🆚) ======
+    st.divider()
+    if st.toggle("🆚 Comparar 2-3 selecciones a la vez", key="sel_show_comparador",
+                 help="Compara varias selecciones lado a lado (Elo, forma, camino al título, plantilla)."):
+        from app.tabs import comparador
+        comparador.render()
+
 
 def _render_logistic_schedule(team_es: str):
     sched = get_team_schedule(team_es)

@@ -364,3 +364,10 @@ def render() -> None:
     st.divider()
     st.subheader("🏟 Eliminatorias (32 partidos)")
     _render_knockout(elo, w)
+
+    # ---- Mapa de sedes (integrado desde la antigua pestaña Calendario) ----
+    st.divider()
+    st.subheader("🗺 Sedes del Mundial")
+    st.caption("Las 16 sedes en México, EE. UU. y Canadá. Tamaño = nº de partidos · color = altitud.")
+    from app.tabs.calendario import _render_venues_map
+    _render_venues_map(_load_wc_matches())
