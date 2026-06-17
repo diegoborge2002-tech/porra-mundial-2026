@@ -485,24 +485,45 @@ def _render_schedule_difficulty(team_es, group, elo, summary):
 
 def _render_group_comparison(team_es, group, elo, summary):
     st.subheader(f"Comparativa Grupo {group}")
-    group_data = []
+    rows = []
     for t in GROUPS[group]:
-        group_data.append({
-            "Equipo": t,
-            "Elo": int(elo[t]),
-            "P(1.º) %": round(summary["group_winner"].get(group, {}).get(t, 0) * 100, 1),
-            "P(Top 2) %": round(summary["group_top2"].get(group, {}).get(t, 0) * 100, 1),
-            "P(Top 3) %": round(summary["group_top3"].get(group, {}).get(t, 0) * 100, 1),
-            "P(Cuartos) %": round(summary["quarter"].get(t, 0) * 100, 1),
-            "P(Campeon) %": round(summary["champion"].get(t, 0) * 100, 2),
+        rows.append({
+            "team": t, "elo": int(elo[t]),
+            "p1": summary["group_winner"].get(group, {}).get(t, 0) * 100,
+            "top2": summary["group_top2"].get(group, {}).get(t, 0) * 100,
+            "top3": summary["group_top3"].get(group, {}).get(t, 0) * 100,
+            "qf": summary["quarter"].get(t, 0) * 100,
+            "champ": summary["champion"].get(t, 0) * 100,
         })
-    df_group = pd.DataFrame(group_data).sort_values("P(Top 3) %", ascending=False)
-    def highlight_team(row):
-        if row["Equipo"] == team_es:
-            return [f"background-color: {PRIMARY}; color: white; font-weight: 700;"] * len(row)
-        return [""] * len(row)
-    st.dataframe(df_group.style.apply(highlight_team, axis=1),
-                 hide_index=True, use_container_width=True)
+    rows.sort(key=lambda r: r["top3"], reverse=True)
+
+    def _fl(t: str) -> str:
+        iso = ISO_CODES.get(t, "un")
+        return (f'<img src="https://flagcdn.com/w40/{iso}.png" style="width:23px;height:16px;'
+                f'border-radius:3px;object-fit:cover;box-shadow:0 1px 2px rgba(0,0,0,.4);">')
+
+    def _cell(pct: float, champ: bool = False) -> str:
+        cls = "wc-pcell champ" if champ else "wc-pcell"
+        if pct < 8:
+            cls += " dim"
+        return (f'<td><div class="{cls}"><div class="fill" style="width:{max(pct,2):.0f}%"></div>'
+                f'<div class="v">{pct:.1f}</div></div></td>')
+
+    html = ['<div style="overflow-x:auto;"><table class="wc-ptable"><thead><tr>'
+            '<th class="lft">Equipo</th><th>Elo</th><th>1.º</th><th>Top&nbsp;2</th>'
+            '<th>Top&nbsp;3</th><th>Cuartos</th><th>Campeón</th></tr></thead><tbody>']
+    for r in rows:
+        sel = " class='sel'" if r["team"] == team_es else ""
+        html.append(
+            f'<tr{sel}><td><div class="pteam">{_fl(r["team"])}{r["team"]}</div></td>'
+            f'<td class="pelo">{r["elo"]}</td>'
+            + _cell(r["p1"]) + _cell(r["top2"]) + _cell(r["top3"]) + _cell(r["qf"])
+            + _cell(r["champ"], champ=True) + '</tr>'
+        )
+    html.append('</tbody></table></div>')
+    st.markdown("".join(html), unsafe_allow_html=True)
+    st.caption("Probabilidades del Monte Carlo (10.000 torneos) en %. La barra es la probabilidad relativa; "
+               "tu selección va resaltada.")
 
 
 def _render_quick_bias(team_es, elo_delta, cfg):

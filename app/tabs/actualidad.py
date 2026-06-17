@@ -19,9 +19,12 @@ from src.data.actualidad import (
 
 def _flag(team: str, w: int = 20) -> str:
     iso = ISO_CODES.get(team, "un")
-    return (f'<img src="https://flagcdn.com/w{w*2}/{iso}.png" '
-            f'style="width:{w}px;height:{round(w*0.7)}px;border-radius:2px;'
-            f'vertical-align:middle;object-fit:cover;">')
+    # flagcdn solo sirve anchos concretos (20/40/80/160…). Pedimos w40 (nítido en
+    # retina) y escalamos por CSS al ancho de display; así nunca pedimos un ancho
+    # inválido (p. ej. w32) que devuelve 404 y rompe la bandera.
+    return (f'<img src="https://flagcdn.com/w40/{iso}.png" loading="lazy" '
+            f'style="width:{w}px;height:{round(w*0.7)}px;border-radius:3px;'
+            f'vertical-align:middle;object-fit:cover;box-shadow:0 1px 2px rgba(0,0,0,.4);">')
 
 
 def _card_open(title: str) -> str:
@@ -174,18 +177,24 @@ def _render_standings(elo: dict, real: dict) -> None:
     for i in range(0, len(groups), 3):
         cols = st.columns(3)
         for col, g in zip(cols, groups[i:i + 3]):
-            html = [f'<div style="background:{BG_CARD};border:1px solid #1f2937;border-radius:12px;padding:10px 12px;margin-bottom:12px;">'
-                    f'<div style="font-weight:800;color:{PRIMARY};margin-bottom:6px;">Grupo {g}</div>']
+            html = [f'<div style="background:{BG_CARD};border:1px solid #1f2937;border-radius:12px;padding:11px 13px;margin-bottom:12px;">'
+                    f'<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px;">'
+                    f'<span style="font-weight:800;color:{PRIMARY};">Grupo {g}</span>'
+                    f'<span style="font-size:0.62rem;color:{TEXT_DIM};font-weight:600;letter-spacing:.04em;">PJ · DG · PTS</span></div>']
             for pos, t in enumerate(gs[g]):
-                qual = TERTIARY if pos < 2 else TEXT_DIM
+                top = pos < 2
+                badge_bg = TERTIARY if top else "rgba(255,255,255,0.06)"
+                badge_col = "#06231c" if top else TEXT_DIM
+                rowbg = "background:rgba(78,222,163,0.08);" if top else ""
                 html.append(
-                    f'<div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:0.82rem;">'
-                    f'<span style="width:14px;color:{qual};font-weight:700;">{pos+1}</span>'
-                    f'{_flag(t["team"], 16)}'
-                    f'<span style="flex:1;">{t["team"]}</span>'
-                    f'<span style="color:{TEXT_DIM};font-size:0.72rem;width:58px;text-align:right;">'
-                    f'{t["played"]}PJ {t["gd"]:+d}</span>'
-                    f'<span style="font-weight:800;width:24px;text-align:right;">{t["points"]}</span></div>'
+                    f'<div style="display:flex;align-items:center;gap:8px;padding:4px 5px;margin:1px -5px;border-radius:7px;{rowbg}">'
+                    f'<span style="display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;'
+                    f'border-radius:50%;background:{badge_bg};color:{badge_col};font-size:0.68rem;font-weight:800;flex:none;">{pos+1}</span>'
+                    f'{_flag(t["team"], 18)}'
+                    f'<span style="flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:0.84rem;font-weight:600;">{t["team"]}</span>'
+                    f'<span style="color:{TEXT_DIM};font-size:0.7rem;font-variant-numeric:tabular-nums;flex:none;">{t["played"]}</span>'
+                    f'<span style="color:{TEXT_DIM};font-size:0.7rem;width:24px;text-align:right;font-variant-numeric:tabular-nums;flex:none;">{t["gd"]:+d}</span>'
+                    f'<span style="font-weight:800;width:18px;text-align:right;color:{PRIMARY};font-variant-numeric:tabular-nums;flex:none;">{t["points"]}</span></div>'
                 )
             html.append("</div>")
             col.markdown("".join(html), unsafe_allow_html=True)

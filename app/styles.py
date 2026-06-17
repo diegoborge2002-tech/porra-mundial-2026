@@ -212,6 +212,34 @@ h4 {{ font-size: 1.1rem !important; font-weight: 600 !important; color: {TEXT} !
 }}
 
 /* ========================================================================
+   Tabla de probabilidades premium (.wc-ptable) — filas-tarjeta con barras.
+   Reutilizable: comparativa de grupo, rankings, etc.
+   ======================================================================== */
+.wc-ptable {{ width:100%; border-collapse:separate; border-spacing:0 7px; font-size:0.86rem; }}
+.wc-ptable th {{
+    text-align:right; color:{TEXT_DIM}; font-weight:700; font-size:0.66rem;
+    text-transform:uppercase; letter-spacing:0.05em; padding:0 12px 2px;
+    white-space:nowrap;
+}}
+.wc-ptable th.lft {{ text-align:left; }}
+.wc-ptable td {{ padding:9px 12px; background:{BG_CARD}; vertical-align:middle; }}
+.wc-ptable tr td:first-child {{ border-radius:12px 0 0 12px; }}
+.wc-ptable tr td:last-child {{ border-radius:0 12px 12px 0; }}
+.wc-ptable tr.sel td {{ background:rgba(76,215,246,0.13); box-shadow: inset 3px 0 0 {PRIMARY}; }}
+.wc-ptable .pteam {{ display:flex; align-items:center; gap:9px; font-weight:600; white-space:nowrap; }}
+.wc-ptable .pelo {{ text-align:right; font-weight:700; color:{TEXT_DIM}; font-variant-numeric:tabular-nums; }}
+.wc-pcell {{ position:relative; height:22px; min-width:64px; border-radius:6px;
+    background:rgba(255,255,255,0.05); overflow:hidden; }}
+.wc-pcell .fill {{ position:absolute; top:0; left:0; bottom:0; border-radius:6px;
+    background:linear-gradient(90deg, rgba(76,215,246,0.45), rgba(76,215,246,0.85));
+    transition:width .5s cubic-bezier(.22,1,.36,1); }}
+.wc-pcell.champ .fill {{ background:linear-gradient(90deg, rgba(208,188,255,0.45), rgba(208,188,255,0.92)); }}
+.wc-pcell .v {{ position:absolute; inset:0; display:flex; align-items:center; justify-content:flex-end;
+    padding-right:7px; font-size:0.76rem; font-weight:800; font-variant-numeric:tabular-nums;
+    text-shadow:0 1px 2px rgba(0,0,0,.5); }}
+.wc-pcell.dim .v {{ color:{TEXT_DIM}; }}
+
+/* ========================================================================
    Tablas
    ======================================================================== */
 [data-testid="stTable"], [data-testid="stDataFrame"] {{
