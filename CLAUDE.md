@@ -56,9 +56,14 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
    **"Diego (es)"**) y descargarlas a `app/assets/recaps/`. La web muestra SIEMPRE
    el par más reciente por nombre (`app/components_media.py` → `render_matchday_brief`),
    no hay que tocar código. El banner fijo está en `app/assets/banner_mundial.png`.
-5. **Desplegar**: `git add -A && git commit -m "..." && git push origin main`
-   y luego **`python scripts/deploy_hf.py "..."`** (HF por API; `git push hf`
-   rechaza los binarios de los recaps). HF rebuildea en ~40 s.
+5. **Desplegar**: primero **`python scripts/warm_mc.py`** (precalcula el Monte
+   Carlo con los resultados nuevos → `data/processed/mc_cache/`, para que la web
+   cargue al instante; gitignored, lo sube el deploy). Luego
+   `git add -A && git commit -m "..." && git push origin main` y
+   **`python scripts/deploy_hf.py "..."`** (HF por API; `git push hf` rechaza los
+   binarios de los recaps). HF rebuildea en ~40 s. El caché es seguro: la clave
+   incluye los resultados, así que si se te olvida `warm_mc` la web recalcula en
+   vivo (más lento) pero **nunca sirve datos viejos**.
 6. **Resumir al usuario**: aciertos/fallos del modelo, qué motor va ganando
    (si el Elo rinde peor de forma sostenida, sugerir subir `stats_weight` en
    🎯 Mis ajustes), movimientos grandes en la porra, y partidos clave de hoy.

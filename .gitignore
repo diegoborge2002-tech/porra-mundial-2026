@@ -49,3 +49,7 @@ informes_tacticos/
 
 # Streamlit local PID
 /tmp/streamlit_pid
+
+# Caché del Monte Carlo (artefacto derivado: lo regenera scripts/warm_mc.py y
+# lo sube deploy_hf.py; no hace falta versionarlo en GitHub)
+data/processed/mc_cache/

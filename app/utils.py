@@ -129,7 +129,18 @@ def run_simulation(
     amigos_fingerprint: str = "",  # part of cache key, no use inside
     stats_weight: float = 0.5,
 ) -> dict:
-    """Ejecuta Monte Carlo. Cacheado por elos+resultados+porra propia+peso ensemble."""
+    """Ejecuta Monte Carlo. Cacheado por elos+resultados+porra propia+peso ensemble.
+
+    Antes de calcular mira el caché en disco (data/processed/mc_cache): si la
+    rutina diaria ya precalculó esta configuración, la carga al instante. Si no,
+    calcula y la guarda (para esta sesión y futuras).
+    """
+    from src.model.mc_runtime import disk_key, load_cached, save_cached, summary_to_dict
+    key = disk_key(elo_dict_frozen, n_sims, seed, real_results_str, porra_str, stats_weight)
+    cached = load_cached(key)
+    if cached is not None:
+        return cached
+
     from src.model import ensemble
     ensemble.set_stats_weight(stats_weight)
     elo = dict(elo_dict_frozen)
@@ -139,30 +150,9 @@ def run_simulation(
 
     summary = run_monte_carlo(elo, n_sims=n_sims, seed=seed,
                               real_results=real_results, predictions=predictions)
-
-    return {
-        "n_sims": summary.n_sims,
-        "champion": summary.champion_probs,
-        "finalist": summary.finalist_probs,
-        "semifinal": summary.semifinal_probs,
-        "quarter": summary.quarter_probs,
-        "r16": summary.r16_probs,
-        "group_winner": summary.group_winner_probs,
-        "group_top2": summary.group_top2_probs,
-        "group_top3": summary.group_top3_probs,
-        "third_place": summary.third_place_probs,
-        "best_third": summary.qualified_as_best_third_probs,
-        "expected_total_goals": summary.expected_total_goals,
-        "total_goals_distribution": summary.total_goals_distribution,
-        "expected_team_goals": summary.expected_team_goals,
-        "pichichi": summary.pichichi_probs,
-        "leaderboard": summary.leaderboard_probs,
-        "leaderboard_expected_points": summary.leaderboard_expected_points,
-        "champion_by_sim": summary.champion_by_sim,
-        "points_by_sim": summary.points_by_sim,
-        "final_position_by_team": summary.final_position_by_team,
-        "opponent_probs_per_team": summary.opponent_probs_per_team,
-    }
+    result = summary_to_dict(summary)
+    save_cached(key, result)
+    return result
 
 
 def run_simulation_with_real(elo: dict[str, float], n_sims: int = 10_000, seed: int = 42) -> dict:
