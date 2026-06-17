@@ -50,6 +50,13 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
    movimientos de la porra, clasificaciones, titulares automáticos) se calcula
    solo desde los resultados; no hay que tocar nada. La API gratuita NO da
    goleadores, por eso van por búsqueda web.
+3c. **Refrescar cuotas** (pestaña 💰 Mercado): `python scripts/fetch_odds.py --apply`
+   → reescribe `data/processed/odds.json` con las cuotas de the-odds-api (campeón
+   + 1X2 de los próximos partidos). ~2 créditos/llamada (free tier 500/mes; token
+   en `~/.config/porra/odds_api.token`, NO en el repo). La web compara modelo vs
+   mercado y marca *value bets* (EV + Kelly). OJO: el modelo es ~10 pp más plano
+   que el mercado, así que casi todo el value es infraconfianza del modelo, no
+   ineficiencia — la propia pestaña lo avisa con un banner de calibración.
 4. **Recap visual + boletín (Higgsfield)** — opcional, gasta créditos (~2/img,
    ~2/audio; free tier ≈10): generar con Higgsfield una imagen `recap_<fecha>.png`
    y una locución `boletin_<fecha>.wav` (modelo `inworld_text_to_speech`, voz
@@ -101,9 +108,16 @@ el código no hace falta tocarlo, solo registrar resultados y desplegar.
 - `data/processed/actualidad.json` — goleadores + MVP (datos externos, vía web);
   los lee `src/data/actualidad.py` (que además deriva en forma / movimientos /
   clasificaciones / titulares) y los pinta `app/tabs/actualidad.py` (pestaña 🔥)
+- `data/processed/odds.json` — cuotas de apuestas (the-odds-api, vía
+  `scripts/fetch_odds.py`; mejor cuota + prob implícita media por casa). Las lee
+  `src/data/odds.py` (devig por normalización + helpers EV/Kelly) y las pinta
+  `app/tabs/mercado.py` (pestaña 💰 Mercado vs Modelo: campeón y 1X2 modelo vs
+  mercado + value bets). El modelo del 1X2 sale del MISMO `_predict_match` que
+  🔮 Partidos, así que los números cuadran entre pestañas.
 - `app/tabs/partidos.py` — pestaña "🔮 Partidos" (resultado esperado de los 104 +
   mapa de sedes). **Navegación**: `app/streamlit_app.py` usa `st.segmented_control`
-  (lazy: solo renderiza la pestaña activa), 9 pestañas. Retiradas: Comparador
+  (lazy: solo renderiza la pestaña activa), 9 pestañas (incl. 💰 Mercado vs
+  Modelo). Retiradas: Comparador
   (ahora toggle dentro de Selecciones), Calendario (su mapa está en Partidos) y
   "En vivo" (calculadora minuto a minuto). Deep-link `?goto=<clave>` para saltar.
 - Nombres de equipo: español sin acentos ("Espana", "Rep. Checa", "R.D. Congo",

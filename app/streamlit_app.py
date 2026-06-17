@@ -19,7 +19,7 @@ from app.styles import inject, TEXT_DIM, PRIMARY, ACCENT
 from app.components_media import render_hero, render_background, render_matchday_brief
 from app.tabs import (
     predicciones, selecciones, biases, seguimiento,
-    rendimiento, plantilla, partidos, actualidad,
+    rendimiento, plantilla, partidos, actualidad, mercado,
 )
 # comparador y calendario ya no son pestañas propias: comparador vive dentro de
 # Selecciones (toggle) y el mapa de Calendario dentro de Partidos. Se importan
@@ -267,6 +267,7 @@ _TABS = [
     ("📊 Predicciones", predicciones.render),
     ("🔥 Actualidad", actualidad.render),
     ("🔮 Partidos", partidos.render),
+    ("💰 Mercado", mercado.render),
     ("🌍 Selecciones", selecciones.render),
     ("👥 Plantilla", plantilla.render),
     ("🎯 Mis ajustes", biases.render),
@@ -277,8 +278,9 @@ _LABELS = [t[0] for t in _TABS]
 _RENDER = dict(_TABS)
 _GOTO = {  # claves cortas de ?goto= → etiqueta de pestaña
     "predicciones": _LABELS[0], "actualidad": _LABELS[1], "partidos": _LABELS[2],
-    "selecciones": _LABELS[3], "plantilla": _LABELS[4], "biases": _LABELS[5],
-    "ajustes": _LABELS[5], "seguimiento": _LABELS[6], "rendimiento": _LABELS[7],
+    "mercado": _LABELS[3], "cuotas": _LABELS[3], "selecciones": _LABELS[4],
+    "plantilla": _LABELS[5], "biases": _LABELS[6], "ajustes": _LABELS[6],
+    "seguimiento": _LABELS[7], "rendimiento": _LABELS[8],
 }
 
 _NAV_KEY = "active_tab"
