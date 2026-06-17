@@ -5,7 +5,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 from app.utils import load_base_elo, get_biases, get_elo_with_biases, run_simulation_with_real, load_real_results
-from app.components import big_stat
+from app.components import big_stat, render_table
 from app.components_day import render_upcoming_card, render_pre_match_extras
 from app.components_media import render_tab_banner
 from app.styles import PRIMARY, ACCENT, BG_CARD, TEXT, TEXT_DIM, GOOD
@@ -253,34 +253,33 @@ def render():
     st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
 
     # === Tabla completa + grafico ===
-    col_left, col_right = st.columns([3, 2])
-    with col_left:
-        st.subheader("Ranking completo de probabilidades")
-        df = pd.DataFrame([
-            {"Equipo": t,
-             "Campeon %": summary["champion"].get(t, 0) * 100,
-             "Final %": summary["finalist"].get(t, 0) * 100,
-             "Semi %": summary["semifinal"].get(t, 0) * 100,
-             "Cuartos %": summary["quarter"].get(t, 0) * 100,
-             "Octavos %": summary["r16"].get(t, 0) * 100,
-             "Elo": round(elo[t], 0)}
-            for t in ALL_TEAMS
-        ]).sort_values("Campeon %", ascending=False).reset_index(drop=True)
-        df.index = df.index + 1
-        st.dataframe(
-            df.style.format({
-                "Campeon %": "{:.2f}",
-                "Final %": "{:.2f}",
-                "Semi %": "{:.2f}",
-                "Cuartos %": "{:.2f}",
-                "Octavos %": "{:.2f}",
-                "Elo": "{:.0f}",
-            }).background_gradient(subset=["Campeon %"], cmap="Greens"),
-            height=600, use_container_width=True,
-        )
+    st.subheader("Ranking completo de probabilidades")
+    df = pd.DataFrame([
+        {"Equipo": t,
+         "Campeon %": summary["champion"].get(t, 0) * 100,
+         "Final %": summary["finalist"].get(t, 0) * 100,
+         "Semi %": summary["semifinal"].get(t, 0) * 100,
+         "Cuartos %": summary["quarter"].get(t, 0) * 100,
+         "Octavos %": summary["r16"].get(t, 0) * 100,
+         "Elo": round(elo[t], 0)}
+        for t in ALL_TEAMS
+    ]).sort_values("Campeon %", ascending=False).reset_index(drop=True)
+    render_table(df.to_dict("records"), [
+        {"label": "Equipo", "key": "Equipo", "kind": "team"},
+        {"label": "Campeón", "key": "Campeon %", "kind": "bar", "champ": True},
+        {"label": "Final", "key": "Final %", "kind": "bar"},
+        {"label": "Semi", "key": "Semi %", "kind": "bar"},
+        {"label": "Cuartos", "key": "Cuartos %", "kind": "bar"},
+        {"label": "Octavos", "key": "Octavos %", "kind": "bar"},
+        {"label": "Elo", "key": "Elo", "kind": "num"},
+    ], max_height="560px")
+    st.caption("Probabilidad de llegar a cada ronda (Monte Carlo, 10.000 torneos). La barra es la probabilidad relativa.")
 
-    with col_right:
-        st.subheader("Top 12 al titulo")
+    st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
+
+    col_chart, _ = st.columns([3, 2])
+    with col_chart:
+        st.subheader("Top 12 al título")
         top12 = df.head(12)
         fig = go.Figure(go.Bar(
             x=top12["Campeon %"],

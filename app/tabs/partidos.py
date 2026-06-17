@@ -10,6 +10,7 @@ import streamlit as st
 
 from app.utils import ROOT, get_elo_with_biases, get_biases, load_real_results
 from app.styles import TEXT_DIM, PRIMARY, ACCENT, GOOD, DANGER, BG_CARD
+from app.components import render_table
 from src.data.team_names import EN_TO_ES
 from src.data.team_profile import ISO_CODES
 from src.model import ensemble
@@ -186,13 +187,18 @@ def _match_card(m: pd.Series, pred: dict) -> None:
         ts_h, ts_a = ensemble.get_team_stats(home), ensemble.get_team_stats(away)
         if ts_h and ts_a:
             st.markdown("**Forma reciente (últimos 5 partidos, datos scrapeados):**")
-            form = pd.DataFrame([
-                {"Equipo": home, "xG/partido": ts_h["xg5"], "Posesión": f"{ts_h['posesion5']*100:.0f}%",
-                 "Remates puerta": ts_h["remates5"], "Ranking FIFA (pts)": ts_h["fifa_points"]},
-                {"Equipo": away, "xG/partido": ts_a["xg5"], "Posesión": f"{ts_a['posesion5']*100:.0f}%",
-                 "Remates puerta": ts_a["remates5"], "Ranking FIFA (pts)": ts_a["fifa_points"]},
+            render_table([
+                {"team": home, "xg": ts_h["xg5"], "pos": ts_h["posesion5"] * 100,
+                 "rem": ts_h["remates5"], "fifa": ts_h["fifa_points"]},
+                {"team": away, "xg": ts_a["xg5"], "pos": ts_a["posesion5"] * 100,
+                 "rem": ts_a["remates5"], "fifa": ts_a["fifa_points"]},
+            ], [
+                {"label": "Equipo", "key": "team", "kind": "team"},
+                {"label": "xG/partido", "key": "xg", "kind": "num", "fmt": "{:.2f}"},
+                {"label": "Posesión", "key": "pos", "kind": "pct"},
+                {"label": "Remates puerta", "key": "rem", "kind": "num"},
+                {"label": "Ranking FIFA", "key": "fifa", "kind": "num"},
             ])
-            st.dataframe(form, hide_index=True, use_container_width=True)
 
 
 def _slot_label(slot) -> str:
