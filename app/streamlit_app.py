@@ -253,28 +253,44 @@ _news_banner()
 render_matchday_brief()
 
 
-tab1, tab1b, tab2, tab2b, tab2c, tab3, tab4, tab5, tab6, tab7, tab9 = st.tabs([
-    "📊 Predicciones",
-    "🔮 Partidos",
-    "🌍 Selecciones",
-    "🆚 Comparador",
-    "👥 Plantilla",
-    "🗓 Calendario",
-    "🎯 Mis ajustes",
-    "📋 Mi porra",
-    "📡 Seguimiento en vivo",
-    "⚡ En vivo",
-    "📈 Rendimiento del modelo",
-])
+# ============================================================
+# Navegación lazy: solo se renderiza la pestaña activa.
+# Con st.tabs, Streamlit ejecuta el render() de las 11 pestañas en CADA
+# interacción (las oculta por CSS, pero el Python corre entero). Con un
+# segmented_control rendereamos únicamente la activa → ~11× menos trabajo
+# por clic. Bonus: permite deep-links con ?goto= (st.tabs no podía).
+# ============================================================
+_TABS = [
+    ("📊 Predicciones", predicciones.render),
+    ("🔮 Partidos", partidos.render),
+    ("🌍 Selecciones", selecciones.render),
+    ("🆚 Comparador", comparador.render),
+    ("👥 Plantilla", plantilla.render),
+    ("🗓 Calendario", calendario.render),
+    ("🎯 Mis ajustes", biases.render),
+    ("📋 Mi porra", porra.render),
+    ("📡 Seguimiento en vivo", seguimiento.render),
+    ("⚡ En vivo", en_vivo.render),
+    ("📈 Rendimiento del modelo", rendimiento.render),
+]
+_LABELS = [t[0] for t in _TABS]
+_RENDER = dict(_TABS)
+_GOTO = {  # claves cortas de ?goto= → etiqueta de pestaña
+    "predicciones": _LABELS[0], "partidos": _LABELS[1], "selecciones": _LABELS[2],
+    "comparador": _LABELS[3], "plantilla": _LABELS[4], "calendario": _LABELS[5],
+    "biases": _LABELS[6], "ajustes": _LABELS[6], "porra": _LABELS[7],
+    "seguimiento": _LABELS[8], "en_vivo": _LABELS[9], "rendimiento": _LABELS[10],
+}
 
-with tab1: predicciones.render()
-with tab1b: partidos.render()
-with tab2: selecciones.render()
-with tab2b: comparador.render()
-with tab2c: plantilla.render()
-with tab3: calendario.render()
-with tab4: biases.render()
-with tab5: porra.render()
-with tab6: seguimiento.render()
-with tab7: en_vivo.render()
-with tab9: rendimiento.render()
+_NAV_KEY = "active_tab"
+_goto = st.query_params.get("goto")
+if _goto and _goto in _GOTO:
+    st.session_state[_NAV_KEY] = _GOTO[_goto]
+    del st.query_params["goto"]
+elif _NAV_KEY not in st.session_state:
+    st.session_state[_NAV_KEY] = _LABELS[0]
+
+_active = st.segmented_control(
+    "Navegación", _LABELS, key=_NAV_KEY, label_visibility="collapsed",
+)
+_RENDER.get(_active or st.session_state[_NAV_KEY], predicciones.render)()

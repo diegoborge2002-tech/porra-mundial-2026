@@ -103,9 +103,15 @@ def render_background() -> None:
 
 
 def render_tab_banner(filename: str, caption: str = "") -> None:
-    """Imagen-cabecera decorativa al principio de una pestaña."""
-    p = CUSTOM / filename
-    if p.exists():
+    """Imagen-cabecera decorativa al principio de una pestaña.
+
+    Prefiere una versión optimizada `.jpg` (mismo nombre) si existe; cae al
+    fichero pedido en caso contrario. Así los PNG pesados originales solo se
+    usan de fallback.
+    """
+    stem = Path(filename).stem
+    p = _first(CUSTOM / f"{stem}.jpg", CUSTOM / filename)
+    if p:
         st.image(str(p), use_container_width=True, caption=caption or None)
 
 
@@ -135,7 +141,7 @@ def render_matchday_brief() -> None:
     _aud = (list(RECAP_DIR.glob("boletin_*.wav")) + list(RECAP_DIR.glob("boletin_*.mp3"))
             if RECAP_DIR.exists() else [])
     audio = max(_aud, key=lambda p: p.stat().st_mtime) if _aud else None
-    img = _first(CUSTOM / "engine.png")
+    img = _first(CUSTOM / "engine.jpg", CUSTOM / "engine.png")
     if not img and not audio:
         return
 

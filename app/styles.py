@@ -171,6 +171,47 @@ h4 {{ font-size: 1.1rem !important; font-weight: 600 !important; color: {TEXT} !
 [data-testid="stTabs"] [role="tablist"] {{ border-bottom: none !important; }}
 
 /* ========================================================================
+   Navegación principal (st.segmented_control) — mismas píldoras que las tabs.
+   Sustituye a st.tabs para renderizar SOLO la pestaña activa (lazy-load).
+   ======================================================================== */
+[data-testid="stButtonGroup"] {{
+    background-color: rgba(21, 27, 45, 0.5) !important;
+    border-radius: 16px !important;
+    padding: 8px !important;
+    border: 1px solid {BORDER} !important;
+    margin: 8px 0 24px !important;
+    backdrop-filter: blur(12px) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+    justify-content: center !important;
+}}
+[data-testid="stBaseButton-segmented_control"],
+[data-testid="stBaseButton-segmented_controlActive"] {{
+    background-color: transparent !important;
+    color: {TEXT_DIM} !important;
+    border: none !important;
+    padding: 9px 18px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    border-radius: 9999px !important;
+    transition: all 0.2s ease !important;
+    font-family: 'Outfit', sans-serif !important;
+    letter-spacing: -0.005em !important;
+    min-height: 0 !important;
+}}
+[data-testid="stBaseButton-segmented_control"]:hover {{
+    color: {PRIMARY} !important;
+    background-color: rgba(76, 215, 246, 0.08) !important;
+}}
+[data-testid="stBaseButton-segmented_controlActive"] {{
+    color: {SURFACE} !important;
+    background: linear-gradient(135deg, {PRIMARY} 0%, #22d3ee 100%) !important;
+    box-shadow: 0 4px 15px rgba(76,215,246,0.30) !important;
+    font-weight: 700 !important;
+}}
+
+/* ========================================================================
    Tablas
    ======================================================================== */
 [data-testid="stTable"], [data-testid="stDataFrame"] {{

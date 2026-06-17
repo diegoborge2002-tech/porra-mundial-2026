@@ -16,6 +16,7 @@ from src.model.match_probs import top_exact_scores, match_outcome_probs
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 RESULTS_CSV = ROOT / "data" / "raw" / "results.csv"
+REAL_RESULTS = ROOT / "data" / "processed" / "real_results.json"
 
 
 @dataclass
@@ -112,6 +113,32 @@ def _build_upcoming(row, elo: dict[str, float], use_host: bool = True) -> Upcomi
     )
 
 
+def _played_pairs() -> set[frozenset]:
+    """Pares {local, visitante} (en español) ya registrados en real_results.json.
+
+    Los resultados se guardan ahí, NO en results.csv, así que el `home_score`
+    del calendario sigue vacío aunque el partido se haya jugado. Sin esto, un
+    partido recién registrado aparece como "próximo" (su hora de inicio cae
+    dentro de la ventana). No se cachea: cambia al registrar cada resultado.
+    """
+    pairs: set[frozenset] = set()
+    if not REAL_RESULTS.exists():
+        return pairs
+    try:
+        data = json.loads(REAL_RESULTS.read_text(encoding="utf-8"))
+    except Exception:
+        return pairs
+    for key, score in (data.get("group_matches") or {}).items():
+        if score and " vs " in key:
+            h, a = key.split(" vs ", 1)
+            pairs.add(frozenset((h, a)))
+    for rnd in (data.get("knockout_matches") or {}).values():
+        for m in (rnd or {}).values():
+            if isinstance(m, dict) and m.get("home") and m.get("away"):
+                pairs.add(frozenset((m["home"], m["away"])))
+    return pairs
+
+
 def find_upcoming_matches(
     elo: dict[str, float],
     now: datetime | None = None,
@@ -126,6 +153,14 @@ def find_upcoming_matches(
     now = now or datetime.now()
     df = _wc_schedule()
     pending = df[df["home_score"].isna()].copy()
+    # Excluir los ya registrados en real_results.json (el CSV no los conoce)
+    played = _played_pairs()
+    if played and not pending.empty:
+        pending = pending[~pending.apply(
+            lambda r: frozenset((
+                EN_TO_ES.get(r["home_team"], r["home_team"]),
+                EN_TO_ES.get(r["away_team"], r["away_team"]),
+            )) in played, axis=1)]
     if pending.empty:
         return []
     pending["seconds_to_kickoff"] = (pending["date"] - pd.Timestamp(now)).dt.total_seconds()
