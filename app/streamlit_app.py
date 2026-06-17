@@ -18,7 +18,7 @@ import streamlit as st
 from app.styles import inject, TEXT_DIM, PRIMARY, ACCENT
 from app.components_media import render_hero, render_background, render_matchday_brief
 from app.tabs import (
-    predicciones, selecciones, biases, porra, seguimiento,
+    predicciones, selecciones, biases, seguimiento,
     rendimiento, plantilla, partidos, actualidad,
 )
 # comparador y calendario ya no son pestañas propias: comparador vive dentro de
@@ -30,7 +30,7 @@ KICKOFF = datetime(2026, 6, 11, 20, 0, 0)
 
 
 st.set_page_config(
-    page_title="Porra Mundial 2026",
+    page_title="Mi Mundial 2026",
     page_icon="⚽",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -269,7 +269,6 @@ _TABS = [
     ("🔮 Partidos", partidos.render),
     ("🌍 Selecciones", selecciones.render),
     ("👥 Plantilla", plantilla.render),
-    ("📋 Mi porra", porra.render),
     ("🎯 Mis ajustes", biases.render),
     ("📡 Seguimiento en vivo", seguimiento.render),
     ("📈 Rendimiento del modelo", rendimiento.render),
@@ -278,9 +277,8 @@ _LABELS = [t[0] for t in _TABS]
 _RENDER = dict(_TABS)
 _GOTO = {  # claves cortas de ?goto= → etiqueta de pestaña
     "predicciones": _LABELS[0], "actualidad": _LABELS[1], "partidos": _LABELS[2],
-    "selecciones": _LABELS[3], "plantilla": _LABELS[4], "porra": _LABELS[5],
-    "biases": _LABELS[6], "ajustes": _LABELS[6], "seguimiento": _LABELS[7],
-    "rendimiento": _LABELS[8],
+    "selecciones": _LABELS[3], "plantilla": _LABELS[4], "biases": _LABELS[5],
+    "ajustes": _LABELS[5], "seguimiento": _LABELS[6], "rendimiento": _LABELS[7],
 }
 
 _NAV_KEY = "active_tab"

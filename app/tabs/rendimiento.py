@@ -5,7 +5,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 from app.utils import get_elo_with_biases, load_base_elo, load_real_results, get_biases
-from app.components import big_stat
+from app.components import big_stat, render_table
 from app.styles import PRIMARY, ACCENT, BG_CARD, TEXT, TEXT_DIM, GOOD, DANGER
 from src.model.live_diagnostics import compute_match_diagnostics, diagnostics_to_dataframe
 from src.model.calibration import aggregate_metrics, reliability_bins
@@ -106,18 +106,23 @@ def render():
                 preds_w = [((d.p_home, d.p_draw, d.p_away), d.outcome) for d in diags_w]
                 s_w = aggregate_metrics(preds_w)
                 comp_rows.append({
-                    "Modelo": label,
-                    "Top-1 aciertos": f"{s_w.hit_rate_top1*100:.0f}%",
-                    "Brier ↓": round(s_w.mean_brier, 3),
-                    "Log-loss ↓": round(s_w.mean_log_loss, 3),
-                    "RPS ↓": round(s_w.mean_rps, 3),
+                    "modelo": label,
+                    "top1": s_w.hit_rate_top1 * 100,
+                    "brier": s_w.mean_brier,
+                    "logloss": s_w.mean_log_loss,
+                    "rps": s_w.mean_rps,
                 })
             _ens.set_stats_weight(w_user)  # restaurar el peso del usuario
-            df_comp = pd.DataFrame(comp_rows)
-            best_brier = df_comp["Brier ↓"].idxmin()
-            st.dataframe(df_comp, hide_index=True, use_container_width=True)
+            best_label = min(comp_rows, key=lambda r: r["brier"])["modelo"]
+            render_table(comp_rows, [
+                {"label": "Modelo", "key": "modelo", "kind": "text"},
+                {"label": "Top-1 aciertos", "key": "top1", "kind": "pct"},
+                {"label": "Brier ↓", "key": "brier", "kind": "num", "fmt": "{:.3f}"},
+                {"label": "Log-loss ↓", "key": "logloss", "kind": "num", "fmt": "{:.3f}"},
+                {"label": "RPS ↓", "key": "rps", "kind": "num", "fmt": "{:.3f}"},
+            ], highlight=lambda r: r["modelo"] == best_label)
             st.caption(
-                f"🏆 Mejor Brier hasta ahora: **{df_comp.loc[best_brier, 'Modelo']}**. "
+                f"🏆 Mejor Brier hasta ahora: **{best_label}**. "
                 "Con pocos partidos esto baila mucho; gana valor a medida que avanza el torneo."
             )
             st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
@@ -129,22 +134,29 @@ def render():
             "Cuanto más alta, más sorprendente fue el resultado para el modelo."
         )
         df = diagnostics_to_dataframe(diagnostics)
-        df_view = df[[
-            "phase", "match_id", "home_score", "away_score",
-            "p_home", "p_draw", "p_away", "outcome",
-            "xg_home", "xg_away", "surprise", "brier", "rps",
-        ]].copy()
-        df_view.columns = ["Fase", "Partido", "GL", "GV",
-                           "P(H)", "P(X)", "P(A)", "Real",
-                           "xG L", "xG V", "Sorpresa", "Brier", "RPS"]
-        st.dataframe(
-            df_view.style.format({
-                "P(H)": "{:.0%}", "P(X)": "{:.0%}", "P(A)": "{:.0%}",
-                "xG L": "{:.2f}", "xG V": "{:.2f}",
-                "Sorpresa": "{:.0%}", "Brier": "{:.2f}", "RPS": "{:.2f}",
-            }).background_gradient(subset=["Sorpresa"], cmap="Reds"),
-            hide_index=True, use_container_width=True, height=420,
-        )
+        diag_rows = [{
+            "phase": r["phase"], "match": r["match_id"],
+            "gl": r["home_score"], "gv": r["away_score"],
+            "ph": r["p_home"] * 100, "px": r["p_draw"] * 100, "pa": r["p_away"] * 100,
+            "real": r["outcome"], "xgl": r["xg_home"], "xgv": r["xg_away"],
+            "surp": r["surprise"] * 100, "brier": r["brier"], "rps": r["rps"],
+        } for _, r in df.iterrows()]
+        render_table(diag_rows, [
+            {"label": "Fase", "key": "phase", "kind": "text"},
+            {"label": "Partido", "key": "match", "kind": "text"},
+            {"label": "GL", "key": "gl", "kind": "num"},
+            {"label": "GV", "key": "gv", "kind": "num"},
+            {"label": "P(H)", "key": "ph", "kind": "pct"},
+            {"label": "P(X)", "key": "px", "kind": "pct"},
+            {"label": "P(A)", "key": "pa", "kind": "pct"},
+            {"label": "Real", "key": "real", "kind": "text"},
+            {"label": "xG L", "key": "xgl", "kind": "num", "fmt": "{:.2f}"},
+            {"label": "xG V", "key": "xgv", "kind": "num", "fmt": "{:.2f}"},
+            {"label": "Sorpresa", "key": "surp", "kind": "grad", "hex": "#ef4444",
+             "max": 100, "fmt": "{:.0f}%"},
+            {"label": "Brier", "key": "brier", "kind": "num", "fmt": "{:.2f}"},
+            {"label": "RPS", "key": "rps", "kind": "num", "fmt": "{:.2f}"},
+        ], max_height="440px")
 
         st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
 

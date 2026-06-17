@@ -34,7 +34,7 @@ HEAD = f"""
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#020617">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta property="og:title" content="Porra Mundial 2026">
+<meta property="og:title" content="Mi Mundial 2026">
 <meta property="og:description" content="Predicciones del Mundial 2026 con IA: Elo + XGBoost + Monte Carlo de 10.000 torneos.">
 <meta property="og:image" content="{BASE_URL}/og_image.png">
 <meta property="og:url" content="{BASE_URL}">

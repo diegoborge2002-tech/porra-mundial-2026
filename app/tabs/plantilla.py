@@ -16,7 +16,7 @@ from app.utils import (
     ROOT, get_biases, freeze_elo, run_simulation, load_real_results,
 )
 from app.styles import PRIMARY, ACCENT, GOOD, DANGER, TEXT_DIM
-from app.components import big_stat
+from app.components import big_stat, render_table
 from src.data.squad import (
     Player, Squad, load_squad, SQUADS_DIR, POSITIONS, POSITION_LABELS,
     calculate_club_performance_bias, ratings_to_elo_bias,
@@ -217,38 +217,21 @@ def _render_ranking(data: dict[str, dict]) -> None:
     df_sorted = df.sort_values(sort_by, ascending=False).reset_index(drop=True)
     df_sorted.index = df_sorted.index + 1
 
-    display = df_sorted[[
-        "team", "total_mv", "n_players", "n_starters",
-        "elite_players", "mean_form_starters",
-        "mv_bias", "pedigree_bias", "form_bias",
-        "club_bias_total", "base_elo", "delta_elo",
-    ]].rename(columns={
-        "team": "Selección",
-        "total_mv": "Valor (M€)",
-        "n_players": "Jugs",
-        "n_starters": "Titulares",
-        "elite_players": "Élite",
-        "mean_form_starters": "Forma titulares",
-        "mv_bias": "Δ valor",
-        "pedigree_bias": "Δ pedigrí",
-        "form_bias": "Δ forma",
-        "club_bias_total": "Bias total",
-        "base_elo": "Elo base",
-        "delta_elo": "Δ Elo",
-    })
-    st.dataframe(
-        display.style.format({
-            "Valor (M€)": "{:.0f}",
-            "Forma titulares": "{:.2f}",
-            "Δ valor": "{:+.0f}",
-            "Δ pedigrí": "{:+.0f}",
-            "Δ forma": "{:+.0f}",
-            "Bias total": "{:+.0f}",
-            "Δ Elo": "{:+d}",
-        }).background_gradient(subset=["Bias total"], cmap="RdYlGn", vmin=-200, vmax=200),
-        use_container_width=True,
-        height=560,
-    )
+    render_table(df_sorted.to_dict("records"), [
+        {"label": "Selección", "key": "team", "kind": "team"},
+        {"label": "Valor", "key": "total_mv", "kind": "num", "fmt": "{:.0f}", "suffix": " M€"},
+        {"label": "Jugs", "key": "n_players", "kind": "num"},
+        {"label": "Titulares", "key": "n_starters", "kind": "num"},
+        {"label": "Élite", "key": "elite_players", "kind": "num"},
+        {"label": "Forma", "key": "mean_form_starters", "kind": "num", "fmt": "{:.2f}"},
+        {"label": "Δ valor", "key": "mv_bias", "kind": "delta"},
+        {"label": "Δ pedigrí", "key": "pedigree_bias", "kind": "delta"},
+        {"label": "Δ forma", "key": "form_bias", "kind": "delta"},
+        {"label": "Bias total", "key": "club_bias_total", "kind": "grad",
+         "diverge": True, "max": 200, "fmt": "{:+.0f}"},
+        {"label": "Elo base", "key": "base_elo", "kind": "num"},
+        {"label": "Δ Elo", "key": "delta_elo", "kind": "delta"},
+    ], max_height="560px")
 
     st.caption(
         "**Fórmula**: `bias = 25·log(valor/50M)·w_mv + 5·elite_weighted·w_pedigree + "

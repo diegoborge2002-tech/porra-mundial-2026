@@ -61,7 +61,7 @@ def render_hero() -> None:
           </video>
           <div class="hero-scrim"></div>
           <div class="hero-text">
-            <h1 class="wc-title"><span class="ball">⚽</span> Porra Mundial 2026
+            <h1 class="wc-title"><span class="ball">⚽</span> Mi Mundial 2026
                 <span class="hosts">🇺🇸 🇨🇦 🇲🇽</span></h1>
             <p class="sub">Ensemble Elo + XGBoost · Monte Carlo 10.000 torneos · 48 equipos · 104 partidos · 11 jun → 19 jul</p>
           </div>
