@@ -1,40 +1,520 @@
 {
-  "updated": "2026-06-17",
+  "updated": "2026-06-20",
   "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
-  "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Se refresca en cada 'actualiza'.",
+  "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
   "scorers": [
-    {"player": "Kylian Mbappé", "team": "Francia", "goals": 2},
-    {"player": "Kai Havertz", "team": "Alemania", "goals": 2},
-    {"player": "Niclas Füllkrug", "team": "Alemania", "goals": 2},
-    {"player": "Alexander Isak", "team": "Suecia", "goals": 2},
-    {"player": "Folarin Balogun", "team": "Estados Unidos", "goals": 2},
-    {"player": "Jamal Musiala", "team": "Alemania", "goals": 1},
-    {"player": "Leroy Sané", "team": "Alemania", "goals": 1},
-    {"player": "Florian Wirtz", "team": "Alemania", "goals": 1},
-    {"player": "Dejan Kulusevski", "team": "Suecia", "goals": 1},
-    {"player": "Viktor Gyökeres", "team": "Suecia", "goals": 1},
-    {"player": "Emil Forsberg", "team": "Suecia", "goals": 1},
-    {"player": "Cody Gakpo", "team": "Paises Bajos", "goals": 1},
-    {"player": "Memphis Depay", "team": "Paises Bajos", "goals": 1},
-    {"player": "Daizen Maeda", "team": "Japon", "goals": 1},
-    {"player": "Takumi Minamino", "team": "Japon", "goals": 1},
-    {"player": "Julián Quiñones", "team": "Mexico", "goals": 1},
-    {"player": "Raúl Jiménez", "team": "Mexico", "goals": 1},
-    {"player": "Hwang In-beom", "team": "Corea del Sur", "goals": 1},
-    {"player": "Oh Hyeon-gyu", "team": "Corea del Sur", "goals": 1},
-    {"player": "Ladislav Krejčí", "team": "Rep. Checa", "goals": 1},
-    {"player": "Cyle Larin", "team": "Canada", "goals": 1},
-    {"player": "Saša Lukić", "team": "Bosnia Herz.", "goals": 1},
-    {"player": "Breel Embolo", "team": "Suiza", "goals": 1},
-    {"player": "Boualem Khoukhi", "team": "Catar", "goals": 1},
-    {"player": "Sébastien Haller", "team": "Costa Marfil", "goals": 1},
-    {"player": "Juninho Bacuna", "team": "Curazao", "goals": 1},
-    {"player": "Anis Slimane", "team": "Tunez", "goals": 1},
-    {"player": "Emam Ashour", "team": "Egipto", "goals": 1}
+    {
+      "player": "Cody Gakpo",
+      "team": "Paises Bajos",
+      "goals": 3
+    },
+    {
+      "player": "Jonathan David",
+      "team": "Canada",
+      "goals": 3
+    },
+    {
+      "player": "Lionel Messi",
+      "team": "Argentina",
+      "goals": 3
+    },
+    {
+      "player": "Alexander Isak",
+      "team": "Suecia",
+      "goals": 2
+    },
+    {
+      "player": "Brian Brobbey",
+      "team": "Paises Bajos",
+      "goals": 2
+    },
+    {
+      "player": "Cyle Larin",
+      "team": "Canada",
+      "goals": 2
+    },
+    {
+      "player": "Elijah Just",
+      "team": "Nueva Zelanda",
+      "goals": 2
+    },
+    {
+      "player": "Erling Haaland",
+      "team": "Noruega",
+      "goals": 2
+    },
+    {
+      "player": "Folarin Balogun",
+      "team": "Estados Unidos",
+      "goals": 2
+    },
+    {
+      "player": "Harry Kane",
+      "team": "Inglaterra",
+      "goals": 2
+    },
+    {
+      "player": "Ismael Saibari",
+      "team": "Marruecos",
+      "goals": 2
+    },
+    {
+      "player": "Johan Manzambi",
+      "team": "Suiza",
+      "goals": 2
+    },
+    {
+      "player": "Kai Havertz",
+      "team": "Alemania",
+      "goals": 2
+    },
+    {
+      "player": "Kylian Mbappé",
+      "team": "Francia",
+      "goals": 2
+    },
+    {
+      "player": "Matheus Cunha",
+      "team": "Brasil",
+      "goals": 2
+    },
+    {
+      "player": "Niclas Füllkrug",
+      "team": "Alemania",
+      "goals": 2
+    },
+    {
+      "player": "Vinicius Junior",
+      "team": "Brasil",
+      "goals": 2
+    },
+    {
+      "player": "Yasin Ayari",
+      "team": "Suecia",
+      "goals": 2
+    },
+    {
+      "player": "Abbosbek Fayzullaev",
+      "team": "Uzbekistan",
+      "goals": 1
+    },
+    {
+      "player": "Abdulelah Al-Amri",
+      "team": "Arabia Saudi",
+      "goals": 1
+    },
+    {
+      "player": "Alex Freeman",
+      "team": "Estados Unidos",
+      "goals": 1
+    },
+    {
+      "player": "Ali Olwan",
+      "team": "Jordania",
+      "goals": 1
+    },
+    {
+      "player": "Amad Diallo",
+      "team": "Costa Marfil",
+      "goals": 1
+    },
+    {
+      "player": "Anis Slimane",
+      "team": "Tunez",
+      "goals": 1
+    },
+    {
+      "player": "Anthony Elanga",
+      "team": "Suecia",
+      "goals": 1
+    },
+    {
+      "player": "Ayman Hussein",
+      "team": "Irak",
+      "goals": 1
+    },
+    {
+      "player": "Boualem Khoukhi",
+      "team": "Catar",
+      "goals": 1
+    },
+    {
+      "player": "Bradley Barcola",
+      "team": "Francia",
+      "goals": 1
+    },
+    {
+      "player": "Breel Embolo",
+      "team": "Suiza",
+      "goals": 1
+    },
+    {
+      "player": "Caleb Yirenkyi",
+      "team": "Ghana",
+      "goals": 1
+    },
+    {
+      "player": "Connor Metcalfe",
+      "team": "Australia",
+      "goals": 1
+    },
+    {
+      "player": "Crysencio Summerville",
+      "team": "Paises Bajos",
+      "goals": 1
+    },
+    {
+      "player": "Daichi Kamada",
+      "team": "Japon",
+      "goals": 1
+    },
+    {
+      "player": "Daizen Maeda",
+      "team": "Japon",
+      "goals": 1
+    },
+    {
+      "player": "Daniel Munoz",
+      "team": "Colombia",
+      "goals": 1
+    },
+    {
+      "player": "Dejan Kulusevski",
+      "team": "Suecia",
+      "goals": 1
+    },
+    {
+      "player": "Deniz Undav",
+      "team": "Alemania",
+      "goals": 1
+    },
+    {
+      "player": "Emam Ashour",
+      "team": "Egipto",
+      "goals": 1
+    },
+    {
+      "player": "Emil Forsberg",
+      "team": "Suecia",
+      "goals": 1
+    },
+    {
+      "player": "Ermin Mahmic",
+      "team": "Bosnia Herz.",
+      "goals": 1
+    },
+    {
+      "player": "Florian Wirtz",
+      "team": "Alemania",
+      "goals": 1
+    },
+    {
+      "player": "Granit Xhaka",
+      "team": "Suiza",
+      "goals": 1
+    },
+    {
+      "player": "Hwang In-beom",
+      "team": "Corea del Sur",
+      "goals": 1
+    },
+    {
+      "player": "Ibrahima Mbaye",
+      "team": "Senegal",
+      "goals": 1
+    },
+    {
+      "player": "Jamal Musiala",
+      "team": "Alemania",
+      "goals": 1
+    },
+    {
+      "player": "Jaminton Campaz",
+      "team": "Colombia",
+      "goals": 1
+    },
+    {
+      "player": "Joao Neves",
+      "team": "Portugal",
+      "goals": 1
+    },
+    {
+      "player": "John McGinn",
+      "team": "Escocia",
+      "goals": 1
+    },
+    {
+      "player": "Jude Bellingham",
+      "team": "Inglaterra",
+      "goals": 1
+    },
+    {
+      "player": "Julián Quiñones",
+      "team": "Mexico",
+      "goals": 1
+    },
+    {
+      "player": "Juninho Bacuna",
+      "team": "Curazao",
+      "goals": 1
+    },
+    {
+      "player": "Keito Nakamura",
+      "team": "Japon",
+      "goals": 1
+    },
+    {
+      "player": "Ladislav Krejčí",
+      "team": "Rep. Checa",
+      "goals": 1
+    },
+    {
+      "player": "Leroy Sané",
+      "team": "Alemania",
+      "goals": 1
+    },
+    {
+      "player": "Luis Diaz",
+      "team": "Colombia",
+      "goals": 1
+    },
+    {
+      "player": "Luis Romo",
+      "team": "Mexico",
+      "goals": 1
+    },
+    {
+      "player": "Marcus Rashford",
+      "team": "Inglaterra",
+      "goals": 1
+    },
+    {
+      "player": "Marko Arnautovic",
+      "team": "Austria",
+      "goals": 1
+    },
+    {
+      "player": "Martin Baturina",
+      "team": "Croacia",
+      "goals": 1
+    },
+    {
+      "player": "Matias Galarza",
+      "team": "Paraguay",
+      "goals": 1
+    },
+    {
+      "player": "Maxi Araujo",
+      "team": "Uruguay",
+      "goals": 1
+    },
+    {
+      "player": "Memphis Depay",
+      "team": "Paises Bajos",
+      "goals": 1
+    },
+    {
+      "player": "Michal Sadilek",
+      "team": "Rep. Checa",
+      "goals": 1
+    },
+    {
+      "player": "Nathan Saliba",
+      "team": "Canada",
+      "goals": 1
+    },
+    {
+      "player": "Oh Hyeon-gyu",
+      "team": "Corea del Sur",
+      "goals": 1
+    },
+    {
+      "player": "Petar Musa",
+      "team": "Croacia",
+      "goals": 1
+    },
+    {
+      "player": "Ramin Rezaeian",
+      "team": "Iran",
+      "goals": 1
+    },
+    {
+      "player": "Raúl Jiménez",
+      "team": "Mexico",
+      "goals": 1
+    },
+    {
+      "player": "Romano Schmid",
+      "team": "Austria",
+      "goals": 1
+    },
+    {
+      "player": "Ruben Vargas",
+      "team": "Suiza",
+      "goals": 1
+    },
+    {
+      "player": "Saša Lukić",
+      "team": "Bosnia Herz.",
+      "goals": 1
+    },
+    {
+      "player": "Sébastien Haller",
+      "team": "Costa Marfil",
+      "goals": 1
+    },
+    {
+      "player": "Takumi Minamino",
+      "team": "Japon",
+      "goals": 1
+    },
+    {
+      "player": "Teboho Mokoena",
+      "team": "Sudafrica",
+      "goals": 1
+    },
+    {
+      "player": "Viktor Gyökeres",
+      "team": "Suecia",
+      "goals": 1
+    },
+    {
+      "player": "Virgil van Dijk",
+      "team": "Paises Bajos",
+      "goals": 1
+    },
+    {
+      "player": "Yoane Wissa",
+      "team": "R.D. Congo",
+      "goals": 1
+    }
   ],
   "mvps": [
-    {"player": "Vozinha", "team": "Cabo Verde", "match": "Espana 0-0 Cabo Verde", "date": "2026-06-15", "note": "7 paradas; primer punto histórico de Cabo Verde"},
-    {"player": "Folarin Balogun", "team": "Estados Unidos", "match": "Estados Unidos 4-1 Paraguay", "date": "2026-06-13", "note": "Doblete en el debut"},
-    {"player": "Ismael Koné", "team": "Canada", "match": "Canada 1-1 Bosnia Herz.", "date": "2026-06-12", "note": ""}
+    {
+      "player": "Ismael Saibari",
+      "team": "Marruecos",
+      "match": "Escocia 0-1 Marruecos",
+      "date": "2026-06-20",
+      "note": "Gol más rápido del Mundial, a los 70 segundos"
+    },
+    {
+      "player": "Matheus Cunha",
+      "team": "Brasil",
+      "match": "Brasil 3-0 Haiti",
+      "date": "2026-06-20",
+      "note": "Doblete decisivo en la goleada"
+    },
+    {
+      "player": "Matias Galarza",
+      "team": "Paraguay",
+      "match": "Turquia 0-1 Paraguay",
+      "date": "2026-06-20",
+      "note": "Golazo al minuto 1 y figura"
+    },
+    {
+      "player": "Cody Gakpo",
+      "team": "Paises Bajos",
+      "match": "Paises Bajos 5-1 Suecia",
+      "date": "2026-06-20",
+      "note": "Doblete decisivo, iguala a Van Persie"
+    },
+    {
+      "player": "Jonathan David",
+      "team": "Canada",
+      "match": "Canada 6-0 Catar",
+      "date": "2026-06-19",
+      "note": "Triplete en la goleada"
+    },
+    {
+      "player": "Luis Romo",
+      "team": "Mexico",
+      "match": "Mexico 1-0 Corea del Sur",
+      "date": "2026-06-19",
+      "note": "Gol decisivo y dueno del medio"
+    },
+    {
+      "player": "Folarin Balogun",
+      "team": "Estados Unidos",
+      "match": "Estados Unidos 2-0 Australia",
+      "date": "2026-06-19",
+      "note": "Generó el autogol y dominó el ataque"
+    },
+    {
+      "player": "Caleb Yirenkyi",
+      "team": "Ghana",
+      "match": "Ghana 1-0 Panama",
+      "date": "2026-06-18",
+      "note": "Gol ganador en el 90+5"
+    },
+    {
+      "player": "Luis Diaz",
+      "team": "Colombia",
+      "match": "Uzbekistan 1-3 Colombia",
+      "date": "2026-06-18",
+      "note": "Gol y lideró el ataque cafetero"
+    },
+    {
+      "player": "Teboho Mokoena",
+      "team": "Sudafrica",
+      "match": "Rep. Checa 1-1 Sudafrica",
+      "date": "2026-06-18",
+      "note": "Penalti salvador y figura del partido"
+    },
+    {
+      "player": "Johan Manzambi",
+      "team": "Suiza",
+      "match": "Suiza 4-1 Bosnia Herz.",
+      "date": "2026-06-18",
+      "note": "Doblete decisivo desde el banquillo"
+    },
+    {
+      "player": "Lionel Messi",
+      "team": "Argentina",
+      "match": "Argentina 3-0 Argelia",
+      "date": "2026-06-17",
+      "note": "Triplete en el debut mundialista"
+    },
+    {
+      "player": "Marko Arnautovic",
+      "team": "Austria",
+      "match": "Austria 3-1 Jordania",
+      "date": "2026-06-17",
+      "note": "Provocó el autogol y marcó el penalti decisivo"
+    },
+    {
+      "player": "Yoane Wissa",
+      "team": "R.D. Congo",
+      "match": "Portugal 1-1 R.D. Congo",
+      "date": "2026-06-17",
+      "note": "Gol historico para empatar a Portugal"
+    },
+    {
+      "player": "Harry Kane",
+      "team": "Inglaterra",
+      "match": "Inglaterra 4-2 Croacia",
+      "date": "2026-06-17",
+      "note": "Doblete (penalti y cabeza), record Lineker"
+    },
+    {
+      "player": "Vozinha",
+      "team": "Cabo Verde",
+      "match": "Espana 0-0 Cabo Verde",
+      "date": "2026-06-15",
+      "note": "7 paradas; primer punto histórico de Cabo Verde"
+    },
+    {
+      "player": "Folarin Balogun",
+      "team": "Estados Unidos",
+      "match": "Estados Unidos 4-1 Paraguay",
+      "date": "2026-06-13",
+      "note": "Doblete en el debut"
+    },
+    {
+      "player": "Ismael Koné",
+      "team": "Canada",
+      "match": "Canada 1-1 Bosnia Herz.",
+      "date": "2026-06-12",
+      "note": ""
+    }
   ]
 }
