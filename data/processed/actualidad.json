@@ -1,11 +1,16 @@
 {
-  "updated": "2026-06-20",
+  "updated": "2026-06-22",
   "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
   "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
   "scorers": [
     {
       "player": "Cody Gakpo",
       "team": "Paises Bajos",
+      "goals": 3
+    },
+    {
+      "player": "Deniz Undav",
+      "team": "Alemania",
       "goals": 3
     },
     {
@@ -24,6 +29,11 @@
       "goals": 2
     },
     {
+      "player": "Ayase Ueda",
+      "team": "Japon",
+      "goals": 2
+    },
+    {
       "player": "Brian Brobbey",
       "team": "Paises Bajos",
       "goals": 2
@@ -31,6 +41,11 @@
     {
       "player": "Cyle Larin",
       "team": "Canada",
+      "goals": 2
+    },
+    {
+      "player": "Daichi Kamada",
+      "team": "Japon",
       "goals": 2
     },
     {
@@ -79,6 +94,16 @@
       "goals": 2
     },
     {
+      "player": "Maxi Araujo",
+      "team": "Uruguay",
+      "goals": 2
+    },
+    {
+      "player": "Mikel Oyarzabal",
+      "team": "Espana",
+      "goals": 2
+    },
+    {
       "player": "Niclas Füllkrug",
       "team": "Alemania",
       "goals": 2
@@ -101,6 +126,11 @@
     {
       "player": "Abdulelah Al-Amri",
       "team": "Arabia Saudi",
+      "goals": 1
+    },
+    {
+      "player": "Agustin Canobbio",
+      "team": "Uruguay",
       "goals": 1
     },
     {
@@ -164,11 +194,6 @@
       "goals": 1
     },
     {
-      "player": "Daichi Kamada",
-      "team": "Japon",
-      "goals": 1
-    },
-    {
       "player": "Daizen Maeda",
       "team": "Japon",
       "goals": 1
@@ -181,11 +206,6 @@
     {
       "player": "Dejan Kulusevski",
       "team": "Suecia",
-      "goals": 1
-    },
-    {
-      "player": "Deniz Undav",
-      "team": "Alemania",
       "goals": 1
     },
     {
@@ -204,13 +224,28 @@
       "goals": 1
     },
     {
+      "player": "Finn Surman",
+      "team": "Nueva Zelanda",
+      "goals": 1
+    },
+    {
       "player": "Florian Wirtz",
       "team": "Alemania",
       "goals": 1
     },
     {
+      "player": "Franck Kessie",
+      "team": "Costa Marfil",
+      "goals": 1
+    },
+    {
       "player": "Granit Xhaka",
       "team": "Suiza",
+      "goals": 1
+    },
+    {
+      "player": "Helio Varela",
+      "team": "Cabo Verde",
       "goals": 1
     },
     {
@@ -259,13 +294,28 @@
       "goals": 1
     },
     {
+      "player": "Junya Ito",
+      "team": "Japon",
+      "goals": 1
+    },
+    {
       "player": "Keito Nakamura",
       "team": "Japon",
       "goals": 1
     },
     {
+      "player": "Kevin Pina",
+      "team": "Cabo Verde",
+      "goals": 1
+    },
+    {
       "player": "Ladislav Krejčí",
       "team": "Rep. Checa",
+      "goals": 1
+    },
+    {
+      "player": "Lamine Yamal",
+      "team": "Espana",
       "goals": 1
     },
     {
@@ -281,6 +331,11 @@
     {
       "player": "Luis Romo",
       "team": "Mexico",
+      "goals": 1
+    },
+    {
+      "player": "Mahmoud Trezeguet",
+      "team": "Egipto",
       "goals": 1
     },
     {
@@ -304,11 +359,6 @@
       "goals": 1
     },
     {
-      "player": "Maxi Araujo",
-      "team": "Uruguay",
-      "goals": 1
-    },
-    {
       "player": "Memphis Depay",
       "team": "Paises Bajos",
       "goals": 1
@@ -316,6 +366,16 @@
     {
       "player": "Michal Sadilek",
       "team": "Rep. Checa",
+      "goals": 1
+    },
+    {
+      "player": "Mohamed Salah",
+      "team": "Egipto",
+      "goals": 1
+    },
+    {
+      "player": "Mostafa Mohamed",
+      "team": "Egipto",
       "goals": 1
     },
     {
@@ -390,6 +450,55 @@
     }
   ],
   "mvps": [
+    {
+      "player": "Mikel Oyarzabal",
+      "team": "Espana",
+      "match": "Espana 4-0 Arabia Saudi",
+      "date": "2026-06-21",
+      "note": "Doblete antes de la media hora; goleada y liderato del grupo"
+    },
+    {
+      "player": "Deniz Undav",
+      "team": "Alemania",
+      "match": "Alemania 2-1 Costa Marfil",
+      "date": "2026-06-21",
+      "note": "Doblete, incluido el gol del triunfo en el 90+4, y clasificacion"
+    },
+    {
+      "player": "Ayase Ueda",
+      "team": "Japon",
+      "match": "Tunez 0-4 Japon",
+      "date": "2026-06-21",
+      "note": "Doblete en la goleada que deja a Tunez eliminado"
+    },
+    {
+      "player": "Mohamed Salah",
+      "team": "Egipto",
+      "match": "Nueva Zelanda 1-3 Egipto",
+      "date": "2026-06-21",
+      "note": "Gol y asistencia en la remontada; Egipto lider del grupo"
+    },
+    {
+      "player": "Eloy Room",
+      "team": "Curazao",
+      "match": "Ecuador 0-0 Curazao",
+      "date": "2026-06-21",
+      "note": "15 atajadas (record del Mundial); primer punto historico de Curazao"
+    },
+    {
+      "player": "Alireza Beiranvand",
+      "team": "Iran",
+      "match": "Belgica 0-0 Iran",
+      "date": "2026-06-21",
+      "note": "Paradas clave para el 0-0 que mete a Belgica en aprietos"
+    },
+    {
+      "player": "Helio Varela",
+      "team": "Cabo Verde",
+      "match": "Uruguay 2-2 Cabo Verde",
+      "date": "2026-06-21",
+      "note": "Gol del 2-2 que rescata un punto historico ante Uruguay"
+    },
     {
       "player": "Ismael Saibari",
       "team": "Marruecos",
