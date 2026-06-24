@@ -1,8 +1,23 @@
 {
-  "updated": "2026-06-22",
+  "updated": "2026-06-24",
   "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
   "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
   "scorers": [
+    {
+      "player": "Lionel Messi",
+      "team": "Argentina",
+      "goals": 5
+    },
+    {
+      "player": "Erling Haaland",
+      "team": "Noruega",
+      "goals": 4
+    },
+    {
+      "player": "Kylian Mbappé",
+      "team": "Francia",
+      "goals": 4
+    },
     {
       "player": "Cody Gakpo",
       "team": "Paises Bajos",
@@ -16,11 +31,6 @@
     {
       "player": "Jonathan David",
       "team": "Canada",
-      "goals": 3
-    },
-    {
-      "player": "Lionel Messi",
-      "team": "Argentina",
       "goals": 3
     },
     {
@@ -39,6 +49,11 @@
       "goals": 2
     },
     {
+      "player": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "goals": 2
+    },
+    {
       "player": "Cyle Larin",
       "team": "Canada",
       "goals": 2
@@ -49,13 +64,13 @@
       "goals": 2
     },
     {
-      "player": "Elijah Just",
-      "team": "Nueva Zelanda",
+      "player": "Daniel Munoz",
+      "team": "Colombia",
       "goals": 2
     },
     {
-      "player": "Erling Haaland",
-      "team": "Noruega",
+      "player": "Elijah Just",
+      "team": "Nueva Zelanda",
       "goals": 2
     },
     {
@@ -74,6 +89,11 @@
       "goals": 2
     },
     {
+      "player": "Ismaila Sarr",
+      "team": "Senegal",
+      "goals": 2
+    },
+    {
       "player": "Johan Manzambi",
       "team": "Suiza",
       "goals": 2
@@ -81,11 +101,6 @@
     {
       "player": "Kai Havertz",
       "team": "Alemania",
-      "goals": 2
-    },
-    {
-      "player": "Kylian Mbappé",
-      "team": "Francia",
       "goals": 2
     },
     {
@@ -149,8 +164,18 @@
       "goals": 1
     },
     {
+      "player": "Amine Gouiri",
+      "team": "Argelia",
+      "goals": 1
+    },
+    {
       "player": "Anis Slimane",
       "team": "Tunez",
+      "goals": 1
+    },
+    {
+      "player": "Ante Budimir",
+      "team": "Croacia",
       "goals": 1
     },
     {
@@ -196,11 +221,6 @@
     {
       "player": "Daizen Maeda",
       "team": "Japon",
-      "goals": 1
-    },
-    {
-      "player": "Daniel Munoz",
-      "team": "Colombia",
       "goals": 1
     },
     {
@@ -339,6 +359,11 @@
       "goals": 1
     },
     {
+      "player": "Marcus Pedersen",
+      "team": "Noruega",
+      "goals": 1
+    },
+    {
       "player": "Marcus Rashford",
       "team": "Inglaterra",
       "goals": 1
@@ -379,8 +404,23 @@
       "goals": 1
     },
     {
+      "player": "Nadhir Benbouali",
+      "team": "Argelia",
+      "goals": 1
+    },
+    {
       "player": "Nathan Saliba",
       "team": "Canada",
+      "goals": 1
+    },
+    {
+      "player": "Nizar Al-Rashdan",
+      "team": "Jordania",
+      "goals": 1
+    },
+    {
+      "player": "Nuno Mendes",
+      "team": "Portugal",
       "goals": 1
     },
     {
@@ -389,8 +429,18 @@
       "goals": 1
     },
     {
+      "player": "Ousmane Dembélé",
+      "team": "Francia",
+      "goals": 1
+    },
+    {
       "player": "Petar Musa",
       "team": "Croacia",
+      "goals": 1
+    },
+    {
+      "player": "Rafael Leão",
+      "team": "Portugal",
       "goals": 1
     },
     {
@@ -450,6 +500,62 @@
     }
   ],
   "mvps": [
+    {
+      "player": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "match": "Portugal 5-0 Uzbekistan",
+      "date": "2026-06-23",
+      "note": "Doblete y record historico: primer jugador en marcar en 6 Mundiales distintos"
+    },
+    {
+      "player": "Daniel Munoz",
+      "team": "Colombia",
+      "match": "Colombia 1-0 R.D. Congo",
+      "date": "2026-06-23",
+      "note": "Gol decisivo (su 2º del torneo); Colombia a octavos"
+    },
+    {
+      "player": "Ante Budimir",
+      "team": "Croacia",
+      "match": "Panama 0-1 Croacia",
+      "date": "2026-06-23",
+      "note": "Gol ganador desde el banquillo; goleador mundialista mas veterano de Croacia"
+    },
+    {
+      "player": "Jude Bellingham",
+      "team": "Inglaterra",
+      "match": "Inglaterra 0-0 Ghana",
+      "date": "2026-06-23",
+      "note": "Mejor del partido en un insipido 0-0 ante una Ghana ordenada"
+    },
+    {
+      "player": "Lionel Messi",
+      "team": "Argentina",
+      "match": "Argentina 2-0 Austria",
+      "date": "2026-06-22",
+      "note": "Doblete y maximo goleador historico de los Mundiales (18 goles)"
+    },
+    {
+      "player": "Kylian Mbappé",
+      "team": "Francia",
+      "match": "Francia 3-0 Irak",
+      "date": "2026-06-22",
+      "note": "Doblete en su partido 100 con Francia; clasificacion sellada"
+    },
+    {
+      "player": "Erling Haaland",
+      "team": "Noruega",
+      "match": "Noruega 3-2 Senegal",
+      "date": "2026-06-22",
+      "note": "Doblete; 4 goles en 2 partidos y Noruega a octavos"
+    },
+    {
+      "player": "Amine Gouiri",
+      "team": "Argelia",
+      "match": "Jordania 1-2 Argelia",
+      "date": "2026-06-22",
+      "note": "Gol del triunfo (82') en la remontada que elimina a Jordania"
+    },
     {
       "player": "Mikel Oyarzabal",
       "team": "Espana",
