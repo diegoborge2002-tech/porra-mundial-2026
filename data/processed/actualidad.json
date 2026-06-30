@@ -1,25 +1,40 @@
 {
-  "updated": "2026-06-24",
+  "updated": "2026-07-01",
   "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
   "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
   "scorers": [
     {
+      "player": "Kylian Mbappé",
+      "team": "Francia",
+      "goals": 6
+    },
+    {
       "player": "Lionel Messi",
       "team": "Argentina",
-      "goals": 5
+      "goals": 6
     },
     {
       "player": "Erling Haaland",
       "team": "Noruega",
+      "goals": 5
+    },
+    {
+      "player": "Cody Gakpo",
+      "team": "Paises Bajos",
       "goals": 4
     },
     {
-      "player": "Kylian Mbappé",
+      "player": "Ousmane Dembélé",
       "team": "Francia",
       "goals": 4
     },
     {
-      "player": "Cody Gakpo",
+      "player": "Vinicius Junior",
+      "team": "Brasil",
+      "goals": 4
+    },
+    {
+      "player": "Brian Brobbey",
       "team": "Paises Bajos",
       "goals": 3
     },
@@ -29,8 +44,43 @@
       "goals": 3
     },
     {
+      "player": "Elijah Just",
+      "team": "Nueva Zelanda",
+      "goals": 3
+    },
+    {
+      "player": "Harry Kane",
+      "team": "Inglaterra",
+      "goals": 3
+    },
+    {
+      "player": "Ismael Saibari",
+      "team": "Marruecos",
+      "goals": 3
+    },
+    {
+      "player": "Ismaila Sarr",
+      "team": "Senegal",
+      "goals": 3
+    },
+    {
+      "player": "Johan Manzambi",
+      "team": "Suiza",
+      "goals": 3
+    },
+    {
       "player": "Jonathan David",
       "team": "Canada",
+      "goals": 3
+    },
+    {
+      "player": "Kai Havertz",
+      "team": "Alemania",
+      "goals": 3
+    },
+    {
+      "player": "Matheus Cunha",
+      "team": "Brasil",
       "goals": 3
     },
     {
@@ -39,13 +89,18 @@
       "goals": 2
     },
     {
+      "player": "Amad Diallo",
+      "team": "Costa Marfil",
+      "goals": 2
+    },
+    {
       "player": "Ayase Ueda",
       "team": "Japon",
       "goals": 2
     },
     {
-      "player": "Brian Brobbey",
-      "team": "Paises Bajos",
+      "player": "Bradley Barcola",
+      "team": "Francia",
       "goals": 2
     },
     {
@@ -69,43 +124,8 @@
       "goals": 2
     },
     {
-      "player": "Elijah Just",
-      "team": "Nueva Zelanda",
-      "goals": 2
-    },
-    {
       "player": "Folarin Balogun",
       "team": "Estados Unidos",
-      "goals": 2
-    },
-    {
-      "player": "Harry Kane",
-      "team": "Inglaterra",
-      "goals": 2
-    },
-    {
-      "player": "Ismael Saibari",
-      "team": "Marruecos",
-      "goals": 2
-    },
-    {
-      "player": "Ismaila Sarr",
-      "team": "Senegal",
-      "goals": 2
-    },
-    {
-      "player": "Johan Manzambi",
-      "team": "Suiza",
-      "goals": 2
-    },
-    {
-      "player": "Kai Havertz",
-      "team": "Alemania",
-      "goals": 2
-    },
-    {
-      "player": "Matheus Cunha",
-      "team": "Brasil",
       "goals": 2
     },
     {
@@ -121,11 +141,6 @@
     {
       "player": "Niclas Füllkrug",
       "team": "Alemania",
-      "goals": 2
-    },
-    {
-      "player": "Vinicius Junior",
-      "team": "Brasil",
       "goals": 2
     },
     {
@@ -159,11 +174,6 @@
       "goals": 1
     },
     {
-      "player": "Amad Diallo",
-      "team": "Costa Marfil",
-      "goals": 1
-    },
-    {
       "player": "Amine Gouiri",
       "team": "Argelia",
       "goals": 1
@@ -184,6 +194,11 @@
       "goals": 1
     },
     {
+      "player": "Antonio Nusa",
+      "team": "Noruega",
+      "goals": 1
+    },
+    {
       "player": "Ayman Hussein",
       "team": "Irak",
       "goals": 1
@@ -194,11 +209,6 @@
       "goals": 1
     },
     {
-      "player": "Bradley Barcola",
-      "team": "Francia",
-      "goals": 1
-    },
-    {
       "player": "Breel Embolo",
       "team": "Suiza",
       "goals": 1
@@ -206,6 +216,11 @@
     {
       "player": "Caleb Yirenkyi",
       "team": "Ghana",
+      "goals": 1
+    },
+    {
+      "player": "Casemiro",
+      "team": "Brasil",
       "goals": 1
     },
     {
@@ -226,6 +241,11 @@
     {
       "player": "Dejan Kulusevski",
       "team": "Suecia",
+      "goals": 1
+    },
+    {
+      "player": "Désiré Doué",
+      "team": "Francia",
       "goals": 1
     },
     {
@@ -259,6 +279,11 @@
       "goals": 1
     },
     {
+      "player": "Gabriel Martinelli",
+      "team": "Brasil",
+      "goals": 1
+    },
+    {
       "player": "Granit Xhaka",
       "team": "Suiza",
       "goals": 1
@@ -276,6 +301,11 @@
     {
       "player": "Ibrahima Mbaye",
       "team": "Senegal",
+      "goals": 1
+    },
+    {
+      "player": "Issa Diop",
+      "team": "Marruecos",
       "goals": 1
     },
     {
@@ -304,6 +334,11 @@
       "goals": 1
     },
     {
+      "player": "Julio Enciso",
+      "team": "Paraguay",
+      "goals": 1
+    },
+    {
       "player": "Julián Quiñones",
       "team": "Mexico",
       "goals": 1
@@ -315,6 +350,11 @@
     },
     {
       "player": "Junya Ito",
+      "team": "Japon",
+      "goals": 1
+    },
+    {
+      "player": "Kaishu Sano",
       "team": "Japon",
       "goals": 1
     },
@@ -429,11 +469,6 @@
       "goals": 1
     },
     {
-      "player": "Ousmane Dembélé",
-      "team": "Francia",
-      "goals": 1
-    },
-    {
       "player": "Petar Musa",
       "team": "Croacia",
       "goals": 1
@@ -469,6 +504,11 @@
       "goals": 1
     },
     {
+      "player": "Stephen Eustaquio",
+      "team": "Canada",
+      "goals": 1
+    },
+    {
       "player": "Sébastien Haller",
       "team": "Costa Marfil",
       "goals": 1
@@ -481,6 +521,11 @@
     {
       "player": "Teboho Mokoena",
       "team": "Sudafrica",
+      "goals": 1
+    },
+    {
+      "player": "Thelo Aasgaard",
+      "team": "Noruega",
       "goals": 1
     },
     {
@@ -500,6 +545,62 @@
     }
   ],
   "mvps": [
+    {
+      "player": "Erling Haaland",
+      "team": "Noruega",
+      "match": "Costa Marfil 1-2 Noruega",
+      "date": "2026-06-30",
+      "note": "Gol al 86' que mete a Noruega en octavos por primera vez; 5 goles, a uno de Messi"
+    },
+    {
+      "player": "Michael Olise",
+      "team": "Francia",
+      "match": "Francia 3-0 Suecia",
+      "date": "2026-06-30",
+      "note": "Dos asistencias de lujo (Barcola y Mbappé) en el pase a octavos"
+    },
+    {
+      "player": "Ismael Saibari",
+      "team": "Marruecos",
+      "match": "Paises Bajos 1-1 Marruecos",
+      "date": "2026-06-29",
+      "note": "Marcó el penalti decisivo; Marruecos elimina a Países Bajos en la tanda"
+    },
+    {
+      "player": "Gabriel Martinelli",
+      "team": "Brasil",
+      "match": "Brasil 2-1 Japon",
+      "date": "2026-06-29",
+      "note": "Gol en el descuento que culmina la remontada ante Japón"
+    },
+    {
+      "player": "Orlando Gill",
+      "team": "Paraguay",
+      "match": "Alemania 1-1 Paraguay",
+      "date": "2026-06-29",
+      "note": "Paró dos penaltis en la tanda; Paraguay deja fuera a Alemania"
+    },
+    {
+      "player": "Stephen Eustaquio",
+      "team": "Canada",
+      "match": "Sudafrica 0-1 Canada",
+      "date": "2026-06-28",
+      "note": "Golazo en el descuento; Canadá a octavos por primera vez"
+    },
+    {
+      "player": "Ousmane Dembélé",
+      "team": "Francia",
+      "match": "Noruega 1-4 Francia",
+      "date": "2026-06-26",
+      "note": "Hat-trick en el primer tiempo, el primero en un Mundial desde Salenko 1994"
+    },
+    {
+      "player": "Vinicius Junior",
+      "team": "Brasil",
+      "match": "Escocia 0-3 Brasil",
+      "date": "2026-06-24",
+      "note": "Doblete antes del descanso; marcó en los 3 partidos de grupo"
+    },
     {
       "player": "Cristiano Ronaldo",
       "team": "Portugal",
