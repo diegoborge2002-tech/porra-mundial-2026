@@ -203,7 +203,9 @@ def recent_match_breakdowns(elo: dict[str, float], real_results: dict,
     times = _kickoffs()
     played = _all_played(real_results)
     played.sort(key=lambda m: times.get(m["key"], ""), reverse=True)
-    mvps = load_actualidad().get("mvps", [])
+    act = load_actualidad()
+    mvps = act.get("mvps", [])
+    ms_list = act.get("match_scorers", [])
     out = []
     for m in played[:limit]:
         ha = _host_adv(m["home"], m["away"])
@@ -219,11 +221,18 @@ def recent_match_breakdowns(elo: dict[str, float], real_results: dict,
         brier = sum((probs[k] - (1.0 if k == actual else 0.0)) ** 2 for k in "HDA")
         # sorpresón: el modelo daba claro favorito y no ganó
         surprise = (actual != "H" and p_h >= 0.55) or (actual != "A" and p_a >= 0.55)
+        scorers = next((e.get("goals", []) for e in ms_list
+                        if {e.get("home"), e.get("away")} == {m["home"], m["away"]}), [])
         out.append({**m, "exp_home": bh, "exp_away": ba, "xg_home": lh, "xg_away": la,
                     "p_home": p_h, "p_draw": p_d, "p_away": p_a, "hit": hit,
-                    "surprise": surprise, "brier": brier,
+                    "surprise": surprise, "brier": brier, "scorers": scorers,
                     "mvp": _find_mvp(mvps, m["home"], m["away"])})
     return out
+
+
+def unavailable_list() -> list[dict]:
+    """Bajas y sancionados anotados por web (lesiones, sanciones)."""
+    return load_actualidad().get("unavailable", [])
 
 
 def _watch_note(p_home: float, p_draw: float, p_away: float,

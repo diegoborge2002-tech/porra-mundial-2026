@@ -832,5 +832,163 @@
       "date": "2026-06-12",
       "note": ""
     }
+  ],
+  "match_scorers": [
+    {
+      "home": "Francia",
+      "away": "Suecia",
+      "goals": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "Francia",
+          "minute": "45', 74'"
+        },
+        {
+          "player": "Bradley Barcola",
+          "team": "Francia",
+          "minute": "53'"
+        }
+      ]
+    },
+    {
+      "home": "Costa Marfil",
+      "away": "Noruega",
+      "goals": [
+        {
+          "player": "Amad Diallo",
+          "team": "Costa Marfil",
+          "minute": ""
+        },
+        {
+          "player": "Antonio Nusa",
+          "team": "Noruega",
+          "minute": "39'"
+        },
+        {
+          "player": "Erling Haaland",
+          "team": "Noruega",
+          "minute": "86'"
+        }
+      ]
+    },
+    {
+      "home": "Paises Bajos",
+      "away": "Marruecos",
+      "goals": [
+        {
+          "player": "Cody Gakpo",
+          "team": "Paises Bajos",
+          "minute": "72'"
+        },
+        {
+          "player": "Issa Diop",
+          "team": "Marruecos",
+          "minute": "90+'"
+        }
+      ],
+      "note": "Marruecos gana 3-2 en penaltis"
+    },
+    {
+      "home": "Alemania",
+      "away": "Paraguay",
+      "goals": [
+        {
+          "player": "Kai Havertz",
+          "team": "Alemania",
+          "minute": "52'"
+        },
+        {
+          "player": "Julio Enciso",
+          "team": "Paraguay",
+          "minute": "43'"
+        }
+      ],
+      "note": "Paraguay gana 4-3 en penaltis"
+    },
+    {
+      "home": "Brasil",
+      "away": "Japon",
+      "goals": [
+        {
+          "player": "Kaishu Sano",
+          "team": "Japon",
+          "minute": "29'"
+        },
+        {
+          "player": "Casemiro",
+          "team": "Brasil",
+          "minute": "78'"
+        },
+        {
+          "player": "Gabriel Martinelli",
+          "team": "Brasil",
+          "minute": "90+'"
+        }
+      ]
+    },
+    {
+      "home": "Sudafrica",
+      "away": "Canada",
+      "goals": [
+        {
+          "player": "Stephen Eustaquio",
+          "team": "Canada",
+          "minute": "90+'"
+        }
+      ]
+    },
+    {
+      "home": "Noruega",
+      "away": "Francia",
+      "goals": [
+        {
+          "player": "Thelo Aasgaard",
+          "team": "Noruega",
+          "minute": "46'"
+        },
+        {
+          "player": "Ousmane Dembélé",
+          "team": "Francia",
+          "minute": "7', 20', 32'"
+        },
+        {
+          "player": "Désiré Doué",
+          "team": "Francia",
+          "minute": "90+'"
+        }
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "player": "Rodrygo",
+      "team": "Brasil",
+      "reason": "Lesión",
+      "detail": "Rotura de LCA y menisco; fuera del Mundial"
+    },
+    {
+      "player": "Ismael Koné",
+      "team": "Canada",
+      "reason": "Lesión",
+      "detail": "Fractura en la pierna izda. operada; baja el resto del torneo"
+    },
+    {
+      "player": "Reece James",
+      "team": "Inglaterra",
+      "reason": "Lesión",
+      "detail": "Se pierde los próximos partidos"
+    },
+    {
+      "player": "Nico Williams",
+      "team": "Espana",
+      "reason": "Lesión",
+      "detail": "Contratiempo muscular en la fase de grupos"
+    },
+    {
+      "player": "Yeremy Pino",
+      "team": "Espana",
+      "reason": "Lesión",
+      "detail": "Lesión en la fase de grupos"
+    }
   ]
 }

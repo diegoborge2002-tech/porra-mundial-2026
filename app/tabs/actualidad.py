@@ -14,7 +14,7 @@ from src.data.team_profile import ISO_CODES
 from src.data.actualidad import (
     load_actualidad, top_scorers, recent_mvps, form_table,
     champion_movers, auto_storylines, group_standings,
-    recent_match_breakdowns, upcoming_watchouts,
+    recent_match_breakdowns, upcoming_watchouts, unavailable_list,
 )
 
 
@@ -203,6 +203,14 @@ def _render_breakdowns(elo: dict, real: dict) -> None:
             tag, tcol = "😱 sorpresón", ACCENT
         else:
             tag, tcol = "✗ falló", DANGER
+        scorers = ""
+        if b.get("scorers"):
+            chips = " · ".join(
+                f'<span style="white-space:nowrap;">⚽ {g["player"]}'
+                + (f' <span style="color:{TEXT_DIM};">{g["minute"]}</span>' if g.get("minute") else "")
+                + "</span>"
+                for g in b["scorers"])
+            scorers = (f'<div style="font-size:0.76rem;margin-top:4px;line-height:1.5;">{chips}</div>')
         mvp = ""
         if b.get("mvp"):
             mvp = (f'<div style="color:{TEXT_DIM};font-size:0.76rem;margin-top:3px;">'
@@ -213,6 +221,7 @@ def _render_breakdowns(elo: dict, real: dict) -> None:
             f'<span style="font-size:0.64rem;font-weight:700;letter-spacing:.04em;color:{TEXT_DIM};text-transform:uppercase;">{b["stage"]}</span>'
             f'<span style="font-size:0.7rem;font-weight:800;color:{tcol};">{tag}</span></div>'
             f'{_team_score_row(b)}'
+            f'{scorers}'
             f'<div style="color:{TEXT_DIM};font-size:0.76rem;margin-top:4px;">'
             f'Modelo: esperaba <b>{b["exp_home"]}–{b["exp_away"]}</b> · 1X2 '
             f'{b["p_home"]*100:.0f}/{b["p_draw"]*100:.0f}/{b["p_away"]*100:.0f} · Brier {b["brier"]:.2f}</div>'
@@ -243,6 +252,34 @@ def _render_upcoming(elo: dict, real: dict) -> None:
             f'</div>'
             f'<div style="color:{TEXT_DIM};font-size:0.77rem;margin-top:5px;">{u["note"]}</div>'
             f'</div>'
+        )
+    cards.append("</div>")
+    st.markdown("".join(cards), unsafe_allow_html=True)
+
+
+def _render_unavailable() -> None:
+    rows = unavailable_list()
+    if not rows:
+        return
+    st.markdown(
+        f'<div style="font-size:1.1rem;font-weight:700;margin:14px 0 8px;">🚑 Bajas y sancionados '
+        f'<span style="color:{TEXT_DIM};font-size:0.8rem;font-weight:500;">· quién no estará</span></div>',
+        unsafe_allow_html=True,
+    )
+    cards = ['<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;">']
+    for r in rows:
+        reason = r.get("reason", "")
+        rcol = DANGER if "esion" in reason or "Lesi" in reason else ACCENT
+        cards.append(
+            f'<div style="background:{BG_CARD};border:1px solid #1f2937;border-radius:11px;padding:9px 11px;'
+            f'display:flex;align-items:center;gap:9px;">'
+            f'{_flag(r["team"], 20)}'
+            f'<div style="flex:1;min-width:0;">'
+            f'<div style="font-weight:700;font-size:0.86rem;">{r["player"]} '
+            f'<span style="color:{TEXT_DIM};font-size:0.74rem;font-weight:500;">· {r["team"]}</span></div>'
+            f'<div style="color:{TEXT_DIM};font-size:0.74rem;">{r.get("detail","")}</div></div>'
+            f'<span style="font-size:0.64rem;font-weight:800;color:{rcol};text-transform:uppercase;'
+            f'white-space:nowrap;">{reason}</span></div>'
         )
     cards.append("</div>")
     st.markdown("".join(cards), unsafe_allow_html=True)
@@ -307,5 +344,6 @@ def render():
     _render_movers()
     _render_breakdowns(elo, real)
     _render_upcoming(elo, real)
+    _render_unavailable()
     _render_storylines(elo, real)
     _render_standings(elo, real)

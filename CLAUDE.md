@@ -44,12 +44,24 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
    partidos con resultado esperado.
 3b. **Refrescar Actualidad** (pestaña 🔥): busca en la web los **máximos
    goleadores** y el **jugador del partido / MVP** de los partidos nuevos y
-   escríbelos en `data/processed/actualidad.json` (`scorers`, `mvps`, `updated`).
+   escríbelos en `data/processed/actualidad.json`. Campos editables a mano:
+   - `scorers` — tabla acumulada de goleadores (la pestaña muestra el top 15).
+   - `mvps` — jugador del partido (la pestaña muestra los 8 más recientes).
+   - `match_scorers` — **goleadores por partido** (lista `{home, away, goals:[{player, team, minute}]}`),
+     para el desglose "Resultados al detalle". Añade los partidos nuevos; cotéjalos
+     con el marcador (los goles deben sumar). Empareja por los dos equipos.
+   - `unavailable` — **bajas y sancionados** (`{player, team, reason, detail}`),
+     para la sección "🚑 Bajas y sancionados". Búscalos en web (lesiones/sanciones);
+     ojo: las amarillas se borran tras la fase de grupos, así que en R32 casi no hay
+     arrastre de sanciones.
+   - `updated` — fecha del refresco.
    Coteja siempre los goles con los marcadores registrados (deben sumar por
    partido) — eso garantiza la calidad. El resto de la pestaña (en forma,
-   movimientos de la porra, clasificaciones, titulares automáticos) se calcula
-   solo desde los resultados; no hay que tocar nada. La API gratuita NO da
-   goleadores, por eso van por búsqueda web.
+   movimientos de la porra, clasificaciones, titulares, **desglose modelo-vs-realidad**,
+   **avisos de próximos**) se calcula solo desde los resultados; no hay que tocar nada.
+   El **🏆 Cuadro** (bracket de eliminatorias) también es automático: se rellena solo
+   con cada KO que registras con `dia.py ko`. La API gratuita NO da goleadores ni
+   bajas, por eso van por búsqueda web.
 3c. **Refrescar cuotas** (pestaña 💰 Mercado): `python scripts/fetch_odds.py --apply`
    → reescribe `data/processed/odds.json` con las cuotas de the-odds-api (campeón
    + 1X2 de los próximos partidos). ~2 créditos/llamada (free tier 500/mes; token
@@ -105,9 +117,17 @@ el código no hace falta tocarlo, solo registrar resultados y desplegar.
 - `data/processed/real_results.json` — resultados reales registrados (formato:
   `group_matches: {"A vs B": [gA, gB]}`, `knockout_matches: {r32: {"73": {home, away, ...}}}`)
 - `data/processed/stats_model.json` — 1.128 cruces precomputados del XGBoost
-- `data/processed/actualidad.json` — goleadores + MVP (datos externos, vía web);
-  los lee `src/data/actualidad.py` (que además deriva en forma / movimientos /
-  clasificaciones / titulares) y los pinta `app/tabs/actualidad.py` (pestaña 🔥)
+- `data/processed/actualidad.json` — goleadores + MVP + goleadores por partido
+  (`match_scorers`) + bajas (`unavailable`), datos externos vía web; los lee
+  `src/data/actualidad.py` (que además deriva en forma / movimientos /
+  clasificaciones / titulares / **desglose modelo-vs-realidad por partido** vía
+  `recent_match_breakdowns` / **avisos de próximos** vía `upcoming_watchouts`) y
+  los pinta `app/tabs/actualidad.py` (pestaña 🔥)
+- `src/data/bracket_view.py` — construye el cuadro de eliminatorias (R32→Final)
+  desde `real_results.json`: resuelve los cruces de R32 con `_resolve_r32_pairings`
+  (clasificaciones reales) y propaga ganadores; marcador esperado del ensemble en
+  los pendientes. Lo pinta `app/tabs/cuadro.py` (pestaña 🏆 Cuadro, árbol clásico de
+  mitades). 100% automático: solo registrar KO con `dia.py ko`.
 - `data/processed/odds.json` — cuotas de apuestas (the-odds-api, vía
   `scripts/fetch_odds.py`; mejor cuota + prob implícita media por casa). Las lee
   `src/data/odds.py` (devig por normalización + helpers EV/Kelly) y las pinta
@@ -116,8 +136,8 @@ el código no hace falta tocarlo, solo registrar resultados y desplegar.
   🔮 Partidos, así que los números cuadran entre pestañas.
 - `app/tabs/partidos.py` — pestaña "🔮 Partidos" (resultado esperado de los 104 +
   mapa de sedes). **Navegación**: `app/streamlit_app.py` usa `st.segmented_control`
-  (lazy: solo renderiza la pestaña activa), 9 pestañas (incl. 💰 Mercado vs
-  Modelo). Retiradas: Comparador
+  (lazy: solo renderiza la pestaña activa), 10 pestañas (incl. 🏆 Cuadro y 💰 Mercado
+  vs Modelo). Retiradas: Comparador
   (ahora toggle dentro de Selecciones), Calendario (su mapa está en Partidos) y
   "En vivo" (calculadora minuto a minuto). Deep-link `?goto=<clave>` para saltar.
 - Nombres de equipo: español sin acentos ("Espana", "Rep. Checa", "R.D. Congo",
