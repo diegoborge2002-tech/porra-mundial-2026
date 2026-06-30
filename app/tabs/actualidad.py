@@ -14,6 +14,7 @@ from src.data.team_profile import ISO_CODES
 from src.data.actualidad import (
     load_actualidad, top_scorers, recent_mvps, form_table,
     champion_movers, auto_storylines, group_standings,
+    recent_match_breakdowns, upcoming_watchouts,
 )
 
 
@@ -163,6 +164,90 @@ def _render_storylines(elo: dict, real: dict) -> None:
     st.markdown("".join(rows), unsafe_allow_html=True)
 
 
+def _team_score_row(b: dict) -> str:
+    """Fila con los dos equipos y el marcador, ganador en negrita."""
+    h, a, gh, ga = b["home"], b["away"], b["gh"], b["ga"]
+    if b.get("winner"):
+        h_win, a_win = b["winner"] == h, b["winner"] == a
+    else:
+        h_win, a_win = gh > ga, ga > gh
+    def side(team, win, align):
+        col = "#eafff5" if win else TEXT_DIM
+        wt = "800" if win else "600"
+        order = f'{_flag(team,18)}<span>{team}</span>' if align == "l" else f'<span>{team}</span>{_flag(team,18)}'
+        just = "flex-start" if align == "l" else "flex-end"
+        return (f'<div style="flex:1;display:flex;align-items:center;gap:6px;justify-content:{just};'
+                f'color:{col};font-weight:{wt};font-size:0.86rem;min-width:0;">{order}</div>')
+    pen = '<span style="font-size:0.6rem;color:%s;font-weight:700;"> pen</span>' % ACCENT if b.get("pens") else ""
+    return (f'<div style="display:flex;align-items:center;gap:8px;margin:3px 0;">'
+            f'{side(h, h_win, "l")}'
+            f'<span style="font-weight:800;font-size:0.95rem;font-variant-numeric:tabular-nums;'
+            f'background:#0c1119;border:1px solid #1f2937;border-radius:6px;padding:1px 8px;white-space:nowrap;">{gh}–{ga}{pen}</span>'
+            f'{side(a, a_win, "r")}</div>')
+
+
+def _render_breakdowns(elo: dict, real: dict) -> None:
+    bd = recent_match_breakdowns(elo, real, limit=10)
+    if not bd:
+        return
+    st.markdown(
+        f'<div style="font-size:1.1rem;font-weight:700;margin:14px 0 8px;">🧮 Resultados al detalle '
+        f'<span style="color:{TEXT_DIM};font-size:0.8rem;font-weight:500;">· marcador real vs lo que esperaba el modelo</span></div>',
+        unsafe_allow_html=True,
+    )
+    cards = ['<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px;">']
+    for b in bd:
+        if b["hit"]:
+            tag, tcol = "✓ acierto", GOOD
+        elif b["surprise"]:
+            tag, tcol = "😱 sorpresón", ACCENT
+        else:
+            tag, tcol = "✗ falló", DANGER
+        mvp = ""
+        if b.get("mvp"):
+            mvp = (f'<div style="color:{TEXT_DIM};font-size:0.76rem;margin-top:3px;">'
+                   f'🏅 <b style="color:{ACCENT};">{b["mvp"]["player"]}</b> · {b["mvp"].get("note","")}</div>')
+        cards.append(
+            f'<div style="background:{BG_CARD};border:1px solid #1f2937;border-radius:12px;padding:10px 12px;">'
+            f'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;">'
+            f'<span style="font-size:0.64rem;font-weight:700;letter-spacing:.04em;color:{TEXT_DIM};text-transform:uppercase;">{b["stage"]}</span>'
+            f'<span style="font-size:0.7rem;font-weight:800;color:{tcol};">{tag}</span></div>'
+            f'{_team_score_row(b)}'
+            f'<div style="color:{TEXT_DIM};font-size:0.76rem;margin-top:4px;">'
+            f'Modelo: esperaba <b>{b["exp_home"]}–{b["exp_away"]}</b> · 1X2 '
+            f'{b["p_home"]*100:.0f}/{b["p_draw"]*100:.0f}/{b["p_away"]*100:.0f} · Brier {b["brier"]:.2f}</div>'
+            f'{mvp}</div>'
+        )
+    cards.append("</div>")
+    st.markdown("".join(cards), unsafe_allow_html=True)
+
+
+def _render_upcoming(elo: dict, real: dict) -> None:
+    ups = upcoming_watchouts(elo, real, limit=6)
+    if not ups:
+        return
+    st.markdown(
+        f'<div style="font-size:1.1rem;font-weight:700;margin:14px 0 8px;">🔭 Lo que viene '
+        f'<span style="color:{TEXT_DIM};font-size:0.8rem;font-weight:500;">· resultado esperado y a qué tener cuidado</span></div>',
+        unsafe_allow_html=True,
+    )
+    cards = ['<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px;">']
+    for u in ups:
+        cards.append(
+            f'<div style="background:{BG_CARD};border:1px solid #1f2937;border-radius:12px;padding:10px 12px;">'
+            f'<div style="font-size:0.64rem;font-weight:700;letter-spacing:.04em;color:{TEXT_DIM};text-transform:uppercase;margin-bottom:4px;">{u.get("stage","")}</div>'
+            f'<div style="display:flex;align-items:center;gap:8px;">'
+            f'<div style="flex:1;display:flex;align-items:center;gap:6px;font-weight:700;font-size:0.86rem;min-width:0;">{_flag(u["home"],18)}<span>{u["home"]}</span></div>'
+            f'<span style="font-weight:800;color:{PRIMARY};background:#0c1119;border:1px solid #1f2937;border-radius:6px;padding:1px 8px;">{u["exp_home"]}–{u["exp_away"]}</span>'
+            f'<div style="flex:1;display:flex;align-items:center;gap:6px;justify-content:flex-end;font-weight:700;font-size:0.86rem;min-width:0;"><span>{u["away"]}</span>{_flag(u["away"],18)}</div>'
+            f'</div>'
+            f'<div style="color:{TEXT_DIM};font-size:0.77rem;margin-top:5px;">{u["note"]}</div>'
+            f'</div>'
+        )
+    cards.append("</div>")
+    st.markdown("".join(cards), unsafe_allow_html=True)
+
+
 def _render_standings(elo: dict, real: dict) -> None:
     gs = group_standings(real, elo)
     # solo mostrar si hay algún partido jugado
@@ -220,5 +305,7 @@ def render():
 
     _render_form(elo, real)
     _render_movers()
+    _render_breakdowns(elo, real)
+    _render_upcoming(elo, real)
     _render_storylines(elo, real)
     _render_standings(elo, real)
