@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-07T02:57:17",
-  "fetched_at_utc": "2026-07-07T00:57:17Z",
+  "fetched_at": "2026-07-07T18:05:37",
+  "fetched_at_utc": "2026-07-07T16:05:37Z",
   "regions": "eu",
-  "requests_remaining": 498,
-  "requests_used": 2,
+  "requests_remaining": 496,
+  "requests_used": 4,
   "champion": {
     "Francia": {
-      "best": 3.05,
-      "imp": 0.34575,
+      "best": 3.0,
+      "imp": 0.34848,
       "n_books": 2
     },
     "Espana": {
       "best": 5.1,
-      "imp": 0.19804,
+      "imp": 0.20915,
       "n_books": 2
     },
     "Argentina": {
@@ -22,17 +22,17 @@
     },
     "Inglaterra": {
       "best": 6.6,
-      "imp": 0.15268,
+      "imp": 0.15909,
       "n_books": 2
     },
     "Noruega": {
-      "best": 21.0,
-      "imp": 0.05322,
+      "best": 18.5,
+      "imp": 0.05644,
       "n_books": 2
     },
     "Colombia": {
-      "best": 28.0,
-      "imp": 0.03709,
+      "best": 27.0,
+      "imp": 0.03775,
       "n_books": 2
     },
     "Marruecos": {
@@ -45,106 +45,101 @@
       "imp": 0.02721,
       "n_books": 2
     },
-    "Estados Unidos": {
-      "best": 60.0,
-      "imp": 0.02053,
-      "n_books": 2
-    },
     "Suiza": {
-      "best": 100.0,
-      "imp": 0.01246,
+      "best": 90.0,
+      "imp": 0.01302,
       "n_books": 2
     },
     "Egipto": {
-      "best": 350.0,
-      "imp": 0.00392,
+      "best": 400.0,
+      "imp": 0.00374,
       "n_books": 2
     }
   },
   "matches": {
-    "Estados Unidos vs Belgica": {
-      "commence_time": "2026-07-07T00:00:00Z",
-      "home": "Estados Unidos",
-      "away": "Belgica",
-      "h": {
-        "best": 9.6,
-        "imp": 0.12879,
-        "n_books": 14
-      },
-      "x": {
-        "best": 4.3,
-        "imp": 0.25295,
-        "n_books": 14
-      },
-      "a": {
-        "best": 1.5,
-        "imp": 0.69637,
-        "n_books": 14
-      },
-      "n_books": 14
-    },
     "Argentina vs Egipto": {
-      "commence_time": "2026-07-07T16:00:00Z",
+      "commence_time": "2026-07-07T16:01:00Z",
       "home": "Argentina",
       "away": "Egipto",
       "h": {
-        "best": 1.41,
-        "imp": 0.73364,
-        "n_books": 23
+        "best": 1.37,
+        "imp": 0.75518,
+        "n_books": 25
       },
       "x": {
-        "best": 5.1,
-        "imp": 0.20799,
-        "n_books": 23
+        "best": 5.0,
+        "imp": 0.21677,
+        "n_books": 25
       },
       "a": {
-        "best": 12.0,
-        "imp": 0.10271,
-        "n_books": 23
+        "best": 14.0,
+        "imp": 0.09148,
+        "n_books": 25
       },
-      "n_books": 23
+      "n_books": 25
     },
     "Suiza vs Colombia": {
       "commence_time": "2026-07-07T20:00:00Z",
       "home": "Suiza",
       "away": "Colombia",
       "h": {
-        "best": 3.75,
-        "imp": 0.27984,
-        "n_books": 23
+        "best": 3.85,
+        "imp": 0.27616,
+        "n_books": 25
       },
       "x": {
-        "best": 3.17,
-        "imp": 0.32322,
-        "n_books": 23
+        "best": 3.2,
+        "imp": 0.3237,
+        "n_books": 25
       },
       "a": {
-        "best": 2.34,
-        "imp": 0.44166,
-        "n_books": 23
+        "best": 2.36,
+        "imp": 0.44036,
+        "n_books": 25
       },
-      "n_books": 23
+      "n_books": 25
     },
     "Francia vs Marruecos": {
       "commence_time": "2026-07-09T20:00:00Z",
       "home": "Francia",
       "away": "Marruecos",
       "h": {
-        "best": 1.64,
-        "imp": 0.62963,
-        "n_books": 23
+        "best": 1.61,
+        "imp": 0.63482,
+        "n_books": 25
       },
       "x": {
-        "best": 4.1,
-        "imp": 0.25735,
-        "n_books": 23
+        "best": 4.11,
+        "imp": 0.25335,
+        "n_books": 25
       },
       "a": {
-        "best": 7.0,
-        "imp": 0.15883,
-        "n_books": 23
+        "best": 7.01,
+        "imp": 0.15689,
+        "n_books": 25
       },
-      "n_books": 23
+      "n_books": 25
+    },
+    "Espana vs Belgica": {
+      "commence_time": "2026-07-10T19:00:00Z",
+      "home": "Espana",
+      "away": "Belgica",
+      "h": {
+        "best": 1.65,
+        "imp": 0.61712,
+        "n_books": 25
+      },
+      "x": {
+        "best": 4.2,
+        "imp": 0.25001,
+        "n_books": 25
+      },
+      "a": {
+        "best": 6.2,
+        "imp": 0.17851,
+        "n_books": 25
+      },
+      "n_books": 25
     },
     "Noruega vs Inglaterra": {
       "commence_time": "2026-07-11T21:00:00Z",
@@ -152,20 +147,20 @@
       "away": "Inglaterra",
       "h": {
         "best": 4.4,
-        "imp": 0.2474,
-        "n_books": 23
+        "imp": 0.24549,
+        "n_books": 25
       },
       "x": {
-        "best": 3.81,
-        "imp": 0.27223,
-        "n_books": 23
+        "best": 3.83,
+        "imp": 0.27055,
+        "n_books": 25
       },
       "a": {
-        "best": 1.96,
-        "imp": 0.5253,
-        "n_books": 23
+        "best": 1.95,
+        "imp": 0.52847,
+        "n_books": 25
       },
-      "n_books": 23
+      "n_books": 25
     }
   }
 }

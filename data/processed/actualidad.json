@@ -4,6 +4,11 @@
   "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
   "scorers": [
     {
+      "player": "Erling Haaland",
+      "team": "Noruega",
+      "goals": 7
+    },
+    {
       "player": "Kylian Mbappé",
       "team": "Francia",
       "goals": 7
@@ -14,13 +19,33 @@
       "goals": 7
     },
     {
-      "player": "Erling Haaland",
-      "team": "Noruega",
+      "player": "Harry Kane",
+      "team": "Inglaterra",
       "goals": 6
     },
     {
       "player": "Cody Gakpo",
       "team": "Paises Bajos",
+      "goals": 4
+    },
+    {
+      "player": "Ismaila Sarr",
+      "team": "Senegal",
+      "goals": 4
+    },
+    {
+      "player": "Jude Bellingham",
+      "team": "Inglaterra",
+      "goals": 4
+    },
+    {
+      "player": "Julián Quiñones",
+      "team": "Mexico",
+      "goals": 4
+    },
+    {
+      "player": "Mikel Oyarzabal",
+      "team": "Espana",
       "goals": 4
     },
     {
@@ -39,6 +64,11 @@
       "goals": 3
     },
     {
+      "player": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "goals": 3
+    },
+    {
       "player": "Deniz Undav",
       "team": "Alemania",
       "goals": 3
@@ -49,23 +79,13 @@
       "goals": 3
     },
     {
-      "player": "Harry Kane",
-      "team": "Inglaterra",
-      "goals": 5
-    },
-    {
-      "player": "Jude Bellingham",
-      "team": "Inglaterra",
+      "player": "Folarin Balogun",
+      "team": "Estados Unidos",
       "goals": 3
     },
     {
       "player": "Ismael Saibari",
       "team": "Marruecos",
-      "goals": 3
-    },
-    {
-      "player": "Ismaila Sarr",
-      "team": "Senegal",
       "goals": 3
     },
     {
@@ -89,6 +109,11 @@
       "goals": 3
     },
     {
+      "player": "Raúl Jiménez",
+      "team": "Mexico",
+      "goals": 3
+    },
+    {
       "player": "Alexander Isak",
       "team": "Suecia",
       "goals": 2
@@ -104,13 +129,23 @@
       "goals": 2
     },
     {
+      "player": "Azzedine Ounahi",
+      "team": "Marruecos",
+      "goals": 2
+    },
+    {
       "player": "Bradley Barcola",
       "team": "Francia",
       "goals": 2
     },
     {
-      "player": "Cristiano Ronaldo",
-      "team": "Portugal",
+      "player": "Breel Embolo",
+      "team": "Suiza",
+      "goals": 2
+    },
+    {
+      "player": "Charles De Ketelaere",
+      "team": "Belgica",
       "goals": 2
     },
     {
@@ -129,7 +164,22 @@
       "goals": 2
     },
     {
-      "player": "Folarin Balogun",
+      "player": "Emam Ashour",
+      "team": "Egipto",
+      "goals": 2
+    },
+    {
+      "player": "Habib Diarra",
+      "team": "Senegal",
+      "goals": 2
+    },
+    {
+      "player": "Leandro Trossard",
+      "team": "Belgica",
+      "goals": 2
+    },
+    {
+      "player": "Malik Tillman",
       "team": "Estados Unidos",
       "goals": 2
     },
@@ -139,18 +189,33 @@
       "goals": 2
     },
     {
-      "player": "Mikel Oyarzabal",
-      "team": "Espana",
-      "goals": 2
-    },
-    {
       "player": "Niclas Füllkrug",
       "team": "Alemania",
       "goals": 2
     },
     {
+      "player": "Riyad Mahrez",
+      "team": "Argelia",
+      "goals": 2
+    },
+    {
+      "player": "Ruben Vargas",
+      "team": "Suiza",
+      "goals": 2
+    },
+    {
+      "player": "Soufiane Rahimi",
+      "team": "Marruecos",
+      "goals": 2
+    },
+    {
       "player": "Yasin Ayari",
       "team": "Suecia",
+      "goals": 2
+    },
+    {
+      "player": "Youri Tielemans",
+      "team": "Belgica",
       "goals": 2
     },
     {
@@ -214,8 +279,8 @@
       "goals": 1
     },
     {
-      "player": "Breel Embolo",
-      "team": "Suiza",
+      "player": "Brian Cipenga",
+      "team": "R.D. Congo",
       "goals": 1
     },
     {
@@ -249,13 +314,13 @@
       "goals": 1
     },
     {
-      "player": "Désiré Doué",
-      "team": "Francia",
+      "player": "Deroy Duarte",
+      "team": "Cabo Verde",
       "goals": 1
     },
     {
-      "player": "Emam Ashour",
-      "team": "Egipto",
+      "player": "Désiré Doué",
+      "team": "Francia",
       "goals": 1
     },
     {
@@ -289,8 +354,18 @@
       "goals": 1
     },
     {
+      "player": "Gonçalo Ramos",
+      "team": "Portugal",
+      "goals": 1
+    },
+    {
       "player": "Granit Xhaka",
       "team": "Suiza",
+      "goals": 1
+    },
+    {
+      "player": "Hans Vanaken",
+      "team": "Belgica",
       "goals": 1
     },
     {
@@ -314,12 +389,22 @@
       "goals": 1
     },
     {
+      "player": "Ivan Perišić",
+      "team": "Croacia",
+      "goals": 1
+    },
+    {
       "player": "Jamal Musiala",
       "team": "Alemania",
       "goals": 1
     },
     {
       "player": "Jaminton Campaz",
+      "team": "Colombia",
+      "goals": 1
+    },
+    {
+      "player": "Jhon Arias",
       "team": "Colombia",
       "goals": 1
     },
@@ -334,18 +419,8 @@
       "goals": 1
     },
     {
-      "player": "Jude Bellingham",
-      "team": "Inglaterra",
-      "goals": 1
-    },
-    {
       "player": "Julio Enciso",
       "team": "Paraguay",
-      "goals": 1
-    },
-    {
-      "player": "Julián Quiñones",
-      "team": "Mexico",
       "goals": 1
     },
     {
@@ -386,6 +461,11 @@
     {
       "player": "Leroy Sané",
       "team": "Alemania",
+      "goals": 1
+    },
+    {
+      "player": "Lisandro Martínez",
+      "team": "Argentina",
       "goals": 1
     },
     {
@@ -459,6 +539,11 @@
       "goals": 1
     },
     {
+      "player": "Neymar",
+      "team": "Brasil",
+      "goals": 1
+    },
+    {
       "player": "Nizar Al-Rashdan",
       "team": "Jordania",
       "goals": 1
@@ -471,6 +556,16 @@
     {
       "player": "Oh Hyeon-gyu",
       "team": "Corea del Sur",
+      "goals": 1
+    },
+    {
+      "player": "Pedri",
+      "team": "Espana",
+      "goals": 1
+    },
+    {
+      "player": "Pedro Porro",
+      "team": "Espana",
       "goals": 1
     },
     {
@@ -489,23 +584,18 @@
       "goals": 1
     },
     {
-      "player": "Raúl Jiménez",
-      "team": "Mexico",
-      "goals": 1
-    },
-    {
       "player": "Romano Schmid",
       "team": "Austria",
       "goals": 1
     },
     {
-      "player": "Ruben Vargas",
-      "team": "Suiza",
+      "player": "Saša Lukić",
+      "team": "Bosnia Herz.",
       "goals": 1
     },
     {
-      "player": "Saša Lukić",
-      "team": "Bosnia Herz.",
+      "player": "Sidny Lopes Cabral",
+      "team": "Cabo Verde",
       "goals": 1
     },
     {
@@ -551,6 +641,48 @@
   ],
   "mvps": [
     {
+      "player": "Charles De Ketelaere",
+      "team": "Belgica",
+      "match": "Estados Unidos 1-4 Belgica",
+      "date": "2026-07-07",
+      "note": "Doblete (9' y 33') que encarrila el pase a cuartos"
+    },
+    {
+      "player": "Erling Haaland",
+      "team": "Noruega",
+      "match": "Brasil 1-2 Noruega",
+      "date": "2026-07-05",
+      "note": "Doblete (80' y 90') que elimina a Brasil; iguala a Messi y Mbappé con 7"
+    },
+    {
+      "player": "Azzedine Ounahi",
+      "team": "Marruecos",
+      "match": "Canada 0-3 Marruecos",
+      "date": "2026-07-04",
+      "note": "Doblete (50' y 82'); Marruecos a cuartos"
+    },
+    {
+      "player": "Kylian Mbappé",
+      "team": "Francia",
+      "match": "Paraguay 0-1 Francia",
+      "date": "2026-07-04",
+      "note": "Penalti decisivo al 69'; su 7º gol del torneo"
+    },
+    {
+      "player": "Mikel Oyarzabal",
+      "team": "Espana",
+      "match": "Espana 3-0 Austria",
+      "date": "2026-07-02",
+      "note": "Doblete con dos asistencias de Cucurella; llega a 4 goles"
+    },
+    {
+      "player": "Julián Quiñones",
+      "team": "Mexico",
+      "match": "Mexico 2-0 Ecuador",
+      "date": "2026-07-01",
+      "note": "Gol y asistencia; Player of the Match oficial"
+    },
+    {
       "player": "Pedri",
       "team": "Espana",
       "match": "Portugal 0-1 Espana",
@@ -567,9 +699,9 @@
     {
       "player": "Mohamed Salah",
       "team": "Egipto",
-      "match": "Australia 3-5 Egipto",
+      "match": "Australia 1-1 Egipto (2-4 pen)",
       "date": "2026-07-06",
-      "note": "Lidero la remontada espectacular en R16"
+      "note": "Panenka en la tanda; Egipto a octavos por primera vez en su historia"
     },
     {
       "player": "Erling Haaland",
@@ -907,19 +1039,19 @@
       "away": "Noruega",
       "goals": [
         {
-          "player": "Vinícius Júnior",
-          "team": "Brasil",
-          "minute": "55'"
+          "player": "Erling Haaland",
+          "team": "Noruega",
+          "minute": "80'"
         },
         {
           "player": "Erling Haaland",
           "team": "Noruega",
-          "minute": "12'"
+          "minute": "90'"
         },
         {
-          "player": "Alexander Sørloth",
-          "team": "Noruega",
-          "minute": "78'"
+          "player": "Neymar (pen.)",
+          "team": "Brasil",
+          "minute": "90+5'"
         }
       ]
     },
@@ -928,44 +1060,13 @@
       "away": "Egipto",
       "goals": [
         {
-          "player": "Alex Iwobi",
+          "player": "Emam Ashour",
+          "team": "Egipto"
+        },
+        {
+          "player": "Mohamed Hany (p.p.)",
           "team": "Australia",
-          "minute": "12'"
-        },
-        {
-          "player": "Aaron Mooy",
-          "team": "Australia",
-          "minute": "36'"
-        },
-        {
-          "player": "Nick D'Agostino",
-          "team": "Australia",
-          "minute": "63'"
-        },
-        {
-          "player": "Mohamed Salah",
-          "team": "Egipto",
-          "minute": "22'"
-        },
-        {
-          "player": "Omar Marmoush",
-          "team": "Egipto",
-          "minute": "31'"
-        },
-        {
-          "player": "Amro El Soleya",
-          "team": "Egipto",
-          "minute": "45'"
-        },
-        {
-          "player": "Karim Fathy",
-          "team": "Egipto",
-          "minute": "58'"
-        },
-        {
-          "player": "Mahmoud Hassan",
-          "team": "Egipto",
-          "minute": "79'"
+          "minute": "55'"
         }
       ]
     },
@@ -976,12 +1077,17 @@
         {
           "player": "Kylian Mbappé",
           "team": "Francia",
-          "minute": "45', 74'"
+          "minute": "45'"
         },
         {
           "player": "Bradley Barcola",
           "team": "Francia",
           "minute": "53'"
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "Francia",
+          "minute": "74'"
         }
       ]
     },
@@ -1077,19 +1183,263 @@
       "away": "Francia",
       "goals": [
         {
-          "player": "Thelo Aasgaard",
-          "team": "Noruega",
-          "minute": "46'"
+          "player": "Ousmane Dembélé",
+          "team": "Francia",
+          "minute": "7'"
         },
         {
           "player": "Ousmane Dembélé",
           "team": "Francia",
-          "minute": "7', 20', 32'"
+          "minute": "20'"
+        },
+        {
+          "player": "Thelo Aasgaard",
+          "team": "Noruega",
+          "minute": "21'"
+        },
+        {
+          "player": "Ousmane Dembélé",
+          "team": "Francia",
+          "minute": "32'"
         },
         {
           "player": "Désiré Doué",
           "team": "Francia",
-          "minute": "90+'"
+          "minute": "90+4'"
+        }
+      ]
+    },
+    {
+      "home": "Mexico",
+      "away": "Ecuador",
+      "goals": [
+        {
+          "player": "Julián Quiñones",
+          "team": "Mexico",
+          "minute": "22'"
+        },
+        {
+          "player": "Raúl Jiménez",
+          "team": "Mexico",
+          "minute": "31'"
+        }
+      ]
+    },
+    {
+      "home": "Inglaterra",
+      "away": "R.D. Congo",
+      "goals": [
+        {
+          "player": "Brian Cipenga",
+          "team": "R.D. Congo",
+          "minute": "7'"
+        },
+        {
+          "player": "Harry Kane",
+          "team": "Inglaterra"
+        },
+        {
+          "player": "Harry Kane",
+          "team": "Inglaterra"
+        }
+      ]
+    },
+    {
+      "home": "Belgica",
+      "away": "Senegal",
+      "goals": [
+        {
+          "player": "Habib Diarra",
+          "team": "Senegal",
+          "minute": "25'"
+        },
+        {
+          "player": "Ismaila Sarr",
+          "team": "Senegal",
+          "minute": "51'"
+        },
+        {
+          "player": "Romelu Lukaku",
+          "team": "Belgica",
+          "minute": "86'"
+        },
+        {
+          "player": "Youri Tielemans",
+          "team": "Belgica",
+          "minute": "89'"
+        },
+        {
+          "player": "Youri Tielemans (pen.)",
+          "team": "Belgica",
+          "minute": "125'"
+        }
+      ]
+    },
+    {
+      "home": "Suiza",
+      "away": "Argelia",
+      "goals": [
+        {
+          "player": "Breel Embolo",
+          "team": "Suiza"
+        },
+        {
+          "player": "Ruben Vargas",
+          "team": "Suiza"
+        }
+      ]
+    },
+    {
+      "home": "Estados Unidos",
+      "away": "Bosnia Herz.",
+      "goals": [
+        {
+          "player": "Folarin Balogun",
+          "team": "Estados Unidos"
+        },
+        {
+          "player": "Malik Tillman",
+          "team": "Estados Unidos"
+        }
+      ]
+    },
+    {
+      "home": "Portugal",
+      "away": "Croacia",
+      "goals": [
+        {
+          "player": "Ivan Perišić",
+          "team": "Croacia"
+        },
+        {
+          "player": "Cristiano Ronaldo (pen.)",
+          "team": "Portugal"
+        },
+        {
+          "player": "Gonçalo Ramos",
+          "team": "Portugal"
+        }
+      ]
+    },
+    {
+      "home": "Espana",
+      "away": "Austria",
+      "goals": [
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Espana"
+        },
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Espana"
+        },
+        {
+          "player": "Pedro Porro",
+          "team": "Espana"
+        }
+      ]
+    },
+    {
+      "home": "Argentina",
+      "away": "Cabo Verde",
+      "goals": [
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": "29'"
+        },
+        {
+          "player": "Deroy Duarte",
+          "team": "Cabo Verde",
+          "minute": "59'"
+        },
+        {
+          "player": "Lisandro Martínez",
+          "team": "Argentina",
+          "minute": "92'"
+        },
+        {
+          "player": "Sidny Lopes Cabral",
+          "team": "Cabo Verde",
+          "minute": "103'"
+        },
+        {
+          "player": "Diney Borges (p.p.)",
+          "team": "Argentina",
+          "minute": "111'"
+        }
+      ]
+    },
+    {
+      "home": "Colombia",
+      "away": "Ghana",
+      "goals": [
+        {
+          "player": "Jhon Arias",
+          "team": "Colombia"
+        }
+      ]
+    },
+    {
+      "home": "Canada",
+      "away": "Marruecos",
+      "goals": [
+        {
+          "player": "Azzedine Ounahi",
+          "team": "Marruecos",
+          "minute": "50'"
+        },
+        {
+          "player": "Azzedine Ounahi",
+          "team": "Marruecos",
+          "minute": "82'"
+        },
+        {
+          "player": "Soufiane Rahimi",
+          "team": "Marruecos",
+          "minute": "90+8'"
+        }
+      ]
+    },
+    {
+      "home": "Paraguay",
+      "away": "Francia",
+      "goals": [
+        {
+          "player": "Kylian Mbappé (pen.)",
+          "team": "Francia",
+          "minute": "69'"
+        }
+      ]
+    },
+    {
+      "home": "Estados Unidos",
+      "away": "Belgica",
+      "goals": [
+        {
+          "player": "Charles De Ketelaere",
+          "team": "Belgica",
+          "minute": "9'"
+        },
+        {
+          "player": "Malik Tillman",
+          "team": "Estados Unidos",
+          "minute": "30'"
+        },
+        {
+          "player": "Charles De Ketelaere",
+          "team": "Belgica",
+          "minute": "33'"
+        },
+        {
+          "player": "Hans Vanaken",
+          "team": "Belgica",
+          "minute": "57'"
+        },
+        {
+          "player": "Romelu Lukaku",
+          "team": "Belgica",
+          "minute": "90+4'"
         }
       ]
     }

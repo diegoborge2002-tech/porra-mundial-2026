@@ -332,9 +332,122 @@
         "home_score": 1,
         "away_score": 2,
         "winner": "Noruega"
+      },
+      "78": {
+        "home": "Inglaterra",
+        "away": "R.D. Congo",
+        "home_score": 2,
+        "away_score": 1,
+        "winner": "Inglaterra"
+      },
+      "80": {
+        "home": "Mexico",
+        "away": "Ecuador",
+        "home_score": 2,
+        "away_score": 0,
+        "winner": "Mexico"
+      },
+      "81": {
+        "home": "Belgica",
+        "away": "Senegal",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Belgica"
+      },
+      "82": {
+        "home": "Suiza",
+        "away": "Argelia",
+        "home_score": 2,
+        "away_score": 0,
+        "winner": "Suiza"
+      },
+      "83": {
+        "home": "Portugal",
+        "away": "Croacia",
+        "home_score": 2,
+        "away_score": 1,
+        "winner": "Portugal"
+      },
+      "84": {
+        "home": "Espana",
+        "away": "Austria",
+        "home_score": 3,
+        "away_score": 0,
+        "winner": "Espana"
+      },
+      "85": {
+        "home": "Estados Unidos",
+        "away": "Bosnia Herz.",
+        "home_score": 2,
+        "away_score": 0,
+        "winner": "Estados Unidos"
+      },
+      "86": {
+        "home": "Colombia",
+        "away": "Ghana",
+        "home_score": 1,
+        "away_score": 0,
+        "winner": "Colombia"
+      },
+      "87": {
+        "home": "Argentina",
+        "away": "Cabo Verde",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Argentina"
+      },
+      "88": {
+        "home": "Australia",
+        "away": "Egipto",
+        "home_score": 1,
+        "away_score": 1,
+        "winner": "Egipto"
       }
     },
-    "r16": {},
+    "r16": {
+      "89": {
+        "home": "Paraguay",
+        "away": "Francia",
+        "home_score": 0,
+        "away_score": 1,
+        "winner": "Francia"
+      },
+      "90": {
+        "home": "Canada",
+        "away": "Marruecos",
+        "home_score": 0,
+        "away_score": 3,
+        "winner": "Marruecos"
+      },
+      "91": {
+        "home": "Brasil",
+        "away": "Noruega",
+        "home_score": 1,
+        "away_score": 2,
+        "winner": "Noruega"
+      },
+      "92": {
+        "home": "Mexico",
+        "away": "Inglaterra",
+        "home_score": 2,
+        "away_score": 3,
+        "winner": "Inglaterra"
+      },
+      "93": {
+        "home": "Portugal",
+        "away": "Espana",
+        "home_score": 0,
+        "away_score": 1,
+        "winner": "Espana"
+      },
+      "94": {
+        "home": "Estados Unidos",
+        "away": "Belgica",
+        "home_score": 1,
+        "away_score": 4,
+        "winner": "Belgica"
+      }
+    },
     "qf": {},
     "sf": {},
     "final": {}
