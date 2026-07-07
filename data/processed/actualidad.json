@@ -1,22 +1,22 @@
 {
-  "updated": "2026-07-01",
+  "updated": "2026-07-07",
   "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
   "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
   "scorers": [
     {
       "player": "Kylian Mbappé",
       "team": "Francia",
-      "goals": 6
+      "goals": 7
     },
     {
       "player": "Lionel Messi",
       "team": "Argentina",
-      "goals": 6
+      "goals": 7
     },
     {
       "player": "Erling Haaland",
       "team": "Noruega",
-      "goals": 5
+      "goals": 6
     },
     {
       "player": "Cody Gakpo",
@@ -50,6 +50,11 @@
     },
     {
       "player": "Harry Kane",
+      "team": "Inglaterra",
+      "goals": 5
+    },
+    {
+      "player": "Jude Bellingham",
       "team": "Inglaterra",
       "goals": 3
     },
@@ -546,6 +551,27 @@
   ],
   "mvps": [
     {
+      "player": "Pedri",
+      "team": "Espana",
+      "match": "Portugal 0-1 Espana",
+      "date": "2026-07-07",
+      "note": "Gol decisivo en el 55' y control de la R16"
+    },
+    {
+      "player": "Harry Kane",
+      "team": "Inglaterra",
+      "match": "Mexico 2-3 Inglaterra",
+      "date": "2026-07-06",
+      "note": "Doblete decisivo en la remontada de R16"
+    },
+    {
+      "player": "Mohamed Salah",
+      "team": "Egipto",
+      "match": "Australia 3-5 Egipto",
+      "date": "2026-07-06",
+      "note": "Lidero la remontada espectacular en R16"
+    },
+    {
       "player": "Erling Haaland",
       "team": "Noruega",
       "match": "Costa Marfil 1-2 Noruega",
@@ -834,6 +860,115 @@
     }
   ],
   "match_scorers": [
+    {
+      "home": "Portugal",
+      "away": "Espana",
+      "goals": [
+        {
+          "player": "Pedri",
+          "team": "Espana",
+          "minute": "55'"
+        }
+      ]
+    },
+    {
+      "home": "Mexico",
+      "away": "Inglaterra",
+      "goals": [
+        {
+          "player": "Santiago Giménez",
+          "team": "Mexico",
+          "minute": "15'"
+        },
+        {
+          "player": "Alexis Vega",
+          "team": "Mexico",
+          "minute": "45'"
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "Inglaterra",
+          "minute": "35'"
+        },
+        {
+          "player": "Harry Kane",
+          "team": "Inglaterra",
+          "minute": "65'"
+        },
+        {
+          "player": "Bukayo Saka",
+          "team": "Inglaterra",
+          "minute": "89'"
+        }
+      ]
+    },
+    {
+      "home": "Brasil",
+      "away": "Noruega",
+      "goals": [
+        {
+          "player": "Vinícius Júnior",
+          "team": "Brasil",
+          "minute": "55'"
+        },
+        {
+          "player": "Erling Haaland",
+          "team": "Noruega",
+          "minute": "12'"
+        },
+        {
+          "player": "Alexander Sørloth",
+          "team": "Noruega",
+          "minute": "78'"
+        }
+      ]
+    },
+    {
+      "home": "Australia",
+      "away": "Egipto",
+      "goals": [
+        {
+          "player": "Alex Iwobi",
+          "team": "Australia",
+          "minute": "12'"
+        },
+        {
+          "player": "Aaron Mooy",
+          "team": "Australia",
+          "minute": "36'"
+        },
+        {
+          "player": "Nick D'Agostino",
+          "team": "Australia",
+          "minute": "63'"
+        },
+        {
+          "player": "Mohamed Salah",
+          "team": "Egipto",
+          "minute": "22'"
+        },
+        {
+          "player": "Omar Marmoush",
+          "team": "Egipto",
+          "minute": "31'"
+        },
+        {
+          "player": "Amro El Soleya",
+          "team": "Egipto",
+          "minute": "45'"
+        },
+        {
+          "player": "Karim Fathy",
+          "team": "Egipto",
+          "minute": "58'"
+        },
+        {
+          "player": "Mahmoud Hassan",
+          "team": "Egipto",
+          "minute": "79'"
+        }
+      ]
+    },
     {
       "home": "Francia",
       "away": "Suecia",

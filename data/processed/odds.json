@@ -1,414 +1,171 @@
 {
-  "fetched_at": "2026-07-01T01:15:48",
-  "fetched_at_utc": "2026-06-30T23:15:48Z",
+  "fetched_at": "2026-07-07T02:57:17",
+  "fetched_at_utc": "2026-07-07T00:57:17Z",
   "regions": "eu",
-  "requests_remaining": 488,
-  "requests_used": 12,
+  "requests_remaining": 498,
+  "requests_used": 2,
   "champion": {
     "Francia": {
-      "best": 3.15,
-      "imp": 0.3254,
-      "n_books": 2
-    },
-    "Argentina": {
-      "best": 5.6,
-      "imp": 0.18019,
-      "n_books": 2
-    },
-    "Inglaterra": {
-      "best": 9.0,
-      "imp": 0.12222,
+      "best": 3.05,
+      "imp": 0.34575,
       "n_books": 2
     },
     "Espana": {
-      "best": 9.2,
-      "imp": 0.11685,
+      "best": 5.1,
+      "imp": 0.19804,
       "n_books": 2
     },
-    "Brasil": {
-      "best": 13.0,
-      "imp": 0.08392,
+    "Argentina": {
+      "best": 5.8,
+      "imp": 0.17712,
       "n_books": 2
     },
-    "Portugal": {
-      "best": 17.0,
-      "imp": 0.06787,
+    "Inglaterra": {
+      "best": 6.6,
+      "imp": 0.15268,
       "n_books": 2
     },
-    "Marruecos": {
-      "best": 32.0,
-      "imp": 0.03943,
+    "Noruega": {
+      "best": 21.0,
+      "imp": 0.05322,
       "n_books": 2
     },
     "Colombia": {
+      "best": 28.0,
+      "imp": 0.03709,
+      "n_books": 2
+    },
+    "Marruecos": {
       "best": 36.0,
       "imp": 0.03113,
       "n_books": 2
     },
-    "Estados Unidos": {
+    "Belgica": {
       "best": 40.0,
       "imp": 0.02721,
       "n_books": 2
     },
-    "Noruega": {
-      "best": 46.0,
-      "imp": 0.02811,
-      "n_books": 2
-    },
-    "Mexico": {
-      "best": 55.0,
-      "imp": 0.02129,
-      "n_books": 2
-    },
-    "Belgica": {
-      "best": 75.0,
-      "imp": 0.01647,
+    "Estados Unidos": {
+      "best": 60.0,
+      "imp": 0.02053,
       "n_books": 2
     },
     "Suiza": {
-      "best": 120.0,
-      "imp": 0.01034,
-      "n_books": 2
-    },
-    "Senegal": {
-      "best": 160.0,
-      "imp": 0.00644,
-      "n_books": 2
-    },
-    "Ecuador": {
-      "best": 180.0,
-      "imp": 0.00675,
-      "n_books": 2
-    },
-    "Croacia": {
-      "best": 270.0,
-      "imp": 0.00516,
-      "n_books": 2
-    },
-    "Paraguay": {
-      "best": 380.0,
-      "imp": 0.0038,
-      "n_books": 2
-    },
-    "Canada": {
-      "best": 420.0,
-      "imp": 0.00516,
+      "best": 100.0,
+      "imp": 0.01246,
       "n_books": 2
     },
     "Egipto": {
-      "best": 520.0,
-      "imp": 0.00295,
-      "n_books": 2
-    },
-    "Austria": {
-      "best": 550.0,
-      "imp": 0.0029,
-      "n_books": 2
-    },
-    "Australia": {
-      "best": 590.0,
-      "imp": 0.00227,
-      "n_books": 2
-    },
-    "Ghana": {
-      "best": 730.0,
-      "imp": 0.00211,
-      "n_books": 2
-    },
-    "Argelia": {
-      "best": 800.0,
-      "imp": 0.00205,
-      "n_books": 2
-    },
-    "Cabo Verde": {
-      "best": 1000.0,
-      "imp": 0.0015,
-      "n_books": 2
-    },
-    "R.D. Congo": {
-      "best": 1000.0,
-      "imp": 0.0015,
-      "n_books": 2
-    },
-    "Bosnia Herz.": {
-      "best": 1000.0,
-      "imp": 0.0015,
+      "best": 350.0,
+      "imp": 0.00392,
       "n_books": 2
     }
   },
   "matches": {
-    "Mexico vs Ecuador": {
-      "commence_time": "2026-07-01T01:00:00Z",
-      "home": "Mexico",
-      "away": "Ecuador",
-      "h": {
-        "best": 2.32,
-        "imp": 0.4491,
-        "n_books": 24
-      },
-      "x": {
-        "best": 2.96,
-        "imp": 0.34604,
-        "n_books": 24
-      },
-      "a": {
-        "best": 4.4,
-        "imp": 0.24496,
-        "n_books": 24
-      },
-      "n_books": 24
-    },
-    "Inglaterra vs R.D. Congo": {
-      "commence_time": "2026-07-01T16:00:00Z",
-      "home": "Inglaterra",
-      "away": "R.D. Congo",
-      "h": {
-        "best": 1.31,
-        "imp": 0.77913,
-        "n_books": 22
-      },
-      "x": {
-        "best": 5.7,
-        "imp": 0.18562,
-        "n_books": 22
-      },
-      "a": {
-        "best": 16.5,
-        "imp": 0.07524,
-        "n_books": 22
-      },
-      "n_books": 22
-    },
-    "Belgica vs Senegal": {
-      "commence_time": "2026-07-01T20:00:00Z",
-      "home": "Belgica",
-      "away": "Senegal",
-      "h": {
-        "best": 2.25,
-        "imp": 0.45951,
-        "n_books": 24
-      },
-      "x": {
-        "best": 3.52,
-        "imp": 0.30506,
-        "n_books": 24
-      },
-      "a": {
-        "best": 3.95,
-        "imp": 0.27847,
-        "n_books": 24
-      },
-      "n_books": 24
-    },
-    "Estados Unidos vs Bosnia Herz.": {
-      "commence_time": "2026-07-02T00:00:00Z",
+    "Estados Unidos vs Belgica": {
+      "commence_time": "2026-07-07T00:00:00Z",
       "home": "Estados Unidos",
-      "away": "Bosnia Herz.",
+      "away": "Belgica",
       "h": {
-        "best": 1.42,
-        "imp": 0.72435,
-        "n_books": 24
+        "best": 9.6,
+        "imp": 0.12879,
+        "n_books": 14
       },
       "x": {
-        "best": 5.2,
-        "imp": 0.20479,
-        "n_books": 24
+        "best": 4.3,
+        "imp": 0.25295,
+        "n_books": 14
       },
       "a": {
-        "best": 9.8,
-        "imp": 0.11732,
-        "n_books": 24
+        "best": 1.5,
+        "imp": 0.69637,
+        "n_books": 14
       },
-      "n_books": 24
+      "n_books": 14
     },
-    "Espana vs Austria": {
-      "commence_time": "2026-07-02T19:00:00Z",
-      "home": "Espana",
-      "away": "Austria",
+    "Argentina vs Egipto": {
+      "commence_time": "2026-07-07T16:00:00Z",
+      "home": "Argentina",
+      "away": "Egipto",
       "h": {
-        "best": 1.36,
-        "imp": 0.75304,
-        "n_books": 24
+        "best": 1.41,
+        "imp": 0.73364,
+        "n_books": 23
       },
       "x": {
-        "best": 5.6,
-        "imp": 0.18957,
-        "n_books": 24
+        "best": 5.1,
+        "imp": 0.20799,
+        "n_books": 23
       },
       "a": {
         "best": 12.0,
-        "imp": 0.10072,
-        "n_books": 24
+        "imp": 0.10271,
+        "n_books": 23
       },
-      "n_books": 24
+      "n_books": 23
     },
-    "Portugal vs Croacia": {
-      "commence_time": "2026-07-02T23:00:00Z",
-      "home": "Portugal",
-      "away": "Croacia",
-      "h": {
-        "best": 1.85,
-        "imp": 0.55966,
-        "n_books": 24
-      },
-      "x": {
-        "best": 3.65,
-        "imp": 0.28306,
-        "n_books": 24
-      },
-      "a": {
-        "best": 5.5,
-        "imp": 0.20123,
-        "n_books": 24
-      },
-      "n_books": 24
-    },
-    "Suiza vs Argelia": {
-      "commence_time": "2026-07-03T03:00:00Z",
+    "Suiza vs Colombia": {
+      "commence_time": "2026-07-07T20:00:00Z",
       "home": "Suiza",
-      "away": "Argelia",
+      "away": "Colombia",
       "h": {
-        "best": 2.14,
-        "imp": 0.48429,
-        "n_books": 24
+        "best": 3.75,
+        "imp": 0.27984,
+        "n_books": 23
       },
       "x": {
-        "best": 3.38,
-        "imp": 0.30882,
-        "n_books": 24
+        "best": 3.17,
+        "imp": 0.32322,
+        "n_books": 23
       },
       "a": {
-        "best": 4.4,
-        "imp": 0.25211,
-        "n_books": 24
+        "best": 2.34,
+        "imp": 0.44166,
+        "n_books": 23
       },
-      "n_books": 24
+      "n_books": 23
     },
-    "Australia vs Egipto": {
-      "commence_time": "2026-07-03T18:00:00Z",
-      "home": "Australia",
-      "away": "Egipto",
+    "Francia vs Marruecos": {
+      "commence_time": "2026-07-09T20:00:00Z",
+      "home": "Francia",
+      "away": "Marruecos",
       "h": {
-        "best": 3.55,
-        "imp": 0.29805,
-        "n_books": 24
-      },
-      "x": {
-        "best": 3.06,
-        "imp": 0.3458,
-        "n_books": 24
-      },
-      "a": {
-        "best": 2.6,
-        "imp": 0.40109,
-        "n_books": 24
-      },
-      "n_books": 24
-    },
-    "Argentina vs Cabo Verde": {
-      "commence_time": "2026-07-03T22:00:00Z",
-      "home": "Argentina",
-      "away": "Cabo Verde",
-      "h": {
-        "best": 1.2,
-        "imp": 0.85701,
-        "n_books": 24
-      },
-      "x": {
-        "best": 9.0,
-        "imp": 0.13089,
-        "n_books": 24
-      },
-      "a": {
-        "best": 24.0,
-        "imp": 0.0546,
-        "n_books": 24
-      },
-      "n_books": 24
-    },
-    "Colombia vs Ghana": {
-      "commence_time": "2026-07-04T01:30:00Z",
-      "home": "Colombia",
-      "away": "Ghana",
-      "h": {
-        "best": 1.56,
-        "imp": 0.65732,
-        "n_books": 24
+        "best": 1.64,
+        "imp": 0.62963,
+        "n_books": 23
       },
       "x": {
         "best": 4.1,
-        "imp": 0.25489,
-        "n_books": 24
+        "imp": 0.25735,
+        "n_books": 23
       },
       "a": {
-        "best": 8.5,
-        "imp": 0.13323,
-        "n_books": 24
+        "best": 7.0,
+        "imp": 0.15883,
+        "n_books": 23
       },
-      "n_books": 24
+      "n_books": 23
     },
-    "Canada vs Marruecos": {
-      "commence_time": "2026-07-04T17:00:00Z",
-      "home": "Canada",
-      "away": "Marruecos",
+    "Noruega vs Inglaterra": {
+      "commence_time": "2026-07-11T21:00:00Z",
+      "home": "Noruega",
+      "away": "Inglaterra",
       "h": {
-        "best": 5.1,
-        "imp": 0.20793,
-        "n_books": 24
-      },
-      "x": {
-        "best": 3.6,
-        "imp": 0.28786,
-        "n_books": 24
-      },
-      "a": {
-        "best": 1.87,
-        "imp": 0.54868,
-        "n_books": 24
-      },
-      "n_books": 24
-    },
-    "Paraguay vs Francia": {
-      "commence_time": "2026-07-04T21:00:00Z",
-      "home": "Paraguay",
-      "away": "Francia",
-      "h": {
-        "best": 18.0,
-        "imp": 0.05996,
-        "n_books": 11
-      },
-      "x": {
-        "best": 7.95,
-        "imp": 0.13897,
-        "n_books": 11
-      },
-      "a": {
-        "best": 1.22,
-        "imp": 0.84633,
-        "n_books": 11
-      },
-      "n_books": 11
-    },
-    "Brasil vs Noruega": {
-      "commence_time": "2026-07-05T20:00:00Z",
-      "home": "Brasil",
-      "away": "Noruega",
-      "h": {
-        "best": 1.99,
-        "imp": 0.53367,
-        "n_books": 18
-      },
-      "x": {
-        "best": 3.7,
-        "imp": 0.28509,
-        "n_books": 18
-      },
-      "a": {
         "best": 4.4,
-        "imp": 0.2411,
-        "n_books": 18
+        "imp": 0.2474,
+        "n_books": 23
       },
-      "n_books": 18
+      "x": {
+        "best": 3.81,
+        "imp": 0.27223,
+        "n_books": 23
+      },
+      "a": {
+        "best": 1.96,
+        "imp": 0.5253,
+        "n_books": 23
+      },
+      "n_books": 23
     }
   }
 }
