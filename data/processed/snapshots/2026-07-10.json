@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-10",
+  "datetime": "2026-07-10T20:06:14",
+  "champion": {
+    "Francia": 0.3495,
+    "Noruega": 0.0322,
+    "Inglaterra": 0.1441,
+    "Espana": 0.2058,
+    "Argentina": 0.1849,
+    "Belgica": 0.0437,
+    "Suiza": 0.0398
+  },
+  "finalist": {
+    "Francia": 0.5634,
+    "Suiza": 0.1315,
+    "Noruega": 0.1171,
+    "Espana": 0.3335,
+    "Argentina": 0.3965,
+    "Inglaterra": 0.3549,
+    "Belgica": 0.1031
+  },
+  "semifinal": {
+    "Francia": 1.0,
+    "Espana": 0.678,
+    "Inglaterra": 0.6729,
+    "Suiza": 0.3343,
+    "Belgica": 0.322,
+    "Noruega": 0.3271,
+    "Argentina": 0.6657
+  }
+}

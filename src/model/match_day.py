@@ -139,6 +139,45 @@ def _played_pairs() -> set[frozenset]:
     return pairs
 
 
+def _dynamic_knockout_matches(elo: dict[str, float]) -> list[UpcomingMatch]:
+    """Partidos KO ya resueltos por el cuadro, con horario y pronóstico únicos.
+
+    El CSV oficial contiene plazas genéricas (W95, W96...) hasta que se conoce el
+    cruce. Esta capa los sustituye por equipos reales para que portada,
+    Selecciones y Actualidad no discrepen durante las eliminatorias.
+    """
+    if not REAL_RESULTS.exists():
+        return []
+    try:
+        real = json.loads(REAL_RESULTS.read_text(encoding="utf-8"))
+        from src.data.bracket_view import build_bracket
+        bracket = build_bracket(real, elo)
+    except Exception:
+        return []
+    if not bracket:
+        return []
+
+    kickoffs = _kickoff_overrides()
+    out: list[UpcomingMatch] = []
+    for match in bracket["matches"].values():
+        home, away = match.get("home"), match.get("away")
+        if not (match.get("expected") and home and away):
+            continue
+        when = kickoffs.get(f"{home} vs {away}")
+        if not when:
+            continue
+        exp = match["expected"]
+        lh, la = exp["xg_home"], exp["xg_away"]
+        out.append(UpcomingMatch(
+            date=pd.Timestamp(when), home=home, away=away, city="",
+            altitude=0, group="KO", is_played=False, home_score=None,
+            away_score=None, lambda_home=lh, lambda_away=la,
+            p_home=exp["p_home"], p_draw=exp["p_draw"], p_away=exp["p_away"],
+            top_scores=top_exact_scores(lh, la, n=5, use_dc=True),
+        ))
+    return out
+
+
 def find_upcoming_matches(
     elo: dict[str, float],
     now: datetime | None = None,
@@ -161,21 +200,21 @@ def find_upcoming_matches(
                 EN_TO_ES.get(r["home_team"], r["home_team"]),
                 EN_TO_ES.get(r["away_team"], r["away_team"]),
             )) in played, axis=1)]
-    if pending.empty:
+    scheduled = [] if pending.empty else [_build_upcoming(row, elo) for _, row in pending.iterrows()]
+    # Los KO dinámicos tienen prioridad sobre los placeholders del CSV oficial.
+    dynamic = _dynamic_knockout_matches(elo)
+    known_pairs = {frozenset((m.home, m.away)) for m in dynamic}
+    candidates = [m for m in scheduled if frozenset((m.home, m.away)) not in known_pairs] + dynamic
+    if not candidates:
         return []
-    pending["seconds_to_kickoff"] = (pending["date"] - pd.Timestamp(now)).dt.total_seconds()
+    candidates.sort(key=lambda m: m.date)
+    timed = [(m, (m.date - pd.Timestamp(now)).total_seconds()) for m in candidates]
     # Solo futuros y dentro de ventana
-    in_window = pending[
-        (pending["seconds_to_kickoff"] >= -3600 * 3) &  # incluye hasta 3h después por si estamos en partido
-        (pending["seconds_to_kickoff"] <= window_hours * 3600)
-    ]
-    if in_window.empty:
+    in_window = [m for m, secs in timed if -3600 * 3 <= secs <= window_hours * 3600]
+    if not in_window:
         # Fallback: el siguiente partido por jugar
-        future = pending[pending["seconds_to_kickoff"] >= 0].sort_values("seconds_to_kickoff")
-        in_window = future.head(3)  # máximo 3 cards
-        # filtramos por fallback_days
-        in_window = in_window[in_window["seconds_to_kickoff"] <= fallback_days * 86400]
-    return [_build_upcoming(row, elo) for _, row in in_window.iterrows()]
+        in_window = [m for m, secs in timed if 0 <= secs <= fallback_days * 86400][:3]
+    return in_window
 
 
 def find_recently_played(
@@ -213,12 +252,13 @@ def find_recently_played(
 def days_to_next_match(now: datetime | None = None) -> int:
     """Días hasta el siguiente partido pendiente."""
     now = now or datetime.now()
-    df = _wc_schedule()
-    pending = df[df["home_score"].isna()]
-    future = pending[pending["date"] >= pd.Timestamp(now)]
-    if future.empty:
+    # Reutiliza la misma fuente unificada que el resto de la aplicación.
+    from app.utils import get_elo_with_biases
+    upcoming = find_upcoming_matches(get_elo_with_biases(), now=now,
+                                     window_hours=24 * 21, fallback_days=21)
+    if not upcoming:
         return 999
-    next_match = future["date"].min()
+    next_match = min(m.date for m in upcoming)
     return max(0, (next_match - pd.Timestamp(now)).days)
 
 

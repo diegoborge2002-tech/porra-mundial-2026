@@ -17,6 +17,7 @@ from app.utils import (
 )
 from app.styles import PRIMARY, ACCENT, GOOD, DANGER, TEXT_DIM
 from app.components import big_stat, render_table
+from app.admin import editor_gate
 from src.data.squad import (
     Player, Squad, load_squad, SQUADS_DIR, POSITIONS, POSITION_LABELS,
     calculate_club_performance_bias, ratings_to_elo_bias,
@@ -153,6 +154,7 @@ def _mc_baseline(n_sims: int = 5000) -> dict:
 # Render principal
 # ─────────────────────────────────────────────────────────────
 def render() -> None:
+    can_edit = editor_gate()
     st.markdown("### 👥 Plantilla y rendimiento de club 2026")
     st.caption(
         "La gracia: ¿qué selecciones tienen jugadores que han hecho una temporada "
@@ -453,7 +455,7 @@ def _render_impact(data: dict[str, dict]) -> None:
     with bc1:
         if not is_active:
             if st.button("⚡ Activar club bias + guardar pesos", type="primary",
-                         key="btn_activate_plantilla"):
+                         key="btn_activate_plantilla", disabled=not can_edit):
                 cfg.use_club_performance = True
                 cfg.weight_market_value = round(w_mv, 1)
                 cfg.weight_club_pedigree = round(w_ped, 1)
@@ -463,7 +465,8 @@ def _render_impact(data: dict[str, dict]) -> None:
                 st.success("Activado. Las predicciones globales ya usan estos pesos.")
                 st.rerun()
         else:
-            if st.button("🔄 Actualizar pesos guardados", key="btn_update_plantilla"):
+            if st.button("🔄 Actualizar pesos guardados", key="btn_update_plantilla",
+                         disabled=not can_edit):
                 cfg.weight_market_value = round(w_mv, 1)
                 cfg.weight_club_pedigree = round(w_ped, 1)
                 cfg.weight_recent_form = round(w_form, 1)
@@ -471,7 +474,8 @@ def _render_impact(data: dict[str, dict]) -> None:
                 st.cache_data.clear()
                 st.success("Pesos actualizados.")
                 st.rerun()
-            if st.button("✖️ Desactivar club bias", key="btn_disable_plantilla"):
+            if st.button("✖️ Desactivar club bias", key="btn_disable_plantilla",
+                         disabled=not can_edit):
                 cfg.use_club_performance = False
                 cfg.save()
                 st.cache_data.clear()

@@ -1,5 +1,6 @@
 """Componentes UI específicos del 'Día de partido' y widget en-vivo."""
 from __future__ import annotations
+from textwrap import dedent
 import streamlit as st
 
 from app.styles import PRIMARY, ACCENT, BG_CARD, TEXT, TEXT_DIM, GOOD, DANGER
@@ -16,6 +17,11 @@ def _flag(team: str, size: int = 30) -> str:
     return (f'<img src="https://flagcdn.com/w80/{iso}.png" '
             f'style="width:{size}px;height:{int(size*0.75)}px;border-radius:3px;'
             f'object-fit:cover;vertical-align:middle;">')
+
+
+def _html(markup: str) -> str:
+    """Evita que Markdown interprete la indentación de HTML como bloque de código."""
+    return "".join(line.strip() for line in markup.splitlines())
 
 
 def render_upcoming_card(m: UpcomingMatch, idx: int = 0):
@@ -46,9 +52,7 @@ def render_upcoming_card(m: UpcomingMatch, idx: int = 0):
 
     # Cabecera de la card
     st.markdown(
-        f"""
-        <div style="background:linear-gradient(135deg, rgba(16,185,129,0.04) 0%, rgba(245,158,11,0.04) 100%);
-                    border:1px solid rgba(16,185,129,0.25); border-radius:14px; padding:18px; margin-bottom:14px;">
+        _html(dedent(f"""
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
                 <div style="font-size:0.78rem; color:{TEXT_DIM};">
                     {venue}{alt_badge}{group_badge}
@@ -71,14 +75,14 @@ def render_upcoming_card(m: UpcomingMatch, idx: int = 0):
                     <div style="margin-top:6px; font-weight:700; font-size:1.05rem; text-align:center;">{m.away}</div>
                 </div>
             </div>
-        """,
+        """)),
         unsafe_allow_html=True,
     )
 
     # Barra 1X2
     p_h, p_d, p_a = m.p_home, m.p_draw, m.p_away
     st.markdown(
-        f"""
+        _html(dedent(f"""
             <div style="display:flex; height:32px; border-radius:8px; overflow:hidden; margin-top:6px;">
                 <div style="width:{p_h*100}%; background:{PRIMARY}; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.85rem;">
                     {p_h*100:.0f}%
@@ -93,7 +97,7 @@ def render_upcoming_card(m: UpcomingMatch, idx: int = 0):
             <div style="display:flex; justify-content:space-between; font-size:0.72rem; color:{TEXT_DIM}; margin-top:4px;">
                 <span>V {m.home}</span><span>Empate</span><span>V {m.away}</span>
             </div>
-        """,
+        """)),
         unsafe_allow_html=True,
     )
 
@@ -109,7 +113,6 @@ def render_upcoming_card(m: UpcomingMatch, idx: int = 0):
     score_html += "</div>"
     st.markdown(score_html, unsafe_allow_html=True)
 
-    st.markdown("</div>", unsafe_allow_html=True)
 
 
 def _form_pills_html(streak: str) -> str:
@@ -194,7 +197,7 @@ def render_pre_match_extras(home: str, away: str) -> None:
     streak_a_html = _form_pills_html(getattr(prof_a, "form_streak", ""))
 
     st.markdown(
-        f"""
+        _html(dedent(f"""
         <div style="background:rgba(15,23,42,0.35); border:1px solid rgba(255,255,255,0.04);
                     border-radius:12px; padding:14px; margin-top:-10px; margin-bottom:14px;">
             <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:14px;">
@@ -231,7 +234,7 @@ def render_pre_match_extras(home: str, away: str) -> None:
                 </div>
             </div>
         </div>
-        """,
+        """)),
         unsafe_allow_html=True,
     )
 

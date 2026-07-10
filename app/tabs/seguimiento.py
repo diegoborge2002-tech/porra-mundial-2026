@@ -23,6 +23,7 @@ from src.model.tournament_sim import _resolve_r32_pairings
 from src.model.history import append_snapshot, clear_history
 from src.model.calibration import shannon_entropy
 from app.styles import PRIMARY, ACCENT, TEXT_DIM, GOOD, DANGER, BG_CARD
+from app.admin import editor_gate
 
 
 def clean_html(html_str: str) -> str:
@@ -299,6 +300,7 @@ def render_standings_table(standings: list[dict]) -> str:
 
 def render():
     st.header("Seguimiento en vivo")
+    can_edit = editor_gate()
     st.caption(
         "Introduce los resultados reales del Mundial 2026 a medida que se jueguen. "
         "La aplicación congelará los partidos jugados, calculará dinámicamente las clasificaciones y la porra, y simulará el resto del torneo en tiempo real."
@@ -325,7 +327,8 @@ def render():
             unsafe_allow_html=True
         )
         
-        if st.button("💾 Guardar Cambios", type="primary", use_container_width=True):
+        if st.button("💾 Guardar Cambios", type="primary", use_container_width=True,
+                     disabled=not can_edit):
             save_real_results(temp_results)
             # Snapshot del estado actual del torneo (probabilidades + entropía)
             try:
@@ -343,7 +346,8 @@ def render():
             
         st.markdown("<div style='height: 8px;'></div>", unsafe_allow_html=True)
             
-        if st.button("🗑️ Resetear Marcadores", use_container_width=True, type="secondary"):
+        if st.button("🗑️ Resetear Marcadores", use_container_width=True, type="secondary",
+                     disabled=not can_edit):
             empty_results = {
                 "group_matches": {},
                 "knockout_matches": {
@@ -1174,4 +1178,3 @@ def render_bracket_visual(state: dict, temp_results: dict):
     </div>
     """
     st.markdown(clean_html(bracket_html), unsafe_allow_html=True)
-

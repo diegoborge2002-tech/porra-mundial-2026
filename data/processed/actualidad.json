@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07",
+  "updated": "2026-07-10",
   "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
   "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
   "scorers": [
@@ -11,12 +11,12 @@
     {
       "player": "Kylian Mbappé",
       "team": "Francia",
-      "goals": 7
+      "goals": 8
     },
     {
       "player": "Lionel Messi",
       "team": "Argentina",
-      "goals": 7
+      "goals": 8
     },
     {
       "player": "Harry Kane",
@@ -51,7 +51,7 @@
     {
       "player": "Ousmane Dembélé",
       "team": "Francia",
-      "goals": 4
+      "goals": 5
     },
     {
       "player": "Vinicius Junior",
@@ -641,6 +641,27 @@
   ],
   "mvps": [
     {
+      "player": "Kylian Mbappé",
+      "team": "Francia",
+      "match": "Francia 2-0 Marruecos",
+      "date": "2026-07-09",
+      "note": "Abrió el partido en el 60'; octavo gol del torneo y MVP oficial."
+    },
+    {
+      "player": "Gregor Kobel",
+      "team": "Suiza",
+      "match": "Suiza 0-0 Colombia (4-3 pen)",
+      "date": "2026-07-07",
+      "note": "Figura de la tanda que lleva a Suiza a cuartos ante Argentina."
+    },
+    {
+      "player": "Lionel Messi",
+      "team": "Argentina",
+      "match": "Argentina 3-2 Egipto",
+      "date": "2026-07-07",
+      "note": "Gol del empate en la remontada desde el 0-2; alcanza 8 goles."
+    },
+    {
       "player": "Charles De Ketelaere",
       "team": "Belgica",
       "match": "Estados Unidos 1-4 Belgica",
@@ -992,6 +1013,30 @@
     }
   ],
   "match_scorers": [
+    {
+      "home": "Francia",
+      "away": "Marruecos",
+      "goals": [
+        {"player": "Kylian Mbappé", "team": "Francia", "minute": "60'"},
+        {"player": "Ousmane Dembélé", "team": "Francia", "minute": "66'"}
+      ]
+    },
+    {
+      "home": "Argentina",
+      "away": "Egipto",
+      "goals": [
+        {"player": "Trezeguet", "team": "Egipto"},
+        {"player": "Mostafa Zico", "team": "Egipto"},
+        {"player": "Cristian Romero", "team": "Argentina", "minute": "79'"},
+        {"player": "Lionel Messi", "team": "Argentina", "minute": "83'"},
+        {"player": "Enzo Fernández", "team": "Argentina", "minute": "90+2'"}
+      ]
+    },
+    {
+      "home": "Suiza",
+      "away": "Colombia",
+      "goals": []
+    },
     {
       "home": "Portugal",
       "away": "Espana",

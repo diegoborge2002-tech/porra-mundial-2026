@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+import json
 import math
 import streamlit as st
 
@@ -100,6 +101,23 @@ def _header_kpi_bar() -> None:
     st.markdown("".join(parts), unsafe_allow_html=True)
 
 
+def _freshness_bar() -> None:
+    """Expone cuándo se refrescó cada fuente para que la web sea auditable."""
+    def _read_date(path: Path, field: str) -> str:
+        try:
+            value = json.loads(path.read_text(encoding="utf-8")).get(field, "")
+            return str(value).replace("T", " ")[:16] or "sin datos"
+        except Exception:
+            return "sin datos"
+
+    actual = _read_date(ROOT / "data" / "processed" / "actualidad.json", "updated")
+    odds = _read_date(ROOT / "data" / "processed" / "odds.json", "fetched_at")
+    st.caption(
+        f"🛰️ Datos verificados · Resultados: API football-data.org · "
+        f"Actualidad: {actual} · Mercado: {odds} · Modelo: ensemble Elo + stats"
+    )
+
+
 def _ticker_bar() -> None:
     """Cinta LED tipo videomarcador: resultados recientes + próximos con pronóstico."""
     try:
@@ -116,14 +134,22 @@ def _ticker_bar() -> None:
             return f'<img src="https://flagcdn.com/w40/{iso}.png">'
 
         items: list[str] = []
-        # Resultados ya jugados (últimos 6)
-        for key, scores in list((real.get("group_matches") or {}).items())[-6:]:
-            if not scores or len(scores) < 2:
-                continue
-            h, a = key.split(" vs ")
+        # Resultados ya jugados: prioriza eliminatorias, que son lo relevante
+        # durante la fase final, y completa con los últimos grupos si hace falta.
+        finals = []
+        for rnd in (real.get("knockout_matches") or {}).values():
+            for m in rnd.values():
+                if m.get("home_score") is not None:
+                    finals.append((m["home"], m["away"], m["home_score"], m["away_score"]))
+        group_finals = []
+        for key, scores in (real.get("group_matches") or {}).items():
+            if scores and len(scores) >= 2 and " vs " in key:
+                h, a = key.split(" vs ")
+                group_finals.append((h, a, scores[0], scores[1]))
+        for h, a, gh, ga in (finals[-6:] or group_finals[-6:]):
             items.append(
                 f'<span class="wc-tick">{flag(h)} {h} '
-                f'<span class="score">{scores[0]}–{scores[1]}</span> {a} {flag(a)} '
+                f'<span class="score">{gh}–{ga}</span> {a} {flag(a)} '
                 f'<span class="ok">FINAL</span></span>'
             )
         # Próximos partidos con resultado esperado
@@ -252,6 +278,7 @@ _global_search()
 _ticker_bar()
 _next_match_panel()
 _header_kpi_bar()
+_freshness_bar()
 _news_banner()
 render_matchday_brief()
 
@@ -286,14 +313,37 @@ _GOTO = {  # claves cortas de ?goto= → etiqueta de pestaña
 }
 
 _NAV_KEY = "active_tab"
+_NAV_AREAS = {
+    "Mundial": _LABELS[:6],
+    "Modelo": [_LABELS[0], _LABELS[4], _LABELS[9]],
+    "Mi espacio": [_LABELS[6], _LABELS[7], _LABELS[8]],
+}
+_AREA_FOR_TAB: dict[str, str] = {}
+for _area_name, _area_tabs in _NAV_AREAS.items():
+    for _tab_label in _area_tabs:
+        # Predicciones pertenece también al área Modelo; en la primera visita
+        # priorizamos Mundial para conservar una portada editorial.
+        _AREA_FOR_TAB.setdefault(_tab_label, _area_name)
 _goto = st.query_params.get("goto")
 if _goto and _goto in _GOTO:
     st.session_state[_NAV_KEY] = _GOTO[_goto]
+    st.session_state["nav_area"] = _AREA_FOR_TAB[_GOTO[_goto]]
     del st.query_params["goto"]
 elif _NAV_KEY not in st.session_state:
     st.session_state[_NAV_KEY] = _LABELS[0]
 
+if "nav_area" not in st.session_state:
+    st.session_state["nav_area"] = _AREA_FOR_TAB[st.session_state[_NAV_KEY]]
+
+_area = st.segmented_control(
+    "Área", list(_NAV_AREAS), key="nav_area", label_visibility="collapsed",
+)
+_area = _area or st.session_state["nav_area"]
+_area_labels = _NAV_AREAS[_area]
+if st.session_state[_NAV_KEY] not in _area_labels:
+    st.session_state[_NAV_KEY] = _area_labels[0]
+
 _active = st.segmented_control(
-    "Navegación", _LABELS, key=_NAV_KEY, label_visibility="collapsed",
+    "Navegación", _area_labels, key=_NAV_KEY, label_visibility="collapsed",
 )
 _RENDER.get(_active or st.session_state[_NAV_KEY], predicciones.render)()

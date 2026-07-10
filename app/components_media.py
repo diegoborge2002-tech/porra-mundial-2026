@@ -140,23 +140,23 @@ def render_matchday_brief() -> None:
     """
     _aud = (list(RECAP_DIR.glob("boletin_*.wav")) + list(RECAP_DIR.glob("boletin_*.mp3"))
             if RECAP_DIR.exists() else [])
-    audio = max(_aud, key=lambda p: p.stat().st_mtime) if _aud else None
+    # En el deploy los mtimes cambian al reconstruir la imagen Docker; el nombre
+    # YYYY-MM-DD es la fuente estable de cuál es el boletín más reciente.
+    audio = max(_aud, key=lambda p: p.name) if _aud else None
     img = _first(CUSTOM / "engine.jpg", CUSTOM / "engine.png")
     if not img and not audio:
         return
 
     fecha = _nice_date(audio) if audio else ""
-    titulo = "📻 Boletín de la jornada" + (f" · {fecha}" if fecha else "")
-    st.markdown(
-        f'<div style="font-size:1.15rem;font-weight:700;margin:.3rem 0 .5rem;">{titulo}</div>',
-        unsafe_allow_html=True,
-    )
-
-    cols = st.columns([3, 2])
-    if img:
-        cols[0].image(str(img), use_container_width=True)
-    with cols[1]:
-        if audio:
-            st.audio(str(audio))
-            st.caption("🔊 Resumen del día narrado · voz IA")
-        st.caption("Se actualiza cada jornada con los resultados del día.")
+    titulo = "📻 Escuchar boletín de la jornada" + (f" · {fecha}" if fecha else "")
+    # El audio es contenido complementario: plegado no desplaza el centro de
+    # partido (la información urgente) por debajo del primer scroll.
+    with st.expander(titulo, expanded=False):
+        cols = st.columns([3, 2])
+        if img:
+            cols[0].image(str(img), use_container_width=True)
+        with cols[1]:
+            if audio:
+                st.audio(str(audio))
+                st.caption("🔊 Resumen del día narrado · voz IA")
+            st.caption("Se actualiza cada jornada con los resultados del día.")

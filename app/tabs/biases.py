@@ -6,6 +6,7 @@ import pandas as pd
 from app.utils import load_base_elo, get_biases
 from app.components import big_stat
 from app.styles import PRIMARY, ACCENT, TEXT, TEXT_DIM, GOOD, DANGER
+from app.admin import editor_gate
 from src.tournament.groups import GROUPS, HOST_NATIONS, ALL_TEAMS
 from src.data.team_profile import ISO_CODES
 
@@ -20,6 +21,7 @@ SLIDER_HELP = (
 def render():
     st.header("Mis ajustes")
     st.caption("Configura el motor matemático subyacente y aplica tus propios sesgos de intuición futbolística sobre el Elo.")
+    can_edit = editor_gate()
 
     cfg = get_biases()
 
@@ -201,10 +203,12 @@ def render():
         negatives = sum(1 for _, d, _ in active if d < 0)
         st.markdown(big_stat(f"{negatives}", "Debilitados"), unsafe_allow_html=True)
     with cD:
-        if st.button("💾 Guardar configuración", type="primary", use_container_width=True):
+        if st.button("💾 Guardar configuración", type="primary", use_container_width=True,
+                     disabled=not can_edit):
             cfg.save()
             st.success("Configuración guardada correctamente")
-        if st.button("🔄 Resetear sesgos manuales a 0", use_container_width=True):
+        if st.button("🔄 Resetear sesgos manuales a 0", use_container_width=True,
+                     disabled=not can_edit):
             for team in list(cfg.team_biases.keys()):
                 cfg.team_biases[team].elo_delta = 0.0
             st.rerun()
@@ -332,7 +336,8 @@ def _render_news_editor() -> None:
                 )
             texto = st.text_input("Texto", placeholder="ej: Lesión de Pedri, fuera 3 semanas",
                                    key="news_text")
-            submitted = st.form_submit_button("📰 Guardar noticia", use_container_width=True)
+            submitted = st.form_submit_button("📰 Guardar noticia", use_container_width=True,
+                                              disabled=not can_edit)
             if submitted:
                 if not texto.strip():
                     st.error("Falta el texto.")
@@ -376,12 +381,12 @@ def _render_news_editor() -> None:
                 )
         with col_toggle:
             label_btn = "Desactivar" if n.active else "Activar"
-            if st.button(label_btn, key=f"toggle_{n.id}"):
+            if st.button(label_btn, key=f"toggle_{n.id}", disabled=not can_edit):
                 toggle_active(n.id)
                 st.cache_data.clear()
                 st.rerun()
         with col_del:
-            if st.button("🗑", key=f"del_{n.id}"):
+            if st.button("🗑", key=f"del_{n.id}", disabled=not can_edit):
                 delete_news(n.id)
                 st.cache_data.clear()
                 st.rerun()

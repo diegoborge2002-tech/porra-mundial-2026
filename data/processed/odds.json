@@ -1,142 +1,64 @@
 {
-  "fetched_at": "2026-07-07T18:05:37",
-  "fetched_at_utc": "2026-07-07T16:05:37Z",
+  "fetched_at": "2026-07-10T20:03:40",
+  "fetched_at_utc": "2026-07-10T18:03:40Z",
   "regions": "eu",
-  "requests_remaining": 496,
-  "requests_used": 4,
+  "requests_remaining": 494,
+  "requests_used": 6,
   "champion": {
     "Francia": {
-      "best": 3.0,
-      "imp": 0.34848,
-      "n_books": 2
-    },
-    "Espana": {
-      "best": 5.1,
-      "imp": 0.20915,
+      "best": 2.54,
+      "imp": 0.39685,
       "n_books": 2
     },
     "Argentina": {
-      "best": 5.8,
-      "imp": 0.17712,
+      "best": 5.6,
+      "imp": 0.18019,
+      "n_books": 2
+    },
+    "Espana": {
+      "best": 5.6,
+      "imp": 0.18019,
       "n_books": 2
     },
     "Inglaterra": {
-      "best": 6.6,
-      "imp": 0.15909,
+      "best": 6.2,
+      "imp": 0.17155,
       "n_books": 2
     },
     "Noruega": {
-      "best": 18.5,
-      "imp": 0.05644,
-      "n_books": 2
-    },
-    "Colombia": {
-      "best": 27.0,
-      "imp": 0.03775,
-      "n_books": 2
-    },
-    "Marruecos": {
-      "best": 36.0,
-      "imp": 0.03113,
+      "best": 18.0,
+      "imp": 0.06111,
       "n_books": 2
     },
     "Belgica": {
-      "best": 40.0,
-      "imp": 0.02721,
+      "best": 46.0,
+      "imp": 0.02558,
       "n_books": 2
     },
     "Suiza": {
-      "best": 90.0,
-      "imp": 0.01302,
-      "n_books": 2
-    },
-    "Egipto": {
-      "best": 400.0,
-      "imp": 0.00374,
+      "best": 55.0,
+      "imp": 0.0238,
       "n_books": 2
     }
   },
   "matches": {
-    "Argentina vs Egipto": {
-      "commence_time": "2026-07-07T16:01:00Z",
-      "home": "Argentina",
-      "away": "Egipto",
-      "h": {
-        "best": 1.37,
-        "imp": 0.75518,
-        "n_books": 25
-      },
-      "x": {
-        "best": 5.0,
-        "imp": 0.21677,
-        "n_books": 25
-      },
-      "a": {
-        "best": 14.0,
-        "imp": 0.09148,
-        "n_books": 25
-      },
-      "n_books": 25
-    },
-    "Suiza vs Colombia": {
-      "commence_time": "2026-07-07T20:00:00Z",
-      "home": "Suiza",
-      "away": "Colombia",
-      "h": {
-        "best": 3.85,
-        "imp": 0.27616,
-        "n_books": 25
-      },
-      "x": {
-        "best": 3.2,
-        "imp": 0.3237,
-        "n_books": 25
-      },
-      "a": {
-        "best": 2.36,
-        "imp": 0.44036,
-        "n_books": 25
-      },
-      "n_books": 25
-    },
-    "Francia vs Marruecos": {
-      "commence_time": "2026-07-09T20:00:00Z",
-      "home": "Francia",
-      "away": "Marruecos",
-      "h": {
-        "best": 1.61,
-        "imp": 0.63482,
-        "n_books": 25
-      },
-      "x": {
-        "best": 4.11,
-        "imp": 0.25335,
-        "n_books": 25
-      },
-      "a": {
-        "best": 7.01,
-        "imp": 0.15689,
-        "n_books": 25
-      },
-      "n_books": 25
-    },
     "Espana vs Belgica": {
       "commence_time": "2026-07-10T19:00:00Z",
       "home": "Espana",
       "away": "Belgica",
       "h": {
-        "best": 1.65,
-        "imp": 0.61712,
+        "best": 1.69,
+        "imp": 0.61537,
         "n_books": 25
       },
       "x": {
         "best": 4.2,
-        "imp": 0.25001,
+        "imp": 0.24843,
         "n_books": 25
       },
       "a": {
         "best": 6.2,
-        "imp": 0.17851,
+        "imp": 0.17634,
         "n_books": 25
       },
       "n_books": 25
@@ -146,18 +68,39 @@
       "home": "Noruega",
       "away": "Inglaterra",
       "h": {
-        "best": 4.4,
-        "imp": 0.24549,
+        "best": 4.3,
+        "imp": 0.24535,
         "n_books": 25
       },
       "x": {
-        "best": 3.83,
-        "imp": 0.27055,
+        "best": 3.85,
+        "imp": 0.27145,
         "n_books": 25
       },
       "a": {
-        "best": 1.95,
-        "imp": 0.52847,
+        "best": 1.96,
+        "imp": 0.52717,
+        "n_books": 25
+      },
+      "n_books": 25
+    },
+    "Argentina vs Suiza": {
+      "commence_time": "2026-07-12T01:00:00Z",
+      "home": "Argentina",
+      "away": "Suiza",
+      "h": {
+        "best": 1.74,
+        "imp": 0.59204,
+        "n_books": 25
+      },
+      "x": {
+        "best": 3.75,
+        "imp": 0.27701,
+        "n_books": 25
+      },
+      "a": {
+        "best": 6.4,
+        "imp": 0.1727,
         "n_books": 25
       },
       "n_books": 25

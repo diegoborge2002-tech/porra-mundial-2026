@@ -79,6 +79,9 @@ def load_real_results() -> dict:
 
 
 def save_real_results(results: dict) -> None:
+    from app.admin import editing_enabled
+    if not editing_enabled():
+        raise PermissionError("La edición de resultados requiere modo administrador.")
     REAL_RESULTS_PATH.parent.mkdir(parents=True, exist_ok=True)
     REAL_RESULTS_PATH.write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -173,12 +176,8 @@ def run_simulation_with_real(elo: dict[str, float], n_sims: int = 10_000, seed: 
     porra_str = json.dumps(porra_dict, sort_keys=True) if porra_dict else ""
     result = run_simulation(freeze_elo(elo), n_sims, seed, real_results_str, porra_str,
                             _amigos_fingerprint(), stats_weight=get_biases().stats_weight)
-    # Snapshot diario de probabilidades (idempotente: 1/día)
-    try:
-        from src.data.snapshots import take_snapshot
-        take_snapshot(result)
-    except Exception:
-        pass
+    # Los snapshots se generan en la rutina diaria (scripts/dia.py informe),
+    # nunca al abrir la web: los visitantes no deben mutar datos compartidos.
     return result
 
 
