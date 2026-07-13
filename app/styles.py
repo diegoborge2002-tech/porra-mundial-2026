@@ -1123,6 +1123,158 @@ footer {{ visibility: hidden; }}
 .reveal-init {{ opacity: 0; transform: translateY(18px); }}
 .reveal-in {{ opacity: 1 !important; transform: none !important;
     transition: opacity .6s ease, transform .6s cubic-bezier(0.16,1,0.3,1); }}
+
+/* ========================================================================
+   🏆 FINAL FOUR — "Camino a la final"
+   Elemento-firma de la fase final: las dos semifinales (cyan a la izquierda,
+   violeta a la derecha) convergen sobre un nodo dorado de trofeo. El oro es el
+   único color cálido de la paleta: aparece solo aquí porque todo el cuadro
+   converge hacia el premio.
+   ======================================================================== */
+.ff-wrap {{
+    position: relative;
+    border-radius: 20px;
+    padding: 20px 24px 22px;
+    margin: 4px 0 20px;
+    background:
+        radial-gradient(ellipse 60% 130% at 50% -10%, rgba(255,209,92,0.10), transparent 62%),
+        linear-gradient(135deg, rgba(15,23,42,0.60), rgba(12,26,34,0.50));
+    border: 1px solid {BORDER};
+    backdrop-filter: blur(16px) saturate(1.15);
+    -webkit-backdrop-filter: blur(16px) saturate(1.15);
+    box-shadow: 0 12px 44px rgba(0,0,0,0.45);
+    overflow: hidden;
+    animation: fadeInUp 0.55s cubic-bezier(0.16,1,0.3,1) both;
+}}
+/* Hairline tricolor arriba: cyan → oro → violeta = las dos ramas y el trofeo */
+.ff-wrap::before {{
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, {PRIMARY} 0%, #ffd15c 50%, {ACCENT} 100%);
+    opacity: 0.85;
+}}
+.ff-head {{
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap; margin-bottom: 16px;
+}}
+.ff-eyebrow {{
+    font-family: 'Outfit', sans-serif; font-weight: 800;
+    font-size: 0.74rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #ffd98a;
+    display: inline-flex; align-items: center; gap: 9px;
+}}
+.ff-eyebrow .rhomb {{ color: #ffd15c; font-size: 0.7rem; }}
+.ff-when {{
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+    font-size: 0.7rem; color: {TEXT_DIM}; letter-spacing: 0.04em;
+}}
+.ff-grid {{
+    position: relative;
+    display: grid; grid-template-columns: 1fr auto 1fr;
+    align-items: center; gap: 10px;
+}}
+/* Raíl que converge en el trofeo: cyan por la izquierda, violeta por la derecha,
+   ambos se desvanecen hacia el centro donde el nodo dorado los "absorbe". */
+.ff-grid::before {{
+    content: ""; position: absolute; left: 8%; right: 8%; top: 50%;
+    height: 2px; transform: translateY(-50%); z-index: 0;
+    background: linear-gradient(90deg,
+        rgba(76,215,246,0) 0%, rgba(76,215,246,0.55) 20%, rgba(76,215,246,0) 44%,
+        rgba(208,188,255,0) 56%, rgba(208,188,255,0.55) 80%, rgba(208,188,255,0) 100%);
+}}
+.ff-semi {{
+    position: relative; z-index: 1;
+    background: rgba(9,14,28,0.72);
+    border: 1px solid {BORDER};
+    border-radius: 14px; padding: 13px 15px;
+    transition: transform .3s cubic-bezier(0.16,1,0.3,1), box-shadow .3s ease, border-color .3s ease;
+}}
+.ff-semi.left  {{ border-top: 2px solid {PRIMARY}; }}
+.ff-semi.right {{ border-top: 2px solid {ACCENT}; }}
+.ff-semi:hover {{ transform: translateY(-3px); }}
+.ff-semi.left:hover  {{ border-color: rgba(76,215,246,0.45); box-shadow: 0 0 24px rgba(76,215,246,0.16); }}
+.ff-semi.right:hover {{ border-color: rgba(208,188,255,0.45); box-shadow: 0 0 24px rgba(208,188,255,0.16); }}
+.ff-semi-tag {{
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'Outfit', sans-serif; font-weight: 700;
+    font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: {TEXT_DIM}; margin-bottom: 9px;
+}}
+.ff-semi.left  .ff-semi-tag .s {{ color: {PRIMARY}; }}
+.ff-semi.right .ff-semi-tag .s {{ color: {ACCENT}; }}
+.ff-team {{
+    display: flex; align-items: center; gap: 10px;
+    padding: 4px 0; font-family: 'Outfit', sans-serif;
+}}
+.ff-team img {{
+    width: 30px; height: 21px; border-radius: 3px; flex-shrink: 0;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.10);
+}}
+.ff-team .nm {{ font-weight: 700; font-size: 1.0rem; color: {TEXT_DIM}; flex: 1;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+.ff-team .pc {{
+    font-family: 'JetBrains Mono', monospace; font-weight: 800; font-size: 0.9rem;
+    color: {TEXT_DIM}; font-variant-numeric: tabular-nums;
+}}
+.ff-team.fav .nm {{ color: #eaf6ff; }}
+.ff-team.fav .pc {{ color: #fff; }}
+.ff-semi.left  .ff-team.fav .nm {{ text-shadow: 0 0 14px rgba(76,215,246,0.55); }}
+.ff-semi.left  .ff-team.fav .pc {{ color: {PRIMARY}; }}
+.ff-semi.right .ff-team.fav .nm {{ text-shadow: 0 0 14px rgba(208,188,255,0.55); }}
+.ff-semi.right .ff-team.fav .pc {{ color: {ACCENT}; }}
+.ff-team .arrow {{ width: 10px; font-size: 0.7rem; color: transparent; }}
+.ff-team.fav .arrow {{ color: currentColor; }}
+.ff-semi.left  .ff-team.fav .arrow {{ color: {PRIMARY}; }}
+.ff-semi.right .ff-team.fav .arrow {{ color: {ACCENT}; }}
+/* barra de reparto "pasa a la final" */
+.ff-split {{ display: flex; height: 7px; border-radius: 4px; overflow: hidden;
+    margin-top: 9px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.55); }}
+.ff-semi.left  .ff-split .a {{ background: linear-gradient(90deg, #2bb8e0, {PRIMARY}); }}
+.ff-semi.left  .ff-split .b {{ background: #263042; }}
+.ff-semi.right .ff-split .a {{ background: #263042; }}
+.ff-semi.right .ff-split .b {{ background: linear-gradient(90deg, {ACCENT}, #b39ef5); }}
+.ff-exp {{ margin-top: 7px; font-size: 0.64rem; color: {TEXT_DIM};
+    font-family: 'JetBrains Mono', monospace; letter-spacing: 0.02em; text-align: center; }}
+.ff-exp b {{ color: #cfe9ff; font-weight: 800; }}
+
+/* Nodo central: el trofeo dorado */
+.ff-final {{
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-width: 132px; padding: 8px 10px 12px; border-radius: 16px;
+    background: radial-gradient(ellipse at center, rgba(255,209,92,0.16), rgba(255,209,92,0.02) 70%);
+    animation: ffCupGlow 4.5s ease-in-out infinite;
+}}
+.ff-cup {{ font-size: 2.5rem; line-height: 1;
+    filter: drop-shadow(0 0 16px rgba(255,209,92,0.6)); animation: ballBounce 3.2s ease-in-out infinite; }}
+.ff-final .lbl {{
+    font-family: 'Bebas Neue', 'Outfit', sans-serif; letter-spacing: 0.14em;
+    font-size: 1.15rem; color: #ffe08a; margin-top: 4px;
+    text-shadow: 0 0 18px rgba(255,209,92,0.45); }}
+.ff-final .date {{ font-family: 'JetBrains Mono', monospace; font-size: 0.6rem;
+    color: {TEXT_DIM}; letter-spacing: 0.06em; margin-top: 1px; }}
+.ff-final .champ {{ margin-top: 8px; text-align: center; }}
+.ff-final .champ .k {{ display: block; font-size: 0.54rem; text-transform: uppercase;
+    letter-spacing: 0.12em; color: {TEXT_DIM}; font-weight: 700; }}
+.ff-final .champ .v {{ font-family: 'Outfit', sans-serif; font-weight: 800;
+    font-size: 0.9rem; color: #ffe08a; }}
+.ff-final .champ .v .p {{ font-family: 'JetBrains Mono', monospace; color: #fff; font-size: 0.82rem; }}
+@keyframes ffCupGlow {{
+    0%,100% {{ box-shadow: 0 0 0 rgba(255,209,92,0); }}
+    50%     {{ box-shadow: 0 0 34px rgba(255,209,92,0.22); }}
+}}
+
+@media (max-width: 640px) {{
+    .ff-wrap {{ padding: 16px 14px 18px; }}
+    .ff-grid {{ grid-template-columns: 1fr; gap: 12px; }}
+    .ff-grid::before {{ display: none; }}
+    .ff-final {{ order: 3; min-width: 0; width: 100%; }}
+    .ff-semi.right {{ order: 4; }}
+    .ff-team .nm {{ font-size: 0.95rem; }}
+    .ff-cup {{ font-size: 2.1rem; }}
+}}
+@media (prefers-reduced-motion: reduce) {{
+    .ff-wrap, .ff-final, .ff-cup {{ animation: none !important; }}
+}}
 </style>
 """
 

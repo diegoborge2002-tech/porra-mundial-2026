@@ -1,106 +1,70 @@
 {
-  "fetched_at": "2026-07-10T20:03:40",
-  "fetched_at_utc": "2026-07-10T18:03:40Z",
+  "fetched_at": "2026-07-13T15:10:29",
+  "fetched_at_utc": "2026-07-13T13:10:29Z",
   "regions": "eu",
-  "requests_remaining": 494,
-  "requests_used": 6,
+  "requests_remaining": 492,
+  "requests_used": 8,
   "champion": {
     "Francia": {
-      "best": 2.54,
-      "imp": 0.39685,
-      "n_books": 2
-    },
-    "Argentina": {
-      "best": 5.6,
-      "imp": 0.18019,
-      "n_books": 2
-    },
-    "Espana": {
-      "best": 5.6,
-      "imp": 0.18019,
+      "best": 2.52,
+      "imp": 0.4085,
       "n_books": 2
     },
     "Inglaterra": {
-      "best": 6.2,
-      "imp": 0.17155,
+      "best": 4.5,
+      "imp": 0.23611,
       "n_books": 2
     },
-    "Noruega": {
-      "best": 18.0,
-      "imp": 0.06111,
+    "Espana": {
+      "best": 4.5,
+      "imp": 0.23611,
       "n_books": 2
     },
-    "Belgica": {
-      "best": 46.0,
-      "imp": 0.02558,
-      "n_books": 2
-    },
-    "Suiza": {
-      "best": 55.0,
-      "imp": 0.0238,
+    "Argentina": {
+      "best": 5.8,
+      "imp": 0.18621,
       "n_books": 2
     }
   },
   "matches": {
-    "Espana vs Belgica": {
-      "commence_time": "2026-07-10T19:00:00Z",
-      "home": "Espana",
-      "away": "Belgica",
+    "Francia vs Espana": {
+      "commence_time": "2026-07-14T19:00:00Z",
+      "home": "Francia",
+      "away": "Espana",
       "h": {
-        "best": 1.69,
-        "imp": 0.61537,
+        "best": 2.42,
+        "imp": 0.42965,
         "n_books": 25
       },
       "x": {
-        "best": 4.2,
-        "imp": 0.24843,
+        "best": 3.35,
+        "imp": 0.30526,
         "n_books": 25
       },
       "a": {
-        "best": 6.2,
-        "imp": 0.17634,
+        "best": 3.4,
+        "imp": 0.30636,
         "n_books": 25
       },
       "n_books": 25
     },
-    "Noruega vs Inglaterra": {
-      "commence_time": "2026-07-11T21:00:00Z",
-      "home": "Noruega",
-      "away": "Inglaterra",
+    "Inglaterra vs Argentina": {
+      "commence_time": "2026-07-15T19:00:00Z",
+      "home": "Inglaterra",
+      "away": "Argentina",
       "h": {
-        "best": 4.3,
-        "imp": 0.24535,
+        "best": 2.76,
+        "imp": 0.37918,
         "n_books": 25
       },
       "x": {
-        "best": 3.85,
-        "imp": 0.27145,
+        "best": 3.08,
+        "imp": 0.33631,
         "n_books": 25
       },
       "a": {
-        "best": 1.96,
-        "imp": 0.52717,
-        "n_books": 25
-      },
-      "n_books": 25
-    },
-    "Argentina vs Suiza": {
-      "commence_time": "2026-07-12T01:00:00Z",
-      "home": "Argentina",
-      "away": "Suiza",
-      "h": {
-        "best": 1.74,
-        "imp": 0.59204,
-        "n_books": 25
-      },
-      "x": {
-        "best": 3.75,
-        "imp": 0.27701,
-        "n_books": 25
-      },
-      "a": {
-        "best": 6.4,
-        "imp": 0.1727,
+        "best": 3.2,
+        "imp": 0.32833,
         "n_books": 25
       },
       "n_books": 25

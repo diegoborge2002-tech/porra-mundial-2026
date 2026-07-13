@@ -1,13 +1,8 @@
 {
-  "updated": "2026-07-10",
+  "updated": "2026-07-13",
   "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
   "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
   "scorers": [
-    {
-      "player": "Erling Haaland",
-      "team": "Noruega",
-      "goals": 7
-    },
     {
       "player": "Kylian Mbappé",
       "team": "Francia",
@@ -19,9 +14,24 @@
       "goals": 8
     },
     {
+      "player": "Erling Haaland",
+      "team": "Noruega",
+      "goals": 7
+    },
+    {
       "player": "Harry Kane",
       "team": "Inglaterra",
       "goals": 6
+    },
+    {
+      "player": "Jude Bellingham",
+      "team": "Inglaterra",
+      "goals": 6
+    },
+    {
+      "player": "Ousmane Dembélé",
+      "team": "Francia",
+      "goals": 5
     },
     {
       "player": "Cody Gakpo",
@@ -34,11 +44,6 @@
       "goals": 4
     },
     {
-      "player": "Jude Bellingham",
-      "team": "Inglaterra",
-      "goals": 4
-    },
-    {
       "player": "Julián Quiñones",
       "team": "Mexico",
       "goals": 4
@@ -47,11 +52,6 @@
       "player": "Mikel Oyarzabal",
       "team": "Espana",
       "goals": 4
-    },
-    {
-      "player": "Ousmane Dembélé",
-      "team": "Francia",
-      "goals": 5
     },
     {
       "player": "Vinicius Junior",
@@ -114,6 +114,11 @@
       "goals": 3
     },
     {
+      "player": "Charles De Ketelaere",
+      "team": "Belgica",
+      "goals": 3
+    },
+    {
       "player": "Alexander Isak",
       "team": "Suecia",
       "goals": 2
@@ -141,11 +146,6 @@
     {
       "player": "Breel Embolo",
       "team": "Suiza",
-      "goals": 2
-    },
-    {
-      "player": "Charles De Ketelaere",
-      "team": "Belgica",
       "goals": 2
     },
     {
@@ -637,9 +637,65 @@
       "player": "Yoane Wissa",
       "team": "R.D. Congo",
       "goals": 1
+    },
+    {
+      "player": "Fabián Ruiz",
+      "team": "Espana",
+      "goals": 1
+    },
+    {
+      "player": "Mikel Merino",
+      "team": "Espana",
+      "goals": 1
+    },
+    {
+      "player": "Andreas Schjelderup",
+      "team": "Noruega",
+      "goals": 1
+    },
+    {
+      "player": "Alexis Mac Allister",
+      "team": "Argentina",
+      "goals": 1
+    },
+    {
+      "player": "Dan Ndoye",
+      "team": "Suiza",
+      "goals": 1
+    },
+    {
+      "player": "Julián Álvarez",
+      "team": "Argentina",
+      "goals": 1
+    },
+    {
+      "player": "Lautaro Martínez",
+      "team": "Argentina",
+      "goals": 1
     }
   ],
   "mvps": [
+    {
+      "player": "Julián Álvarez",
+      "team": "Argentina",
+      "match": "Argentina 3-1 Suiza",
+      "date": "2026-07-11",
+      "note": "Golazo del 2-1 en la prórroga (112'); Argentina a semis vs Inglaterra."
+    },
+    {
+      "player": "Jude Bellingham",
+      "team": "Inglaterra",
+      "match": "Noruega 1-2 Inglaterra",
+      "date": "2026-07-11",
+      "note": "Doblete (45+2' y 93' en la prórroga) para remontar; Inglaterra a semis."
+    },
+    {
+      "player": "Mikel Merino",
+      "team": "Espana",
+      "match": "Espana 2-1 Belgica",
+      "date": "2026-07-10",
+      "note": "Gol de la victoria en el 88'; España a semis vs Francia."
+    },
     {
       "player": "Kylian Mbappé",
       "team": "Francia",
@@ -1017,19 +1073,45 @@
       "home": "Francia",
       "away": "Marruecos",
       "goals": [
-        {"player": "Kylian Mbappé", "team": "Francia", "minute": "60'"},
-        {"player": "Ousmane Dembélé", "team": "Francia", "minute": "66'"}
+        {
+          "player": "Kylian Mbappé",
+          "team": "Francia",
+          "minute": "60'"
+        },
+        {
+          "player": "Ousmane Dembélé",
+          "team": "Francia",
+          "minute": "66'"
+        }
       ]
     },
     {
       "home": "Argentina",
       "away": "Egipto",
       "goals": [
-        {"player": "Trezeguet", "team": "Egipto"},
-        {"player": "Mostafa Zico", "team": "Egipto"},
-        {"player": "Cristian Romero", "team": "Argentina", "minute": "79'"},
-        {"player": "Lionel Messi", "team": "Argentina", "minute": "83'"},
-        {"player": "Enzo Fernández", "team": "Argentina", "minute": "90+2'"}
+        {
+          "player": "Trezeguet",
+          "team": "Egipto"
+        },
+        {
+          "player": "Mostafa Zico",
+          "team": "Egipto"
+        },
+        {
+          "player": "Cristian Romero",
+          "team": "Argentina",
+          "minute": "79'"
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": "83'"
+        },
+        {
+          "player": "Enzo Fernández",
+          "team": "Argentina",
+          "minute": "90+2'"
+        }
       ]
     },
     {
@@ -1487,21 +1569,77 @@
           "minute": "90+4'"
         }
       ]
+    },
+    {
+      "home": "Espana",
+      "away": "Belgica",
+      "goals": [
+        {
+          "player": "Fabián Ruiz",
+          "team": "Espana",
+          "minute": "30'"
+        },
+        {
+          "player": "Charles De Ketelaere",
+          "team": "Belgica",
+          "minute": "41'"
+        },
+        {
+          "player": "Mikel Merino",
+          "team": "Espana",
+          "minute": "88'"
+        }
+      ]
+    },
+    {
+      "home": "Noruega",
+      "away": "Inglaterra",
+      "goals": [
+        {
+          "player": "Andreas Schjelderup",
+          "team": "Noruega",
+          "minute": "36'"
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "Inglaterra",
+          "minute": "45+2'"
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "Inglaterra",
+          "minute": "93'"
+        }
+      ]
+    },
+    {
+      "home": "Argentina",
+      "away": "Suiza",
+      "goals": [
+        {
+          "player": "Alexis Mac Allister",
+          "team": "Argentina",
+          "minute": "10'"
+        },
+        {
+          "player": "Dan Ndoye",
+          "team": "Suiza",
+          "minute": "67'"
+        },
+        {
+          "player": "Julián Álvarez",
+          "team": "Argentina",
+          "minute": "112'"
+        },
+        {
+          "player": "Lautaro Martínez",
+          "team": "Argentina",
+          "minute": "121'"
+        }
+      ]
     }
   ],
   "unavailable": [
-    {
-      "player": "Rodrygo",
-      "team": "Brasil",
-      "reason": "Lesión",
-      "detail": "Rotura de LCA y menisco; fuera del Mundial"
-    },
-    {
-      "player": "Ismael Koné",
-      "team": "Canada",
-      "reason": "Lesión",
-      "detail": "Fractura en la pierna izda. operada; baja el resto del torneo"
-    },
     {
       "player": "Reece James",
       "team": "Inglaterra",
@@ -1519,6 +1657,12 @@
       "team": "Espana",
       "reason": "Lesión",
       "detail": "Lesión en la fase de grupos"
+    },
+    {
+      "player": "Erling Haaland",
+      "team": "Noruega",
+      "reason": "Lesión",
+      "detail": "Se retiró lesionado en cuartos ante Inglaterra; Noruega, eliminada"
     }
   ]
 }

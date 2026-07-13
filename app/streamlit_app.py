@@ -222,6 +222,107 @@ def _next_match_panel() -> None:
         pass
 
 
+def _final_four_panel() -> None:
+    """Panel 'Camino a la final': las dos semifinales convergen sobre el trofeo.
+
+    Solo aparece en la ventana de semifinales (4 cuartos jugados, final aún sin
+    jugar). Todo son datos vivos: P(pasa a la final) sale de las probabilidades
+    de finalista del Monte Carlo y el favorito al título de las de campeón; el
+    resultado esperado y los cruces, del mismo bracket que la pestaña 🏆 Cuadro.
+    """
+    try:
+        from app.utils import get_elo_with_biases, load_real_results, run_simulation_with_real
+        from src.data.bracket_view import build_bracket, bracket_progress
+        from src.data.team_profile import ISO_CODES
+        from src.model.match_day import find_upcoming_matches
+
+        real = load_real_results() or {}
+        prog = bracket_progress(real)["played"]
+        # ventana de semifinales: cuartos completos y la final aún sin resolver
+        if prog.get("qf", 0) < 4 or prog.get("final", 0) >= 1:
+            return
+        elo = get_elo_with_biases()
+        bracket = build_bracket(real, elo)
+        if not bracket:
+            return
+        matches = bracket["matches"]
+        m_left = matches.get(bracket["layout_left"]["sf"][0])
+        m_right = matches.get(bracket["layout_right"]["sf"][0])
+        if not (m_left and m_right and m_left["home"] and m_right["home"]):
+            return
+
+        summary = run_simulation_with_real(elo, n_sims=10_000, seed=42)
+        finalist = summary.get("finalist", {}) or {}
+        champion = summary.get("champion", {}) or {}
+
+        def flag(team: str) -> str:
+            return f'<img src="https://flagcdn.com/w40/{ISO_CODES.get(team, "un")}.png">'
+
+        # sede y fecha de cada semi (si ya están programadas en los próximos)
+        kicks: dict = {}
+        try:
+            for mm in find_upcoming_matches(elo, window_hours=240, fallback_days=12):
+                kicks[frozenset((mm.home, mm.away))] = mm
+        except Exception:
+            pass
+
+        def semi_html(m: dict, side: str, tag: str) -> str:
+            h, a = m["home"], m["away"]
+            fh, fa = finalist.get(h, 0.0), finalist.get(a, 0.0)
+            tot = (fh + fa) or 1.0
+            ph, pa = fh / tot, fa / tot          # normaliza a "pasa a la final"
+            exp = m.get("expected") or {}
+            bh, ba = exp.get("exp_home", "–"), exp.get("exp_away", "–")
+            info = kicks.get(frozenset((h, a)))
+            when = ""
+            if info is not None and hasattr(info.date, "strftime"):
+                when = info.date.strftime("%d %b").upper()
+                if getattr(info, "city", ""):
+                    when += f" · {info.city}"
+
+            def row(team: str, p: float, fav: bool) -> str:
+                cls = "ff-team fav" if fav else "ff-team"
+                return (f'<div class="{cls}"><span class="arrow">▸</span>{flag(team)}'
+                        f'<span class="nm">{team}</span><span class="pc">{p*100:.0f}%</span></div>')
+
+            return (
+                f'<div class="ff-semi {side}">'
+                f'<div class="ff-semi-tag"><span class="s">{tag}</span><span>{when}</span></div>'
+                f'{row(h, ph, ph >= pa)}{row(a, pa, pa > ph)}'
+                f'<div class="ff-split"><div class="a" style="width:{ph*100:.0f}%"></div>'
+                f'<div class="b" style="width:{pa*100:.0f}%"></div></div>'
+                f'<div class="ff-exp">esperado <b>{bh}–{ba}</b></div>'
+                f'</div>'
+            )
+
+        champ_lead, champ_p = ("—", 0.0)
+        if champion:
+            champ_lead, champ_p = max(champion.items(), key=lambda x: x[1])
+
+        st.markdown(
+            '<div class="ff-wrap">'
+            '<div class="ff-head">'
+            '<span class="ff-eyebrow"><span class="rhomb">◆</span>Camino a la final</span>'
+            '<span class="ff-when">Quedan 4 · Semis 14–15 jul · Final 19 jul</span>'
+            '</div>'
+            '<div class="ff-grid">'
+            f'{semi_html(m_left, "left", "Semifinal 1")}'
+            '<div class="ff-final">'
+            '<div class="ff-cup">🏆</div>'
+            '<div class="lbl">FINAL</div>'
+            '<div class="date">19 JUL</div>'
+            f'<div class="champ"><span class="k">Favorito al título</span>'
+            f'<span class="v">{champ_lead} <span class="p">{champ_p*100:.0f}%</span></span></div>'
+            '</div>'
+            f'{semi_html(m_right, "right", "Semifinal 2")}'
+            '</div>'
+            '</div>',
+            unsafe_allow_html=True,
+        )
+    except Exception:
+        pass
+
+
 def _news_banner() -> None:
     """Banner con las 3 noticias activas más recientes."""
     try:
@@ -276,6 +377,7 @@ render_hero()
 _global_search()
 
 _ticker_bar()
+_final_four_panel()
 _next_match_panel()
 _header_kpi_bar()
 _freshness_bar()

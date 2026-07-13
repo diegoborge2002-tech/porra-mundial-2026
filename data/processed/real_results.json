@@ -469,6 +469,27 @@
         "home_score": 2,
         "away_score": 0,
         "winner": "Francia"
+      },
+      "98": {
+        "home": "Espana",
+        "away": "Belgica",
+        "home_score": 2,
+        "away_score": 1,
+        "winner": "Espana"
+      },
+      "99": {
+        "home": "Noruega",
+        "away": "Inglaterra",
+        "home_score": 1,
+        "away_score": 2,
+        "winner": "Inglaterra"
+      },
+      "100": {
+        "home": "Argentina",
+        "away": "Suiza",
+        "home_score": 3,
+        "away_score": 1,
+        "winner": "Argentina"
       }
     },
     "sf": {},
