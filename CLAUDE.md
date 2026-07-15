@@ -43,9 +43,15 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
    vs el snapshot anterior, guarda el snapshot del día y lista los próximos
    partidos con resultado esperado.
 3b. **Refrescar Actualidad** (pestaña 🔥): busca en la web los **máximos
-   goleadores** y el **jugador del partido / MVP** de los partidos nuevos y
-   escríbelos en `data/processed/actualidad.json`. Campos editables a mano:
+   goleadores**, las **máximas asistencias** y el **jugador del partido / MVP** de
+   los partidos nuevos y escríbelos en `data/processed/actualidad.json`. Campos
+   editables a mano:
    - `scorers` — tabla acumulada de goleadores (la pestaña muestra el top 15).
+   - `assists` — tabla acumulada de asistencias (`{player, team, assists}`; la
+     pestaña muestra el top 15 en "🅰️ Rey de las asistencias", junto a goleadores).
+     La API/prensa gratis da datos fragmentados y a veces de fases pasadas: fíjate
+     bien en el top (ej. Olise, Messi) y cotéjalo con varias fuentes; el tramo bajo
+     es aproximado. Súmale a cada asistente los pases de gol de los partidos nuevos.
    - `mvps` — jugador del partido (la pestaña muestra los 8 más recientes).
    - `match_scorers` — **goleadores por partido** (lista `{home, away, goals:[{player, team, minute}]}`),
      para el desglose "Resultados al detalle". Añade los partidos nuevos; cotéjalos
@@ -117,7 +123,7 @@ el código no hace falta tocarlo, solo registrar resultados y desplegar.
 - `data/processed/real_results.json` — resultados reales registrados (formato:
   `group_matches: {"A vs B": [gA, gB]}`, `knockout_matches: {r32: {"73": {home, away, ...}}}`)
 - `data/processed/stats_model.json` — 1.128 cruces precomputados del XGBoost
-- `data/processed/actualidad.json` — goleadores + MVP + goleadores por partido
+- `data/processed/actualidad.json` — goleadores + asistencias + MVP + goleadores por partido
   (`match_scorers`) + bajas (`unavailable`), datos externos vía web; los lee
   `src/data/actualidad.py` (que además deriva en forma / movimientos /
   clasificaciones / titulares / **desglose modelo-vs-realidad por partido** vía
