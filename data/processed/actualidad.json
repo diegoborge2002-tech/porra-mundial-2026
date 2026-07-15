@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-13",
-  "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores)",
-  "note": "Goles y MVP cotejados con los marcadores registrados (suman exacto por partido). Goleadores = máximo entre fuentes para reflejar lo más reciente. Se refresca en cada 'actualiza'.",
+  "updated": "2026-07-15",
+  "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores ni asistencias)",
+  "note": "Goles, asistencias y MVP cotejados con los marcadores registrados (los goles suman exacto por partido). Goleadores/asistentes = máximo entre fuentes para reflejar lo más reciente. La tabla de asistencias es sólida en el top (Olise 5; Messi/Guimarães/Brahim/Ødegaard 4) y aproximada por debajo. Se refresca en cada 'actualiza'.",
   "scorers": [
     {
       "player": "Kylian Mbappé",
@@ -51,7 +51,7 @@
     {
       "player": "Mikel Oyarzabal",
       "team": "Espana",
-      "goals": 4
+      "goals": 5
     },
     {
       "player": "Vinicius Junior",
@@ -566,7 +566,7 @@
     {
       "player": "Pedro Porro",
       "team": "Espana",
-      "goals": 1
+      "goals": 2
     },
     {
       "player": "Petar Musa",
@@ -671,16 +671,115 @@
     {
       "player": "Lautaro Martínez",
       "team": "Argentina",
+      "goals": 2
+    },
+    {
+      "player": "Enzo Fernández",
+      "team": "Argentina",
       "goals": 1
+    },
+    {
+      "player": "Anthony Gordon",
+      "team": "Inglaterra",
+      "goals": 1
+    }
+  ],
+  "assists": [
+    {
+      "player": "Michael Olise",
+      "team": "Francia",
+      "assists": 5
+    },
+    {
+      "player": "Lionel Messi",
+      "team": "Argentina",
+      "assists": 4
+    },
+    {
+      "player": "Bruno Guimarães",
+      "team": "Brasil",
+      "assists": 4
+    },
+    {
+      "player": "Brahim Díaz",
+      "team": "Marruecos",
+      "assists": 4
+    },
+    {
+      "player": "Martin Ødegaard",
+      "team": "Noruega",
+      "assists": 4
+    },
+    {
+      "player": "Alexander Isak",
+      "team": "Suecia",
+      "assists": 3
+    },
+    {
+      "player": "Florian Wirtz",
+      "team": "Alemania",
+      "assists": 3
+    },
+    {
+      "player": "Marcos Cucurella",
+      "team": "Espana",
+      "assists": 2
+    },
+    {
+      "player": "Dani Olmo",
+      "team": "Espana",
+      "assists": 2
+    },
+    {
+      "player": "Kylian Mbappé",
+      "team": "Francia",
+      "assists": 2
+    },
+    {
+      "player": "Joshua Kimmich",
+      "team": "Alemania",
+      "assists": 2
+    },
+    {
+      "player": "Ryan Gravenberch",
+      "team": "Paises Bajos",
+      "assists": 2
+    },
+    {
+      "player": "Julio Enciso",
+      "team": "Paraguay",
+      "assists": 2
+    },
+    {
+      "player": "Mohamed Salah",
+      "team": "Egipto",
+      "assists": 2
+    },
+    {
+      "player": "Deniz Undav",
+      "team": "Alemania",
+      "assists": 2
+    },
+    {
+      "player": "Chris Wood",
+      "team": "Nueva Zelanda",
+      "assists": 2
     }
   ],
   "mvps": [
     {
-      "player": "Julián Álvarez",
+      "player": "Lionel Messi",
       "team": "Argentina",
-      "match": "Argentina 3-1 Suiza",
-      "date": "2026-07-11",
-      "note": "Golazo del 2-1 en la prórroga (112'); Argentina a semis vs Inglaterra."
+      "match": "Inglaterra 1-2 Argentina",
+      "date": "2026-07-15",
+      "note": "Dos asistencias en el tramo final (a Enzo Fernández, 85', y a Lautaro Martínez, 92') para remontar el 0-1; Argentina a la final vs España. Suma 4 asistencias en el torneo y bate el récord histórico de asistencias en Mundiales."
+    },
+    {
+      "player": "Lamine Yamal",
+      "team": "Espana",
+      "match": "Francia 0-2 Espana",
+      "date": "2026-07-14",
+      "note": "Provocó el penalti del 1-0 (falta de Digne) y desbordó sin descanso; España deja fuera a Francia y jugará su primera final desde 2010."
     },
     {
       "player": "Jude Bellingham",
@@ -1069,6 +1168,43 @@
     }
   ],
   "match_scorers": [
+    {
+      "home": "Inglaterra",
+      "away": "Argentina",
+      "goals": [
+        {
+          "player": "Anthony Gordon",
+          "team": "Inglaterra",
+          "minute": "55'"
+        },
+        {
+          "player": "Enzo Fernández",
+          "team": "Argentina",
+          "minute": "85'"
+        },
+        {
+          "player": "Lautaro Martínez",
+          "team": "Argentina",
+          "minute": "90+2'"
+        }
+      ]
+    },
+    {
+      "home": "Francia",
+      "away": "Espana",
+      "goals": [
+        {
+          "player": "Mikel Oyarzabal (pen.)",
+          "team": "Espana",
+          "minute": "21'"
+        },
+        {
+          "player": "Pedro Porro",
+          "team": "Espana",
+          "minute": "58'"
+        }
+      ]
+    },
     {
       "home": "Francia",
       "away": "Marruecos",

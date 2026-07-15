@@ -492,7 +492,22 @@
         "winner": "Argentina"
       }
     },
-    "sf": {},
+    "sf": {
+      "101": {
+        "home": "Francia",
+        "away": "Espana",
+        "home_score": 0,
+        "away_score": 2,
+        "winner": "Espana"
+      },
+      "102": {
+        "home": "Inglaterra",
+        "away": "Argentina",
+        "home_score": 1,
+        "away_score": 2,
+        "winner": "Argentina"
+      }
+    },
     "final": {}
   }
 }

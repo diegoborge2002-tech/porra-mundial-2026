@@ -32,12 +32,17 @@ def load_actualidad() -> dict:
             return json.loads(ACTUALIDAD_PATH.read_text(encoding="utf-8"))
         except Exception:
             pass
-    return {"updated": "", "scorers": [], "mvps": []}
+    return {"updated": "", "scorers": [], "assists": [], "mvps": []}
 
 
 def top_scorers(limit: int = 20) -> list[dict]:
     data = load_actualidad().get("scorers", [])
     return sorted(data, key=lambda s: (-s.get("goals", 0), s.get("player", "")))[:limit]
+
+
+def top_assists(limit: int = 15) -> list[dict]:
+    data = load_actualidad().get("assists", [])
+    return sorted(data, key=lambda s: (-s.get("assists", 0), s.get("player", "")))[:limit]
 
 
 def recent_mvps(limit: int = 8) -> list[dict]:

@@ -12,7 +12,7 @@ from app.utils import get_elo_with_biases, load_real_results
 from app.styles import PRIMARY, ACCENT, TEXT_DIM, BG_CARD, GOOD, DANGER, TERTIARY
 from src.data.team_profile import ISO_CODES
 from src.data.actualidad import (
-    load_actualidad, top_scorers, recent_mvps, form_table,
+    load_actualidad, top_scorers, top_assists, recent_mvps, form_table,
     champion_movers, auto_storylines, group_standings,
     recent_match_breakdowns, upcoming_watchouts, unavailable_list,
 )
@@ -55,6 +55,33 @@ def _render_scorers() -> None:
             f'<span style="flex:1;font-weight:600;">{s["player"]}</span>'
             f'<span style="color:{TEXT_DIM};font-size:0.8rem;">{s["team"]}</span>'
             f'<span style="font-weight:800;color:{PRIMARY};min-width:42px;text-align:right;">{s["goals"]} ⚽</span>'
+            f'</div>'
+        )
+    rows.append("</div>")
+    st.markdown("".join(rows), unsafe_allow_html=True)
+
+
+def _render_assists() -> None:
+    assists = top_assists(15)
+    rows = [_card_open("🅰️ Rey de las asistencias · más asistencias")]
+    if not assists:
+        rows.append(f'<div style="color:{TEXT_DIM};">Sin asistencias registradas todavía.</div>')
+    medals = {0: "🥇", 1: "🥈", 2: "🥉"}
+    # ranking por asistencias: el puesto lo marca el nº de asistencias, no el índice
+    last_assists, rank = None, 0
+    for i, s in enumerate(assists):
+        if s["assists"] != last_assists:
+            rank = i + 1
+            last_assists = s["assists"]
+        badge = medals.get(rank - 1, f'<span style="color:{TEXT_DIM};">{rank}.</span>') if rank <= 3 else f'<span style="color:{TEXT_DIM};">{rank}.</span>'
+        rows.append(
+            f'<div style="display:flex;align-items:center;gap:8px;padding:4px 0;'
+            f'border-bottom:1px solid rgba(255,255,255,0.04);">'
+            f'<span style="width:24px;text-align:center;">{badge}</span>'
+            f'{_flag(s["team"])}'
+            f'<span style="flex:1;font-weight:600;">{s["player"]}</span>'
+            f'<span style="color:{TEXT_DIM};font-size:0.8rem;">{s["team"]}</span>'
+            f'<span style="font-weight:800;color:{ACCENT};min-width:42px;text-align:right;">{s["assists"]} 🅰️</span>'
             f'</div>'
         )
     rows.append("</div>")
@@ -327,17 +354,19 @@ def render():
     data = load_actualidad()
     updated = data.get("updated", "")
     st.caption(
-        "Lo que está pasando en el Mundial, de un vistazo. Goleadores y MVP cotejados por "
+        "Lo que está pasando en el Mundial, de un vistazo. Goleadores, asistencias y MVP cotejados por "
         f"web{' (act. ' + updated + ')' if updated else ''}; el resto se calcula solo desde los resultados."
     )
 
     elo = get_elo_with_biases()
     real = load_real_results()
 
-    c1, c2 = st.columns([3, 2])
+    c1, c2, c3 = st.columns([5, 5, 4])
     with c1:
         _render_scorers()
     with c2:
+        _render_assists()
+    with c3:
         _render_mvps()
 
     _render_form(elo, real)
