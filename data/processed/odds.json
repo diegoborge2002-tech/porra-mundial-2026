@@ -1,70 +1,39 @@
 {
-  "fetched_at": "2026-07-13T15:10:29",
-  "fetched_at_utc": "2026-07-13T13:10:29Z",
+  "fetched_at": "2026-07-19T12:47:10",
+  "fetched_at_utc": "2026-07-19T10:47:10Z",
   "regions": "eu",
-  "requests_remaining": 492,
-  "requests_used": 8,
+  "requests_remaining": 490,
+  "requests_used": 10,
   "champion": {
-    "Francia": {
-      "best": 2.52,
-      "imp": 0.4085,
-      "n_books": 2
-    },
-    "Inglaterra": {
-      "best": 4.5,
-      "imp": 0.23611,
-      "n_books": 2
-    },
     "Espana": {
-      "best": 4.5,
-      "imp": 0.23611,
+      "best": 1.69,
+      "imp": 0.6045,
       "n_books": 2
     },
     "Argentina": {
-      "best": 5.8,
-      "imp": 0.18621,
+      "best": 2.42,
+      "imp": 0.43388,
       "n_books": 2
     }
   },
   "matches": {
-    "Francia vs Espana": {
-      "commence_time": "2026-07-14T19:00:00Z",
-      "home": "Francia",
-      "away": "Espana",
-      "h": {
-        "best": 2.42,
-        "imp": 0.42965,
-        "n_books": 25
-      },
-      "x": {
-        "best": 3.35,
-        "imp": 0.30526,
-        "n_books": 25
-      },
-      "a": {
-        "best": 3.4,
-        "imp": 0.30636,
-        "n_books": 25
-      },
-      "n_books": 25
-    },
-    "Inglaterra vs Argentina": {
-      "commence_time": "2026-07-15T19:00:00Z",
-      "home": "Inglaterra",
+    "Espana vs Argentina": {
+      "commence_time": "2026-07-19T19:00:00Z",
+      "home": "Espana",
       "away": "Argentina",
       "h": {
-        "best": 2.76,
-        "imp": 0.37918,
+        "best": 2.4,
+        "imp": 0.43272,
         "n_books": 25
       },
       "x": {
-        "best": 3.08,
-        "imp": 0.33631,
+        "best": 3.15,
+        "imp": 0.32924,
         "n_books": 25
       },
       "a": {
-        "best": 3.2,
-        "imp": 0.32833,
+        "best": 3.85,
+        "imp": 0.27634,
         "n_books": 25
       },
       "n_books": 25

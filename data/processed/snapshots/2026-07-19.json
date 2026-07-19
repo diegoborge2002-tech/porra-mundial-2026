@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-19",
+  "datetime": "2026-07-19T12:47:09",
+  "champion": {
+    "Espana": 0.5739,
+    "Argentina": 0.4261
+  },
+  "finalist": {
+    "Espana": 1.0,
+    "Argentina": 1.0
+  },
+  "semifinal": {
+    "Francia": 1.0,
+    "Espana": 1.0,
+    "Inglaterra": 1.0,
+    "Argentina": 1.0
+  }
+}

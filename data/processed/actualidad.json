@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-15",
+  "updated": "2026-07-19",
   "source": "Prensa deportiva + FIFA (búsqueda web; la API gratuita no da goleadores ni asistencias)",
-  "note": "Goles, asistencias y MVP cotejados con los marcadores registrados (los goles suman exacto por partido). Goleadores/asistentes = máximo entre fuentes para reflejar lo más reciente. La tabla de asistencias es sólida en el top (Olise 5; Messi/Guimarães/Brahim/Ødegaard 4) y aproximada por debajo. Se refresca en cada 'actualiza'.",
+  "note": "GRAN FINAL 19 jul: Espana vs Argentina (21:00 ES / 15:00 ET, New York-New Jersey). Modelo: Espana 57% titulo vs Argentina 43% (mercado 58/42). Goles, asistencias y MVP cotejados con los marcadores registrados (los goles suman exacto por partido). Messi y Mbappe cerraron empatados a 8 goles, pero Mbappe cayo con Francia: Messi puede quedarse la Bota de Oro si marca en la final. Se refresca en cada 'actualiza'.",
   "scorers": [
     {
       "player": "Kylian Mbappé",
@@ -1777,28 +1777,16 @@
   ],
   "unavailable": [
     {
-      "player": "Reece James",
-      "team": "Inglaterra",
-      "reason": "Lesión",
-      "detail": "Se pierde los próximos partidos"
-    },
-    {
-      "player": "Nico Williams",
+      "player": "Pedro Porro",
       "team": "Espana",
-      "reason": "Lesión",
-      "detail": "Contratiempo muscular en la fase de grupos"
+      "reason": "Duda",
+      "detail": "Molestias musculares; en duda para la final aunque apunta a ser titular"
     },
     {
       "player": "Yeremy Pino",
       "team": "Espana",
       "reason": "Lesión",
-      "detail": "Lesión en la fase de grupos"
-    },
-    {
-      "player": "Erling Haaland",
-      "team": "Noruega",
-      "reason": "Lesión",
-      "detail": "Se retiró lesionado en cuartos ante Inglaterra; Noruega, eliminada"
+      "detail": "Arrastra lesión desde la fase de grupos; fuera de la final"
     }
   ]
 }
