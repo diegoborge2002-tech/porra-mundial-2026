@@ -27,6 +27,9 @@ IGNORE = [
     "*.log",
     ".claude/*",
     ".streamlit/secrets.toml",
+    # La película se despliega en Vercel, no aquí: son ~100 MB de vídeo que el
+    # Space no sirve ni necesita. La app solo enlaza a ella (FILM_URL).
+    "film/*",
 ]
 
 
