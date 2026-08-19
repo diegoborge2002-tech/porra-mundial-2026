@@ -177,7 +177,7 @@ def render() -> None:
 
     with sub1: _render_ranking(data)
     with sub2: _render_detail(data)
-    with sub3: _render_impact(data)
+    with sub3: _render_impact(data, can_edit)
     with sub4: _render_by_confed(data)
     with sub5: _render_vs_elo(data)
 
@@ -387,7 +387,7 @@ def _render_detail(data: dict[str, dict]) -> None:
 # ─────────────────────────────────────────────────────────────
 # Sub-tab 3: Impacto en el modelo
 # ─────────────────────────────────────────────────────────────
-def _render_impact(data: dict[str, dict]) -> None:
+def _render_impact(data: dict[str, dict], can_edit: bool = False) -> None:
     st.caption(
         "Compara las probabilidades del modelo **sin** vs **con** el bias derivado de la "
         "plantilla. Cada slider modula una de las 3 componentes de la fórmula."

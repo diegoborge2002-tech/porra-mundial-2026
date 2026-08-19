@@ -53,3 +53,7 @@ informes_tacticos/
 # Caché del Monte Carlo (artefacto derivado: lo regenera scripts/warm_mc.py y
 # lo sube deploy_hf.py; no hace falta versionarlo en GitHub)
 data/processed/mc_cache/
+
+# Película: originales de vídeo y metraje base (pesados, regenerables)
+film/assets/_raw/
+film/assets/_base/

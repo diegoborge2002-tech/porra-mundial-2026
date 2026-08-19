@@ -128,8 +128,8 @@ def cmd_add(scores: list[str]) -> None:
 
 
 def cmd_ko(ronda: str, match_id: int, score: str, ganador: str | None) -> None:
-    if ronda not in ("r32", "r16", "qf", "sf", "final"):
-        raise SystemExit("❌ Ronda debe ser: r32, r16, qf, sf o final")
+    if ronda not in ("r32", "r16", "qf", "sf", "third", "final"):
+        raise SystemExit("❌ Ronda debe ser: r32, r16, qf, sf, third o final")
     a, ga, gb, b = parse_score(score)
     if ga == gb and not ganador:
         raise SystemExit("❌ Empate en eliminatoria: indica --ganador <equipo> (penaltis)")
@@ -272,7 +272,7 @@ def main() -> None:
     p_add.add_argument("scores", nargs="+", help='"Equipo1 2-0 Equipo2" …')
 
     p_ko = sub.add_parser("ko", help="Registrar resultado de eliminatoria")
-    p_ko.add_argument("ronda", choices=["r32", "r16", "qf", "sf", "final"])
+    p_ko.add_argument("ronda", choices=["r32", "r16", "qf", "sf", "third", "final"])
     p_ko.add_argument("match_id", type=int, help="Nº de partido FIFA (73-104)")
     p_ko.add_argument("score", help='"Equipo1 2-1 Equipo2"')
     p_ko.add_argument("--ganador", help="Necesario si hay empate (penaltis)")

@@ -1,0 +1,587 @@
+/* ============================================================================
+   Mi Mundial 2026 · La película
+   ---------------------------------------------------------------------------
+   Idea rectora: el ORO es lo que pasó, el CIAN es lo que el modelo dijo que
+   iba a pasar. Toda la pieza se lee con esa clave. La tipografía sostiene la
+   misma tensión: serif editorial para la narración (el romance del fútbol),
+   grotesca para los datos (la frialdad del modelo).
+   ========================================================================== */
+
+:root {
+  /* superficie */
+  --ink:        #05080f;
+  --bg:         #0a0f1e;
+  --bg-2:       #0d1424;
+  --surface:    #131a2c;
+  --surface-2:  #1a2338;
+  --line:       #263149;
+
+  /* clave de color */
+  --gold:       #f0c14b;   /* lo que pasó */
+  --gold-hi:    #ffd97a;
+  --gold-deep:  #a97e22;
+  --cyan:       #4cd7f6;   /* lo que se predijo */
+  --cyan-deep:  #1d6b81;
+
+  --text:       #e9edf8;
+  --dim:        #93a0ba;
+  --dimmer:     #5d6987;
+
+  /* tipografía */
+  --display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --ui: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* ritmo */
+  --gut: clamp(1.25rem, 4vw, 3rem);
+  --maxw: 62rem;
+  --maxw-wide: 78rem;
+
+  /* movimiento */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ui);
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* grano de película: rompe el degradado plano y da textura */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 200;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ============================ PROGRESO ============================ */
+.progress {
+  position: fixed; inset: 0 0 auto 0; height: 2px; z-index: 150;
+  background: rgba(255,255,255,0.06);
+}
+.progress i {
+  display: block; height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--cyan), var(--gold));
+  transform-origin: left;
+}
+
+/* ============================ NAV DE CAPÍTULOS ============================ */
+.chapternav {
+  position: fixed; right: clamp(0.75rem, 2vw, 1.75rem); top: 50%;
+  transform: translateY(-50%); z-index: 140;
+}
+.chapternav ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+.chapternav a {
+  display: flex; align-items: center; justify-content: flex-end; gap: 0.6rem;
+  text-decoration: none; color: var(--dimmer);
+  font: 600 0.62rem/1 var(--ui); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.chapternav a::after {
+  content: ""; width: 22px; height: 2px; border-radius: 2px;
+  background: currentColor; opacity: 0.5;
+  transition: width 0.4s var(--ease), opacity 0.3s, background-color 0.3s;
+}
+.chapternav a span {
+  opacity: 0; transform: translateX(6px);
+  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+  white-space: nowrap;
+}
+.chapternav a:hover span, .chapternav a:focus-visible span { opacity: 1; transform: none; }
+.chapternav a:hover::after { width: 34px; opacity: 1; }
+.chapternav li.on a { color: var(--gold); }
+.chapternav li.on a::after { width: 34px; opacity: 1; }
+.chapternav li.on a span { opacity: 1; transform: none; }
+
+@media (max-width: 900px) { .chapternav { display: none; } }
+
+/* ============================ TRANSICIÓN DE VÍDEO ============================ */
+/* El clip se genera sobre negro puro; en modo `screen` el negro desaparece y
+   solo queda el destello. Es lo que da la sensación de corte de película. */
+.wipe {
+  position: fixed; inset: 0; z-index: 130;
+  pointer-events: none; opacity: 0;
+}
+.wipe-vid {
+  width: 100%; height: 100%; object-fit: cover;
+  mix-blend-mode: screen;
+}
+
+/* ============================ CAPÍTULOS ============================ */
+main { position: relative; z-index: 1; }
+
+.chapter {
+  position: relative;
+  min-height: 100svh;
+  display: flex; align-items: center;
+  padding: clamp(5rem, 12vh, 9rem) var(--gut);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.bgvid { position: absolute; inset: 0; z-index: -2; }
+.bgvid video {
+  width: 100%; height: 100%; object-fit: cover;
+  /* arranca ligeramente escalado: el paralaje lo devuelve a su sitio */
+  transform: scale(1.08);
+  will-change: transform;
+}
+/* si aún no hay clip, el hueco no queda en blanco: degradado de la casa */
+.bgvid::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(120% 80% at 20% 0%, rgba(76,215,246,0.10), transparent 60%),
+    radial-gradient(100% 90% at 90% 100%, rgba(240,193,75,0.08), transparent 55%),
+    var(--bg);
+}
+
+.scrim {
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(to right, rgba(5,8,15,0.94) 0%, rgba(5,8,15,0.78) 45%, rgba(5,8,15,0.55) 100%),
+    linear-gradient(to bottom, rgba(5,8,15,0.75) 0%, transparent 25%, transparent 70%, rgba(5,8,15,0.9) 100%);
+}
+.scrim-solid { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 50%, var(--bg) 100%); }
+.scrim-hero {
+  background:
+    linear-gradient(to right, rgba(5,8,15,0.88) 0%, rgba(5,8,15,0.55) 50%, rgba(5,8,15,0.35) 100%),
+    linear-gradient(to bottom, rgba(5,8,15,0.6) 0%, transparent 30%, transparent 55%, rgba(5,8,15,0.95) 100%);
+}
+
+.wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; }
+.wrap.wide { max-width: var(--maxw-wide); }
+
+/* ============================ TIPOGRAFÍA ============================ */
+.chapno {
+  font: 700 0.68rem/1 var(--ui);
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--cyan); margin: 0 0 1.1rem;
+  display: flex; align-items: center; gap: 0.7rem;
+}
+.chapno::before {
+  content: ""; width: 26px; height: 1px; background: currentColor; opacity: 0.6;
+}
+
+h1, h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.5rem;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(3.4rem, 12vw, 9rem); }
+h2 { font-size: clamp(2.6rem, 7.5vw, 5.6rem); }
+h1 em, h2 em { font-style: italic; color: var(--gold); }
+
+h1 .line1 { display: block; }
+h1 .line2 { display: block; }
+
+h3.sub {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  margin: 3.5rem 0 0.75rem; line-height: 1.05;
+}
+
+.eyebrow {
+  font: 600 0.72rem/1 var(--ui);
+  letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--gold); margin: 0 0 1.6rem;
+}
+
+.lede {
+  font-size: clamp(1.02rem, 1.9vw, 1.28rem);
+  line-height: 1.65; color: var(--dim);
+  max-width: 46ch; margin: 0 0 2.5rem;
+  text-wrap: pretty;
+}
+.lede.tight { margin-bottom: 1.4rem; }
+.lede b, .punch b { color: var(--text); font-weight: 700; }
+
+.dek {
+  font-size: clamp(0.98rem, 1.7vw, 1.15rem);
+  color: var(--dim); max-width: 44ch; margin: 2rem 0 0; line-height: 1.65;
+}
+
+.punch {
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  line-height: 1.5; margin: 2.8rem 0 0; max-width: 52ch;
+  padding-left: 1.15rem;
+  border-left: 2px solid var(--gold);
+  text-wrap: pretty;
+}
+.punch b { color: var(--gold); }
+.quiet { color: var(--dimmer); font-size: 0.88em; }
+.small { font-size: 0.85rem; }
+
+/* ============================ HERO ============================ */
+/* En pantallas bajas (portátil a 720 px) el hero se desbordaba: el título y el
+   marcador se comen el alto disponible. Escalamos con vh además de vw para que
+   la apertura entre siempre entera, que es justo lo que tiene que hacer. */
+.hero { align-items: flex-end; padding-bottom: clamp(4rem, 10vh, 8rem); }
+.hero-inner { width: 100%; max-width: var(--maxw); margin-inline: auto; }
+.hero h1 { font-size: clamp(2.8rem, min(12vw, 15vh), 9rem); margin-bottom: 1.1rem; }
+.hero .eyebrow { margin-bottom: clamp(0.8rem, 2.5vh, 1.6rem); }
+.hero .dek { margin-top: clamp(1rem, 3vh, 2rem); }
+
+@media (max-height: 780px) {
+  .hero .dek { font-size: 0.95rem; }
+  .hero { padding-bottom: 3.5rem; }
+}
+
+.finalscore {
+  display: flex; align-items: center; gap: clamp(0.8rem, 2.5vw, 1.8rem);
+  margin-top: 0.5rem; flex-wrap: wrap;
+}
+.finalscore .t {
+  display: flex; align-items: center; gap: 0.6rem;
+  font: 700 clamp(1rem, 2.2vw, 1.45rem)/1 var(--ui);
+  letter-spacing: -0.01em;
+}
+.finalscore .t img { border-radius: 3px; box-shadow: 0 2px 10px rgba(0,0,0,0.5); display: block; }
+.finalscore .s {
+  font: 900 clamp(1.9rem, 5vw, 3.2rem)/1 var(--ui);
+  color: var(--gold); letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.finalscore .s i { font-style: normal; opacity: 0.4; margin: 0 0.15em; }
+
+.scrollhint {
+  position: absolute; left: 50%; bottom: 2.2rem; translate: -50% 0;
+  width: 26px; height: 42px; border: 1.5px solid rgba(255,255,255,0.28);
+  border-radius: 14px; z-index: 3;
+}
+.scrollhint span {
+  position: absolute; left: 50%; top: 9px; translate: -50% 0;
+  width: 3px; height: 7px; border-radius: 2px; background: var(--gold);
+  animation: hint 1.9s var(--ease) infinite;
+}
+@keyframes hint {
+  0%   { opacity: 0; transform: translateY(0); }
+  30%  { opacity: 1; }
+  70%  { opacity: 1; transform: translateY(14px); }
+  100% { opacity: 0; transform: translateY(16px); }
+}
+
+/* ============================ BARRAS (preseason) ============================ */
+.bars { display: grid; gap: 0.55rem; margin: 0 0 1rem; max-width: 46rem; }
+.bar {
+  display: grid;
+  grid-template-columns: 2rem minmax(7.5rem, auto) 1fr 3.6rem;
+  align-items: center; gap: 0.75rem;
+}
+.bar .flag { width: 26px; height: 19px; border-radius: 3px; object-fit: cover; }
+.bar .nm { font: 600 0.94rem/1 var(--ui); white-space: nowrap; }
+.bar .track {
+  display: block;
+  height: 10px; border-radius: 5px; background: rgba(255,255,255,0.05);
+  overflow: hidden;
+}
+.bar .fill {
+  display: block;              /* <i> es inline: sin esto la barra no se ve */
+  height: 100%; border-radius: 5px; width: 0;
+  background: linear-gradient(90deg, var(--cyan-deep), var(--cyan));
+}
+.bar .pc {
+  font: 700 0.92rem/1 var(--ui); text-align: right; color: var(--dim);
+  font-variant-numeric: tabular-nums;
+}
+.bar.win .nm { color: var(--gold); }
+.bar.win .fill { background: linear-gradient(90deg, var(--gold-deep), var(--gold-hi)); }
+.bar.win .pc { color: var(--gold); }
+
+/* ============================ NÚMEROS GRANDES ============================ */
+.bignums {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 1.5rem 2rem; margin: 0 0 2.75rem;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  padding: 1.75rem 0;
+}
+.bignums b {
+  display: block;
+  font: 900 clamp(2.4rem, 6vw, 3.8rem)/0.9 var(--ui);
+  letter-spacing: -0.04em; color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+.bignums span {
+  display: block; margin-top: 0.45rem;
+  font: 600 0.7rem/1 var(--ui); letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--dimmer);
+}
+
+/* ============================ MURO DE 104 PARTIDOS ============================ */
+.wall {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(26px, 1fr));
+  gap: 5px; margin: 0 0 1rem;
+}
+.cell {
+  aspect-ratio: 1; border-radius: 4px; position: relative;
+  background: rgba(255,255,255,0.055);
+  border: 1px solid transparent;
+  transform: scale(0.4); opacity: 0;
+  transition: border-color 0.2s, transform 0.2s var(--ease);
+  cursor: default;
+}
+.cell.hit { background: linear-gradient(150deg, var(--gold), var(--gold-deep)); }
+.cell:hover, .cell:focus-visible {
+  border-color: var(--text); transform: scale(1.28) !important; z-index: 5;
+}
+.cell[data-tip]:hover::after {
+  content: attr(data-tip);
+  position: absolute; bottom: calc(100% + 9px); left: 50%; translate: -50% 0;
+  background: var(--ink); color: var(--text);
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 0.5rem 0.7rem; font: 500 0.74rem/1.35 var(--ui);
+  white-space: pre; z-index: 10; pointer-events: none;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+}
+.walllegend { font-size: 0.85rem; color: var(--dimmer); margin: 0 0 1rem; }
+.walllegend b { color: var(--gold); font-weight: 800; }
+.k-hit { color: var(--gold); font-weight: 700; }
+.k-miss { color: var(--dimmer); font-weight: 700; }
+
+/* ============================ SORPRESAS ============================ */
+.surprises { display: grid; gap: 0.6rem; margin-top: 1.25rem; }
+.surp {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem;
+  background: rgba(255,255,255,0.035);
+  border: 1px solid var(--line); border-radius: 12px;
+  padding: 0.85rem 1.1rem;
+}
+.surp .m { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.surp .m img { width: 22px; height: 16px; border-radius: 2px; object-fit: cover; }
+.surp .m b { font-weight: 700; font-size: 0.95rem; }
+.surp .m .sc {
+  font-weight: 800; color: var(--gold); font-variant-numeric: tabular-nums;
+  margin: 0 0.3rem;
+}
+.surp .m .ph {
+  font: 600 0.62rem/1 var(--ui); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--dimmer); border: 1px solid var(--line); border-radius: 99px;
+  padding: 0.25rem 0.5rem; margin-left: 0.2rem;
+}
+.surp .said { font-size: 0.8rem; color: var(--dimmer); margin-top: 0.3rem; width: 100%; }
+.surp .pct {
+  font: 900 1.5rem/1 var(--ui); color: #ff8a8a; font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em; text-align: right;
+}
+.surp .pct span {
+  display: block; font: 600 0.58rem/1 var(--ui); letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--dimmer); margin-top: 0.3rem;
+}
+
+/* ============================ CARRERA DE PROBABILIDADES ============================ */
+.racewrap {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid var(--line); border-radius: 16px;
+  padding: 1.5rem 1.25rem 1rem; margin-bottom: 1rem;
+}
+#race { width: 100%; height: clamp(260px, 42vh, 460px); display: block; overflow: visible; }
+#race .grid { stroke: var(--line); stroke-width: 1; }
+#race .axlbl { fill: var(--dimmer); font: 600 11px var(--ui); }
+#race .rline { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+#race .rdot { stroke: var(--ink); stroke-width: 2; }
+#race .note { fill: var(--dim); font: 500 11px var(--ui); }
+#race .noteline { stroke: var(--dimmer); stroke-width: 1; stroke-dasharray: 3 3; }
+
+.racelegend { display: flex; gap: 1.25rem; flex-wrap: wrap; padding-top: 0.5rem; }
+.racelegend i {
+  display: inline-block; width: 14px; height: 3px; border-radius: 2px;
+  margin-right: 0.45rem; vertical-align: middle;
+}
+.racelegend span { font: 600 0.82rem/1 var(--ui); color: var(--dim); }
+
+/* ============================ EL CAMINO ============================ */
+.road { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: 0.5rem; }
+.road li {
+  display: grid; grid-template-columns: 6.5rem 1fr auto; align-items: center;
+  gap: 1rem; padding: 0.85rem 1.1rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--line); border-radius: 12px;
+}
+.road .ph {
+  font: 700 0.63rem/1 var(--ui); letter-spacing: 0.13em; text-transform: uppercase;
+  color: var(--cyan);
+}
+.road .mt { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; font-size: 0.95rem; }
+.road .mt img { width: 22px; height: 16px; border-radius: 2px; object-fit: cover; }
+.road .mt .sc { font-weight: 800; color: var(--gold); font-variant-numeric: tabular-nums; }
+.road .pw {
+  text-align: right; font: 800 1.15rem/1 var(--ui);
+  color: var(--cyan); font-variant-numeric: tabular-nums;
+}
+.road .pw span {
+  display: block; font: 600 0.55rem/1 var(--ui); letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--dimmer); margin-top: 0.35rem;
+}
+
+/* ============================ VEREDICTO ============================ */
+.verdict {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1rem; margin-bottom: 1rem;
+}
+.vcard {
+  background: rgba(255,255,255,0.035);
+  border: 1px solid var(--line); border-radius: 14px;
+  padding: 1.4rem 1.25rem;
+}
+.vcard b {
+  display: block; font: 900 clamp(2rem, 4.5vw, 2.9rem)/0.95 var(--ui);
+  letter-spacing: -0.035em; color: var(--text); font-variant-numeric: tabular-nums;
+}
+.vcard.good b { color: var(--gold); }
+.vcard .lbl {
+  display: block; margin-top: 0.6rem;
+  font: 700 0.66rem/1 var(--ui); letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--dim);
+}
+.vcard .hint { display: block; margin-top: 0.5rem; font-size: 0.78rem; color: var(--dimmer); line-height: 1.45; }
+
+/* ============================ MOTORES ============================ */
+.engines { display: grid; gap: 0.65rem; }
+.eng {
+  display: grid; grid-template-columns: minmax(9rem, 1.2fr) 1fr auto;
+  align-items: center; gap: 1rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--line); border-radius: 12px;
+  padding: 0.95rem 1.15rem;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.eng.best { border-color: var(--gold); background: rgba(240,193,75,0.07); }
+.eng .nm { font: 700 0.94rem/1.2 var(--ui); }
+.eng .nm i {
+  display: block; font-style: normal; margin-top: 0.3rem;
+  font: 600 0.62rem/1 var(--ui); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--dimmer);
+}
+.eng.best .nm i { color: var(--gold); }
+.eng .track { display: block; height: 8px; border-radius: 4px; background: rgba(255,255,255,0.05); overflow: hidden; }
+.eng .fill {
+  display: block;
+  height: 100%; border-radius: 4px; width: 0;
+  background: linear-gradient(90deg, var(--cyan-deep), var(--cyan));
+}
+.eng.best .fill { background: linear-gradient(90deg, var(--gold-deep), var(--gold-hi)); }
+.eng .metrics {
+  display: flex; gap: 1.1rem; font-variant-numeric: tabular-nums; text-align: right;
+}
+.eng .metrics div { min-width: 3.4rem; }
+.eng .metrics b { display: block; font: 800 1rem/1 var(--ui); }
+.eng .metrics span {
+  display: block; margin-top: 0.3rem;
+  font: 600 0.55rem/1 var(--ui); letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--dimmer);
+}
+
+/* ============================ ARCHIVO ============================ */
+.archive {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem; margin-bottom: 1rem;
+}
+.acard {
+  background: rgba(255,255,255,0.035); border: 1px solid var(--line);
+  border-radius: 14px; padding: 1.3rem 1.2rem;
+}
+.acard b {
+  display: block; font: 900 2.2rem/0.95 var(--ui); color: var(--cyan);
+  letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
+}
+.acard span {
+  display: block; margin-top: 0.55rem; font: 700 0.66rem/1 var(--ui);
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim);
+}
+.acard i { display: block; margin-top: 0.5rem; font-style: normal; font-size: 0.78rem; color: var(--dimmer); }
+
+.boletines { display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.bol {
+  background: rgba(255,255,255,0.03); border: 1px solid var(--line);
+  border-radius: 12px; padding: 0.85rem 1rem;
+}
+.bol .d {
+  font: 700 0.72rem/1 var(--ui); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.6rem;
+}
+/* Los controles nativos vienen en claro y cantan sobre el fondo oscuro.
+   Invertirlos conserva la accesibilidad del control nativo y quita el fogonazo. */
+.bol audio {
+  width: 100%; height: 32px; display: block;
+  filter: invert(0.92) hue-rotate(180deg) saturate(0.55) contrast(0.92);
+}
+
+/* ============================ CIERRE ============================ */
+.outro { margin-top: 3.5rem; text-align: center; }
+.outro > p:first-child {
+  font-family: var(--display); font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  margin: 0 0 1.3rem;
+}
+.cta {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  background: var(--gold); color: var(--ink);
+  font: 800 0.92rem/1 var(--ui); letter-spacing: 0.01em;
+  padding: 1rem 1.6rem; border-radius: 99px; text-decoration: none;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), background-color 0.3s;
+  box-shadow: 0 8px 30px rgba(240,193,75,0.18);
+}
+.cta:hover { transform: translateY(-2px); background: var(--gold-hi); box-shadow: 0 14px 40px rgba(240,193,75,0.3); }
+.cta span { transition: transform 0.3s var(--ease); }
+.cta:hover span { transform: translateX(4px); }
+.outro .quiet { margin: 1.1rem auto 0; max-width: 38ch; }
+
+.foot {
+  margin-top: 4.5rem; padding-top: 1.75rem; border-top: 1px solid var(--line);
+  color: var(--dimmer); font-size: 0.82rem; line-height: 1.6;
+}
+.foot p { margin: 0 0 0.4rem; max-width: 60ch; }
+
+/* ============================ REVEALS ============================ */
+.reveal { opacity: 0; transform: translateY(18px); }
+
+/* ============================ RESPONSIVE ============================ */
+@media (max-width: 700px) {
+  body { font-size: 16px; }
+  .chapter { padding-block: clamp(4rem, 10vh, 6rem); }
+  .bar { grid-template-columns: 1.7rem minmax(5.5rem, auto) 1fr 3rem; gap: 0.5rem; }
+  .bar .nm { font-size: 0.85rem; }
+  .road li { grid-template-columns: 1fr auto; row-gap: 0.4rem; }
+  .road .ph { grid-column: 1 / -1; }
+  .eng { grid-template-columns: 1fr; row-gap: 0.75rem; }
+  .eng .metrics { justify-content: flex-start; text-align: left; }
+  .surp { grid-template-columns: 1fr auto; }
+  .wall { grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); gap: 4px; }
+  .punch { padding-left: 0.9rem; }
+}
+
+/* ============================ MOVIMIENTO REDUCIDO ============================ */
+/* Nadie se queda sin contenido: se apaga el movimiento, no la información. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .cell { opacity: 1 !important; transform: none !important; }
+  .bgvid video { transform: none !important; }
+  .scrollhint span { animation: none; opacity: 1; }
+  .wipe { display: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -18,7 +18,14 @@ from src.data.bracket_view import (
 
 _CSS = f"""
 <style>
-.bk-scroll {{ overflow-x:auto; padding:6px 2px 16px; }}
+.bk-scroll {{ overflow-x:auto; padding:6px 2px 16px;
+             scrollbar-width:thin; scrollbar-color:rgba(76,215,246,.5) transparent; }}
+.bk-scroll::-webkit-scrollbar {{ height:8px; }}
+.bk-scroll::-webkit-scrollbar-track {{ background:rgba(255,255,255,.05); border-radius:4px; }}
+.bk-scroll::-webkit-scrollbar-thumb {{ background:rgba(76,215,246,.45); border-radius:4px; }}
+.bracket-hint {{ display:none; color:{TEXT_DIM}; font-size:.78rem;
+                margin:0 0 6px; text-align:center; letter-spacing:.02em; }}
+@media (max-width:900px) {{ .bracket-hint {{ display:block; }} }}
 .bk-wrap {{ display:flex; align-items:stretch; gap:10px; min-width:1180px; }}
 .bk-side {{ display:flex; gap:10px; flex:1; }}
 .bk-col {{ display:flex; flex-direction:column; flex:1; min-width:128px; }}
@@ -154,7 +161,11 @@ def render() -> None:
               f'<div class="bk-col-body" style="justify-content:center;">'
               f'{final_inner}{champ_html}</div></div>')
 
-    html = [_CSS, '<div class="bk-scroll"><div class="bk-wrap">']
+    # El árbol mide 1.180 px y en el móvil se ve un tercio. Scrollea, pero sin
+    # barra visible en táctil nadie lo adivina: hay que decirlo.
+    html = [_CSS,
+            '<p class="bracket-hint">← Desliza en horizontal para recorrer el cuadro →</p>',
+            '<div class="bk-scroll"><div class="bk-wrap">']
     # Mitad izquierda: R32 → R16 → QF → SF
     html.append('<div class="bk-side">')
     html.append(_column(L["r32"], matches, "16avos"))

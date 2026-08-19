@@ -724,7 +724,7 @@ def _render_goleadores(real_results: dict):
             ta, tb = k.split(" vs ")
             played_matches.append((f"grupos::{k}", ta, tb, int(score[0]), int(score[1])))
     # Eliminatorias
-    for r_key in ("r32", "r16", "qf", "sf", "final"):
+    for r_key in ("r32", "r16", "qf", "sf", "third", "final"):
         round_data = real_results.get("knockout_matches", {}).get(r_key, {})
         for mid, info in round_data.items():
             ta, tb = info.get("home"), info.get("away")

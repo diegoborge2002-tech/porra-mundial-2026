@@ -24,7 +24,7 @@ def _count_played(real_results: dict | None) -> int:
     if not real_results:
         return 0
     n = len(real_results.get("group_matches", {}))
-    for r in ("r32", "r16", "qf", "sf", "final"):
+    for r in ("r32", "r16", "qf", "sf", "third", "final"):
         n += len(real_results.get("knockout_matches", {}).get(r, {}))
     return n
 

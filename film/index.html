@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi Mundial 2026 · La película</title>
+<meta name="description" content="El Mundial 2026 contado por el modelo que lo predijo. 104 partidos, 18 tomas de probabilidad y un veredicto: qué dijo el modelo y qué pasó de verdad.">
+<meta name="theme-color" content="#0a0f1e">
+
+<meta property="og:title" content="Mi Mundial 2026 · La película">
+<meta property="og:description" content="España campeona. El modelo la señaló el 23 de mayo. Esta es la historia de los 104 partidos que hubo en medio.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/film.css">
+</head>
+<body>
+
+<!-- ============ PROGRESO + NAV ============ -->
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<nav class="chapternav" aria-label="Capítulos">
+  <ol>
+    <li><a href="#c0" data-n="00"><span>El pitido final</span></a></li>
+    <li><a href="#c1" data-n="01"><span>Lo que dije en mayo</span></a></li>
+    <li><a href="#c2" data-n="02"><span>104 partidos</span></a></li>
+    <li><a href="#c3" data-n="03"><span>La montaña rusa</span></a></li>
+    <li><a href="#c4" data-n="04"><span>El camino</span></a></li>
+    <li><a href="#c5" data-n="05"><span>El juicio al modelo</span></a></li>
+    <li><a href="#c6" data-n="06"><span>El archivo</span></a></li>
+  </ol>
+</nav>
+
+<!-- capa de transición de vídeo entre capítulos (screen blend sobre negro) -->
+<div class="wipe" aria-hidden="true">
+  <video class="wipe-vid" muted playsinline preload="none"></video>
+</div>
+
+<main>
+
+<!-- ============ 00 · EL PITIDO FINAL ============ -->
+<section class="chapter hero" id="c0" data-chapter="0">
+  <div class="bgvid" data-src="assets/cap0_final.mp4" data-scrub="1">
+    <video muted playsinline preload="auto" aria-hidden="true"></video>
+  </div>
+  <div class="scrim scrim-hero"></div>
+
+  <div class="hero-inner">
+    <p class="eyebrow reveal">19 de julio de 2026 · Estadio Azteca</p>
+    <h1 class="reveal">
+      <span class="line1">España</span>
+      <span class="line2"><em>campeona del mundo</em></span>
+    </h1>
+    <div class="finalscore reveal">
+      <span class="t"><img alt="" src="https://flagcdn.com/w80/es.png" width="40" height="30"> España</span>
+      <span class="s">1<i>–</i>0</span>
+      <span class="t">Argentina <img alt="" src="https://flagcdn.com/w80/ar.png" width="40" height="30"></span>
+    </div>
+    <p class="dek reveal">
+      Seguí este Mundial durante 38 días con un modelo propio: Elo dinámico, XGBoost
+      y diez mil torneos simulados cada noche. Esto es lo que el modelo dijo,
+      y lo que pasó de verdad.
+    </p>
+  </div>
+
+  <a class="scrollhint" href="#c1" aria-label="Empezar">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ 01 · LO QUE DIJE EN MAYO ============ -->
+<section class="chapter" id="c1" data-chapter="1">
+  <div class="bgvid" data-src="assets/cap1_mayo.mp4"><video muted loop playsinline preload="none" aria-hidden="true"></video></div>
+  <div class="scrim"></div>
+
+  <div class="wrap">
+    <p class="chapno">Capítulo 01</p>
+    <h2 class="reveal">Lo que dije<br><em>en mayo</em></h2>
+    <p class="lede reveal">
+      <b>23 de mayo de 2026.</b> Diecinueve días antes de que rodara el primer balón,
+      el modelo corrió diez mil torneos y repartió el título entre 48 selecciones.
+      Esta era la foto.
+    </p>
+
+    <div class="bars" id="preseason" data-anim="bars"></div>
+
+    <p class="punch reveal">
+      España, <b>19,4 %</b>. Más del doble que la segunda.<br>
+      <span class="quiet">El modelo la puso primera antes de que empezara nada — y no se movió de ahí en las cinco tomas siguientes.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 02 · 104 PARTIDOS ============ -->
+<section class="chapter" id="c2" data-chapter="2">
+  <div class="bgvid" data-src="assets/cap2_partidos.mp4"><video muted loop playsinline preload="none" aria-hidden="true"></video></div>
+  <div class="scrim"></div>
+
+  <div class="wrap">
+    <p class="chapno">Capítulo 02</p>
+    <h2 class="reveal">Y luego pasaron<br><em>104 partidos</em></h2>
+
+    <div class="bignums reveal">
+      <div><b data-count="104">0</b><span>partidos</span></div>
+      <div><b data-count="308">0</b><span>goles</span></div>
+      <div><b data-count="48">0</b><span>selecciones</span></div>
+      <div><b data-count="38">0</b><span>días</span></div>
+    </div>
+
+    <p class="lede reveal">
+      El modelo predijo los 104, uno a uno, antes de jugarse. Cada cuadradito es un
+      partido: <span class="k-hit">dorado</span> si acertó el resultado,
+      <span class="k-miss">apagado</span> si falló.
+    </p>
+
+    <div class="wall" id="wall" role="img" aria-label="Cuadrícula de los 104 partidos del Mundial, coloreada según si el modelo acertó"></div>
+    <p class="walllegend reveal"><b id="wallHits">—</b> aciertos de <b>104</b> · pasa el ratón por encima para ver cada partido</p>
+
+    <h3 class="sub reveal">Las noches que no vio venir</h3>
+    <div class="surprises" id="surprises"></div>
+  </div>
+</section>
+
+<!-- ============ 03 · LA MONTAÑA RUSA ============ -->
+<section class="chapter" id="c3" data-chapter="3">
+  <div class="bgvid" data-src="assets/cap3_montana.mp4"><video muted loop playsinline preload="none" aria-hidden="true"></video></div>
+  <div class="scrim"></div>
+
+  <div class="wrap wide">
+    <p class="chapno">Capítulo 03</p>
+    <h2 class="reveal">La montaña rusa</h2>
+    <p class="lede reveal">
+      Cada noche, después de registrar los resultados del día, el modelo volvía a
+      simular el torneo entero y guardaba una foto. Quedaron <b>18 tomas</b>.
+      Puestas en fila, cuentan una historia con giro.
+    </p>
+
+    <div class="racewrap">
+      <svg id="race" viewBox="0 0 1000 460" preserveAspectRatio="none" role="img"
+           aria-label="Evolución de la probabilidad de ser campeón para España, Francia y Argentina a lo largo del torneo"></svg>
+      <div class="racelegend" id="racelegend"></div>
+    </div>
+
+    <p class="punch reveal">
+      El <b>1 de julio</b>, con Francia arrasando en grupos, el modelo se bajó del carro:
+      España cayó al <b>12,4 %</b> y Francia se puso líder con el 24,5 %.<br>
+      <span class="quiet">Francia siguió por delante el 10 y el 13 de julio. Y entonces jugaron la semifinal.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 04 · EL CAMINO ============ -->
+<section class="chapter" id="c4" data-chapter="4">
+  <div class="scrim scrim-solid"></div>
+  <div class="wrap">
+    <p class="chapno">Capítulo 04</p>
+    <h2 class="reveal">El camino</h2>
+    <p class="lede reveal">
+      Ocho partidos de España, y el porcentaje que el modelo le daba de ganar cada uno
+      <b>en los noventa minutos</b>. Fíjate en la dirección de los números.
+    </p>
+
+    <ol class="road" id="road"></ol>
+
+    <p class="punch reveal">
+      El modelo creyó <b>cada vez menos</b> en ella según avanzaba —
+      del 77 % contra Arabia Saudí al 35 % contra Francia.<br>
+      <span class="quiet">Ganó los ocho. Los dos partidos en los que menos la veía fueron la semifinal y la final.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 05 · EL JUICIO AL MODELO ============ -->
+<section class="chapter" id="c5" data-chapter="5">
+  <div class="bgvid" data-src="assets/cap4_juicio.mp4" data-scrub="1"><video muted playsinline preload="none" aria-hidden="true"></video></div>
+  <div class="scrim"></div>
+
+  <div class="wrap wide">
+    <p class="chapno">Capítulo 05</p>
+    <h2 class="reveal">El juicio<br><em>al modelo</em></h2>
+    <p class="lede reveal">
+      Acertar al campeón es fácil de contar y fácil de tener suerte. Lo honesto es
+      medir los 104 partidos con las métricas que no perdonan.
+    </p>
+
+    <div class="verdict" id="verdict"></div>
+
+    <h3 class="sub reveal">Tres motores, la misma prueba</h3>
+    <p class="lede tight reveal">
+      El mismo torneo evaluado con el Elo clásico, con el modelo de estadísticas
+      XGBoost, y con la mezcla que usé en la web. <b>Brier y RPS: cuanto más bajo, mejor.</b>
+    </p>
+    <div class="engines" id="engines"></div>
+
+    <p class="punch reveal" id="enginePunch"></p>
+  </div>
+</section>
+
+<!-- ============ 06 · EL ARCHIVO ============ -->
+<section class="chapter" id="c6" data-chapter="6">
+  <div class="bgvid" data-src="assets/cap5_archivo.mp4"><video muted loop playsinline preload="none" aria-hidden="true"></video></div>
+  <div class="scrim"></div>
+
+  <div class="wrap">
+    <p class="chapno">Capítulo 06</p>
+    <h2 class="reveal">El archivo</h2>
+    <p class="lede reveal">
+      Todo esto se registró en directo, día a día, mientras el Mundial pasaba.
+      Nada está reconstruido a posteriori: cada probabilidad quedó grabada
+      <b>antes</b> de que se jugara el partido siguiente.
+    </p>
+
+    <div class="archive" id="archive"></div>
+
+    <h3 class="sub reveal">Los boletines de cada jornada</h3>
+    <p class="lede tight reveal">Nueve resúmenes en audio, generados la misma noche de cada jornada.</p>
+    <div class="boletines" id="boletines"></div>
+
+    <div class="outro reveal">
+      <p>¿Quieres los datos en crudo?</p>
+      <a class="cta" id="ctaArchive" href="https://diegoborge-porra-mundial-2026.hf.space" target="_blank" rel="noopener">
+        Abrir el archivo completo <span aria-hidden="true">→</span>
+      </a>
+      <p class="quiet small">
+        La web de seguimiento con los 104 partidos, el cuadro, las clasificaciones,
+        el mercado de apuestas y el diagnóstico partido a partido.
+      </p>
+    </div>
+
+    <footer class="foot">
+      <p>Mi Mundial 2026 · modelo propio: Elo dinámico + XGBoost sobre 49.215 partidos históricos, Monte Carlo de 10.000 torneos.</p>
+      <p class="quiet small">Resultados verificados contra la API de football-data.org · <span id="builtAt"></span></p>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/film.js"></script>
+</body>
+</html>

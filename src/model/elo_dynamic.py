@@ -78,7 +78,7 @@ def recalculate_elo_with_real(base_elo: dict[str, float], real_results: dict | N
 
     # 2. Partidos de eliminatorias en orden de ronda
     knockout_matches = real_results.get("knockout_matches", {})
-    for round_key in ("r32", "r16", "qf", "sf", "final"):
+    for round_key in ("r32", "r16", "qf", "sf", "third", "final"):
         round_data = knockout_matches.get(round_key, {})
         for match_id in sorted(round_data.keys(),
                                 key=lambda x: int(x) if str(x).isdigit() else 9999):

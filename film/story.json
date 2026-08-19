@@ -1,0 +1,2662 @@
+{
+ "generated_from": "data/processed/real_results.json + snapshots/ + actualidad.json",
+ "tournament": {
+  "name": "Mundial 2026",
+  "hosts": [
+   "us",
+   "ca",
+   "mx"
+  ],
+  "start": "2026-06-11",
+  "end": "2026-07-19",
+  "teams": 48,
+  "matches": 104,
+  "goals": 308
+ },
+ "champion": {
+  "team": "Espana",
+  "iso": "es",
+  "runner_up": "Argentina",
+  "runner_up_iso": "ar",
+  "score": "1-0",
+  "final_home": "Espana",
+  "final_away": "Argentina",
+  "date": "2026-07-19",
+  "third_place": "Inglaterra",
+  "third_iso": "gb-eng",
+  "third_score": "Francia 4-6 Inglaterra",
+  "road": [
+   {
+    "home": "Espana",
+    "away": "Cabo Verde",
+    "gh": 0,
+    "ga": 0,
+    "stage": "Grupo H",
+    "phase": "Grupo H",
+    "p_win": 0.724
+   },
+   {
+    "home": "Espana",
+    "away": "Arabia Saudi",
+    "gh": 4,
+    "ga": 0,
+    "stage": "Grupo H",
+    "phase": "Grupo H",
+    "p_win": 0.7683
+   },
+   {
+    "home": "Uruguay",
+    "away": "Espana",
+    "gh": 0,
+    "ga": 1,
+    "stage": "Grupo H",
+    "phase": "Grupo H",
+    "p_win": 0.5962
+   },
+   {
+    "home": "Espana",
+    "away": "Austria",
+    "gh": 3,
+    "ga": 0,
+    "stage": "R32",
+    "phase": "R32",
+    "p_win": 0.5752
+   },
+   {
+    "home": "Portugal",
+    "away": "Espana",
+    "gh": 0,
+    "ga": 1,
+    "stage": "R16",
+    "phase": "R16",
+    "p_win": 0.4501
+   },
+   {
+    "home": "Espana",
+    "away": "Belgica",
+    "gh": 2,
+    "ga": 1,
+    "stage": "Cuartos",
+    "phase": "Cuartos",
+    "p_win": 0.5179
+   },
+   {
+    "home": "Francia",
+    "away": "Espana",
+    "gh": 0,
+    "ga": 2,
+    "stage": "Semis",
+    "phase": "Semis",
+    "p_win": 0.352
+   },
+   {
+    "home": "Espana",
+    "away": "Argentina",
+    "gh": 1,
+    "ga": 0,
+    "stage": "Final",
+    "phase": "Final",
+    "p_win": 0.4112
+   }
+  ]
+ },
+ "preseason": {
+  "date": "2026-05-23",
+  "top": [
+   {
+    "team": "Espana",
+    "p": 0.1941,
+    "iso": "es"
+   },
+   {
+    "team": "Francia",
+    "p": 0.0954,
+    "iso": "fr"
+   },
+   {
+    "team": "Argentina",
+    "p": 0.0755,
+    "iso": "ar"
+   },
+   {
+    "team": "Portugal",
+    "p": 0.0645,
+    "iso": "pt"
+   },
+   {
+    "team": "Paises Bajos",
+    "p": 0.0577,
+    "iso": "nl"
+   },
+   {
+    "team": "Marruecos",
+    "p": 0.0491,
+    "iso": "ma"
+   },
+   {
+    "team": "Inglaterra",
+    "p": 0.0391,
+    "iso": "gb-eng"
+   },
+   {
+    "team": "Ecuador",
+    "p": 0.0331,
+    "iso": "ec"
+   }
+  ]
+ },
+ "race": {
+  "Espana": [
+   {
+    "date": "2026-05-23",
+    "p": 0.1941
+   },
+   {
+    "date": "2026-06-01",
+    "p": 0.1941
+   },
+   {
+    "date": "2026-06-07",
+    "p": 0.1941
+   },
+   {
+    "date": "2026-06-08",
+    "p": 0.1941
+   },
+   {
+    "date": "2026-06-10",
+    "p": 0.1941
+   },
+   {
+    "date": "2026-06-12",
+    "p": 0.169
+   },
+   {
+    "date": "2026-06-13",
+    "p": 0.1701
+   },
+   {
+    "date": "2026-06-17",
+    "p": 0.1492
+   },
+   {
+    "date": "2026-06-20",
+    "p": 0.1389
+   },
+   {
+    "date": "2026-06-22",
+    "p": 0.1619
+   },
+   {
+    "date": "2026-06-24",
+    "p": 0.1461
+   },
+   {
+    "date": "2026-06-30",
+    "p": 0.1461
+   },
+   {
+    "date": "2026-07-01",
+    "p": 0.1237
+   },
+   {
+    "date": "2026-07-07",
+    "p": 0.2402
+   },
+   {
+    "date": "2026-07-10",
+    "p": 0.2058
+   },
+   {
+    "date": "2026-07-13",
+    "p": 0.2722
+   },
+   {
+    "date": "2026-07-15",
+    "p": 0.5739
+   },
+   {
+    "date": "2026-07-19",
+    "p": 0.5739
+   }
+  ],
+  "Francia": [
+   {
+    "date": "2026-05-23",
+    "p": 0.0954
+   },
+   {
+    "date": "2026-06-01",
+    "p": 0.0954
+   },
+   {
+    "date": "2026-06-07",
+    "p": 0.0954
+   },
+   {
+    "date": "2026-06-08",
+    "p": 0.0954
+   },
+   {
+    "date": "2026-06-10",
+    "p": 0.0954
+   },
+   {
+    "date": "2026-06-12",
+    "p": 0.125
+   },
+   {
+    "date": "2026-06-13",
+    "p": 0.1188
+   },
+   {
+    "date": "2026-06-17",
+    "p": 0.1386
+   },
+   {
+    "date": "2026-06-20",
+    "p": 0.1355
+   },
+   {
+    "date": "2026-06-22",
+    "p": 0.1285
+   },
+   {
+    "date": "2026-06-24",
+    "p": 0.1326
+   },
+   {
+    "date": "2026-06-30",
+    "p": 0.1326
+   },
+   {
+    "date": "2026-07-01",
+    "p": 0.2448
+   },
+   {
+    "date": "2026-07-07",
+    "p": 0.219
+   },
+   {
+    "date": "2026-07-10",
+    "p": 0.3495
+   },
+   {
+    "date": "2026-07-13",
+    "p": 0.2902
+   },
+   {
+    "date": "2026-07-15",
+    "p": 0.0
+   },
+   {
+    "date": "2026-07-19",
+    "p": 0.0
+   }
+  ],
+  "Argentina": [
+   {
+    "date": "2026-05-23",
+    "p": 0.0755
+   },
+   {
+    "date": "2026-06-01",
+    "p": 0.0755
+   },
+   {
+    "date": "2026-06-07",
+    "p": 0.0755
+   },
+   {
+    "date": "2026-06-08",
+    "p": 0.0755
+   },
+   {
+    "date": "2026-06-10",
+    "p": 0.0755
+   },
+   {
+    "date": "2026-06-12",
+    "p": 0.1025
+   },
+   {
+    "date": "2026-06-13",
+    "p": 0.0895
+   },
+   {
+    "date": "2026-06-17",
+    "p": 0.0907
+   },
+   {
+    "date": "2026-06-20",
+    "p": 0.1107
+   },
+   {
+    "date": "2026-06-22",
+    "p": 0.1123
+   },
+   {
+    "date": "2026-06-24",
+    "p": 0.1301
+   },
+   {
+    "date": "2026-06-30",
+    "p": 0.1301
+   },
+   {
+    "date": "2026-07-01",
+    "p": 0.1553
+   },
+   {
+    "date": "2026-07-07",
+    "p": 0.1393
+   },
+   {
+    "date": "2026-07-10",
+    "p": 0.1849
+   },
+   {
+    "date": "2026-07-13",
+    "p": 0.2396
+   },
+   {
+    "date": "2026-07-15",
+    "p": 0.4261
+   },
+   {
+    "date": "2026-07-19",
+    "p": 0.4261
+   }
+  ]
+ },
+ "snapshots": [
+  {
+   "date": "2026-05-23",
+   "leader": "Espana",
+   "leader_p": 0.1941,
+   "probs": {
+    "Espana": 0.1941,
+    "Francia": 0.0954,
+    "Argentina": 0.0755,
+    "Portugal": 0.0645,
+    "Paises Bajos": 0.0577,
+    "Marruecos": 0.0491,
+    "Inglaterra": 0.0391,
+    "Ecuador": 0.0331,
+    "Colombia": 0.0326,
+    "Mexico": 0.0287
+   }
+  },
+  {
+   "date": "2026-06-01",
+   "leader": "Espana",
+   "leader_p": 0.1941,
+   "probs": {
+    "Espana": 0.1941,
+    "Francia": 0.0954,
+    "Argentina": 0.0755,
+    "Portugal": 0.0645,
+    "Paises Bajos": 0.0577,
+    "Marruecos": 0.0491,
+    "Inglaterra": 0.0391,
+    "Ecuador": 0.0331,
+    "Colombia": 0.0326,
+    "Mexico": 0.0287
+   }
+  },
+  {
+   "date": "2026-06-07",
+   "leader": "Espana",
+   "leader_p": 0.1941,
+   "probs": {
+    "Espana": 0.1941,
+    "Francia": 0.0954,
+    "Argentina": 0.0755,
+    "Portugal": 0.0645,
+    "Paises Bajos": 0.0577,
+    "Marruecos": 0.0491,
+    "Inglaterra": 0.0391,
+    "Ecuador": 0.0331,
+    "Colombia": 0.0326,
+    "Mexico": 0.0287
+   }
+  },
+  {
+   "date": "2026-06-08",
+   "leader": "Espana",
+   "leader_p": 0.1941,
+   "probs": {
+    "Espana": 0.1941,
+    "Francia": 0.0954,
+    "Argentina": 0.0755,
+    "Portugal": 0.0645,
+    "Paises Bajos": 0.0577,
+    "Marruecos": 0.0491,
+    "Inglaterra": 0.0391,
+    "Ecuador": 0.0331,
+    "Colombia": 0.0326,
+    "Mexico": 0.0287
+   }
+  },
+  {
+   "date": "2026-06-10",
+   "leader": "Espana",
+   "leader_p": 0.1941,
+   "probs": {
+    "Espana": 0.1941,
+    "Francia": 0.0954,
+    "Argentina": 0.0755,
+    "Portugal": 0.0645,
+    "Paises Bajos": 0.0577,
+    "Marruecos": 0.0491,
+    "Inglaterra": 0.0391,
+    "Ecuador": 0.0331,
+    "Colombia": 0.0326,
+    "Mexico": 0.0287
+   }
+  },
+  {
+   "date": "2026-06-12",
+   "leader": "Espana",
+   "leader_p": 0.169,
+   "probs": {
+    "Espana": 0.169,
+    "Francia": 0.125,
+    "Argentina": 0.1025,
+    "Inglaterra": 0.0675,
+    "Portugal": 0.066,
+    "Paises Bajos": 0.0535,
+    "Alemania": 0.0525,
+    "Marruecos": 0.04,
+    "Brasil": 0.0285,
+    "Mexico": 0.024
+   }
+  },
+  {
+   "date": "2026-06-13",
+   "leader": "Espana",
+   "leader_p": 0.1701,
+   "probs": {
+    "Espana": 0.1701,
+    "Francia": 0.1188,
+    "Argentina": 0.0895,
+    "Portugal": 0.0658,
+    "Inglaterra": 0.0641,
+    "Paises Bajos": 0.0514,
+    "Alemania": 0.049,
+    "Marruecos": 0.041,
+    "Senegal": 0.0287,
+    "Belgica": 0.0267
+   }
+  },
+  {
+   "date": "2026-06-17",
+   "leader": "Espana",
+   "leader_p": 0.1492,
+   "probs": {
+    "Espana": 0.1492,
+    "Francia": 0.1386,
+    "Argentina": 0.0907,
+    "Inglaterra": 0.0686,
+    "Portugal": 0.0614,
+    "Alemania": 0.059,
+    "Paises Bajos": 0.0469,
+    "Marruecos": 0.0401,
+    "Mexico": 0.0332,
+    "Belgica": 0.0261
+   }
+  },
+  {
+   "date": "2026-06-20",
+   "leader": "Espana",
+   "leader_p": 0.1389,
+   "probs": {
+    "Espana": 0.1389,
+    "Francia": 0.1355,
+    "Argentina": 0.1107,
+    "Inglaterra": 0.0718,
+    "Paises Bajos": 0.057,
+    "Portugal": 0.0548,
+    "Alemania": 0.054,
+    "Marruecos": 0.0449,
+    "Colombia": 0.032,
+    "Mexico": 0.0288
+   }
+  },
+  {
+   "date": "2026-06-22",
+   "leader": "Espana",
+   "leader_p": 0.1619,
+   "probs": {
+    "Espana": 0.1619,
+    "Francia": 0.1285,
+    "Argentina": 0.1123,
+    "Inglaterra": 0.0738,
+    "Alemania": 0.0599,
+    "Paises Bajos": 0.0547,
+    "Portugal": 0.0528,
+    "Marruecos": 0.038,
+    "Brasil": 0.0319,
+    "Mexico": 0.0287
+   }
+  },
+  {
+   "date": "2026-06-24",
+   "leader": "Espana",
+   "leader_p": 0.1461,
+   "probs": {
+    "Espana": 0.1461,
+    "Francia": 0.1326,
+    "Argentina": 0.1301,
+    "Portugal": 0.0696,
+    "Inglaterra": 0.0663,
+    "Alemania": 0.0637,
+    "Paises Bajos": 0.0504,
+    "Marruecos": 0.0364,
+    "Colombia": 0.0326,
+    "Brasil": 0.0277
+   }
+  },
+  {
+   "date": "2026-06-30",
+   "leader": "Espana",
+   "leader_p": 0.1461,
+   "probs": {
+    "Espana": 0.1461,
+    "Francia": 0.1326,
+    "Argentina": 0.1301,
+    "Portugal": 0.0696,
+    "Inglaterra": 0.0663,
+    "Alemania": 0.0637,
+    "Paises Bajos": 0.0504,
+    "Marruecos": 0.0364,
+    "Colombia": 0.0326,
+    "Brasil": 0.0277
+   }
+  },
+  {
+   "date": "2026-07-01",
+   "leader": "Francia",
+   "leader_p": 0.2448,
+   "probs": {
+    "Francia": 0.2448,
+    "Argentina": 0.1553,
+    "Espana": 0.1237,
+    "Inglaterra": 0.0789,
+    "Marruecos": 0.0658,
+    "Brasil": 0.06,
+    "Colombia": 0.0413,
+    "Portugal": 0.0397,
+    "Noruega": 0.0254,
+    "Belgica": 0.0236
+   }
+  },
+  {
+   "date": "2026-07-07",
+   "leader": "Espana",
+   "leader_p": 0.2402,
+   "probs": {
+    "Espana": 0.2402,
+    "Francia": 0.219,
+    "Inglaterra": 0.1711,
+    "Argentina": 0.1393,
+    "Marruecos": 0.0732,
+    "Belgica": 0.0532,
+    "Noruega": 0.0367,
+    "Colombia": 0.0324,
+    "Suiza": 0.0267,
+    "Egipto": 0.0082
+   }
+  },
+  {
+   "date": "2026-07-10",
+   "leader": "Francia",
+   "leader_p": 0.3495,
+   "probs": {
+    "Francia": 0.3495,
+    "Espana": 0.2058,
+    "Argentina": 0.1849,
+    "Inglaterra": 0.1441,
+    "Belgica": 0.0437,
+    "Suiza": 0.0398,
+    "Noruega": 0.0322
+   }
+  },
+  {
+   "date": "2026-07-13",
+   "leader": "Francia",
+   "leader_p": 0.2902,
+   "probs": {
+    "Francia": 0.2902,
+    "Espana": 0.2722,
+    "Argentina": 0.2396,
+    "Inglaterra": 0.198
+   }
+  },
+  {
+   "date": "2026-07-15",
+   "leader": "Espana",
+   "leader_p": 0.5739,
+   "probs": {
+    "Espana": 0.5739,
+    "Argentina": 0.4261
+   }
+  },
+  {
+   "date": "2026-07-19",
+   "leader": "Espana",
+   "leader_p": 0.5739,
+   "probs": {
+    "Espana": 0.5739,
+    "Argentina": 0.4261
+   }
+  }
+ ],
+ "verdict": {
+  "n": 104,
+  "top1": 0.6442,
+  "brier": 0.5136,
+  "logloss": 0.8773,
+  "rps": 0.1771,
+  "engines": [
+   {
+    "label": "Elo puro",
+    "key": "elo",
+    "weight": 0.0,
+    "n": 104,
+    "top1": 0.625,
+    "brier": 0.5396678433448908,
+    "logloss": 0.9145814840947328,
+    "rps": 0.18858536059505132
+   },
+   {
+    "label": "Ensemble (50% stats)",
+    "key": "ensemble",
+    "weight": 0.5,
+    "n": 104,
+    "top1": 0.6442307692307693,
+    "brier": 0.5135650520766497,
+    "logloss": 0.8773145526348581,
+    "rps": 0.17710581645192766
+   },
+   {
+    "label": "XGBoost stats",
+    "key": "xgb",
+    "weight": 1.0,
+    "n": 104,
+    "top1": 0.6538461538461539,
+    "brier": 0.4995118182333641,
+    "logloss": 0.8559318388717109,
+    "rps": 0.1714962701326916
+   }
+  ],
+  "calibration": [
+   {
+    "mid": 0.05,
+    "n": 6,
+    "predicted": 0.0813,
+    "observed": 0.0
+   },
+   {
+    "mid": 0.15,
+    "n": 36,
+    "predicted": 0.1644,
+    "observed": 0.0556
+   },
+   {
+    "mid": 0.25,
+    "n": 141,
+    "predicted": 0.2617,
+    "observed": 0.1844
+   },
+   {
+    "mid": 0.35,
+    "n": 44,
+    "predicted": 0.3482,
+    "observed": 0.3636
+   },
+   {
+    "mid": 0.45,
+    "n": 33,
+    "predicted": 0.4504,
+    "observed": 0.5758
+   },
+   {
+    "mid": 0.55,
+    "n": 40,
+    "predicted": 0.5538,
+    "observed": 0.775
+   },
+   {
+    "mid": 0.65,
+    "n": 6,
+    "predicted": 0.6633,
+    "observed": 0.8333
+   },
+   {
+    "mid": 0.75,
+    "n": 6,
+    "predicted": 0.7296,
+    "observed": 0.8333
+   }
+  ]
+ },
+ "surprises": [
+  {
+   "home": "Alemania",
+   "away": "Paraguay",
+   "home_iso": "de",
+   "away_iso": "py",
+   "gh": 1,
+   "ga": 1,
+   "phase": "R32",
+   "surprise": 0.8369,
+   "p_home": 0.5876,
+   "p_draw": 0.2493,
+   "p_away": 0.1631
+  },
+  {
+   "home": "Espana",
+   "away": "Cabo Verde",
+   "home_iso": "es",
+   "away_iso": "cv",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo H",
+   "surprise": 0.8041,
+   "p_home": 0.724,
+   "p_draw": 0.1959,
+   "p_away": 0.0801
+  },
+  {
+   "home": "Inglaterra",
+   "away": "Ghana",
+   "home_iso": "gb-eng",
+   "away_iso": "gh",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo L",
+   "surprise": 0.7806,
+   "p_home": 0.6658,
+   "p_draw": 0.2194,
+   "p_away": 0.1148
+  },
+  {
+   "home": "Ecuador",
+   "away": "Alemania",
+   "home_iso": "ec",
+   "away_iso": "de",
+   "gh": 2,
+   "ga": 1,
+   "phase": "Grupo E",
+   "surprise": 0.7769,
+   "p_home": 0.2231,
+   "p_draw": 0.2727,
+   "p_away": 0.5042
+  },
+  {
+   "home": "Catar",
+   "away": "Suiza",
+   "home_iso": "qa",
+   "away_iso": "ch",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo B",
+   "surprise": 0.7549,
+   "p_home": 0.1706,
+   "p_draw": 0.2451,
+   "p_away": 0.5843
+  },
+  {
+   "home": "Turquia",
+   "away": "Paraguay",
+   "home_iso": "tr",
+   "away_iso": "py",
+   "gh": 0,
+   "ga": 1,
+   "phase": "Grupo D",
+   "surprise": 0.7502,
+   "p_home": 0.4648,
+   "p_draw": 0.2854,
+   "p_away": 0.2498
+  },
+  {
+   "home": "Canada",
+   "away": "Bosnia Herz.",
+   "home_iso": "ca",
+   "away_iso": "ba",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo B",
+   "surprise": 0.7501,
+   "p_home": 0.592,
+   "p_draw": 0.2499,
+   "p_away": 0.158
+  },
+  {
+   "home": "Ecuador",
+   "away": "Curazao",
+   "home_iso": "ec",
+   "away_iso": "cw",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo E",
+   "surprise": 0.7498,
+   "p_home": 0.5885,
+   "p_draw": 0.2502,
+   "p_away": 0.1613
+  }
+ ],
+ "matches": [
+  {
+   "home": "Mexico",
+   "away": "Sudafrica",
+   "home_iso": "mx",
+   "away_iso": "za",
+   "gh": 2,
+   "ga": 0,
+   "phase": "Grupo A",
+   "date": "2026-06-11",
+   "p_home": 0.5812,
+   "p_draw": 0.2569,
+   "p_away": 0.1619,
+   "outcome": "H",
+   "surprise": 0.4188,
+   "hit": true
+  },
+  {
+   "home": "Corea del Sur",
+   "away": "Rep. Checa",
+   "home_iso": "kr",
+   "away_iso": "cz",
+   "gh": 2,
+   "ga": 1,
+   "phase": "Grupo A",
+   "date": "2026-06-11",
+   "p_home": 0.4485,
+   "p_draw": 0.2839,
+   "p_away": 0.2677,
+   "outcome": "H",
+   "surprise": 0.5515,
+   "hit": true
+  },
+  {
+   "home": "Estados Unidos",
+   "away": "Paraguay",
+   "home_iso": "us",
+   "away_iso": "py",
+   "gh": 4,
+   "ga": 1,
+   "phase": "Grupo D",
+   "date": "2026-06-12",
+   "p_home": 0.509,
+   "p_draw": 0.2778,
+   "p_away": 0.2131,
+   "outcome": "H",
+   "surprise": 0.491,
+   "hit": true
+  },
+  {
+   "home": "Canada",
+   "away": "Bosnia Herz.",
+   "home_iso": "ca",
+   "away_iso": "ba",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo B",
+   "date": "2026-06-12",
+   "p_home": 0.592,
+   "p_draw": 0.2499,
+   "p_away": 0.158,
+   "outcome": "D",
+   "surprise": 0.7501,
+   "hit": false
+  },
+  {
+   "home": "Catar",
+   "away": "Suiza",
+   "home_iso": "qa",
+   "away_iso": "ch",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo B",
+   "date": "2026-06-13",
+   "p_home": 0.1706,
+   "p_draw": 0.2451,
+   "p_away": 0.5843,
+   "outcome": "D",
+   "surprise": 0.7549,
+   "hit": false
+  },
+  {
+   "home": "Brasil",
+   "away": "Marruecos",
+   "home_iso": "br",
+   "away_iso": "ma",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo C",
+   "date": "2026-06-13",
+   "p_home": 0.3141,
+   "p_draw": 0.2917,
+   "p_away": 0.3942,
+   "outcome": "D",
+   "surprise": 0.7083,
+   "hit": false
+  },
+  {
+   "home": "Haiti",
+   "away": "Escocia",
+   "home_iso": "ht",
+   "away_iso": "gb-sct",
+   "gh": 0,
+   "ga": 1,
+   "phase": "Grupo C",
+   "date": "2026-06-13",
+   "p_home": 0.2519,
+   "p_draw": 0.2712,
+   "p_away": 0.4768,
+   "outcome": "A",
+   "surprise": 0.5232,
+   "hit": true
+  },
+  {
+   "home": "Australia",
+   "away": "Turquia",
+   "home_iso": "au",
+   "away_iso": "tr",
+   "gh": 2,
+   "ga": 0,
+   "phase": "Grupo D",
+   "date": "2026-06-13",
+   "p_home": 0.3192,
+   "p_draw": 0.2831,
+   "p_away": 0.3977,
+   "outcome": "H",
+   "surprise": 0.6808,
+   "hit": false
+  },
+  {
+   "home": "Alemania",
+   "away": "Curazao",
+   "home_iso": "de",
+   "away_iso": "cw",
+   "gh": 7,
+   "ga": 1,
+   "phase": "Grupo E",
+   "date": "2026-06-14",
+   "p_home": 0.6847,
+   "p_draw": 0.2064,
+   "p_away": 0.1089,
+   "outcome": "H",
+   "surprise": 0.3153,
+   "hit": true
+  },
+  {
+   "home": "Paises Bajos",
+   "away": "Japon",
+   "home_iso": "nl",
+   "away_iso": "jp",
+   "gh": 2,
+   "ga": 2,
+   "phase": "Grupo F",
+   "date": "2026-06-14",
+   "p_home": 0.4316,
+   "p_draw": 0.288,
+   "p_away": 0.2804,
+   "outcome": "D",
+   "surprise": 0.712,
+   "hit": false
+  },
+  {
+   "home": "Costa Marfil",
+   "away": "Ecuador",
+   "home_iso": "ci",
+   "away_iso": "ec",
+   "gh": 1,
+   "ga": 0,
+   "phase": "Grupo E",
+   "date": "2026-06-14",
+   "p_home": 0.3262,
+   "p_draw": 0.2971,
+   "p_away": 0.3767,
+   "outcome": "H",
+   "surprise": 0.6738,
+   "hit": false
+  },
+  {
+   "home": "Suecia",
+   "away": "Tunez",
+   "home_iso": "se",
+   "away_iso": "tn",
+   "gh": 5,
+   "ga": 1,
+   "phase": "Grupo F",
+   "date": "2026-06-14",
+   "p_home": 0.3549,
+   "p_draw": 0.2892,
+   "p_away": 0.3559,
+   "outcome": "H",
+   "surprise": 0.6451,
+   "hit": false
+  },
+  {
+   "home": "Espana",
+   "away": "Cabo Verde",
+   "home_iso": "es",
+   "away_iso": "cv",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo H",
+   "date": "2026-06-15",
+   "p_home": 0.724,
+   "p_draw": 0.1959,
+   "p_away": 0.0801,
+   "outcome": "D",
+   "surprise": 0.8041,
+   "hit": false
+  },
+  {
+   "home": "Belgica",
+   "away": "Egipto",
+   "home_iso": "be",
+   "away_iso": "eg",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo G",
+   "date": "2026-06-15",
+   "p_home": 0.459,
+   "p_draw": 0.2875,
+   "p_away": 0.2535,
+   "outcome": "D",
+   "surprise": 0.7125,
+   "hit": false
+  },
+  {
+   "home": "Arabia Saudi",
+   "away": "Uruguay",
+   "home_iso": "sa",
+   "away_iso": "uy",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo H",
+   "date": "2026-06-15",
+   "p_home": 0.1709,
+   "p_draw": 0.2533,
+   "p_away": 0.5758,
+   "outcome": "D",
+   "surprise": 0.7467,
+   "hit": false
+  },
+  {
+   "home": "Iran",
+   "away": "Nueva Zelanda",
+   "home_iso": "ir",
+   "away_iso": "nz",
+   "gh": 2,
+   "ga": 2,
+   "phase": "Grupo G",
+   "date": "2026-06-15",
+   "p_home": 0.5322,
+   "p_draw": 0.2697,
+   "p_away": 0.1981,
+   "outcome": "D",
+   "surprise": 0.7303,
+   "hit": false
+  },
+  {
+   "home": "Francia",
+   "away": "Senegal",
+   "home_iso": "fr",
+   "away_iso": "sn",
+   "gh": 3,
+   "ga": 1,
+   "phase": "Grupo I",
+   "date": "2026-06-16",
+   "p_home": 0.4839,
+   "p_draw": 0.2778,
+   "p_away": 0.2383,
+   "outcome": "H",
+   "surprise": 0.5161,
+   "hit": true
+  },
+  {
+   "home": "Irak",
+   "away": "Noruega",
+   "home_iso": "iq",
+   "away_iso": "no",
+   "gh": 1,
+   "ga": 4,
+   "phase": "Grupo I",
+   "date": "2026-06-16",
+   "p_home": 0.2391,
+   "p_draw": 0.2732,
+   "p_away": 0.4877,
+   "outcome": "A",
+   "surprise": 0.5123,
+   "hit": true
+  },
+  {
+   "home": "Argentina",
+   "away": "Argelia",
+   "home_iso": "ar",
+   "away_iso": "dz",
+   "gh": 3,
+   "ga": 0,
+   "phase": "Grupo J",
+   "date": "2026-06-16",
+   "p_home": 0.5099,
+   "p_draw": 0.276,
+   "p_away": 0.2141,
+   "outcome": "H",
+   "surprise": 0.4901,
+   "hit": true
+  },
+  {
+   "home": "Austria",
+   "away": "Jordania",
+   "home_iso": "at",
+   "away_iso": "jo",
+   "gh": 3,
+   "ga": 1,
+   "phase": "Grupo J",
+   "date": "2026-06-16",
+   "p_home": 0.5063,
+   "p_draw": 0.2687,
+   "p_away": 0.225,
+   "outcome": "H",
+   "surprise": 0.4937,
+   "hit": true
+  },
+  {
+   "home": "Portugal",
+   "away": "R.D. Congo",
+   "home_iso": "pt",
+   "away_iso": "cd",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo K",
+   "date": "2026-06-17",
+   "p_home": 0.5538,
+   "p_draw": 0.2612,
+   "p_away": 0.185,
+   "outcome": "D",
+   "surprise": 0.7388,
+   "hit": false
+  },
+  {
+   "home": "Inglaterra",
+   "away": "Croacia",
+   "home_iso": "gb-eng",
+   "away_iso": "hr",
+   "gh": 4,
+   "ga": 2,
+   "phase": "Grupo L",
+   "date": "2026-06-17",
+   "p_home": 0.4408,
+   "p_draw": 0.2716,
+   "p_away": 0.2876,
+   "outcome": "H",
+   "surprise": 0.5592,
+   "hit": true
+  },
+  {
+   "home": "Ghana",
+   "away": "Panama",
+   "home_iso": "gh",
+   "away_iso": "pa",
+   "gh": 1,
+   "ga": 0,
+   "phase": "Grupo L",
+   "date": "2026-06-17",
+   "p_home": 0.2517,
+   "p_draw": 0.281,
+   "p_away": 0.4673,
+   "outcome": "H",
+   "surprise": 0.7483,
+   "hit": false
+  },
+  {
+   "home": "Uzbekistan",
+   "away": "Colombia",
+   "home_iso": "uz",
+   "away_iso": "co",
+   "gh": 1,
+   "ga": 3,
+   "phase": "Grupo K",
+   "date": "2026-06-17",
+   "p_home": 0.2071,
+   "p_draw": 0.2612,
+   "p_away": 0.5316,
+   "outcome": "A",
+   "surprise": 0.4684,
+   "hit": true
+  },
+  {
+   "home": "Rep. Checa",
+   "away": "Sudafrica",
+   "home_iso": "cz",
+   "away_iso": "za",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo A",
+   "date": "2026-06-18",
+   "p_home": 0.36,
+   "p_draw": 0.2947,
+   "p_away": 0.3453,
+   "outcome": "D",
+   "surprise": 0.7053,
+   "hit": false
+  },
+  {
+   "home": "Suiza",
+   "away": "Bosnia Herz.",
+   "home_iso": "ch",
+   "away_iso": "ba",
+   "gh": 4,
+   "ga": 1,
+   "phase": "Grupo B",
+   "date": "2026-06-18",
+   "p_home": 0.5664,
+   "p_draw": 0.247,
+   "p_away": 0.1867,
+   "outcome": "H",
+   "surprise": 0.4336,
+   "hit": true
+  },
+  {
+   "home": "Canada",
+   "away": "Catar",
+   "home_iso": "ca",
+   "away_iso": "qa",
+   "gh": 6,
+   "ga": 0,
+   "phase": "Grupo B",
+   "date": "2026-06-18",
+   "p_home": 0.5887,
+   "p_draw": 0.2589,
+   "p_away": 0.1525,
+   "outcome": "H",
+   "surprise": 0.4113,
+   "hit": true
+  },
+  {
+   "home": "Mexico",
+   "away": "Corea del Sur",
+   "home_iso": "mx",
+   "away_iso": "kr",
+   "gh": 1,
+   "ga": 0,
+   "phase": "Grupo A",
+   "date": "2026-06-18",
+   "p_home": 0.4672,
+   "p_draw": 0.2827,
+   "p_away": 0.25,
+   "outcome": "H",
+   "surprise": 0.5328,
+   "hit": true
+  },
+  {
+   "home": "Estados Unidos",
+   "away": "Australia",
+   "home_iso": "us",
+   "away_iso": "au",
+   "gh": 2,
+   "ga": 0,
+   "phase": "Grupo D",
+   "date": "2026-06-19",
+   "p_home": 0.4263,
+   "p_draw": 0.2938,
+   "p_away": 0.2799,
+   "outcome": "H",
+   "surprise": 0.5737,
+   "hit": true
+  },
+  {
+   "home": "Escocia",
+   "away": "Marruecos",
+   "home_iso": "gb-sct",
+   "away_iso": "ma",
+   "gh": 0,
+   "ga": 1,
+   "phase": "Grupo C",
+   "date": "2026-06-19",
+   "p_home": 0.1863,
+   "p_draw": 0.2509,
+   "p_away": 0.5627,
+   "outcome": "A",
+   "surprise": 0.4373,
+   "hit": true
+  },
+  {
+   "home": "Brasil",
+   "away": "Haiti",
+   "home_iso": "br",
+   "away_iso": "ht",
+   "gh": 3,
+   "ga": 0,
+   "phase": "Grupo C",
+   "date": "2026-06-19",
+   "p_home": 0.6644,
+   "p_draw": 0.2168,
+   "p_away": 0.1188,
+   "outcome": "H",
+   "surprise": 0.3356,
+   "hit": true
+  },
+  {
+   "home": "Turquia",
+   "away": "Paraguay",
+   "home_iso": "tr",
+   "away_iso": "py",
+   "gh": 0,
+   "ga": 1,
+   "phase": "Grupo D",
+   "date": "2026-06-19",
+   "p_home": 0.4648,
+   "p_draw": 0.2854,
+   "p_away": 0.2498,
+   "outcome": "A",
+   "surprise": 0.7502,
+   "hit": false
+  },
+  {
+   "home": "Paises Bajos",
+   "away": "Suecia",
+   "home_iso": "nl",
+   "away_iso": "se",
+   "gh": 5,
+   "ga": 1,
+   "phase": "Grupo F",
+   "date": "2026-06-20",
+   "p_home": 0.5463,
+   "p_draw": 0.2506,
+   "p_away": 0.203,
+   "outcome": "H",
+   "surprise": 0.4537,
+   "hit": true
+  },
+  {
+   "home": "Alemania",
+   "away": "Costa Marfil",
+   "home_iso": "de",
+   "away_iso": "ci",
+   "gh": 2,
+   "ga": 1,
+   "phase": "Grupo E",
+   "date": "2026-06-20",
+   "p_home": 0.4523,
+   "p_draw": 0.2815,
+   "p_away": 0.2662,
+   "outcome": "H",
+   "surprise": 0.5477,
+   "hit": true
+  },
+  {
+   "home": "Ecuador",
+   "away": "Curazao",
+   "home_iso": "ec",
+   "away_iso": "cw",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo E",
+   "date": "2026-06-20",
+   "p_home": 0.5885,
+   "p_draw": 0.2502,
+   "p_away": 0.1613,
+   "outcome": "D",
+   "surprise": 0.7498,
+   "hit": false
+  },
+  {
+   "home": "Tunez",
+   "away": "Japon",
+   "home_iso": "tn",
+   "away_iso": "jp",
+   "gh": 0,
+   "ga": 4,
+   "phase": "Grupo F",
+   "date": "2026-06-20",
+   "p_home": 0.217,
+   "p_draw": 0.2794,
+   "p_away": 0.5036,
+   "outcome": "A",
+   "surprise": 0.4964,
+   "hit": true
+  },
+  {
+   "home": "Espana",
+   "away": "Arabia Saudi",
+   "home_iso": "es",
+   "away_iso": "sa",
+   "gh": 4,
+   "ga": 0,
+   "phase": "Grupo H",
+   "date": "2026-06-21",
+   "p_home": 0.7683,
+   "p_draw": 0.168,
+   "p_away": 0.0637,
+   "outcome": "H",
+   "surprise": 0.2317,
+   "hit": true
+  },
+  {
+   "home": "Belgica",
+   "away": "Iran",
+   "home_iso": "be",
+   "away_iso": "ir",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo G",
+   "date": "2026-06-21",
+   "p_home": 0.4069,
+   "p_draw": 0.2865,
+   "p_away": 0.3066,
+   "outcome": "D",
+   "surprise": 0.7135,
+   "hit": false
+  },
+  {
+   "home": "Uruguay",
+   "away": "Cabo Verde",
+   "home_iso": "uy",
+   "away_iso": "cv",
+   "gh": 2,
+   "ga": 2,
+   "phase": "Grupo H",
+   "date": "2026-06-21",
+   "p_home": 0.4956,
+   "p_draw": 0.2806,
+   "p_away": 0.2238,
+   "outcome": "D",
+   "surprise": 0.7194,
+   "hit": false
+  },
+  {
+   "home": "Nueva Zelanda",
+   "away": "Egipto",
+   "home_iso": "nz",
+   "away_iso": "eg",
+   "gh": 1,
+   "ga": 3,
+   "phase": "Grupo G",
+   "date": "2026-06-21",
+   "p_home": 0.2412,
+   "p_draw": 0.2829,
+   "p_away": 0.4759,
+   "outcome": "A",
+   "surprise": 0.5241,
+   "hit": true
+  },
+  {
+   "home": "Argentina",
+   "away": "Austria",
+   "home_iso": "ar",
+   "away_iso": "at",
+   "gh": 2,
+   "ga": 0,
+   "phase": "Grupo J",
+   "date": "2026-06-22",
+   "p_home": 0.5146,
+   "p_draw": 0.2676,
+   "p_away": 0.2178,
+   "outcome": "H",
+   "surprise": 0.4854,
+   "hit": true
+  },
+  {
+   "home": "Francia",
+   "away": "Irak",
+   "home_iso": "fr",
+   "away_iso": "iq",
+   "gh": 3,
+   "ga": 0,
+   "phase": "Grupo I",
+   "date": "2026-06-22",
+   "p_home": 0.7201,
+   "p_draw": 0.1917,
+   "p_away": 0.0882,
+   "outcome": "H",
+   "surprise": 0.2799,
+   "hit": true
+  },
+  {
+   "home": "Noruega",
+   "away": "Senegal",
+   "home_iso": "no",
+   "away_iso": "sn",
+   "gh": 3,
+   "ga": 2,
+   "phase": "Grupo I",
+   "date": "2026-06-22",
+   "p_home": 0.293,
+   "p_draw": 0.2788,
+   "p_away": 0.4282,
+   "outcome": "H",
+   "surprise": 0.707,
+   "hit": false
+  },
+  {
+   "home": "Jordania",
+   "away": "Argelia",
+   "home_iso": "jo",
+   "away_iso": "dz",
+   "gh": 1,
+   "ga": 2,
+   "phase": "Grupo J",
+   "date": "2026-06-22",
+   "p_home": 0.2028,
+   "p_draw": 0.2695,
+   "p_away": 0.5277,
+   "outcome": "A",
+   "surprise": 0.4723,
+   "hit": true
+  },
+  {
+   "home": "Portugal",
+   "away": "Uzbekistan",
+   "home_iso": "pt",
+   "away_iso": "uz",
+   "gh": 5,
+   "ga": 0,
+   "phase": "Grupo K",
+   "date": "2026-06-23",
+   "p_home": 0.5956,
+   "p_draw": 0.2372,
+   "p_away": 0.1672,
+   "outcome": "H",
+   "surprise": 0.4044,
+   "hit": true
+  },
+  {
+   "home": "Inglaterra",
+   "away": "Ghana",
+   "home_iso": "gb-eng",
+   "away_iso": "gh",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo L",
+   "date": "2026-06-23",
+   "p_home": 0.6658,
+   "p_draw": 0.2194,
+   "p_away": 0.1148,
+   "outcome": "D",
+   "surprise": 0.7806,
+   "hit": false
+  },
+  {
+   "home": "Panama",
+   "away": "Croacia",
+   "home_iso": "pa",
+   "away_iso": "hr",
+   "gh": 0,
+   "ga": 1,
+   "phase": "Grupo L",
+   "date": "2026-06-23",
+   "p_home": 0.2228,
+   "p_draw": 0.2669,
+   "p_away": 0.5103,
+   "outcome": "A",
+   "surprise": 0.4897,
+   "hit": true
+  },
+  {
+   "home": "Colombia",
+   "away": "R.D. Congo",
+   "home_iso": "co",
+   "away_iso": "cd",
+   "gh": 1,
+   "ga": 0,
+   "phase": "Grupo K",
+   "date": "2026-06-23",
+   "p_home": 0.4887,
+   "p_draw": 0.2814,
+   "p_away": 0.2299,
+   "outcome": "H",
+   "surprise": 0.5113,
+   "hit": true
+  },
+  {
+   "home": "Canada",
+   "away": "Suiza",
+   "home_iso": "ca",
+   "away_iso": "ch",
+   "gh": 1,
+   "ga": 2,
+   "phase": "Grupo B",
+   "date": "2026-06-24",
+   "p_home": 0.3876,
+   "p_draw": 0.2922,
+   "p_away": 0.3202,
+   "outcome": "A",
+   "surprise": 0.6798,
+   "hit": false
+  },
+  {
+   "home": "Bosnia Herz.",
+   "away": "Catar",
+   "home_iso": "ba",
+   "away_iso": "qa",
+   "gh": 3,
+   "ga": 1,
+   "phase": "Grupo B",
+   "date": "2026-06-24",
+   "p_home": 0.3801,
+   "p_draw": 0.2903,
+   "p_away": 0.3296,
+   "outcome": "H",
+   "surprise": 0.6199,
+   "hit": true
+  },
+  {
+   "home": "Marruecos",
+   "away": "Haiti",
+   "home_iso": "ma",
+   "away_iso": "ht",
+   "gh": 4,
+   "ga": 2,
+   "phase": "Grupo C",
+   "date": "2026-06-24",
+   "p_home": 0.7051,
+   "p_draw": 0.2043,
+   "p_away": 0.0906,
+   "outcome": "H",
+   "surprise": 0.2949,
+   "hit": true
+  },
+  {
+   "home": "Escocia",
+   "away": "Brasil",
+   "home_iso": "gb-sct",
+   "away_iso": "br",
+   "gh": 0,
+   "ga": 3,
+   "phase": "Grupo C",
+   "date": "2026-06-24",
+   "p_home": 0.1989,
+   "p_draw": 0.2512,
+   "p_away": 0.5499,
+   "outcome": "A",
+   "surprise": 0.4501,
+   "hit": true
+  },
+  {
+   "home": "Mexico",
+   "away": "Rep. Checa",
+   "home_iso": "mx",
+   "away_iso": "cz",
+   "gh": 3,
+   "ga": 0,
+   "phase": "Grupo A",
+   "date": "2026-06-24",
+   "p_home": 0.5887,
+   "p_draw": 0.247,
+   "p_away": 0.1643,
+   "outcome": "H",
+   "surprise": 0.4113,
+   "hit": true
+  },
+  {
+   "home": "Sudafrica",
+   "away": "Corea del Sur",
+   "home_iso": "za",
+   "away_iso": "kr",
+   "gh": 1,
+   "ga": 0,
+   "phase": "Grupo A",
+   "date": "2026-06-24",
+   "p_home": 0.2507,
+   "p_draw": 0.2897,
+   "p_away": 0.4596,
+   "outcome": "H",
+   "surprise": 0.7493,
+   "hit": false
+  },
+  {
+   "home": "Ecuador",
+   "away": "Alemania",
+   "home_iso": "ec",
+   "away_iso": "de",
+   "gh": 2,
+   "ga": 1,
+   "phase": "Grupo E",
+   "date": "2026-06-25",
+   "p_home": 0.2231,
+   "p_draw": 0.2727,
+   "p_away": 0.5042,
+   "outcome": "H",
+   "surprise": 0.7769,
+   "hit": false
+  },
+  {
+   "home": "Curazao",
+   "away": "Costa Marfil",
+   "home_iso": "cw",
+   "away_iso": "ci",
+   "gh": 0,
+   "ga": 2,
+   "phase": "Grupo E",
+   "date": "2026-06-25",
+   "p_home": 0.1648,
+   "p_draw": 0.2503,
+   "p_away": 0.5849,
+   "outcome": "A",
+   "surprise": 0.4151,
+   "hit": true
+  },
+  {
+   "home": "Tunez",
+   "away": "Paises Bajos",
+   "home_iso": "tn",
+   "away_iso": "nl",
+   "gh": 1,
+   "ga": 3,
+   "phase": "Grupo F",
+   "date": "2026-06-25",
+   "p_home": 0.1639,
+   "p_draw": 0.2569,
+   "p_away": 0.5791,
+   "outcome": "A",
+   "surprise": 0.4209,
+   "hit": true
+  },
+  {
+   "home": "Japon",
+   "away": "Suecia",
+   "home_iso": "jp",
+   "away_iso": "se",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo F",
+   "date": "2026-06-25",
+   "p_home": 0.5044,
+   "p_draw": 0.2684,
+   "p_away": 0.2272,
+   "outcome": "D",
+   "surprise": 0.7316,
+   "hit": false
+  },
+  {
+   "home": "Estados Unidos",
+   "away": "Turquia",
+   "home_iso": "us",
+   "away_iso": "tr",
+   "gh": 2,
+   "ga": 3,
+   "phase": "Grupo D",
+   "date": "2026-06-25",
+   "p_home": 0.4417,
+   "p_draw": 0.2777,
+   "p_away": 0.2806,
+   "outcome": "A",
+   "surprise": 0.7194,
+   "hit": false
+  },
+  {
+   "home": "Paraguay",
+   "away": "Australia",
+   "home_iso": "py",
+   "away_iso": "au",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo D",
+   "date": "2026-06-25",
+   "p_home": 0.2655,
+   "p_draw": 0.2981,
+   "p_away": 0.4364,
+   "outcome": "D",
+   "surprise": 0.7019,
+   "hit": false
+  },
+  {
+   "home": "Noruega",
+   "away": "Francia",
+   "home_iso": "no",
+   "away_iso": "fr",
+   "gh": 1,
+   "ga": 4,
+   "phase": "Grupo I",
+   "date": "2026-06-26",
+   "p_home": 0.1741,
+   "p_draw": 0.2455,
+   "p_away": 0.5804,
+   "outcome": "A",
+   "surprise": 0.4196,
+   "hit": true
+  },
+  {
+   "home": "Senegal",
+   "away": "Irak",
+   "home_iso": "sn",
+   "away_iso": "iq",
+   "gh": 5,
+   "ga": 0,
+   "phase": "Grupo I",
+   "date": "2026-06-26",
+   "p_home": 0.5641,
+   "p_draw": 0.2575,
+   "p_away": 0.1783,
+   "outcome": "H",
+   "surprise": 0.4359,
+   "hit": true
+  },
+  {
+   "home": "Uruguay",
+   "away": "Espana",
+   "home_iso": "uy",
+   "away_iso": "es",
+   "gh": 0,
+   "ga": 1,
+   "phase": "Grupo H",
+   "date": "2026-06-26",
+   "p_home": 0.1586,
+   "p_draw": 0.2452,
+   "p_away": 0.5962,
+   "outcome": "A",
+   "surprise": 0.4038,
+   "hit": true
+  },
+  {
+   "home": "Cabo Verde",
+   "away": "Arabia Saudi",
+   "home_iso": "cv",
+   "away_iso": "sa",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo H",
+   "date": "2026-06-26",
+   "p_home": 0.3957,
+   "p_draw": 0.2982,
+   "p_away": 0.3061,
+   "outcome": "D",
+   "surprise": 0.7018,
+   "hit": false
+  },
+  {
+   "home": "Nueva Zelanda",
+   "away": "Belgica",
+   "home_iso": "nz",
+   "away_iso": "be",
+   "gh": 1,
+   "ga": 5,
+   "phase": "Grupo G",
+   "date": "2026-06-26",
+   "p_home": 0.1659,
+   "p_draw": 0.2362,
+   "p_away": 0.5979,
+   "outcome": "A",
+   "surprise": 0.4021,
+   "hit": true
+  },
+  {
+   "home": "Egipto",
+   "away": "Iran",
+   "home_iso": "eg",
+   "away_iso": "ir",
+   "gh": 1,
+   "ga": 1,
+   "phase": "Grupo G",
+   "date": "2026-06-26",
+   "p_home": 0.2987,
+   "p_draw": 0.2985,
+   "p_away": 0.4028,
+   "outcome": "D",
+   "surprise": 0.7015,
+   "hit": false
+  },
+  {
+   "home": "Panama",
+   "away": "Inglaterra",
+   "home_iso": "pa",
+   "away_iso": "gb-eng",
+   "gh": 0,
+   "ga": 2,
+   "phase": "Grupo L",
+   "date": "2026-06-27",
+   "p_home": 0.1556,
+   "p_draw": 0.2385,
+   "p_away": 0.6058,
+   "outcome": "A",
+   "surprise": 0.3942,
+   "hit": true
+  },
+  {
+   "home": "Croacia",
+   "away": "Ghana",
+   "home_iso": "hr",
+   "away_iso": "gh",
+   "gh": 2,
+   "ga": 1,
+   "phase": "Grupo L",
+   "date": "2026-06-27",
+   "p_home": 0.5857,
+   "p_draw": 0.2474,
+   "p_away": 0.1669,
+   "outcome": "H",
+   "surprise": 0.4143,
+   "hit": true
+  },
+  {
+   "home": "Colombia",
+   "away": "Portugal",
+   "home_iso": "co",
+   "away_iso": "pt",
+   "gh": 0,
+   "ga": 0,
+   "phase": "Grupo K",
+   "date": "2026-06-27",
+   "p_home": 0.2763,
+   "p_draw": 0.273,
+   "p_away": 0.4507,
+   "outcome": "D",
+   "surprise": 0.727,
+   "hit": false
+  },
+  {
+   "home": "R.D. Congo",
+   "away": "Uzbekistan",
+   "home_iso": "cd",
+   "away_iso": "uz",
+   "gh": 3,
+   "ga": 1,
+   "phase": "Grupo K",
+   "date": "2026-06-27",
+   "p_home": 0.3952,
+   "p_draw": 0.3002,
+   "p_away": 0.3046,
+   "outcome": "H",
+   "surprise": 0.6048,
+   "hit": true
+  },
+  {
+   "home": "Jordania",
+   "away": "Argentina",
+   "home_iso": "jo",
+   "away_iso": "ar",
+   "gh": 1,
+   "ga": 3,
+   "phase": "Grupo J",
+   "date": "2026-06-27",
+   "p_home": 0.0814,
+   "p_draw": 0.1858,
+   "p_away": 0.7329,
+   "outcome": "A",
+   "surprise": 0.2671,
+   "hit": true
+  },
+  {
+   "home": "Argelia",
+   "away": "Austria",
+   "home_iso": "dz",
+   "away_iso": "at",
+   "gh": 3,
+   "ga": 3,
+   "phase": "Grupo J",
+   "date": "2026-06-27",
+   "p_home": 0.3495,
+   "p_draw": 0.2922,
+   "p_away": 0.3583,
+   "outcome": "D",
+   "surprise": 0.7078,
+   "hit": false
+  },
+  {
+   "home": "Sudafrica",
+   "away": "Canada",
+   "home_iso": "za",
+   "away_iso": "ca",
+   "gh": 0,
+   "ga": 1,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.2739,
+   "p_draw": 0.2999,
+   "p_away": 0.4262,
+   "outcome": "A",
+   "surprise": 0.5738,
+   "hit": true
+  },
+  {
+   "home": "Alemania",
+   "away": "Paraguay",
+   "home_iso": "de",
+   "away_iso": "py",
+   "gh": 1,
+   "ga": 1,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.5876,
+   "p_draw": 0.2493,
+   "p_away": 0.1631,
+   "outcome": "A",
+   "surprise": 0.8369,
+   "hit": false
+  },
+  {
+   "home": "Paises Bajos",
+   "away": "Marruecos",
+   "home_iso": "nl",
+   "away_iso": "ma",
+   "gh": 1,
+   "ga": 1,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.3921,
+   "p_draw": 0.2878,
+   "p_away": 0.32,
+   "outcome": "A",
+   "surprise": 0.68,
+   "hit": false
+  },
+  {
+   "home": "Brasil",
+   "away": "Japon",
+   "home_iso": "br",
+   "away_iso": "jp",
+   "gh": 2,
+   "ga": 1,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.3866,
+   "p_draw": 0.2944,
+   "p_away": 0.319,
+   "outcome": "H",
+   "surprise": 0.6134,
+   "hit": true
+  },
+  {
+   "home": "Francia",
+   "away": "Suecia",
+   "home_iso": "fr",
+   "away_iso": "se",
+   "gh": 3,
+   "ga": 0,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.6833,
+   "p_draw": 0.205,
+   "p_away": 0.1116,
+   "outcome": "H",
+   "surprise": 0.3167,
+   "hit": true
+  },
+  {
+   "home": "Inglaterra",
+   "away": "R.D. Congo",
+   "home_iso": "gb-eng",
+   "away_iso": "cd",
+   "gh": 2,
+   "ga": 1,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.5563,
+   "p_draw": 0.2645,
+   "p_away": 0.1792,
+   "outcome": "H",
+   "surprise": 0.4437,
+   "hit": true
+  },
+  {
+   "home": "Costa Marfil",
+   "away": "Noruega",
+   "home_iso": "ci",
+   "away_iso": "no",
+   "gh": 1,
+   "ga": 2,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.3842,
+   "p_draw": 0.2886,
+   "p_away": 0.3271,
+   "outcome": "A",
+   "surprise": 0.6729,
+   "hit": false
+  },
+  {
+   "home": "Mexico",
+   "away": "Ecuador",
+   "home_iso": "mx",
+   "away_iso": "ec",
+   "gh": 2,
+   "ga": 0,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.4103,
+   "p_draw": 0.2897,
+   "p_away": 0.3,
+   "outcome": "H",
+   "surprise": 0.5897,
+   "hit": true
+  },
+  {
+   "home": "Belgica",
+   "away": "Senegal",
+   "home_iso": "be",
+   "away_iso": "sn",
+   "gh": 3,
+   "ga": 2,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.3779,
+   "p_draw": 0.2864,
+   "p_away": 0.3357,
+   "outcome": "H",
+   "surprise": 0.6221,
+   "hit": true
+  },
+  {
+   "home": "Suiza",
+   "away": "Argelia",
+   "home_iso": "ch",
+   "away_iso": "dz",
+   "gh": 2,
+   "ga": 0,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.3829,
+   "p_draw": 0.2898,
+   "p_away": 0.3273,
+   "outcome": "H",
+   "surprise": 0.6171,
+   "hit": true
+  },
+  {
+   "home": "Portugal",
+   "away": "Croacia",
+   "home_iso": "pt",
+   "away_iso": "hr",
+   "gh": 2,
+   "ga": 1,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.4544,
+   "p_draw": 0.2665,
+   "p_away": 0.2792,
+   "outcome": "H",
+   "surprise": 0.5456,
+   "hit": true
+  },
+  {
+   "home": "Espana",
+   "away": "Austria",
+   "home_iso": "es",
+   "away_iso": "at",
+   "gh": 3,
+   "ga": 0,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.5752,
+   "p_draw": 0.2503,
+   "p_away": 0.1745,
+   "outcome": "H",
+   "surprise": 0.4248,
+   "hit": true
+  },
+  {
+   "home": "Estados Unidos",
+   "away": "Bosnia Herz.",
+   "home_iso": "us",
+   "away_iso": "ba",
+   "gh": 2,
+   "ga": 0,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.5065,
+   "p_draw": 0.2702,
+   "p_away": 0.2233,
+   "outcome": "H",
+   "surprise": 0.4935,
+   "hit": true
+  },
+  {
+   "home": "Colombia",
+   "away": "Ghana",
+   "home_iso": "co",
+   "away_iso": "gh",
+   "gh": 1,
+   "ga": 0,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.5776,
+   "p_draw": 0.2588,
+   "p_away": 0.1636,
+   "outcome": "H",
+   "surprise": 0.4224,
+   "hit": true
+  },
+  {
+   "home": "Argentina",
+   "away": "Cabo Verde",
+   "home_iso": "ar",
+   "away_iso": "cv",
+   "gh": 3,
+   "ga": 2,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.6756,
+   "p_draw": 0.2178,
+   "p_away": 0.1066,
+   "outcome": "H",
+   "surprise": 0.3244,
+   "hit": true
+  },
+  {
+   "home": "Australia",
+   "away": "Egipto",
+   "home_iso": "au",
+   "away_iso": "eg",
+   "gh": 1,
+   "ga": 1,
+   "phase": "R32",
+   "date": "",
+   "p_home": 0.3429,
+   "p_draw": 0.306,
+   "p_away": 0.3511,
+   "outcome": "A",
+   "surprise": 0.6489,
+   "hit": true
+  },
+  {
+   "home": "Paraguay",
+   "away": "Francia",
+   "home_iso": "py",
+   "away_iso": "fr",
+   "gh": 0,
+   "ga": 1,
+   "phase": "R16",
+   "date": "",
+   "p_home": 0.0836,
+   "p_draw": 0.1894,
+   "p_away": 0.727,
+   "outcome": "A",
+   "surprise": 0.273,
+   "hit": true
+  },
+  {
+   "home": "Canada",
+   "away": "Marruecos",
+   "home_iso": "ca",
+   "away_iso": "ma",
+   "gh": 0,
+   "ga": 3,
+   "phase": "R16",
+   "date": "",
+   "p_home": 0.2308,
+   "p_draw": 0.2803,
+   "p_away": 0.4889,
+   "outcome": "A",
+   "surprise": 0.5111,
+   "hit": true
+  },
+  {
+   "home": "Brasil",
+   "away": "Noruega",
+   "home_iso": "br",
+   "away_iso": "no",
+   "gh": 1,
+   "ga": 2,
+   "phase": "R16",
+   "date": "",
+   "p_home": 0.4298,
+   "p_draw": 0.2748,
+   "p_away": 0.2954,
+   "outcome": "A",
+   "surprise": 0.7046,
+   "hit": false
+  },
+  {
+   "home": "Mexico",
+   "away": "Inglaterra",
+   "home_iso": "mx",
+   "away_iso": "gb-eng",
+   "gh": 2,
+   "ga": 3,
+   "phase": "R16",
+   "date": "",
+   "p_home": 0.2741,
+   "p_draw": 0.2708,
+   "p_away": 0.4551,
+   "outcome": "A",
+   "surprise": 0.5449,
+   "hit": true
+  },
+  {
+   "home": "Portugal",
+   "away": "Espana",
+   "home_iso": "pt",
+   "away_iso": "es",
+   "gh": 0,
+   "ga": 1,
+   "phase": "R16",
+   "date": "",
+   "p_home": 0.2781,
+   "p_draw": 0.2718,
+   "p_away": 0.4501,
+   "outcome": "A",
+   "surprise": 0.5499,
+   "hit": true
+  },
+  {
+   "home": "Estados Unidos",
+   "away": "Belgica",
+   "home_iso": "us",
+   "away_iso": "be",
+   "gh": 1,
+   "ga": 4,
+   "phase": "R16",
+   "date": "",
+   "p_home": 0.264,
+   "p_draw": 0.2776,
+   "p_away": 0.4583,
+   "outcome": "A",
+   "surprise": 0.5417,
+   "hit": true
+  },
+  {
+   "home": "Argentina",
+   "away": "Egipto",
+   "home_iso": "ar",
+   "away_iso": "eg",
+   "gh": 3,
+   "ga": 2,
+   "phase": "R16",
+   "date": "",
+   "p_home": 0.5871,
+   "p_draw": 0.2556,
+   "p_away": 0.1573,
+   "outcome": "H",
+   "surprise": 0.4129,
+   "hit": true
+  },
+  {
+   "home": "Suiza",
+   "away": "Colombia",
+   "home_iso": "ch",
+   "away_iso": "co",
+   "gh": 0,
+   "ga": 0,
+   "phase": "R16",
+   "date": "",
+   "p_home": 0.346,
+   "p_draw": 0.2732,
+   "p_away": 0.3808,
+   "outcome": "H",
+   "surprise": 0.654,
+   "hit": false
+  },
+  {
+   "home": "Francia",
+   "away": "Marruecos",
+   "home_iso": "fr",
+   "away_iso": "ma",
+   "gh": 2,
+   "ga": 0,
+   "phase": "Cuartos",
+   "date": "",
+   "p_home": 0.4686,
+   "p_draw": 0.2828,
+   "p_away": 0.2486,
+   "outcome": "H",
+   "surprise": 0.5314,
+   "hit": true
+  },
+  {
+   "home": "Espana",
+   "away": "Belgica",
+   "home_iso": "es",
+   "away_iso": "be",
+   "gh": 2,
+   "ga": 1,
+   "phase": "Cuartos",
+   "date": "",
+   "p_home": 0.5179,
+   "p_draw": 0.2609,
+   "p_away": 0.2212,
+   "outcome": "H",
+   "surprise": 0.4821,
+   "hit": true
+  },
+  {
+   "home": "Noruega",
+   "away": "Inglaterra",
+   "home_iso": "no",
+   "away_iso": "gb-eng",
+   "gh": 1,
+   "ga": 2,
+   "phase": "Cuartos",
+   "date": "",
+   "p_home": 0.2263,
+   "p_draw": 0.2566,
+   "p_away": 0.5171,
+   "outcome": "A",
+   "surprise": 0.4829,
+   "hit": true
+  },
+  {
+   "home": "Argentina",
+   "away": "Suiza",
+   "home_iso": "ar",
+   "away_iso": "ch",
+   "gh": 3,
+   "ga": 1,
+   "phase": "Cuartos",
+   "date": "",
+   "p_home": 0.5104,
+   "p_draw": 0.2609,
+   "p_away": 0.2287,
+   "outcome": "H",
+   "surprise": 0.4896,
+   "hit": true
+  },
+  {
+   "home": "Francia",
+   "away": "Espana",
+   "home_iso": "fr",
+   "away_iso": "es",
+   "gh": 0,
+   "ga": 2,
+   "phase": "Semis",
+   "date": "",
+   "p_home": 0.3693,
+   "p_draw": 0.2787,
+   "p_away": 0.352,
+   "outcome": "A",
+   "surprise": 0.648,
+   "hit": false
+  },
+  {
+   "home": "Inglaterra",
+   "away": "Argentina",
+   "home_iso": "gb-eng",
+   "away_iso": "ar",
+   "gh": 1,
+   "ga": 2,
+   "phase": "Semis",
+   "date": "",
+   "p_home": 0.3361,
+   "p_draw": 0.281,
+   "p_away": 0.3829,
+   "outcome": "A",
+   "surprise": 0.6171,
+   "hit": true
+  },
+  {
+   "home": "Francia",
+   "away": "Inglaterra",
+   "home_iso": "fr",
+   "away_iso": "gb-eng",
+   "gh": 4,
+   "ga": 6,
+   "phase": "3er puesto",
+   "date": "",
+   "p_home": 0.4172,
+   "p_draw": 0.2733,
+   "p_away": 0.3095,
+   "outcome": "A",
+   "surprise": 0.6905,
+   "hit": false
+  },
+  {
+   "home": "Espana",
+   "away": "Argentina",
+   "home_iso": "es",
+   "away_iso": "ar",
+   "gh": 1,
+   "ga": 0,
+   "phase": "Final",
+   "date": "",
+   "p_home": 0.4112,
+   "p_draw": 0.2769,
+   "p_away": 0.3119,
+   "outcome": "H",
+   "surprise": 0.5888,
+   "hit": true
+  }
+ ],
+ "scorers": [
+  {
+   "player": "Kylian Mbappé",
+   "team": "Francia",
+   "goals": 8
+  },
+  {
+   "player": "Lionel Messi",
+   "team": "Argentina",
+   "goals": 8
+  },
+  {
+   "player": "Erling Haaland",
+   "team": "Noruega",
+   "goals": 7
+  },
+  {
+   "player": "Harry Kane",
+   "team": "Inglaterra",
+   "goals": 6
+  },
+  {
+   "player": "Jude Bellingham",
+   "team": "Inglaterra",
+   "goals": 6
+  },
+  {
+   "player": "Ousmane Dembélé",
+   "team": "Francia",
+   "goals": 5
+  },
+  {
+   "player": "Cody Gakpo",
+   "team": "Paises Bajos",
+   "goals": 4
+  },
+  {
+   "player": "Ismaila Sarr",
+   "team": "Senegal",
+   "goals": 4
+  },
+  {
+   "player": "Julián Quiñones",
+   "team": "Mexico",
+   "goals": 4
+  },
+  {
+   "player": "Mikel Oyarzabal",
+   "team": "Espana",
+   "goals": 5
+  },
+  {
+   "player": "Vinicius Junior",
+   "team": "Brasil",
+   "goals": 4
+  },
+  {
+   "player": "Brian Brobbey",
+   "team": "Paises Bajos",
+   "goals": 3
+  },
+  {
+   "player": "Cristiano Ronaldo",
+   "team": "Portugal",
+   "goals": 3
+  },
+  {
+   "player": "Deniz Undav",
+   "team": "Alemania",
+   "goals": 3
+  },
+  {
+   "player": "Elijah Just",
+   "team": "Nueva Zelanda",
+   "goals": 3
+  }
+ ],
+ "assists": [
+  {
+   "player": "Michael Olise",
+   "team": "Francia",
+   "assists": 5
+  },
+  {
+   "player": "Lionel Messi",
+   "team": "Argentina",
+   "assists": 4
+  },
+  {
+   "player": "Bruno Guimarães",
+   "team": "Brasil",
+   "assists": 4
+  },
+  {
+   "player": "Brahim Díaz",
+   "team": "Marruecos",
+   "assists": 4
+  },
+  {
+   "player": "Martin Ødegaard",
+   "team": "Noruega",
+   "assists": 4
+  },
+  {
+   "player": "Alexander Isak",
+   "team": "Suecia",
+   "assists": 3
+  },
+  {
+   "player": "Florian Wirtz",
+   "team": "Alemania",
+   "assists": 3
+  },
+  {
+   "player": "Marcos Cucurella",
+   "team": "Espana",
+   "assists": 2
+  },
+  {
+   "player": "Dani Olmo",
+   "team": "Espana",
+   "assists": 2
+  },
+  {
+   "player": "Kylian Mbappé",
+   "team": "Francia",
+   "assists": 2
+  }
+ ],
+ "boletines": [
+  "boletin_2026-06-13.mp3",
+  "boletin_2026-06-17.mp3",
+  "boletin_2026-06-20.mp3",
+  "boletin_2026-06-22.mp3",
+  "boletin_2026-06-24.mp3",
+  "boletin_2026-07-01.mp3",
+  "boletin_2026-07-10.mp3",
+  "boletin_2026-07-13.mp3",
+  "boletin_2026-07-19.mp3"
+ ],
+ "archive": {
+  "snapshots": 18,
+  "first": "2026-05-23",
+  "last": "2026-07-19",
+  "audio": 9
+ }
+}

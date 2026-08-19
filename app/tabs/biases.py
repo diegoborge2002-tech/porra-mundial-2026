@@ -282,10 +282,10 @@ def render():
         st.info("Sin sesgos manuales activos: Elo base sin retoques (la mezcla con XGBoost se controla arriba).")
 
     st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
-    _render_news_editor()
+    _render_news_editor(can_edit)
 
 
-def _render_news_editor() -> None:
+def _render_news_editor(can_edit: bool = False) -> None:
     """Editor de noticias / lesiones / cambios de plantilla.
 
     Cada noticia aplica un delta Elo temporal al equipo (si elo_delta != 0).
@@ -331,7 +331,10 @@ def _render_news_editor() -> None:
                 )
                 vence = st.date_input(
                     "Caduca el (opcional)", value=None,
-                    min_value=date.today(), max_value=date(2026, 7, 19),
+                    min_value=date.today(),
+                    # tras el Mundial, hoy ya es posterior al 19-jul: el rango
+                    # se quedaba invertido y Streamlit lanzaba excepción
+                    max_value=max(date(2026, 7, 19), date.today()),
                     key="news_expires",
                 )
             texto = st.text_input("Texto", placeholder="ej: Lesión de Pedri, fuera 3 semanas",

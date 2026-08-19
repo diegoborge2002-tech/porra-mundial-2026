@@ -22,7 +22,7 @@ ACTUALIDAD_PATH = ROOT / "data" / "processed" / "actualidad.json"
 SNAP_DIR = ROOT / "data" / "processed" / "snapshots"
 KICKOFF_PATH = ROOT / "data" / "processed" / "kickoff_times.json"
 _ROUND_LABEL = {"r32": "Dieciseisavos", "r16": "Octavos", "qf": "Cuartos",
-                "sf": "Semifinales", "final": "Final"}
+                "sf": "Semifinales", "third": "3er puesto", "final": "Final"}
 
 
 # ---------------------------------------------------------------- externos ---
@@ -179,7 +179,7 @@ def _all_played(real_results: dict) -> list[dict]:
             out.append({"home": h, "away": a, "gh": int(sc[0]), "ga": int(sc[1]),
                         "stage": "Grupos", "pens": False, "winner": None, "key": key})
     ko = real_results.get("knockout_matches") or {}
-    for rnd in ("r32", "r16", "qf", "sf", "final"):
+    for rnd in ("r32", "r16", "qf", "sf", "third", "final"):
         for _fid, e in (ko.get(rnd) or {}).items():
             if e.get("home_score") is None:
                 continue

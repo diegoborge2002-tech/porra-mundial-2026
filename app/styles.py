@@ -1115,8 +1115,13 @@ footer {{ visibility: hidden; }}
 .hero-cine .hero-text h1.wc-title {{ margin: 0 !important; }}
 .hero-cine .hero-text .sub {{ max-width: 660px; margin-top: 4px; }}
 @media (max-width: 640px) {{
-    .hero-cine {{ aspect-ratio: 16/10; max-height: 280px; }}
-    .hero-cine .hero-text {{ bottom: 8%; }}
+    /* El texto va anclado abajo en absoluto: si la caja es más baja que el
+       título + subtítulo, el título se corta por arriba. Damos alto suficiente
+       y bajamos el subtítulo en vez de recortar el titular. */
+    .hero-cine {{ aspect-ratio: auto; min-height: 300px; max-height: none; }}
+    .hero-cine .hero-text {{ bottom: 7%; left: 6%; right: 6%; }}
+    .hero-cine .hero-text .sub {{ font-size: 0.78rem; line-height: 1.4; margin-top: 8px; }}
+    .hero-cine .hero-text h1.wc-title .hosts {{ display: block; margin-top: 4px; }}
 }}
 
 /* scroll-reveal (lo activa /effects.js) */
@@ -1281,3 +1286,110 @@ footer {{ visibility: hidden; }}
 
 def inject():
     st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
+
+
+# ============================================================================
+# Estado "torneo terminado": panel de campeón + puerta a la película.
+# Se inyecta después del CSS principal para poder pisarlo sin tocarlo.
+# ============================================================================
+CHAMPION_CSS = f"""
+<style>
+/* --- Panel del campeón (sustituye a "Camino a la final") --- */
+.champ-final {{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: clamp(0.75rem, 3vw, 2.5rem);
+    padding: 0.5rem 0 0.75rem;
+}}
+.champ-final .cf-team {{
+    display: flex; align-items: center; gap: 0.7rem;
+    font-family: 'Outfit', sans-serif; font-weight: 700;
+    font-size: clamp(0.95rem, 2vw, 1.35rem);
+    color: {TEXT_DIM};
+}}
+.champ-final .cf-team:last-child {{ justify-content: flex-end; }}
+.champ-final .cf-team.win {{ color: {GOOD}; }}
+.champ-final .cf-team img {{
+    width: clamp(32px, 5vw, 46px); height: auto; border-radius: 4px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.55);
+}}
+.champ-final .cf-score {{
+    font-family: 'Outfit', sans-serif; font-weight: 800;
+    font-size: clamp(1.8rem, 5vw, 3rem); line-height: 1;
+    color: #f0c14b; text-align: center; letter-spacing: -0.03em;
+}}
+.champ-final .cf-score i {{ font-style: normal; opacity: 0.35; margin: 0 0.12em; }}
+.champ-final .cf-score .cf-lbl {{
+    display: block; margin-top: 0.5rem;
+    font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em;
+    color: {TEXT_DIM};
+}}
+.cf-champ {{
+    text-align: center; padding-top: 0.5rem;
+    border-top: 1px solid rgba(240,193,75,0.18);
+    font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+}}
+.cf-champ b {{ color: #f0c14b; font-weight: 800; }}
+.cf-champ .quiet {{ color: {TEXT_DIM}; }}
+
+/* --- Puerta a la película --- */
+a.film-cta {{
+    display: block; text-decoration: none; margin: 0.75rem 0 1.25rem;
+    padding: clamp(1rem, 3vw, 1.6rem) clamp(1.1rem, 3vw, 1.9rem);
+    border-radius: 16px;
+    border: 1px solid rgba(240,193,75,0.30);
+    background:
+        linear-gradient(120deg, rgba(240,193,75,0.10) 0%, rgba(76,215,246,0.05) 55%, transparent 100%),
+        rgba(12, 19, 36, 0.75);
+    transition: border-color .35s ease, transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s ease;
+}}
+a.film-cta:hover {{
+    border-color: rgba(240,193,75,0.65);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 40px rgba(240,193,75,0.14);
+}}
+a.film-cta .fc-eyebrow {{
+    display: block; color: #f0c14b; font-weight: 800;
+    font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}}
+a.film-cta .fc-title {{
+    display: block; font-family: 'Outfit', sans-serif; font-weight: 700;
+    font-size: clamp(1.05rem, 2.6vw, 1.6rem); color: {TEXT};
+    letter-spacing: -0.02em; line-height: 1.2;
+}}
+a.film-cta .fc-sub {{
+    display: block; margin-top: 0.5rem; color: {TEXT_DIM}; font-size: 0.85rem;
+}}
+a.film-cta .fc-arrow {{ display: inline-block; transition: transform .35s cubic-bezier(.22,1,.36,1); }}
+a.film-cta:hover .fc-arrow {{ transform: translateX(5px); }}
+
+/* --- P0 del cuadro en móvil: sin esto, el bracket es inaccesible en el teléfono --- */
+.bracket-scroll {{
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: {PRIMARY} transparent;
+    padding-bottom: 0.75rem;
+}}
+.bracket-scroll::-webkit-scrollbar {{ height: 8px; }}
+.bracket-scroll::-webkit-scrollbar-track {{ background: rgba(255,255,255,0.04); border-radius: 4px; }}
+.bracket-scroll::-webkit-scrollbar-thumb {{ background: rgba(76,215,246,0.45); border-radius: 4px; }}
+.bracket-scroll::-webkit-scrollbar-thumb:hover {{ background: rgba(76,215,246,0.75); }}
+.bracket-hint {{
+    display: none; color: {TEXT_DIM}; font-size: 0.78rem; margin: 0 0 0.5rem;
+}}
+@media (max-width: 900px) {{
+    .bracket-hint {{ display: block; }}
+    /* el árbol necesita su ancho mínimo o las tarjetas se aplastan */
+    .bracket-scroll > div {{ min-width: 1100px; }}
+}}
+</style>
+"""
+
+
+def inject_champion() -> None:
+    """CSS del estado 'torneo terminado'. Idempotente."""
+    st.markdown(CHAMPION_CSS, unsafe_allow_html=True)

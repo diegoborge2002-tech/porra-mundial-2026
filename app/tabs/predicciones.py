@@ -37,6 +37,23 @@ def plotly_theme(**overrides) -> dict:
 def render():
     st.header("Predicciones del modelo")
     st.caption("Monte Carlo de 10.000 torneos · Ensemble: Elo (49.215 partidos históricos) + XGBoost de stats (xG, posesión, ranking FIFA) + tus ajustes")
+
+    # Con los 104 partidos registrados el Monte Carlo ya no tiene nada que sortear:
+    # el campeón sale al 100 %. Decirlo evita que el número se lea como una predicción.
+    try:
+        from app.streamlit_app import tournament_champion
+        _champ = tournament_champion()
+    except Exception:
+        _champ = None
+    if _champ:
+        st.info(
+            f"**El Mundial ya terminó y ganó {_champ}.** Con los 104 resultados "
+            "registrados no queda nada por simular, así que las probabilidades de "
+            "abajo salen al 100 % / 0 %: describen lo que pasó, no un pronóstico.\n\n"
+            "Para ver **lo que el modelo dijo antes de cada partido** y si acertó, "
+            "ve a **📈 Rendimiento del modelo** o al **🏆 Cuadro**.",
+            icon="🏆",
+        )
     render_tab_banner("header_strip.png")
 
     # =========================================================================

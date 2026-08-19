@@ -28,7 +28,7 @@ HOST_ADVANTAGE_ELO = 65.0  # mismo valor que HOME_ADVANTAGE en elo.py
 @dataclass
 class MatchDiagnostic:
     phase: str            # 'Grupos', 'R32', 'R16', 'QF', 'SF', 'Final'
-    match_id: str         # 'Grupo A: España vs Uruguay' o 'R32 #73'
+    match_id: str         # 'Grupo A: España vs Uruguay' o 'Espana vs Argentina'
     date: str             # 'YYYY-MM-DD' o ''
     home: str
     away: str
@@ -131,8 +131,9 @@ def compute_match_diagnostics(
 
     # 2. Eliminatorias en orden de ronda
     knockout_matches = real_results.get("knockout_matches", {})
-    phase_label = {"r32": "R32", "r16": "R16", "qf": "Cuartos", "sf": "Semis", "final": "Final"}
-    for round_key in ("r32", "r16", "qf", "sf", "final"):
+    phase_label = {"r32": "R32", "r16": "R16", "qf": "Cuartos", "sf": "Semis",
+                   "third": "3er puesto", "final": "Final"}
+    for round_key in ("r32", "r16", "qf", "sf", "third", "final"):
         round_data = knockout_matches.get(round_key, {})
         for match_id in sorted(round_data.keys(),
                                 key=lambda x: int(x) if str(x).isdigit() else 9999):
@@ -158,7 +159,7 @@ def compute_match_diagnostics(
             surprise = 1.0 - p_outcome
             diagnostics.append(MatchDiagnostic(
                 phase=phase_label[round_key],
-                match_id=f"{phase_label[round_key]} #{match_id}",
+                match_id=f"{h} vs {a}",
                 date="",
                 home=h, away=a, home_score=gh, away_score=ga,
                 outcome=outcome,

@@ -16,7 +16,7 @@ import json
 import math
 import streamlit as st
 
-from app.styles import inject, TEXT_DIM, PRIMARY, ACCENT
+from app.styles import inject, inject_champion, TEXT_DIM, PRIMARY, ACCENT
 from app.components_media import render_hero, render_background, render_matchday_brief
 from app.tabs import (
     predicciones, selecciones, biases, seguimiento,
@@ -28,6 +28,7 @@ from app.tabs import (
 
 
 KICKOFF = datetime(2026, 6, 11, 20, 0, 0)
+FILM_URL = "https://mi-mundial-2026.vercel.app"
 
 
 st.set_page_config(
@@ -38,7 +39,104 @@ st.set_page_config(
 )
 
 inject()
+inject_champion()
 render_background()
+
+
+@st.cache_data(show_spinner=False)
+def tournament_champion() -> str | None:
+    """Devuelve el campeón si la final ya está registrada, o None si sigue vivo.
+
+    Es el interruptor que pone toda la web en pasado: mientras no haya final,
+    la app se comporta como la herramienta de seguimiento que era.
+    """
+    try:
+        from app.utils import load_real_results
+        final = ((load_real_results() or {}).get("knockout_matches") or {}).get("final") or {}
+        for m in final.values():
+            if m.get("winner"):
+                return m["winner"]
+    except Exception:
+        pass
+    return None
+
+
+@st.cache_data(show_spinner=False)
+def _model_hit_rate() -> str:
+    """% de aciertos 1X2 del modelo sobre todos los partidos jugados."""
+    try:
+        from app.utils import load_base_elo, load_real_results
+        from src.model.live_diagnostics import compute_match_diagnostics
+        from src.model.calibration import aggregate_metrics
+        diags = compute_match_diagnostics(load_base_elo(), load_real_results())
+        if not diags:
+            return "—"
+        s = aggregate_metrics([((d.p_home, d.p_draw, d.p_away), d.outcome) for d in diags])
+        return f"{s.hit_rate_top1*100:.1f}%"
+    except Exception:
+        return "—"
+
+
+def _champion_panel() -> None:
+    """Sustituye a 'Camino a la final' cuando el torneo ya terminó."""
+    champion = tournament_champion()
+    if not champion:
+        return
+    try:
+        from app.utils import load_real_results
+        from src.data.team_profile import ISO_CODES
+        real = load_real_results() or {}
+        ko = real.get("knockout_matches") or {}
+        fin = next(iter((ko.get("final") or {}).values()), None)
+        third = next(iter((ko.get("third") or {}).values()), None)
+        if not fin:
+            return
+
+        def flag(t: str, w: int = 80) -> str:
+            return f'<img src="https://flagcdn.com/w{w}/{ISO_CODES.get(t, "un")}.png">'
+
+        runner = fin["away"] if fin["winner"] == fin["home"] else fin["home"]
+        third_txt = ""
+        if third:
+            third_txt = (
+                f'<span class="ff-when">3.º {third["winner"]} · '
+                f'{third["home"]} {third["home_score"]}–{third["away_score"]} {third["away"]}</span>'
+            )
+
+        st.markdown(
+            '<div class="ff-wrap">'
+            '<div class="ff-head">'
+            '<span class="ff-eyebrow"><span class="rhomb">◆</span>Mundial 2026 · terminado</span>'
+            f'{third_txt}'
+            '</div>'
+            '<div class="champ-final">'
+            f'<div class="cf-team win">{flag(fin["home"])}<span>{fin["home"]}</span></div>'
+            f'<div class="cf-score">{fin["home_score"]}<i>–</i>{fin["away_score"]}'
+            '<span class="cf-lbl">FINAL · 19 JUL</span></div>'
+            f'<div class="cf-team">{flag(fin["away"])}<span>{fin["away"]}</span></div>'
+            '</div>'
+            f'<div class="cf-champ">🏆 <b>{champion}</b> campeona del mundo '
+            f'<span class="quiet">· {runner} subcampeona</span></div>'
+            '</div>',
+            unsafe_allow_html=True,
+        )
+    except Exception:
+        pass
+
+
+def _film_cta() -> None:
+    """Puerta de entrada a la retrospectiva cinematográfica."""
+    if not tournament_champion():
+        return
+    st.markdown(
+        f'<a class="film-cta" href="{FILM_URL}" target="_blank" rel="noopener">'
+        '<span class="fc-eyebrow">▶ La película</span>'
+        '<span class="fc-title">El Mundial contado por el modelo que lo predijo</span>'
+        '<span class="fc-sub">104 partidos · 18 tomas de probabilidad · el veredicto '
+        'sobre el modelo <span class="fc-arrow">→</span></span>'
+        '</a>',
+        unsafe_allow_html=True,
+    )
 
 
 def _header_kpi_bar() -> None:
@@ -63,10 +161,28 @@ def _header_kpi_bar() -> None:
         n_played = sum(1 for v in (real.get("group_matches") or {}).values() if v)
         # Sumar eliminatorias jugadas
         ko = real.get("knockout_matches") or {}
-        for r in ["r32", "r16", "qf", "sf", "final"]:
+        for r in ["r32", "r16", "qf", "sf", "third", "final"]:
             n_played += len(ko.get(r) or {})
     except Exception:
         top_team, top_p, n_eff, n_played = "—", 0.0, 0.0, 0
+
+    # ¿Terminó el torneo? Si la final está registrada, la web habla en pasado.
+    champion = tournament_champion()
+
+    if champion:
+        parts = [
+            '<div class="headerkpi-bar">',
+            '<div class="headerkpi-pill"><span class="lbl">Campeón</span>'
+            f'<span class="val val-good">🏆 {champion}</span></div>',
+            f'<div class="headerkpi-pill"><span class="lbl">Acierto del modelo</span>'
+            f'<span class="val val-accent">{_model_hit_rate()}</span></div>',
+            f'<div class="headerkpi-pill"><span class="lbl">Partidos</span>'
+            f'<span class="val">{n_played}</span><span style="color:{TEXT_DIM}">/104</span>'
+            '<span class="val val-good"> completo</span></div>',
+            '</div>',
+        ]
+        st.markdown("".join(parts), unsafe_allow_html=True)
+        return
 
     today = date.today()
     days_to = (KICKOFF.date() - today).days
@@ -377,9 +493,11 @@ render_hero()
 _global_search()
 
 _ticker_bar()
+_champion_panel()
 _final_four_panel()
 _next_match_panel()
 _header_kpi_bar()
+_film_cta()
 _freshness_bar()
 _news_banner()
 render_matchday_brief()
@@ -432,7 +550,9 @@ if _goto and _goto in _GOTO:
     st.session_state["nav_area"] = _AREA_FOR_TAB[_GOTO[_goto]]
     del st.query_params["goto"]
 elif _NAV_KEY not in st.session_state:
-    st.session_state[_NAV_KEY] = _LABELS[0]
+    # Torneo terminado -> el Cuadro es la mejor primera pantalla (qué pasó).
+    # En vivo seguía siendo Predicciones (qué va a pasar).
+    st.session_state[_NAV_KEY] = _LABELS[3] if tournament_champion() else _LABELS[0]
 
 if "nav_area" not in st.session_state:
     st.session_state["nav_area"] = _AREA_FOR_TAB[st.session_state[_NAV_KEY]]
