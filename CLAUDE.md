@@ -96,6 +96,32 @@ Cuando el usuario diga "actualiza", "informe del día", pase resultados, o simil
 Todo lo que escribe el script lo lee la web (real_results.json, snapshots/):
 el código no hace falta tocarlo, solo registrar resultados y desplegar.
 
+## 🎬 La película (retrospectiva)
+
+El Mundial **terminó el 19 de julio de 2026** (España 1-0 Argentina). Los 104
+partidos están registrados y verificados contra la API, así que los datos ya no
+cambian. Hay **dos superficies desplegadas**:
+
+| | Qué es | Dónde | Deploy |
+|---|---|---|---|
+| **La película** | Scrollytelling de 6 capítulos, estático | https://mi-mundial-2026-beige.vercel.app | `cd film && npx vercel deploy --prod --yes` |
+| **El archivo** | La app Streamlit de siempre | https://diegoborge-porra-mundial-2026.hf.space | `python scripts/deploy_hf.py "msg"` |
+
+- `scripts/build_story.py` → `film/story.json`: hornea TODO lo que pinta la película
+  (104 partidos con lo que dijo el modelo, 18 snapshots, veredicto de los 3 motores,
+  sorpresas, camino del campeón). **Reejecutar si cambian los datos.**
+- `scripts/build_footage.py` genera metraje base con ffmpeg y **nunca pisa un clip que
+  no haya generado él** (control en `film/assets/.generated.json`). Prompts para
+  generar clips nuevos: `film/PROMPTS_PELICULA.md`. Originales en `film/assets/_raw/`.
+- Higgsfield marca con un ✦ en (1162, 597) sobre 1280×720 → `delogo=x=1120:y=555:w=85:h=85`.
+- `scripts/deploy_hf.py` **excluye `film/`**: son ~100 MB de vídeo que el Space no sirve.
+- `tournament_champion()` en `app/streamlit_app.py` es el interruptor que pone la app
+  en pasado: con la final registrada cambia la portada y la pestaña de entrada.
+
+> La **rutina diaria** de abajo queda como referencia histórica: con el torneo cerrado
+> ya no hay resultados nuevos que buscar. La tarea programada `porra-mundial-auto-update`
+> puede desactivarse.
+
 ## Deploy
 
 - Repo: https://github.com/diegoborge2002-tech/porra-mundial-2026 (gh CLI autenticado)
