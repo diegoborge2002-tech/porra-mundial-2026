@@ -28,7 +28,7 @@ from app.tabs import (
 
 
 KICKOFF = datetime(2026, 6, 11, 20, 0, 0)
-FILM_URL = "https://mi-mundial-2026.vercel.app"
+FILM_URL = "https://mi-mundial-2026-beige.vercel.app"
 
 
 st.set_page_config(
