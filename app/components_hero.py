@@ -142,7 +142,7 @@ f'<span class="pc">{pc2}</span>'
         foto_html = (
 '<figure class="hc-foto">'
 f'<img src="{foto}" alt="Celebrando el título">'
-'<figcaption>Campeones 🏆</figcaption>'
+'<figcaption>🏆 Campeones · 19 de julio de 2026</figcaption>'
 '</figure>'
         )
 
