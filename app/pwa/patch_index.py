@@ -25,10 +25,11 @@ og = pathlib.Path("app/assets/custom/og_image.png")
 if og.exists():
     shutil.copy(og, static / "og_image.png")
 
-# Video hero -> servido en /hero.mp4 (lo usa render_hero)
-hero = pathlib.Path("app/assets/custom/hero.mp4")
-if hero.exists():
-    shutil.copy(hero, static / "hero.mp4")
+# Videos hero -> servidos en la raiz (los usan render_hero y la portada de campeon)
+for name in ("hero.mp4", "hero_champion.mp4"):
+    src = pathlib.Path("app/assets/custom") / name
+    if src.exists():
+        shutil.copy(src, static / name)
 
 HEAD = f"""
 <link rel="manifest" href="/manifest.webmanifest">

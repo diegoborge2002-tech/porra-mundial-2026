@@ -16,7 +16,7 @@ import json
 import math
 import streamlit as st
 
-from app.styles import inject, inject_champion, TEXT_DIM, PRIMARY, ACCENT
+from app.styles import inject, inject_champion, inject_hero_champion, TEXT_DIM, PRIMARY, ACCENT
 from app.components_media import render_hero, render_background, render_matchday_brief
 from app.tabs import (
     predicciones, selecciones, biases, seguimiento,
@@ -40,6 +40,7 @@ st.set_page_config(
 
 inject()
 inject_champion()
+inject_hero_champion()
 render_background()
 
 
@@ -72,9 +73,24 @@ def _model_hit_rate() -> str:
         if not diags:
             return "—"
         s = aggregate_metrics([((d.p_home, d.p_draw, d.p_away), d.outcome) for d in diags])
-        return f"{s.hit_rate_top1*100:.1f}%"
+        return f"{s.hit_rate_top1*100:.1f}".replace(".", ",") + " %"
     except Exception:
         return "—"
+
+
+@st.cache_data(show_spinner=False)
+def _played_count() -> int:
+    """Partidos con resultado registrado (grupos + todas las eliminatorias)."""
+    try:
+        from app.utils import load_real_results
+        real = load_real_results() or {}
+        n = sum(1 for v in (real.get("group_matches") or {}).values() if v)
+        ko = real.get("knockout_matches") or {}
+        for r in ("r32", "r16", "qf", "sf", "third", "final"):
+            n += len(ko.get(r) or {})
+        return n
+    except Exception:
+        return 0
 
 
 def _champion_panel() -> None:
@@ -241,6 +257,7 @@ def _ticker_bar() -> None:
         from src.model.match_day import find_upcoming_matches
         from src.model.match_probs import representative_score
         from src.data.team_profile import ISO_CODES
+        from src.data.team_names import display as D
 
         elo = get_elo_with_biases()
         real = load_real_results() or {}
@@ -264,8 +281,8 @@ def _ticker_bar() -> None:
                 group_finals.append((h, a, scores[0], scores[1]))
         for h, a, gh, ga in (finals[-6:] or group_finals[-6:]):
             items.append(
-                f'<span class="wc-tick">{flag(h)} {h} '
-                f'<span class="score">{gh}–{ga}</span> {a} {flag(a)} '
+                f'<span class="wc-tick">{flag(h)} {D(h)} '
+                f'<span class="score">{gh}–{ga}</span> {D(a)} {flag(a)} '
                 f'<span class="ok">FINAL</span></span>'
             )
         # Próximos partidos con resultado esperado
@@ -296,6 +313,7 @@ def _next_match_panel() -> None:
         from src.model.match_day import find_upcoming_matches
         from src.model.match_probs import representative_score
         from src.data.team_profile import ISO_CODES
+        from src.data.team_names import display as D
 
         elo = get_elo_with_biases()
         up = find_upcoming_matches(elo, window_hours=36, fallback_days=10)
@@ -489,18 +507,30 @@ def _global_search() -> None:
 # ============================================================
 # Hero cinematográfico (vídeo de fondo + título superpuesto)
 # ============================================================
-render_hero()
-_global_search()
+# ============================================================
+# Portada. Con el torneo terminado, la premisa cambia por completo:
+# la gente llega desde un enlace y da 30 segundos. Todo lo que importa
+# (campeón + que el modelo lo dijo en mayo + el acierto real) cabe en el
+# primer pantallazo, y lo demás queda debajo para quien se quede.
+# ============================================================
+_CHAMPION = tournament_champion()
 
-_ticker_bar()
-_champion_panel()
-_final_four_panel()
-_next_match_panel()
-_header_kpi_bar()
-_film_cta()
-_freshness_bar()
-_news_banner()
-render_matchday_brief()
+if _CHAMPION:
+    from app.components_hero import render_champion_hero
+    render_champion_hero(_CHAMPION, _model_hit_rate(), _played_count(), FILM_URL)
+    st.markdown('<div id="explorar"></div>', unsafe_allow_html=True)
+    _ticker_bar()
+else:
+    # Durante el torneo la portada seguía siendo la de seguimiento diario.
+    render_hero()
+    _global_search()
+    _ticker_bar()
+    _final_four_panel()
+    _next_match_panel()
+    _header_kpi_bar()
+    _freshness_bar()
+    _news_banner()
+    render_matchday_brief()
 
 
 # ============================================================

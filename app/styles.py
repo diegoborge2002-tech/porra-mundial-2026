@@ -1393,3 +1393,224 @@ a.film-cta:hover .fc-arrow {{ transform: translateX(5px); }}
 def inject_champion() -> None:
     """CSS del estado 'torneo terminado'. Idempotente."""
     st.markdown(CHAMPION_CSS, unsafe_allow_html=True)
+
+# ============================================================================
+# PORTADA DEL TORNEO TERMINADO — "todo en 30 segundos"
+# Un solo pantallazo con el título, el gancho (lo dijo en mayo) y la prueba.
+# ============================================================================
+HERO_CHAMPION_CSS = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+.hc {
+    position: relative;
+    margin: -3.5rem -3rem 1.25rem;      /* rompe el padding de Streamlit: a sangre */
+    min-height: min(88vh, 780px);
+    display: flex; align-items: center;
+    overflow: hidden; isolation: isolate;
+    border-radius: 0 0 26px 26px;
+    /* El poster va SIEMPRE detras: es lo que hace que quitar el video (por
+       reduced-motion o autoplay bloqueado) no deje la portada en negro. */
+    background-size: cover; background-position: center;
+    background-color: #05080f;
+}
+.hc-vid {
+    position: absolute; inset: 0; z-index: -2;
+    width: 100%; height: 100%; object-fit: cover;
+    transform: scale(1.04);
+}
+.hc-scrim {
+    position: absolute; inset: 0; z-index: -1;
+    background:
+        linear-gradient(100deg, rgba(4,7,14,0.95) 0%, rgba(4,7,14,0.80) 42%,
+                        rgba(4,7,14,0.42) 72%, rgba(4,7,14,0.62) 100%),
+        linear-gradient(0deg, rgba(4,7,14,0.94) 0%, transparent 42%);
+}
+.hc-inner {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 1280px; margin-inline: auto;
+    padding: clamp(1.5rem, 4vw, 3.25rem);
+    display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.92fr);
+    gap: clamp(1.25rem, 3.5vw, 3rem); align-items: center;
+}
+.hc-left { display: flex; flex-direction: column; }
+/* Streamlit envuelve cada <h1> en un div con padding y un ancla de enlace.
+   Dentro del hero eso abría un hueco de ~45 px bajo el título. */
+.hc-left > div:not([class^="hc-"]) { padding: 0 !important; margin: 0 !important; }
+.hc-title { padding: 0 !important; }
+.hc [data-testid="stHeaderActionElements"],
+.hc h1 > a[href^="#"] { display: none !important; }
+
+/* --- columna izquierda: el hecho --- */
+.hc-eyebrow {
+    font-size: 0.68rem; font-weight: 800; letter-spacing: 0.22em;
+    text-transform: uppercase; color: #f0c14b; margin: 0 0 0.9rem;
+}
+.hc-title {
+    font-family: 'Instrument Serif', Georgia, serif !important;
+    font-weight: 400 !important; line-height: 0.92 !important;
+    letter-spacing: -0.015em !important; margin: 0 0 1.5rem !important;
+}
+.hc-title span {
+    display: block; color: #f4f7ff;
+    font-size: clamp(2.9rem, min(8.5vw, 11vh), 6.2rem);
+}
+.hc-title em {
+    display: block; font-style: italic; color: #f0c14b;
+    font-size: clamp(2.1rem, min(6.2vw, 8vh), 4.4rem);
+    margin-top: 0.04em;
+}
+.hc-score {
+    display: flex; align-items: center; gap: clamp(0.6rem, 2vw, 1.3rem);
+    flex-wrap: wrap; margin: 0.2rem 0 0.45rem;
+}
+.hc-score .t {
+    display: flex; align-items: center; gap: 0.55rem;
+    font-family: 'Outfit', sans-serif; font-weight: 700;
+    font-size: clamp(0.92rem, 1.9vw, 1.25rem); color: #e9edf8;
+}
+.hc-score .t img {
+    width: clamp(26px, 3.2vw, 36px); height: auto; border-radius: 3px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.6);
+}
+.hc-score .s {
+    font-family: 'Outfit', sans-serif; font-weight: 800;
+    font-size: clamp(1.9rem, 4.6vw, 3rem); color: #f0c14b;
+    letter-spacing: -0.04em; font-variant-numeric: tabular-nums;
+}
+.hc-score .s i { font-style: normal; opacity: 0.35; margin: 0 0.1em; }
+.hc-sub { color: #93a0ba; font-size: 0.86rem; margin: 0 0 1.6rem; }
+
+/* --- los tres números --- */
+.hc-nums {
+    display: flex; gap: clamp(1.1rem, 3vw, 2.4rem); flex-wrap: wrap;
+    padding: 1rem 0; margin-bottom: 1.3rem;
+    border-top: 1px solid rgba(255,255,255,0.11);
+    border-bottom: 1px solid rgba(255,255,255,0.11);
+}
+.hc-nums b {
+    display: block; font-family: 'Outfit', sans-serif; font-weight: 800;
+    font-size: clamp(1.5rem, 3.6vw, 2.35rem); line-height: 1;
+    color: #4cd7f6; letter-spacing: -0.035em; font-variant-numeric: tabular-nums;
+}
+.hc-nums span {
+    display: block; margin-top: 0.42rem; font-size: 0.63rem; font-weight: 700;
+    letter-spacing: 0.13em; text-transform: uppercase; color: #7e8aa4;
+}
+
+/* --- llamadas a la acción --- */
+.hc-ctas { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+a.hc-cta {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.85rem 1.4rem; border-radius: 999px; text-decoration: none;
+    font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 0.92rem;
+    transition: transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease,
+                background-color .3s ease, border-color .3s ease;
+}
+a.hc-cta.primary {
+    background: #f0c14b; color: #05080f;
+    box-shadow: 0 10px 34px rgba(240,193,75,0.26);
+}
+a.hc-cta.primary:hover {
+    background: #ffd97a; transform: translateY(-2px);
+    box-shadow: 0 16px 46px rgba(240,193,75,0.38);
+}
+a.hc-cta.primary .ar { transition: transform .3s cubic-bezier(.22,1,.36,1); }
+a.hc-cta.primary:hover .ar { transform: translateX(4px); }
+a.hc-cta.ghost {
+    background: rgba(255,255,255,0.05); color: #e9edf8;
+    border: 1px solid rgba(255,255,255,0.20);
+}
+a.hc-cta.ghost:hover { border-color: rgba(255,255,255,0.45); transform: translateY(-2px); }
+
+/* --- columna derecha: la foto y el gancho --- */
+.hc-right { display: grid; gap: 1rem; align-content: center; }
+.hc-foto {
+    margin: 0; border-radius: 16px; overflow: hidden;
+    border: 1px solid rgba(240,193,75,0.35);
+    box-shadow: 0 26px 70px rgba(0,0,0,0.7);
+    transform: rotate(-1.1deg);
+    background: #0a0f1e; position: relative;
+}
+.hc-foto img { display: block; width: 100%; height: auto; }
+.hc-foto figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 1.5rem 1rem 0.7rem;
+    background: linear-gradient(0deg, rgba(4,7,14,0.92), transparent);
+    font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 0.85rem;
+    color: #f0c14b; letter-spacing: 0.04em;
+}
+
+.hc-claim {
+    background: rgba(8, 13, 26, 0.80);
+    border: 1px solid rgba(76,215,246,0.26);
+    border-radius: 16px; padding: clamp(1rem, 2.4vw, 1.5rem);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+.hc-claim-h {
+    font-size: 0.7rem; font-weight: 800; letter-spacing: 0.16em;
+    text-transform: uppercase; color: #4cd7f6; margin-bottom: 0.5rem;
+}
+.hc-claim-sub { font-size: 0.82rem; color: #93a0ba; line-height: 1.5; margin-bottom: 0.9rem; }
+.hc-bars { display: grid; gap: 0.5rem; }
+.hc-bar {
+    display: grid; grid-template-columns: 26px minmax(4.5rem, auto) 1fr 3.2rem;
+    align-items: center; gap: 0.6rem;
+}
+.hc-bar img { width: 26px; height: 19px; border-radius: 3px; object-fit: cover; }
+.hc-bar .nm { font-size: 0.86rem; font-weight: 600; color: #93a0ba; white-space: nowrap; }
+.hc-bar .tr {
+    display: block; height: 9px; border-radius: 5px;
+    background: rgba(255,255,255,0.07); overflow: hidden;
+}
+.hc-bar .tr i {
+    display: block; height: 100%; border-radius: 5px;
+    background: linear-gradient(90deg, #1d6b81, #4cd7f6);
+    animation: hcGrow 1.1s cubic-bezier(.22,1,.36,1) both;
+}
+.hc-bar .pc {
+    font-size: 0.85rem; font-weight: 800; text-align: right; color: #93a0ba;
+    font-variant-numeric: tabular-nums;
+}
+.hc-bar.win .nm, .hc-bar.win .pc { color: #f0c14b; }
+.hc-bar.win .tr i { background: linear-gradient(90deg, #a97e22, #ffd97a); }
+@keyframes hcGrow { from { transform: scaleX(0); transform-origin: left; } to { transform: scaleX(1); } }
+.hc-claim-foot {
+    margin-top: 0.85rem; padding-top: 0.75rem;
+    border-top: 1px solid rgba(255,255,255,0.09);
+    font-size: 0.88rem; color: #e9edf8; font-weight: 600;
+}
+
+/* ---------------- MÓVIL: la mayoría entra por aquí ---------------- */
+@media (max-width: 900px) {
+    .hc {
+        margin: -3rem -1.25rem 1rem;
+        min-height: auto; padding-block: 1.5rem 1.75rem;
+    }
+    .hc-eyebrow { font-size: 0.6rem; letter-spacing: 0.16em; }
+    .hc-inner { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.25rem; }
+    .hc-nums { gap: 1.1rem; padding: 0.85rem 0; margin-bottom: 1.1rem; }
+    .hc-nums > div { flex: 1 1 28%; }
+    .hc-ctas { flex-direction: column; }
+    a.hc-cta { justify-content: center; }
+    .hc-foto { transform: none; }
+}
+@media (max-width: 420px) {
+    .hc-title span { font-size: 2.6rem; }
+    .hc-title em { font-size: 1.9rem; }
+}
+
+/* Sin movimiento: nada se mueve, pero todo se ve */
+/* Sin movimiento: se va el video, se queda el poster. La portada no cambia
+   de aspecto, solo deja de moverse. */
+@media (prefers-reduced-motion: reduce) {
+    .hc-bar .tr i { animation: none; }
+    .hc-vid { opacity: 0; }
+}
+</style>
+"""
+
+
+def inject_hero_champion() -> None:
+    """CSS de la portada del torneo terminado."""
+    st.markdown(HERO_CHAMPION_CSS, unsafe_allow_html=True)

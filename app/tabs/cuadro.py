@@ -12,6 +12,7 @@ import streamlit as st
 from app.utils import get_elo_with_biases, load_real_results
 from app.styles import PRIMARY, ACCENT, TEXT_DIM, GOOD, DANGER
 from src.data.team_profile import ISO_CODES
+from src.data.team_names import display as D
 from src.data.bracket_view import (
     build_bracket, bracket_progress, FEEDERS, ROUND_LABEL,
 )
@@ -76,7 +77,7 @@ def _team_row(team: str | None, score, cls: str, feeder_id: int | None) -> str:
     if team:
         sc = "" if score is None else f'<span class="sc{" dim" if "exp" in cls else ""}">{score}</span>'
         return (f'<div class="bk-tm {cls}">{_flag(team)}'
-                f'<span class="nm">{team}</span>{sc}</div>')
+                f'<span class="nm">{D(team)}</span>{sc}</div>')
     label = f"Ganador P{feeder_id}" if feeder_id else "Por definir"
     return f'<div class="bk-tm tbdrow"><span class="nm">{label}</span></div>'
 
@@ -155,7 +156,7 @@ def render() -> None:
     champ_html = ""
     if b["champion"]:
         champ_html = (f'<div class="bk-champ"><div class="lbl">🏆 Campeón</div>'
-                      f'<div class="nm">{_flag(b["champion"])} {b["champion"]}</div></div>')
+                      f'<div class="nm">{_flag(b["champion"])} {D(b["champion"])}</div></div>')
     center = (f'<div class="bk-col" style="flex:1.1;min-width:150px;">'
               f'<div class="bk-col-h">Final</div>'
               f'<div class="bk-col-body" style="justify-content:center;">'

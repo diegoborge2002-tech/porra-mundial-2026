@@ -61,3 +61,38 @@ def to_es(name: str) -> str:
 
 def to_en(name: str) -> str:
     return ES_TO_EN.get(name, name)
+
+
+# ============================================================================
+# Nombres para MOSTRAR
+# ----------------------------------------------------------------------------
+# Las claves internas van sin acentos a propósito ("Espana"): son claves de
+# diccionario y de JSON, y tocarlas rompería lookups por todo el repo. Pero lo
+# que lee una persona debe estar bien escrito. Esta capa se aplica SOLO al
+# pintar, nunca al indexar.
+# ============================================================================
+DISPLAY_NAMES: dict[str, str] = {
+    "Espana": "España",
+    "Belgica": "Bélgica",
+    "Paises Bajos": "Países Bajos",
+    "Arabia Saudi": "Arabia Saudí",
+    "Tunez": "Túnez",
+    "Turquia": "Turquía",
+    "Japon": "Japón",
+    "Iran": "Irán",
+    "Panama": "Panamá",
+    "Sudafrica": "Sudáfrica",
+    "Mexico": "México",
+    "Canada": "Canadá",
+    "Uzbekistan": "Uzbekistán",
+    "Haiti": "Haití",
+    "Rep. Checa": "Chequia",
+    "Bosnia Herz.": "Bosnia y Herz.",
+}
+
+
+def display(name: str | None) -> str:
+    """Nombre bien escrito para pintar en pantalla. Nunca para indexar."""
+    if not name:
+        return ""
+    return DISPLAY_NAMES.get(name, name)
