@@ -68,3 +68,49 @@
   if (document.readyState !== "loading") setTimeout(init, 400);
   else addEventListener("DOMContentLoaded", function () { setTimeout(init, 400); });
 })();
+
+/* ---------------------------------------------------------------------------
+   Vídeos de los "tres golpes": carga diferida.
+   Llevan data-src en vez de src para no competir con el hero al abrir la web.
+   Se cargan cuando el usuario se acerca, y solo si de verdad baja.
+   Streamlit repinta el DOM en cada interacción, así que se reescanea.
+   ------------------------------------------------------------------------- */
+(function () {
+  "use strict";
+  if (!("IntersectionObserver" in window)) {
+    // sin IO, cargamos directamente: mejor gastar datos que dejarlo en negro
+    var load = function () {
+      document.querySelectorAll("video[data-src]").forEach(function (v) {
+        v.src = v.dataset.src; delete v.dataset.src;
+      });
+    };
+    document.addEventListener("DOMContentLoaded", load);
+    setInterval(load, 2000);
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var v = e.target;
+      if (v.dataset.src) {
+        v.src = v.dataset.src;
+        delete v.dataset.src;
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+      io.unobserve(v);
+    });
+  }, { rootMargin: "200% 0px" });
+
+  function scan() {
+    document.querySelectorAll("video[data-src]").forEach(function (v) {
+      if (!v.dataset.observed) { v.dataset.observed = "1"; io.observe(v); }
+    });
+  }
+  scan();
+  document.addEventListener("DOMContentLoaded", scan);
+  // Streamlit rerenderiza: hay que volver a mirar
+  new MutationObserver(scan).observe(document.documentElement,
+    { childList: true, subtree: true });
+})();

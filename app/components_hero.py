@@ -183,3 +183,73 @@ f'{foto_html}{claim}'
         unsafe_allow_html=True,
     )
     return True
+
+
+# ============================================================================
+# LOS TRES GOLPES
+# ----------------------------------------------------------------------------
+# La película entera son 5 minutos de scroll y vive en otra URL. Aquí abajo va
+# comprimida a tres pantallas con el metraje bueno de fondo: el que baja del
+# hero se lleva el torneo contado, sin salir de la web que le pasaron.
+# ============================================================================
+
+def _beat_poster(name: str) -> str:
+    p = CUSTOM / f"beat_{name}_poster.jpg"
+    if not p.exists():
+        return ""
+    return "data:image/jpeg;base64," + base64.b64encode(p.read_bytes()).decode()
+
+
+def _beat(name: str, eyebrow: str, big: str, unit: str, title: str,
+          body: str, side: str = "left") -> str:
+    poster = _beat_poster(name)
+    bg = f' style="background-image:url({poster})"' if poster else ""
+    return (
+f'<section class="beat beat-{side}"{bg}>'
+f'<video class="beat-vid" autoplay muted loop playsinline preload="none" data-src="/beat_{name}.mp4"></video>'
+'<div class="beat-scrim"></div>'
+'<div class="beat-inner">'
+f'<p class="beat-eyebrow">{eyebrow}</p>'
+f'<p class="beat-big">{big}<span class="u">{unit}</span></p>'
+f'<h3 class="beat-title">{title}</h3>'
+f'<p class="beat-body">{body}</p>'
+'</div>'
+'</section>'
+    )
+
+
+def render_beats(hit_rate: str, engines: list[dict] | None = None) -> None:
+    """Tres pantallas de cine: lo que dijo, lo que dudó, lo que acertó."""
+    pre = _preseason()
+    p1 = f"{pre[0][1]*100:.1f}".replace(".", ",") if pre else "19,4"
+    t1 = D(pre[0][0]) if pre else "España"
+
+    veredicto = ""
+    if engines:
+        best = min(engines, key=lambda e: e["brier"])
+        elo = next((e for e in engines if e["key"] == "elo"), None)
+        if elo and best["key"] != "elo":
+            gap = (elo["brier"] - best["brier"]) / elo["brier"] * 100
+            veredicto = (f' El <b>{best["label"]}</b> le sacó un {gap:.0f} % de ventaja '
+                         'al Elo clásico sobre los mismos partidos.')
+
+    st.markdown(
+        _beat("mayo", "23 de mayo · 19 días antes del primer partido",
+              p1, " %",
+              f"{t1}, la más probable de las 48",
+              "El estadio todavía estaba vacío. El modelo corrió diez mil torneos "
+              "y le dio a España más del doble de opciones que a la segunda. "
+              "No se movió de ahí en las cinco tomas siguientes.", "left")
+        + _beat("montana", "1 de julio · fin de la fase de grupos",
+                "12,4", " %",
+                "Y entonces dejó de creérselo",
+                "Francia arrasaba en grupos y el modelo se bajó del carro: España "
+                "cayó al 12,4 % y Francia se puso líder con el 24,5 %. Siguió por "
+                "delante el 10 y el 13 de julio. Después jugaron la semifinal.", "right")
+        + _beat("juicio", "104 partidos · el veredicto",
+                hit_rate.replace(" %", ""), " %",
+                "de acierto, partido a partido",
+                "Acertar al campeón es fácil de contar y fácil de tener suerte. "
+                f"Esto son los 104, cada uno predicho antes de jugarse.{veredicto}", "left"),
+        unsafe_allow_html=True,
+    )

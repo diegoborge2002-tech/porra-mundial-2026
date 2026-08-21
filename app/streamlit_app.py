@@ -16,7 +16,8 @@ import json
 import math
 import streamlit as st
 
-from app.styles import inject, inject_champion, inject_hero_champion, TEXT_DIM, PRIMARY, ACCENT
+from app.styles import (inject, inject_champion, inject_hero_champion,
+                        inject_beats, TEXT_DIM, PRIMARY, ACCENT)
 from app.components_media import render_hero, render_background, render_matchday_brief
 from app.tabs import (
     predicciones, selecciones, biases, seguimiento,
@@ -41,6 +42,7 @@ st.set_page_config(
 inject()
 inject_champion()
 inject_hero_champion()
+inject_beats()
 render_background()
 
 
@@ -91,6 +93,30 @@ def _played_count() -> int:
         return n
     except Exception:
         return 0
+
+
+@st.cache_data(show_spinner=False)
+def _engine_scores() -> list[dict]:
+    """Elo puro vs ensemble vs XGBoost sobre los 104 partidos, para el veredicto."""
+    try:
+        from app.utils import load_base_elo, load_real_results, get_biases
+        from src.model.live_diagnostics import compute_match_diagnostics
+        from src.model.calibration import aggregate_metrics
+        from src.model import ensemble as _ens
+        base, real = load_base_elo(), load_real_results()
+        w_user = get_biases().stats_weight
+        out = []
+        for label, key, w in [("Elo clásico", "elo", 0.0),
+                              ("ensemble", "ensemble", w_user),
+                              ("modelo de estadísticas", "xgb", 1.0)]:
+            _ens.set_stats_weight(w)
+            d = compute_match_diagnostics(base, real)
+            st_ = aggregate_metrics([((x.p_home, x.p_draw, x.p_away), x.outcome) for x in d])
+            out.append({"label": label, "key": key, "brier": st_.mean_brier})
+        _ens.set_stats_weight(w_user)
+        return out
+    except Exception:
+        return []
 
 
 def _champion_panel() -> None:
@@ -516,8 +542,10 @@ def _global_search() -> None:
 _CHAMPION = tournament_champion()
 
 if _CHAMPION:
-    from app.components_hero import render_champion_hero
+    from app.components_hero import render_champion_hero, render_beats
     render_champion_hero(_CHAMPION, _model_hit_rate(), _played_count(), FILM_URL)
+    # Los tres golpes: la película comprimida, para quien baja del hero.
+    render_beats(_model_hit_rate(), _engine_scores())
     st.markdown('<div id="explorar"></div>', unsafe_allow_html=True)
     _ticker_bar()
 else:

@@ -1611,6 +1611,93 @@ a.hc-cta.ghost:hover { border-color: rgba(255,255,255,0.45); transform: translat
 """
 
 
+BEATS_CSS = """
+<style>
+/* ============================================================================
+   LOS TRES GOLPES — la película comprimida a tres pantallas
+   ========================================================================== */
+.beat {
+    position: relative;
+    margin: 0 -3rem;
+    min-height: min(78vh, 640px);
+    display: flex; align-items: center;
+    overflow: hidden; isolation: isolate;
+    background-size: cover; background-position: center;
+    background-color: #05080f;
+}
+.beat + .beat { margin-top: 0; }
+.beat-vid {
+    position: absolute; inset: 0; z-index: -2;
+    width: 100%; height: 100%; object-fit: cover;
+}
+.beat-scrim { position: absolute; inset: 0; z-index: -1; }
+.beat-left .beat-scrim {
+    background: linear-gradient(90deg, rgba(4,7,14,0.95) 0%, rgba(4,7,14,0.72) 45%,
+                                rgba(4,7,14,0.30) 100%);
+}
+.beat-right .beat-scrim {
+    background: linear-gradient(270deg, rgba(4,7,14,0.95) 0%, rgba(4,7,14,0.72) 45%,
+                                rgba(4,7,14,0.30) 100%);
+}
+.beat-inner {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 1280px; margin-inline: auto;
+    padding: clamp(1.5rem, 4vw, 3.25rem);
+    display: grid;
+}
+.beat-left .beat-inner > * { max-width: 30rem; }
+.beat-right .beat-inner { justify-items: end; text-align: right; }
+.beat-right .beat-inner > * { max-width: 30rem; }
+
+/* Streamlit fija `p { font-size: 16px }` con mucha especificidad: aqui hace
+   falta !important o el numero grande sale del tamano de un parrafo. */
+.beat-eyebrow {
+    font-size: 0.66rem !important; font-weight: 800; letter-spacing: 0.2em;
+    text-transform: uppercase; color: #4cd7f6; margin: 0 0 0.9rem !important;
+    line-height: 1.4 !important;
+}
+.beat-big {
+    font-family: 'Outfit', sans-serif !important; font-weight: 800 !important;
+    font-size: clamp(3.4rem, 11vw, 7rem) !important; line-height: 0.88 !important;
+    letter-spacing: -0.045em; color: #f0c14b; margin: 0 0 0.6rem !important;
+    font-variant-numeric: tabular-nums;
+}
+.beat-big .u { font-size: 0.34em; letter-spacing: 0; margin-left: 0.08em; opacity: 0.85; }
+.beat-title {
+    font-family: 'Instrument Serif', Georgia, serif !important;
+    font-weight: 400 !important; font-style: italic;
+    font-size: clamp(1.5rem, 3.6vw, 2.5rem) !important;
+    line-height: 1.05 !important; color: #f4f7ff;
+    margin: 0 0 0.9rem !important; padding: 0 !important;
+    text-wrap: balance;   /* "…de las 48" no debe caer sola en su linea */
+}
+.beat-body {
+    font-size: 1rem !important; line-height: 1.65 !important; color: #a8b3c9;
+    margin: 0 !important; text-wrap: pretty;
+}
+.beat-body b { color: #f0c14b; font-weight: 700; }
+
+@media (max-width: 900px) {
+    .beat { margin: 0 -1.25rem; min-height: auto; padding-block: 2.75rem; }
+    .beat-inner { padding: 1.25rem; }
+    /* en el movil los dos lados se alinean igual: leer en zigzag cansa */
+    .beat-right .beat-inner { justify-items: start; text-align: left; }
+    .beat-left .beat-scrim, .beat-right .beat-scrim {
+        background: linear-gradient(0deg, rgba(4,7,14,0.96) 15%, rgba(4,7,14,0.62) 100%);
+    }
+    .beat-body { font-size: 0.92rem !important; }
+}
+
+@media (prefers-reduced-motion: reduce) { .beat-vid { opacity: 0; } }
+</style>
+"""
+
+
+def inject_beats() -> None:
+    """CSS de los tres golpes de cine bajo la portada."""
+    st.markdown(BEATS_CSS, unsafe_allow_html=True)
+
+
 def inject_hero_champion() -> None:
     """CSS de la portada del torneo terminado."""
     st.markdown(HERO_CHAMPION_CSS, unsafe_allow_html=True)

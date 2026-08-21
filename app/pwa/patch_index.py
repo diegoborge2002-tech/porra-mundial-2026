@@ -26,7 +26,8 @@ if og.exists():
     shutil.copy(og, static / "og_image.png")
 
 # Videos hero -> servidos en la raiz (los usan render_hero y la portada de campeon)
-for name in ("hero.mp4", "hero_champion.mp4"):
+for name in ("hero.mp4", "hero_champion.mp4",
+             "beat_mayo.mp4", "beat_montana.mp4", "beat_juicio.mp4"):
     src = pathlib.Path("app/assets/custom") / name
     if src.exists():
         shutil.copy(src, static / name)
